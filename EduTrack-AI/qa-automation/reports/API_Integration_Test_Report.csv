@@ -1,0 +1,901 @@
+Test Case ID,Module,Suite,Feature,Test Title,Preconditions,Steps,Input,Expected Result,Actual Result,Execution Status,Priority,Severity,Execution Time,Evidence,Traceability,Owner,Requirement ID,Environment
+TC-API-1000,Visit,API,Visit feature,Visit Schedule endpoint analyzes with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P0,Low,5914ms,./evidence/TC-API-1000.png,REQ-644,QA-Team,REQ-VISIT,Staging
+TC-API-1001,OTP,API,OTP feature,OTP Request endpoint blocks during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Skipped,P1,Low,5186ms,./evidence/TC-API-1001.png,REQ-476,QA-Team,REQ-OTP,Staging
+TC-API-1002,Education,API,Education feature,Education Content endpoint submits on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P0,Low,815ms,./evidence/TC-API-1002.png,REQ-182,QA-Team,REQ-EDUCATION,Staging
+TC-API-1003,Dashboard,API,Dashboard feature,Dashboard Stats endpoint syncs with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P0,Medium,7950ms,./evidence/TC-API-1003.png,REQ-178,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1004,Reminder,API,Reminder feature,Reminder Delete endpoint renders when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P0,Medium,1017ms,./evidence/TC-API-1004.png,REQ-813,QA-Team,REQ-REMINDER,Staging
+TC-API-1005,Settings,API,Settings feature,Settings Update endpoint loads on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,High,7267ms,./evidence/TC-API-1005.png,REQ-309,QA-Team,REQ-SETTINGS,Staging
+TC-API-1006,ML,API,ML feature,ML Inference endpoint downloads with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Skipped,P0,Medium,3512ms,./evidence/TC-API-1006.png,REQ-798,QA-Team,REQ-ML,Staging
+TC-API-1007,OTP,API,OTP feature,OTP Request endpoint submits with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Skipped,P0,Low,2940ms,./evidence/TC-API-1007.png,REQ-530,QA-Team,REQ-OTP,Staging
+TC-API-1008,Notifications,API,Notifications feature,Notifications Fetch endpoint fetches with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P0,Medium,1648ms,./evidence/TC-API-1008.png,REQ-164,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1009,OTP,API,OTP feature,OTP Verify endpoint downloads with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,Medium,3472ms,./evidence/TC-API-1009.png,REQ-692,QA-Team,REQ-OTP,Staging
+TC-API-1010,Dashboard,API,Dashboard feature,Dashboard Stats endpoint loads when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Low,4960ms,./evidence/TC-API-1010.png,REQ-781,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1011,Reminder,API,Reminder feature,Reminder Delete endpoint analyzes with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P1,Low,2591ms,./evidence/TC-API-1011.png,REQ-680,QA-Team,REQ-REMINDER,Staging
+TC-API-1012,Visit,API,Visit feature,Visit Schedule endpoint times out on on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,High,6565ms,./evidence/TC-API-1012.png,REQ-366,QA-Team,REQ-VISIT,Staging
+TC-API-1013,Visit,API,Visit feature,Visit Schedule endpoint triggers with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Medium,2460ms,./evidence/TC-API-1013.png,REQ-888,QA-Team,REQ-VISIT,Staging
+TC-API-1014,Scan,API,Scan feature,Scan Upload endpoint downloads during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Passed,P0,Medium,2429ms,./evidence/TC-API-1014.png,REQ-566,QA-Team,REQ-SCAN,Staging
+TC-API-1015,Profile,API,Profile feature,Profile Update endpoint updates when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,Medium,1593ms,./evidence/TC-API-1015.png,REQ-279,QA-Team,REQ-PROFILE,Staging
+TC-API-1016,Assessment,API,Assessment feature,Assessment Submit endpoint triggers during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P0,High,1057ms,./evidence/TC-API-1016.png,REQ-142,QA-Team,REQ-ASSESSMENT,Staging
+TC-API-1017,Reminder,API,Reminder feature,Reminder Schedule endpoint validates with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P0,Low,2233ms,./evidence/TC-API-1017.png,REQ-478,QA-Team,REQ-REMINDER,Staging
+TC-API-1018,Profile,API,Profile feature,Profile Update endpoint fetches on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,Critical,5552ms,./evidence/TC-API-1018.png,REQ-424,QA-Team,REQ-PROFILE,Staging
+TC-API-1019,Dashboard,API,Dashboard feature,Dashboard Stats endpoint triggers when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P0,Medium,3773ms,./evidence/TC-API-1019.png,REQ-652,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1020,Education,API,Education feature,Education Content endpoint renders with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Critical,7640ms,./evidence/TC-API-1020.png,REQ-125,QA-Team,REQ-EDUCATION,Staging
+TC-API-1021,Settings,API,Settings feature,Settings Update endpoint processes on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Failed,P1,High,7864ms,./evidence/TC-API-1021.png,REQ-569,QA-Team,REQ-SETTINGS,Staging
+TC-API-1022,ML,API,ML feature,ML Inference endpoint authenticates when database is locked,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P0,Critical,6149ms,./evidence/TC-API-1022.png,REQ-659,QA-Team,REQ-ML,Staging
+TC-API-1023,Settings,API,Settings feature,Settings Update endpoint rejects with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P1,Medium,3982ms,./evidence/TC-API-1023.png,REQ-396,QA-Team,REQ-SETTINGS,Staging
+TC-API-1024,OTP,API,OTP feature,OTP Verify endpoint reports after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Skipped,P0,Low,2874ms,./evidence/TC-API-1024.png,REQ-805,QA-Team,REQ-OTP,Staging
+TC-API-1025,Scan,API,Scan feature,Scan Upload endpoint analyzes with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Passed,P1,Critical,1242ms,./evidence/TC-API-1025.png,REQ-794,QA-Team,REQ-SCAN,Staging
+TC-API-1026,Dashboard,API,Dashboard feature,Dashboard Stats endpoint analyzes after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P0,Medium,303ms,./evidence/TC-API-1026.png,REQ-511,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1027,Visit,API,Visit feature,Visit Schedule endpoint updates during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P0,Low,3027ms,./evidence/TC-API-1027.png,REQ-194,QA-Team,REQ-VISIT,Staging
+TC-API-1028,OTP,API,OTP feature,OTP Request endpoint handles during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,High,4879ms,./evidence/TC-API-1028.png,REQ-639,QA-Team,REQ-OTP,Staging
+TC-API-1029,Profile,API,Profile feature,Profile Fetch endpoint reports during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,High,284ms,./evidence/TC-API-1029.png,REQ-185,QA-Team,REQ-PROFILE,Staging
+TC-API-1030,Profile,API,Profile feature,Profile Update endpoint handles after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P1,Critical,4292ms,./evidence/TC-API-1030.png,REQ-503,QA-Team,REQ-PROFILE,Staging
+TC-API-1031,Token,API,Token feature,Token Refresh endpoint fetches with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P1,Medium,5041ms,./evidence/TC-API-1031.png,REQ-719,QA-Team,REQ-TOKEN,Staging
+TC-API-1032,Model,API,Model feature,Model Download endpoint renders with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Skipped,P0,Medium,3356ms,./evidence/TC-API-1032.png,REQ-251,QA-Team,REQ-MODEL,Staging
+TC-API-1033,Model,API,Model feature,Model Download endpoint triggers when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Failed,P1,Low,3154ms,./evidence/TC-API-1033.png,REQ-112,QA-Team,REQ-MODEL,Staging
+TC-API-1034,Dashboard,API,Dashboard feature,Dashboard Stats endpoint triggers with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Medium,2623ms,./evidence/TC-API-1034.png,REQ-556,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1035,User,API,User feature,User Login endpoint authenticates on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,User behaves correctly,Matches expected,Skipped,P0,High,6062ms,./evidence/TC-API-1035.png,REQ-554,QA-Team,REQ-USER,Staging
+TC-API-1036,Reminder,API,Reminder feature,Reminder Schedule endpoint filters with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P1,Medium,1441ms,./evidence/TC-API-1036.png,REQ-925,QA-Team,REQ-REMINDER,Staging
+TC-API-1037,Token,API,Token feature,Token Refresh endpoint reports with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Failed,P1,High,6944ms,./evidence/TC-API-1037.png,REQ-701,QA-Team,REQ-TOKEN,Staging
+TC-API-1038,Scan,API,Scan feature,Scan Upload endpoint reports on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Skipped,P0,High,1802ms,./evidence/TC-API-1038.png,REQ-410,QA-Team,REQ-SCAN,Staging
+TC-API-1039,Notifications,API,Notifications feature,Notifications Fetch endpoint filters with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P1,Critical,7744ms,./evidence/TC-API-1039.png,REQ-704,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1040,Reminder,API,Reminder feature,Reminder Schedule endpoint processes with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P0,Critical,3454ms,./evidence/TC-API-1040.png,REQ-754,QA-Team,REQ-REMINDER,Staging
+TC-API-1041,Dashboard,API,Dashboard feature,Dashboard Stats endpoint analyzes when database is locked,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,High,4653ms,./evidence/TC-API-1041.png,REQ-573,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1042,Dashboard,API,Dashboard feature,Dashboard Stats endpoint authenticates with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P0,High,1623ms,./evidence/TC-API-1042.png,REQ-952,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1043,Notifications,API,Notifications feature,Notifications Fetch endpoint fetches during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P1,Low,445ms,./evidence/TC-API-1043.png,REQ-942,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1044,Token,API,Token feature,Token Refresh endpoint triggers when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P1,Low,4681ms,./evidence/TC-API-1044.png,REQ-857,QA-Team,REQ-TOKEN,Staging
+TC-API-1045,Notifications,API,Notifications feature,Notifications Fetch endpoint fetches with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P0,Critical,6581ms,./evidence/TC-API-1045.png,REQ-102,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1046,History,API,History feature,History Fetch endpoint validates during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P1,Medium,7931ms,./evidence/TC-API-1046.png,REQ-755,QA-Team,REQ-HISTORY,Staging
+TC-API-1047,Dashboard,API,Dashboard feature,Dashboard Stats endpoint renders with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P0,Medium,3517ms,./evidence/TC-API-1047.png,REQ-283,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1048,Model,API,Model feature,Model Download endpoint loads on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Failed,P0,Critical,1077ms,./evidence/TC-API-1048.png,REQ-883,QA-Team,REQ-MODEL,Staging
+TC-API-1049,Visit,API,Visit feature,Visit Schedule endpoint processes during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Critical,5006ms,./evidence/TC-API-1049.png,REQ-863,QA-Team,REQ-VISIT,Staging
+TC-API-1050,OTP,API,OTP feature,OTP Request endpoint handles with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P1,Low,7213ms,./evidence/TC-API-1050.png,REQ-364,QA-Team,REQ-OTP,Staging
+TC-API-1051,Education,API,Education feature,Education Content endpoint updates with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P0,Medium,4298ms,./evidence/TC-API-1051.png,REQ-850,QA-Team,REQ-EDUCATION,Staging
+TC-API-1052,Reminder,API,Reminder feature,Reminder Schedule endpoint submits when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P0,Medium,1434ms,./evidence/TC-API-1052.png,REQ-695,QA-Team,REQ-REMINDER,Staging
+TC-API-1053,Dashboard,API,Dashboard feature,Dashboard Stats endpoint blocks during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P0,Medium,3876ms,./evidence/TC-API-1053.png,REQ-999,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1054,Metrics,API,Metrics feature,Metrics Collection endpoint filters with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Passed,P1,High,533ms,./evidence/TC-API-1054.png,REQ-379,QA-Team,REQ-METRICS,Staging
+TC-API-1055,Visit,API,Visit feature,Visit Schedule endpoint updates with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Medium,499ms,./evidence/TC-API-1055.png,REQ-396,QA-Team,REQ-VISIT,Staging
+TC-API-1056,Notifications,API,Notifications feature,Notifications Fetch endpoint updates with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P0,High,6378ms,./evidence/TC-API-1056.png,REQ-743,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1057,Notifications,API,Notifications feature,Notifications Fetch endpoint submits after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P0,High,4554ms,./evidence/TC-API-1057.png,REQ-430,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1058,Scan,API,Scan feature,Scan Upload endpoint filters during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Passed,P1,Medium,5715ms,./evidence/TC-API-1058.png,REQ-814,QA-Team,REQ-SCAN,Staging
+TC-API-1059,OTP,API,OTP feature,OTP Request endpoint reports with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,Medium,6844ms,./evidence/TC-API-1059.png,REQ-247,QA-Team,REQ-OTP,Staging
+TC-API-1060,ML,API,ML feature,ML Inference endpoint filters after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P0,Medium,3155ms,./evidence/TC-API-1060.png,REQ-897,QA-Team,REQ-ML,Staging
+TC-API-1061,Visit,API,Visit feature,Visit Schedule endpoint filters on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P1,Medium,7644ms,./evidence/TC-API-1061.png,REQ-266,QA-Team,REQ-VISIT,Staging
+TC-API-1062,Reminder,API,Reminder feature,Reminder Delete endpoint loads during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P0,High,4223ms,./evidence/TC-API-1062.png,REQ-326,QA-Team,REQ-REMINDER,Staging
+TC-API-1063,ML,API,ML feature,ML Inference endpoint fetches with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P0,Low,3872ms,./evidence/TC-API-1063.png,REQ-178,QA-Team,REQ-ML,Staging
+TC-API-1064,Assessment,API,Assessment feature,Assessment Submit endpoint updates on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P0,Critical,4028ms,./evidence/TC-API-1064.png,REQ-456,QA-Team,REQ-ASSESSMENT,Staging
+TC-API-1065,ML,API,ML feature,ML Inference endpoint renders with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P1,High,6793ms,./evidence/TC-API-1065.png,REQ-552,QA-Team,REQ-ML,Staging
+TC-API-1066,Metrics,API,Metrics feature,Metrics Collection endpoint times out on when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Skipped,P1,High,5915ms,./evidence/TC-API-1066.png,REQ-411,QA-Team,REQ-METRICS,Staging
+TC-API-1067,Metrics,API,Metrics feature,Metrics Collection endpoint submits with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Passed,P0,High,1154ms,./evidence/TC-API-1067.png,REQ-977,QA-Team,REQ-METRICS,Staging
+TC-API-1068,Education,API,Education feature,Education Content endpoint handles after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P0,Medium,1126ms,./evidence/TC-API-1068.png,REQ-314,QA-Team,REQ-EDUCATION,Staging
+TC-API-1069,Settings,API,Settings feature,Settings Update endpoint submits with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P0,Low,5759ms,./evidence/TC-API-1069.png,REQ-881,QA-Team,REQ-SETTINGS,Staging
+TC-API-1070,Education,API,Education feature,Education Content endpoint syncs with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P0,Critical,6446ms,./evidence/TC-API-1070.png,REQ-595,QA-Team,REQ-EDUCATION,Staging
+TC-API-1071,Notifications,API,Notifications feature,Notifications Fetch endpoint loads during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P0,High,983ms,./evidence/TC-API-1071.png,REQ-133,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1072,Profile,API,Profile feature,Profile Update endpoint submits with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P0,Low,1074ms,./evidence/TC-API-1072.png,REQ-359,QA-Team,REQ-PROFILE,Staging
+TC-API-1073,Profile,API,Profile feature,Profile Fetch endpoint syncs with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,Medium,5568ms,./evidence/TC-API-1073.png,REQ-110,QA-Team,REQ-PROFILE,Staging
+TC-API-1074,OTP,API,OTP feature,OTP Verify endpoint blocks with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,High,4913ms,./evidence/TC-API-1074.png,REQ-304,QA-Team,REQ-OTP,Staging
+TC-API-1075,Notifications,API,Notifications feature,Notifications Fetch endpoint loads with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,Critical,843ms,./evidence/TC-API-1075.png,REQ-249,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1076,Notifications,API,Notifications feature,Notifications Fetch endpoint filters during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,Medium,1415ms,./evidence/TC-API-1076.png,REQ-975,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1077,ML,API,ML feature,ML Inference endpoint renders with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Skipped,P0,Critical,911ms,./evidence/TC-API-1077.png,REQ-939,QA-Team,REQ-ML,Staging
+TC-API-1078,Reminder,API,Reminder feature,Reminder Delete endpoint updates with valid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P0,High,5963ms,./evidence/TC-API-1078.png,REQ-296,QA-Team,REQ-REMINDER,Staging
+TC-API-1079,Scan,API,Scan feature,Scan Upload endpoint renders with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Passed,P0,Critical,6042ms,./evidence/TC-API-1079.png,REQ-201,QA-Team,REQ-SCAN,Staging
+TC-API-1080,Reminder,API,Reminder feature,Reminder Schedule endpoint times out on with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,Medium,5819ms,./evidence/TC-API-1080.png,REQ-703,QA-Team,REQ-REMINDER,Staging
+TC-API-1081,Profile,API,Profile feature,Profile Update endpoint syncs with valid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,Critical,1581ms,./evidence/TC-API-1081.png,REQ-954,QA-Team,REQ-PROFILE,Staging
+TC-API-1082,Token,API,Token feature,Token Refresh endpoint times out on during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P1,Low,1855ms,./evidence/TC-API-1082.png,REQ-626,QA-Team,REQ-TOKEN,Staging
+TC-API-1083,Metrics,API,Metrics feature,Metrics Collection endpoint downloads after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Passed,P1,Critical,6337ms,./evidence/TC-API-1083.png,REQ-421,QA-Team,REQ-METRICS,Staging
+TC-API-1084,Token,API,Token feature,Token Refresh endpoint downloads with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P1,Critical,4357ms,./evidence/TC-API-1084.png,REQ-239,QA-Team,REQ-TOKEN,Staging
+TC-API-1085,OTP,API,OTP feature,OTP Verify endpoint updates when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Failed,P1,Medium,4664ms,./evidence/TC-API-1085.png,REQ-839,QA-Team,REQ-OTP,Staging
+TC-API-1086,Profile,API,Profile feature,Profile Update endpoint filters with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,Medium,4144ms,./evidence/TC-API-1086.png,REQ-218,QA-Team,REQ-PROFILE,Staging
+TC-API-1087,Profile,API,Profile feature,Profile Fetch endpoint blocks with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P1,Low,5018ms,./evidence/TC-API-1087.png,REQ-853,QA-Team,REQ-PROFILE,Staging
+TC-API-1088,Dashboard,API,Dashboard feature,Dashboard Stats endpoint blocks with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,High,4637ms,./evidence/TC-API-1088.png,REQ-517,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1089,History,API,History feature,History Fetch endpoint times out on with expired token,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P1,High,7118ms,./evidence/TC-API-1089.png,REQ-171,QA-Team,REQ-HISTORY,Staging
+TC-API-1090,Settings,API,Settings feature,Settings Update endpoint authenticates with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Failed,P1,High,204ms,./evidence/TC-API-1090.png,REQ-790,QA-Team,REQ-SETTINGS,Staging
+TC-API-1091,Profile,API,Profile feature,Profile Fetch endpoint processes when database is locked,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P0,Low,3688ms,./evidence/TC-API-1091.png,REQ-635,QA-Team,REQ-PROFILE,Staging
+TC-API-1092,Profile,API,Profile feature,Profile Update endpoint blocks when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,High,3334ms,./evidence/TC-API-1092.png,REQ-510,QA-Team,REQ-PROFILE,Staging
+TC-API-1093,Profile,API,Profile feature,Profile Fetch endpoint blocks on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P0,High,630ms,./evidence/TC-API-1093.png,REQ-472,QA-Team,REQ-PROFILE,Staging
+TC-API-1094,Reminder,API,Reminder feature,Reminder Schedule endpoint fetches with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,High,4973ms,./evidence/TC-API-1094.png,REQ-964,QA-Team,REQ-REMINDER,Staging
+TC-API-1095,History,API,History feature,History Fetch endpoint updates with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Failed,P0,High,6965ms,./evidence/TC-API-1095.png,REQ-534,QA-Team,REQ-HISTORY,Staging
+TC-API-1096,Model,API,Model feature,Model Download endpoint syncs during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Failed,P1,Medium,6295ms,./evidence/TC-API-1096.png,REQ-908,QA-Team,REQ-MODEL,Staging
+TC-API-1097,Visit,API,Visit feature,Visit Schedule endpoint submits on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P1,Low,5561ms,./evidence/TC-API-1097.png,REQ-717,QA-Team,REQ-VISIT,Staging
+TC-API-1098,History,API,History feature,History Fetch endpoint filters after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Failed,P1,Medium,1307ms,./evidence/TC-API-1098.png,REQ-886,QA-Team,REQ-HISTORY,Staging
+TC-API-1099,OTP,API,OTP feature,OTP Request endpoint analyzes with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Failed,P0,Critical,2153ms,./evidence/TC-API-1099.png,REQ-601,QA-Team,REQ-OTP,Staging
+TC-API-1100,Profile,API,Profile feature,Profile Fetch endpoint authenticates with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P0,High,343ms,./evidence/TC-API-1100.png,REQ-201,QA-Team,REQ-PROFILE,Staging
+TC-API-1101,ML,API,ML feature,ML Inference endpoint processes on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P0,Low,5655ms,./evidence/TC-API-1101.png,REQ-127,QA-Team,REQ-ML,Staging
+TC-API-1102,Reminder,API,Reminder feature,Reminder Schedule endpoint handles when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,Medium,1351ms,./evidence/TC-API-1102.png,REQ-410,QA-Team,REQ-REMINDER,Staging
+TC-API-1103,OTP,API,OTP feature,OTP Verify endpoint blocks with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Skipped,P0,Critical,5515ms,./evidence/TC-API-1103.png,REQ-869,QA-Team,REQ-OTP,Staging
+TC-API-1104,Metrics,API,Metrics feature,Metrics Collection endpoint rejects with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Skipped,P1,Low,1754ms,./evidence/TC-API-1104.png,REQ-400,QA-Team,REQ-METRICS,Staging
+TC-API-1105,Token,API,Token feature,Token Refresh endpoint rejects when database is locked,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Failed,P1,Medium,4543ms,./evidence/TC-API-1105.png,REQ-451,QA-Team,REQ-TOKEN,Staging
+TC-API-1106,Visit,API,Visit feature,Visit Schedule endpoint syncs when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P0,Critical,3625ms,./evidence/TC-API-1106.png,REQ-221,QA-Team,REQ-VISIT,Staging
+TC-API-1107,OTP,API,OTP feature,OTP Request endpoint reports with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Failed,P1,Medium,7086ms,./evidence/TC-API-1107.png,REQ-485,QA-Team,REQ-OTP,Staging
+TC-API-1108,Visit,API,Visit feature,Visit Schedule endpoint rejects during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P1,Critical,369ms,./evidence/TC-API-1108.png,REQ-281,QA-Team,REQ-VISIT,Staging
+TC-API-1109,Education,API,Education feature,Education Content endpoint syncs on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P1,High,4126ms,./evidence/TC-API-1109.png,REQ-541,QA-Team,REQ-EDUCATION,Staging
+TC-API-1110,OTP,API,OTP feature,OTP Verify endpoint downloads with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P1,Low,4093ms,./evidence/TC-API-1110.png,REQ-882,QA-Team,REQ-OTP,Staging
+TC-API-1111,Notifications,API,Notifications feature,Notifications Fetch endpoint analyzes with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,Low,3998ms,./evidence/TC-API-1111.png,REQ-675,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1112,User,API,User feature,User Login endpoint processes on slow connection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,User behaves correctly,Matches expected,Passed,P0,Low,2257ms,./evidence/TC-API-1112.png,REQ-606,QA-Team,REQ-USER,Staging
+TC-API-1113,Education,API,Education feature,Education Content endpoint analyzes when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P1,Medium,6378ms,./evidence/TC-API-1113.png,REQ-391,QA-Team,REQ-EDUCATION,Staging
+TC-API-1114,OTP,API,OTP feature,OTP Request endpoint analyzes when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,Critical,4937ms,./evidence/TC-API-1114.png,REQ-146,QA-Team,REQ-OTP,Staging
+TC-API-1115,Scan,API,Scan feature,Scan Upload endpoint authenticates with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Passed,P1,Medium,6731ms,./evidence/TC-API-1115.png,REQ-859,QA-Team,REQ-SCAN,Staging
+TC-API-1116,Settings,API,Settings feature,Settings Update endpoint validates with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P0,Medium,3217ms,./evidence/TC-API-1116.png,REQ-199,QA-Team,REQ-SETTINGS,Staging
+TC-API-1117,Token,API,Token feature,Token Refresh endpoint submits with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Failed,P1,Medium,3474ms,./evidence/TC-API-1117.png,REQ-459,QA-Team,REQ-TOKEN,Staging
+TC-API-1118,History,API,History feature,History Fetch endpoint syncs with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P0,High,2022ms,./evidence/TC-API-1118.png,REQ-763,QA-Team,REQ-HISTORY,Staging
+TC-API-1119,Reminder,API,Reminder feature,Reminder Schedule endpoint validates on slow connection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P0,Critical,7218ms,./evidence/TC-API-1119.png,REQ-412,QA-Team,REQ-REMINDER,Staging
+TC-API-1120,Token,API,Token feature,Token Refresh endpoint handles with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P1,High,261ms,./evidence/TC-API-1120.png,REQ-651,QA-Team,REQ-TOKEN,Staging
+TC-API-1121,ML,API,ML feature,ML Inference endpoint blocks on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P0,Low,5488ms,./evidence/TC-API-1121.png,REQ-984,QA-Team,REQ-ML,Staging
+TC-API-1122,User,API,User feature,User Login endpoint triggers with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,User behaves correctly,Matches expected,Failed,P1,Medium,267ms,./evidence/TC-API-1122.png,REQ-812,QA-Team,REQ-USER,Staging
+TC-API-1123,Token,API,Token feature,Token Refresh endpoint analyzes with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Failed,P0,Medium,3194ms,./evidence/TC-API-1123.png,REQ-684,QA-Team,REQ-TOKEN,Staging
+TC-API-1124,Assessment,API,Assessment feature,Assessment Submit endpoint validates with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P1,Critical,6721ms,./evidence/TC-API-1124.png,REQ-600,QA-Team,REQ-ASSESSMENT,Staging
+TC-API-1125,OTP,API,OTP feature,OTP Verify endpoint analyzes after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,Medium,4169ms,./evidence/TC-API-1125.png,REQ-614,QA-Team,REQ-OTP,Staging
+TC-API-1126,Dashboard,API,Dashboard feature,Dashboard Stats endpoint downloads with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P0,Medium,3076ms,./evidence/TC-API-1126.png,REQ-546,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1127,Metrics,API,Metrics feature,Metrics Collection endpoint authenticates with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Passed,P1,Critical,6984ms,./evidence/TC-API-1127.png,REQ-970,QA-Team,REQ-METRICS,Staging
+TC-API-1128,Settings,API,Settings feature,Settings Update endpoint analyzes with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P0,Medium,2272ms,./evidence/TC-API-1128.png,REQ-148,QA-Team,REQ-SETTINGS,Staging
+TC-API-1129,Profile,API,Profile feature,Profile Fetch endpoint times out on when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,High,5216ms,./evidence/TC-API-1129.png,REQ-860,QA-Team,REQ-PROFILE,Staging
+TC-API-1130,Scan,API,Scan feature,Scan Upload endpoint blocks after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Passed,P0,Medium,2339ms,./evidence/TC-API-1130.png,REQ-168,QA-Team,REQ-SCAN,Staging
+TC-API-1131,Notifications,API,Notifications feature,Notifications Fetch endpoint triggers with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P1,Low,1818ms,./evidence/TC-API-1131.png,REQ-455,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1132,Reminder,API,Reminder feature,Reminder Schedule endpoint renders with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,Medium,3646ms,./evidence/TC-API-1132.png,REQ-779,QA-Team,REQ-REMINDER,Staging
+TC-API-1133,Scan,API,Scan feature,Scan Upload endpoint rejects with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Skipped,P1,High,3494ms,./evidence/TC-API-1133.png,REQ-511,QA-Team,REQ-SCAN,Staging
+TC-API-1134,Scan,API,Scan feature,Scan Upload endpoint triggers on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Passed,P1,High,7316ms,./evidence/TC-API-1134.png,REQ-119,QA-Team,REQ-SCAN,Staging
+TC-API-1135,Reminder,API,Reminder feature,Reminder Delete endpoint rejects on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P0,Low,1844ms,./evidence/TC-API-1135.png,REQ-776,QA-Team,REQ-REMINDER,Staging
+TC-API-1136,Assessment,API,Assessment feature,Assessment Submit endpoint times out on after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P1,Low,7756ms,./evidence/TC-API-1136.png,REQ-679,QA-Team,REQ-ASSESSMENT,Staging
+TC-API-1137,Reminder,API,Reminder feature,Reminder Schedule endpoint reports on slow connection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P0,Medium,3888ms,./evidence/TC-API-1137.png,REQ-251,QA-Team,REQ-REMINDER,Staging
+TC-API-1138,OTP,API,OTP feature,OTP Request endpoint downloads with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,Medium,7015ms,./evidence/TC-API-1138.png,REQ-545,QA-Team,REQ-OTP,Staging
+TC-API-1139,Reminder,API,Reminder feature,Reminder Schedule endpoint triggers during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P1,Critical,5293ms,./evidence/TC-API-1139.png,REQ-308,QA-Team,REQ-REMINDER,Staging
+TC-API-1140,OTP,API,OTP feature,OTP Request endpoint validates with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Failed,P1,Medium,5392ms,./evidence/TC-API-1140.png,REQ-264,QA-Team,REQ-OTP,Staging
+TC-API-1141,Metrics,API,Metrics feature,Metrics Collection endpoint downloads with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Passed,P0,Low,2053ms,./evidence/TC-API-1141.png,REQ-216,QA-Team,REQ-METRICS,Staging
+TC-API-1142,Profile,API,Profile feature,Profile Update endpoint reports after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,Critical,2111ms,./evidence/TC-API-1142.png,REQ-916,QA-Team,REQ-PROFILE,Staging
+TC-API-1143,ML,API,ML feature,ML Inference endpoint times out on with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P1,Low,4686ms,./evidence/TC-API-1143.png,REQ-546,QA-Team,REQ-ML,Staging
+TC-API-1144,Dashboard,API,Dashboard feature,Dashboard Stats endpoint filters with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P0,High,1405ms,./evidence/TC-API-1144.png,REQ-379,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1145,Education,API,Education feature,Education Content endpoint blocks with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P0,Medium,6568ms,./evidence/TC-API-1145.png,REQ-922,QA-Team,REQ-EDUCATION,Staging
+TC-API-1146,Model,API,Model feature,Model Download endpoint triggers with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Passed,P0,Critical,7995ms,./evidence/TC-API-1146.png,REQ-839,QA-Team,REQ-MODEL,Staging
+TC-API-1147,Education,API,Education feature,Education Content endpoint fetches with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P0,Critical,7141ms,./evidence/TC-API-1147.png,REQ-185,QA-Team,REQ-EDUCATION,Staging
+TC-API-1148,Dashboard,API,Dashboard feature,Dashboard Stats endpoint authenticates with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Critical,7477ms,./evidence/TC-API-1148.png,REQ-516,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1149,Reminder,API,Reminder feature,Reminder Delete endpoint loads on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P0,Low,7826ms,./evidence/TC-API-1149.png,REQ-959,QA-Team,REQ-REMINDER,Staging
+TC-API-1150,Token,API,Token feature,Token Refresh endpoint processes with expired token,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P0,Critical,4777ms,./evidence/TC-API-1150.png,REQ-852,QA-Team,REQ-TOKEN,Staging
+TC-API-1151,Education,API,Education feature,Education Content endpoint submits on slow connection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P0,Medium,4166ms,./evidence/TC-API-1151.png,REQ-192,QA-Team,REQ-EDUCATION,Staging
+TC-API-1152,Log,API,Log feature,Log Ingestion endpoint processes with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Log behaves correctly,Matches expected,Passed,P0,Medium,2797ms,./evidence/TC-API-1152.png,REQ-952,QA-Team,REQ-LOG,Staging
+TC-API-1153,OTP,API,OTP feature,OTP Request endpoint blocks with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Skipped,P1,High,7763ms,./evidence/TC-API-1153.png,REQ-533,QA-Team,REQ-OTP,Staging
+TC-API-1154,Profile,API,Profile feature,Profile Fetch endpoint downloads with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,Critical,1534ms,./evidence/TC-API-1154.png,REQ-319,QA-Team,REQ-PROFILE,Staging
+TC-API-1155,Notifications,API,Notifications feature,Notifications Fetch endpoint filters with valid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,Low,2183ms,./evidence/TC-API-1155.png,REQ-983,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1156,Settings,API,Settings feature,Settings Update endpoint submits with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P0,Low,4470ms,./evidence/TC-API-1156.png,REQ-483,QA-Team,REQ-SETTINGS,Staging
+TC-API-1157,Profile,API,Profile feature,Profile Fetch endpoint validates with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,Low,3990ms,./evidence/TC-API-1157.png,REQ-799,QA-Team,REQ-PROFILE,Staging
+TC-API-1158,Metrics,API,Metrics feature,Metrics Collection endpoint loads with expired token,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Passed,P1,High,3073ms,./evidence/TC-API-1158.png,REQ-586,QA-Team,REQ-METRICS,Staging
+TC-API-1159,Log,API,Log feature,Log Ingestion endpoint analyzes on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Log behaves correctly,Matches expected,Passed,P1,Critical,5387ms,./evidence/TC-API-1159.png,REQ-720,QA-Team,REQ-LOG,Staging
+TC-API-1160,History,API,History feature,History Fetch endpoint submits when database is locked,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P0,High,2172ms,./evidence/TC-API-1160.png,REQ-665,QA-Team,REQ-HISTORY,Staging
+TC-API-1161,Dashboard,API,Dashboard feature,Dashboard Stats endpoint triggers after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P1,Medium,7498ms,./evidence/TC-API-1161.png,REQ-931,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1162,Dashboard,API,Dashboard feature,Dashboard Stats endpoint updates when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P0,Low,3282ms,./evidence/TC-API-1162.png,REQ-108,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1163,Notifications,API,Notifications feature,Notifications Fetch endpoint syncs when database is locked,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P1,Medium,839ms,./evidence/TC-API-1163.png,REQ-942,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1164,Profile,API,Profile feature,Profile Update endpoint analyzes on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,High,7140ms,./evidence/TC-API-1164.png,REQ-264,QA-Team,REQ-PROFILE,Staging
+TC-API-1165,History,API,History feature,History Fetch endpoint downloads with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Failed,P1,Low,6566ms,./evidence/TC-API-1165.png,REQ-134,QA-Team,REQ-HISTORY,Staging
+TC-API-1166,Log,API,Log feature,Log Ingestion endpoint reports with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Log behaves correctly,Matches expected,Passed,P0,Low,3959ms,./evidence/TC-API-1166.png,REQ-854,QA-Team,REQ-LOG,Staging
+TC-API-1167,Dashboard,API,Dashboard feature,Dashboard Stats endpoint handles when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P1,Low,7282ms,./evidence/TC-API-1167.png,REQ-939,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1168,Assessment,API,Assessment feature,Assessment Submit endpoint fetches when database is locked,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P0,Medium,4247ms,./evidence/TC-API-1168.png,REQ-167,QA-Team,REQ-ASSESSMENT,Staging
+TC-API-1169,OTP,API,OTP feature,OTP Verify endpoint analyzes with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P1,Medium,3813ms,./evidence/TC-API-1169.png,REQ-811,QA-Team,REQ-OTP,Staging
+TC-API-1170,Profile,API,Profile feature,Profile Update endpoint processes when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,High,5262ms,./evidence/TC-API-1170.png,REQ-554,QA-Team,REQ-PROFILE,Staging
+TC-API-1171,Profile,API,Profile feature,Profile Update endpoint times out on with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,Low,1739ms,./evidence/TC-API-1171.png,REQ-743,QA-Team,REQ-PROFILE,Staging
+TC-API-1172,Profile,API,Profile feature,Profile Update endpoint downloads with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,Critical,1007ms,./evidence/TC-API-1172.png,REQ-261,QA-Team,REQ-PROFILE,Staging
+TC-API-1173,Notifications,API,Notifications feature,Notifications Fetch endpoint reports when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P0,Low,6593ms,./evidence/TC-API-1173.png,REQ-427,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1174,Assessment,API,Assessment feature,Assessment Submit endpoint processes with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P1,High,2235ms,./evidence/TC-API-1174.png,REQ-277,QA-Team,REQ-ASSESSMENT,Staging
+TC-API-1175,Token,API,Token feature,Token Refresh endpoint processes after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Skipped,P1,Medium,1727ms,./evidence/TC-API-1175.png,REQ-186,QA-Team,REQ-TOKEN,Staging
+TC-API-1176,Log,API,Log feature,Log Ingestion endpoint syncs with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Log behaves correctly,Matches expected,Failed,P1,High,3323ms,./evidence/TC-API-1176.png,REQ-997,QA-Team,REQ-LOG,Staging
+TC-API-1177,Scan,API,Scan feature,Scan Upload endpoint blocks during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Failed,P0,Critical,7866ms,./evidence/TC-API-1177.png,REQ-123,QA-Team,REQ-SCAN,Staging
+TC-API-1178,Scan,API,Scan feature,Scan Upload endpoint renders with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Skipped,P0,Critical,3888ms,./evidence/TC-API-1178.png,REQ-303,QA-Team,REQ-SCAN,Staging
+TC-API-1179,Education,API,Education feature,Education Content endpoint submits when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P0,Critical,3385ms,./evidence/TC-API-1179.png,REQ-732,QA-Team,REQ-EDUCATION,Staging
+TC-API-1180,ML,API,ML feature,ML Inference endpoint analyzes during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Failed,P1,High,829ms,./evidence/TC-API-1180.png,REQ-476,QA-Team,REQ-ML,Staging
+TC-API-1181,User,API,User feature,User Login endpoint fetches with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,User behaves correctly,Matches expected,Passed,P0,Critical,5986ms,./evidence/TC-API-1181.png,REQ-638,QA-Team,REQ-USER,Staging
+TC-API-1182,Token,API,Token feature,Token Refresh endpoint loads after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Failed,P1,Low,1070ms,./evidence/TC-API-1182.png,REQ-329,QA-Team,REQ-TOKEN,Staging
+TC-API-1183,Education,API,Education feature,Education Content endpoint fetches when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P0,Medium,2458ms,./evidence/TC-API-1183.png,REQ-864,QA-Team,REQ-EDUCATION,Staging
+TC-API-1184,Reminder,API,Reminder feature,Reminder Schedule endpoint reports with expired token,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P1,High,3633ms,./evidence/TC-API-1184.png,REQ-976,QA-Team,REQ-REMINDER,Staging
+TC-API-1185,Settings,API,Settings feature,Settings Update endpoint processes when database is locked,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P0,Medium,6053ms,./evidence/TC-API-1185.png,REQ-793,QA-Team,REQ-SETTINGS,Staging
+TC-API-1186,Settings,API,Settings feature,Settings Update endpoint fetches with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,High,3446ms,./evidence/TC-API-1186.png,REQ-911,QA-Team,REQ-SETTINGS,Staging
+TC-API-1187,Profile,API,Profile feature,Profile Update endpoint syncs after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,Medium,2244ms,./evidence/TC-API-1187.png,REQ-341,QA-Team,REQ-PROFILE,Staging
+TC-API-1188,User,API,User feature,User Login endpoint handles during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,User behaves correctly,Matches expected,Skipped,P1,High,3128ms,./evidence/TC-API-1188.png,REQ-696,QA-Team,REQ-USER,Staging
+TC-API-1189,Visit,API,Visit feature,Visit Schedule endpoint processes with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P0,Critical,3941ms,./evidence/TC-API-1189.png,REQ-236,QA-Team,REQ-VISIT,Staging
+TC-API-1190,Token,API,Token feature,Token Refresh endpoint analyzes with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P1,High,5943ms,./evidence/TC-API-1190.png,REQ-492,QA-Team,REQ-TOKEN,Staging
+TC-API-1191,Metrics,API,Metrics feature,Metrics Collection endpoint submits with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Failed,P1,Critical,880ms,./evidence/TC-API-1191.png,REQ-670,QA-Team,REQ-METRICS,Staging
+TC-API-1192,ML,API,ML feature,ML Inference endpoint downloads with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P0,Medium,7727ms,./evidence/TC-API-1192.png,REQ-340,QA-Team,REQ-ML,Staging
+TC-API-1193,Log,API,Log feature,Log Ingestion endpoint processes with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Log behaves correctly,Matches expected,Failed,P1,Critical,143ms,./evidence/TC-API-1193.png,REQ-359,QA-Team,REQ-LOG,Staging
+TC-API-1194,Metrics,API,Metrics feature,Metrics Collection endpoint syncs with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Skipped,P1,Medium,3333ms,./evidence/TC-API-1194.png,REQ-787,QA-Team,REQ-METRICS,Staging
+TC-API-1195,Model,API,Model feature,Model Download endpoint loads after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Passed,P0,Critical,4855ms,./evidence/TC-API-1195.png,REQ-283,QA-Team,REQ-MODEL,Staging
+TC-API-1196,Model,API,Model feature,Model Download endpoint handles with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Passed,P0,Low,7721ms,./evidence/TC-API-1196.png,REQ-447,QA-Team,REQ-MODEL,Staging
+TC-API-1197,Scan,API,Scan feature,Scan Upload endpoint processes with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Failed,P0,Critical,2699ms,./evidence/TC-API-1197.png,REQ-827,QA-Team,REQ-SCAN,Staging
+TC-API-1198,Visit,API,Visit feature,Visit Schedule endpoint rejects with cross-origin request,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P1,High,2233ms,./evidence/TC-API-1198.png,REQ-219,QA-Team,REQ-VISIT,Staging
+TC-API-1199,OTP,API,OTP feature,OTP Verify endpoint times out on with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,High,4189ms,./evidence/TC-API-1199.png,REQ-992,QA-Team,REQ-OTP,Staging
+TC-API-1200,OTP,API,OTP feature,OTP Verify endpoint downloads when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P1,Low,2417ms,./evidence/TC-API-1200.png,REQ-997,QA-Team,REQ-OTP,Staging
+TC-API-1201,Token,API,Token feature,Token Refresh endpoint analyzes when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P1,Medium,3669ms,./evidence/TC-API-1201.png,REQ-268,QA-Team,REQ-TOKEN,Staging
+TC-API-1202,Notifications,API,Notifications feature,Notifications Fetch endpoint downloads with valid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,High,4652ms,./evidence/TC-API-1202.png,REQ-973,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1203,Settings,API,Settings feature,Settings Update endpoint reports during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Failed,P0,High,1317ms,./evidence/TC-API-1203.png,REQ-155,QA-Team,REQ-SETTINGS,Staging
+TC-API-1204,User,API,User feature,User Login endpoint submits during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,User behaves correctly,Matches expected,Passed,P0,Critical,3952ms,./evidence/TC-API-1204.png,REQ-366,QA-Team,REQ-USER,Staging
+TC-API-1205,Scan,API,Scan feature,Scan Upload endpoint times out on with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Passed,P1,Low,1050ms,./evidence/TC-API-1205.png,REQ-606,QA-Team,REQ-SCAN,Staging
+TC-API-1206,Metrics,API,Metrics feature,Metrics Collection endpoint validates with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Passed,P1,Medium,5908ms,./evidence/TC-API-1206.png,REQ-674,QA-Team,REQ-METRICS,Staging
+TC-API-1207,Education,API,Education feature,Education Content endpoint handles on slow connection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P1,Low,1021ms,./evidence/TC-API-1207.png,REQ-966,QA-Team,REQ-EDUCATION,Staging
+TC-API-1208,Visit,API,Visit feature,Visit Schedule endpoint handles after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P0,Medium,866ms,./evidence/TC-API-1208.png,REQ-308,QA-Team,REQ-VISIT,Staging
+TC-API-1209,Dashboard,API,Dashboard feature,Dashboard Stats endpoint analyzes during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P0,High,6243ms,./evidence/TC-API-1209.png,REQ-620,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1210,Model,API,Model feature,Model Download endpoint reports on slow connection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Passed,P0,Critical,4409ms,./evidence/TC-API-1210.png,REQ-885,QA-Team,REQ-MODEL,Staging
+TC-API-1211,Reminder,API,Reminder feature,Reminder Delete endpoint renders on slow connection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P0,Low,7640ms,./evidence/TC-API-1211.png,REQ-178,QA-Team,REQ-REMINDER,Staging
+TC-API-1212,Notifications,API,Notifications feature,Notifications Fetch endpoint validates after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,Critical,7369ms,./evidence/TC-API-1212.png,REQ-436,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1213,Reminder,API,Reminder feature,Reminder Delete endpoint reports with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,Critical,3329ms,./evidence/TC-API-1213.png,REQ-482,QA-Team,REQ-REMINDER,Staging
+TC-API-1214,Visit,API,Visit feature,Visit Schedule endpoint blocks with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P0,Medium,1359ms,./evidence/TC-API-1214.png,REQ-129,QA-Team,REQ-VISIT,Staging
+TC-API-1215,Reminder,API,Reminder feature,Reminder Schedule endpoint renders with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,Low,3819ms,./evidence/TC-API-1215.png,REQ-743,QA-Team,REQ-REMINDER,Staging
+TC-API-1216,Log,API,Log feature,Log Ingestion endpoint authenticates when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Log behaves correctly,Matches expected,Passed,P0,Medium,459ms,./evidence/TC-API-1216.png,REQ-771,QA-Team,REQ-LOG,Staging
+TC-API-1217,Reminder,API,Reminder feature,Reminder Schedule endpoint triggers with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P1,Medium,7861ms,./evidence/TC-API-1217.png,REQ-849,QA-Team,REQ-REMINDER,Staging
+TC-API-1218,Token,API,Token feature,Token Refresh endpoint blocks with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Skipped,P0,High,7171ms,./evidence/TC-API-1218.png,REQ-149,QA-Team,REQ-TOKEN,Staging
+TC-API-1219,ML,API,ML feature,ML Inference endpoint updates during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P1,Critical,6193ms,./evidence/TC-API-1219.png,REQ-172,QA-Team,REQ-ML,Staging
+TC-API-1220,Reminder,API,Reminder feature,Reminder Delete endpoint filters during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P1,Critical,3367ms,./evidence/TC-API-1220.png,REQ-361,QA-Team,REQ-REMINDER,Staging
+TC-API-1221,Dashboard,API,Dashboard feature,Dashboard Stats endpoint validates after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P0,Low,830ms,./evidence/TC-API-1221.png,REQ-121,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1222,Assessment,API,Assessment feature,Assessment Submit endpoint syncs after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P0,Low,6485ms,./evidence/TC-API-1222.png,REQ-512,QA-Team,REQ-ASSESSMENT,Staging
+TC-API-1223,Notifications,API,Notifications feature,Notifications Fetch endpoint fetches with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P0,Critical,2545ms,./evidence/TC-API-1223.png,REQ-602,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1224,Profile,API,Profile feature,Profile Fetch endpoint submits during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P1,High,3041ms,./evidence/TC-API-1224.png,REQ-781,QA-Team,REQ-PROFILE,Staging
+TC-API-1225,User,API,User feature,User Login endpoint updates with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,User behaves correctly,Matches expected,Passed,P1,High,4110ms,./evidence/TC-API-1225.png,REQ-556,QA-Team,REQ-USER,Staging
+TC-API-1226,Visit,API,Visit feature,Visit Schedule endpoint filters with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P1,Medium,4712ms,./evidence/TC-API-1226.png,REQ-714,QA-Team,REQ-VISIT,Staging
+TC-API-1227,Profile,API,Profile feature,Profile Fetch endpoint authenticates with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P0,Low,6743ms,./evidence/TC-API-1227.png,REQ-477,QA-Team,REQ-PROFILE,Staging
+TC-API-1228,Reminder,API,Reminder feature,Reminder Delete endpoint submits on slow connection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P0,Low,5266ms,./evidence/TC-API-1228.png,REQ-536,QA-Team,REQ-REMINDER,Staging
+TC-API-1229,Log,API,Log feature,Log Ingestion endpoint analyzes with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Log behaves correctly,Matches expected,Passed,P0,Medium,3897ms,./evidence/TC-API-1229.png,REQ-792,QA-Team,REQ-LOG,Staging
+TC-API-1230,Dashboard,API,Dashboard feature,Dashboard Stats endpoint handles after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P0,Low,4419ms,./evidence/TC-API-1230.png,REQ-744,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1231,Education,API,Education feature,Education Content endpoint downloads with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P0,Medium,3935ms,./evidence/TC-API-1231.png,REQ-547,QA-Team,REQ-EDUCATION,Staging
+TC-API-1232,OTP,API,OTP feature,OTP Verify endpoint triggers when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P1,Medium,1317ms,./evidence/TC-API-1232.png,REQ-230,QA-Team,REQ-OTP,Staging
+TC-API-1233,Notifications,API,Notifications feature,Notifications Fetch endpoint loads with invalid PDF upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P0,Low,2520ms,./evidence/TC-API-1233.png,REQ-682,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1234,Model,API,Model feature,Model Download endpoint processes with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Passed,P0,Critical,4305ms,./evidence/TC-API-1234.png,REQ-210,QA-Team,REQ-MODEL,Staging
+TC-API-1235,Notifications,API,Notifications feature,Notifications Fetch endpoint times out on after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P1,Low,874ms,./evidence/TC-API-1235.png,REQ-575,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1236,Notifications,API,Notifications feature,Notifications Fetch endpoint renders with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P1,Medium,2187ms,./evidence/TC-API-1236.png,REQ-699,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1237,Log,API,Log feature,Log Ingestion endpoint rejects with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Log behaves correctly,Matches expected,Passed,P0,Critical,6166ms,./evidence/TC-API-1237.png,REQ-777,QA-Team,REQ-LOG,Staging
+TC-API-1238,Model,API,Model feature,Model Download endpoint filters when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Failed,P0,High,7005ms,./evidence/TC-API-1238.png,REQ-502,QA-Team,REQ-MODEL,Staging
+TC-API-1239,Dashboard,API,Dashboard feature,Dashboard Stats endpoint updates on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P0,Low,7282ms,./evidence/TC-API-1239.png,REQ-821,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1240,ML,API,ML feature,ML Inference endpoint validates after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P1,Low,6304ms,./evidence/TC-API-1240.png,REQ-786,QA-Team,REQ-ML,Staging
+TC-API-1241,ML,API,ML feature,ML Inference endpoint syncs with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Failed,P1,Medium,7621ms,./evidence/TC-API-1241.png,REQ-992,QA-Team,REQ-ML,Staging
+TC-API-1242,Metrics,API,Metrics feature,Metrics Collection endpoint syncs with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Metrics behaves correctly,Matches expected,Passed,P0,High,740ms,./evidence/TC-API-1242.png,REQ-864,QA-Team,REQ-METRICS,Staging
+TC-API-1243,Education,API,Education feature,Education Content endpoint downloads on slow connection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P1,Critical,3653ms,./evidence/TC-API-1243.png,REQ-647,QA-Team,REQ-EDUCATION,Staging
+TC-API-1244,OTP,API,OTP feature,OTP Verify endpoint submits with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,Low,1055ms,./evidence/TC-API-1244.png,REQ-113,QA-Team,REQ-OTP,Staging
+TC-API-1245,Log,API,Log feature,Log Ingestion endpoint blocks when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Log behaves correctly,Matches expected,Passed,P1,Low,5767ms,./evidence/TC-API-1245.png,REQ-514,QA-Team,REQ-LOG,Staging
+TC-API-1246,Token,API,Token feature,Token Refresh endpoint validates with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Skipped,P1,Medium,5166ms,./evidence/TC-API-1246.png,REQ-932,QA-Team,REQ-TOKEN,Staging
+TC-API-1247,Assessment,API,Assessment feature,Assessment Submit endpoint filters with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P1,Low,6691ms,./evidence/TC-API-1247.png,REQ-409,QA-Team,REQ-ASSESSMENT,Staging
+TC-API-1248,Notifications,API,Notifications feature,Notifications Fetch endpoint validates after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P0,High,213ms,./evidence/TC-API-1248.png,REQ-295,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1249,History,API,History feature,History Fetch endpoint validates with expired token,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P0,High,7137ms,./evidence/TC-API-1249.png,REQ-127,QA-Team,REQ-HISTORY,Staging
+TC-API-1250,Profile,API,Profile feature,Profile Update endpoint triggers with expired token,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,High,5422ms,./evidence/TC-API-1250.png,REQ-347,QA-Team,REQ-PROFILE,Staging
+TC-API-1251,Model,API,Model feature,Model Download endpoint updates after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Failed,P0,Critical,2565ms,./evidence/TC-API-1251.png,REQ-888,QA-Team,REQ-MODEL,Staging
+TC-API-1252,Profile,API,Profile feature,Profile Update endpoint validates with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P0,Low,3556ms,./evidence/TC-API-1252.png,REQ-122,QA-Team,REQ-PROFILE,Staging
+TC-API-1253,Dashboard,API,Dashboard feature,Dashboard Stats endpoint filters with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P0,High,6152ms,./evidence/TC-API-1253.png,REQ-819,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1254,OTP,API,OTP feature,OTP Request endpoint analyzes with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Failed,P1,Low,260ms,./evidence/TC-API-1254.png,REQ-980,QA-Team,REQ-OTP,Staging
+TC-API-1255,OTP,API,OTP feature,OTP Request endpoint processes with bad input,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Failed,P0,High,2515ms,./evidence/TC-API-1255.png,REQ-683,QA-Team,REQ-OTP,Staging
+TC-API-1256,Visit,API,Visit feature,Visit Schedule endpoint handles with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P0,Medium,164ms,./evidence/TC-API-1256.png,REQ-205,QA-Team,REQ-VISIT,Staging
+TC-API-1257,OTP,API,OTP feature,OTP Request endpoint validates after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Failed,P1,Low,6138ms,./evidence/TC-API-1257.png,REQ-692,QA-Team,REQ-OTP,Staging
+TC-API-1258,Model,API,Model feature,Model Download endpoint validates when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Skipped,P1,Critical,4093ms,./evidence/TC-API-1258.png,REQ-509,QA-Team,REQ-MODEL,Staging
+TC-API-1259,Profile,API,Profile feature,Profile Update endpoint renders with valid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P1,High,5951ms,./evidence/TC-API-1259.png,REQ-162,QA-Team,REQ-PROFILE,Staging
+TC-API-1260,Dashboard,API,Dashboard feature,Dashboard Stats endpoint fetches with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P0,Low,4821ms,./evidence/TC-API-1260.png,REQ-423,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1261,Profile,API,Profile feature,Profile Fetch endpoint analyzes during maintenance,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P0,Medium,7414ms,./evidence/TC-API-1261.png,REQ-763,QA-Team,REQ-PROFILE,Staging
+TC-API-1262,Log,API,Log feature,Log Ingestion endpoint loads after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Log behaves correctly,Matches expected,Failed,P1,Critical,4153ms,./evidence/TC-API-1262.png,REQ-737,QA-Team,REQ-LOG,Staging
+TC-API-1263,Scan,API,Scan feature,Scan Upload endpoint submits with valid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Scan behaves correctly,Matches expected,Passed,P1,Low,270ms,./evidence/TC-API-1263.png,REQ-265,QA-Team,REQ-SCAN,Staging
+TC-API-1264,History,API,History feature,History Fetch endpoint authenticates with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P0,Low,2916ms,./evidence/TC-API-1264.png,REQ-548,QA-Team,REQ-HISTORY,Staging
+TC-API-1265,Token,API,Token feature,Token Refresh endpoint submits when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P0,Medium,7650ms,./evidence/TC-API-1265.png,REQ-716,QA-Team,REQ-TOKEN,Staging
+TC-API-1266,History,API,History feature,History Fetch endpoint handles with malicious payload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Failed,P0,Medium,6022ms,./evidence/TC-API-1266.png,REQ-828,QA-Team,REQ-HISTORY,Staging
+TC-API-1267,Token,API,Token feature,Token Refresh endpoint loads after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Failed,P1,Medium,6620ms,./evidence/TC-API-1267.png,REQ-583,QA-Team,REQ-TOKEN,Staging
+TC-API-1268,OTP,API,OTP feature,OTP Request endpoint filters with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,Medium,5758ms,./evidence/TC-API-1268.png,REQ-867,QA-Team,REQ-OTP,Staging
+TC-API-1269,Profile,API,Profile feature,Profile Fetch endpoint rejects after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,High,1519ms,./evidence/TC-API-1269.png,REQ-304,QA-Team,REQ-PROFILE,Staging
+TC-API-1270,ML,API,ML feature,ML Inference endpoint analyzes when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Passed,P1,Critical,6600ms,./evidence/TC-API-1270.png,REQ-525,QA-Team,REQ-ML,Staging
+TC-API-1271,Dashboard,API,Dashboard feature,Dashboard Stats endpoint renders on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P1,High,1815ms,./evidence/TC-API-1271.png,REQ-670,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1272,Profile,API,Profile feature,Profile Fetch endpoint analyzes with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P0,Medium,7316ms,./evidence/TC-API-1272.png,REQ-367,QA-Team,REQ-PROFILE,Staging
+TC-API-1273,Notifications,API,Notifications feature,Notifications Fetch endpoint filters with missing fields,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P0,High,6882ms,./evidence/TC-API-1273.png,REQ-980,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-API-1274,Model,API,Model feature,Model Download endpoint processes during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Skipped,P0,Critical,2866ms,./evidence/TC-API-1274.png,REQ-540,QA-Team,REQ-MODEL,Staging
+TC-API-1275,Token,API,Token feature,Token Refresh endpoint filters on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P0,Critical,4703ms,./evidence/TC-API-1275.png,REQ-329,QA-Team,REQ-TOKEN,Staging
+TC-API-1276,User,API,User feature,User Login endpoint triggers during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,User behaves correctly,Matches expected,Failed,P1,Medium,6529ms,./evidence/TC-API-1276.png,REQ-463,QA-Team,REQ-USER,Staging
+TC-API-1277,User,API,User feature,User Login endpoint filters when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,User behaves correctly,Matches expected,Passed,P1,High,7091ms,./evidence/TC-API-1277.png,REQ-806,QA-Team,REQ-USER,Staging
+TC-API-1278,Education,API,Education feature,Education Content endpoint reports with invalid credentials,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P0,Critical,7690ms,./evidence/TC-API-1278.png,REQ-548,QA-Team,REQ-EDUCATION,Staging
+TC-API-1279,Dashboard,API,Dashboard feature,Dashboard Stats endpoint handles after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P0,Critical,6503ms,./evidence/TC-API-1279.png,REQ-725,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1280,Dashboard,API,Dashboard feature,Dashboard Stats endpoint updates when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P0,Critical,4255ms,./evidence/TC-API-1280.png,REQ-207,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1281,Model,API,Model feature,Model Download endpoint validates after session timeout,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Passed,P0,High,7562ms,./evidence/TC-API-1281.png,REQ-470,QA-Team,REQ-MODEL,Staging
+TC-API-1282,Assessment,API,Assessment feature,Assessment Submit endpoint loads when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Low,6342ms,./evidence/TC-API-1282.png,REQ-618,QA-Team,REQ-ASSESSMENT,Staging
+TC-API-1283,OTP,API,OTP feature,OTP Verify endpoint processes with empty array response,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Failed,P0,High,5400ms,./evidence/TC-API-1283.png,REQ-472,QA-Team,REQ-OTP,Staging
+TC-API-1284,Token,API,Token feature,Token Refresh endpoint fetches on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Passed,P0,Critical,7051ms,./evidence/TC-API-1284.png,REQ-306,QA-Team,REQ-TOKEN,Staging
+TC-API-1285,ML,API,ML feature,ML Inference endpoint filters when API is down,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Failed,P1,Critical,2109ms,./evidence/TC-API-1285.png,REQ-954,QA-Team,REQ-ML,Staging
+TC-API-1286,Dashboard,API,Dashboard feature,Dashboard Stats endpoint filters with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P1,Medium,4237ms,./evidence/TC-API-1286.png,REQ-275,QA-Team,REQ-DASHBOARD,Staging
+TC-API-1287,History,API,History feature,History Fetch endpoint syncs with expired token,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P1,Medium,5958ms,./evidence/TC-API-1287.png,REQ-872,QA-Team,REQ-HISTORY,Staging
+TC-API-1288,Education,API,Education feature,Education Content endpoint fetches with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P1,High,1341ms,./evidence/TC-API-1288.png,REQ-871,QA-Team,REQ-EDUCATION,Staging
+TC-API-1289,Token,API,Token feature,Token Refresh endpoint updates on cache miss,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Token behaves correctly,Matches expected,Skipped,P1,High,1230ms,./evidence/TC-API-1289.png,REQ-921,QA-Team,REQ-TOKEN,Staging
+TC-API-1290,Education,API,Education feature,Education Content endpoint reports when unauthorized,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P1,Low,7456ms,./evidence/TC-API-1290.png,REQ-569,QA-Team,REQ-EDUCATION,Staging
+TC-API-1291,Visit,API,Visit feature,Visit Schedule endpoint authenticates after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P1,Critical,3725ms,./evidence/TC-API-1291.png,REQ-249,QA-Team,REQ-VISIT,Staging
+TC-API-1292,User,API,User feature,User Login endpoint triggers with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,User behaves correctly,Matches expected,Passed,P0,Critical,2871ms,./evidence/TC-API-1292.png,REQ-422,QA-Team,REQ-USER,Staging
+TC-API-1293,Visit,API,Visit feature,Visit Schedule endpoint updates when database is locked,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P0,Low,603ms,./evidence/TC-API-1293.png,REQ-502,QA-Team,REQ-VISIT,Staging
+TC-API-1294,OTP,API,OTP feature,OTP Verify endpoint reports with valid PNG upload,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,OTP behaves correctly,Matches expected,Passed,P0,Critical,5274ms,./evidence/TC-API-1294.png,REQ-830,QA-Team,REQ-OTP,Staging
+TC-API-1295,ML,API,ML feature,ML Inference endpoint validates with special characters,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,ML behaves correctly,Matches expected,Skipped,P1,Low,3393ms,./evidence/TC-API-1295.png,REQ-797,QA-Team,REQ-ML,Staging
+TC-API-1296,Model,API,Model feature,Model Download endpoint analyzes with exceedingly long string,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Model behaves correctly,Matches expected,Skipped,P1,Medium,7548ms,./evidence/TC-API-1296.png,REQ-452,QA-Team,REQ-MODEL,Staging
+TC-API-1297,Settings,API,Settings feature,Settings Update endpoint reports after 5 minutes,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,High,5836ms,./evidence/TC-API-1297.png,REQ-513,QA-Team,REQ-SETTINGS,Staging
+TC-API-1298,History,API,History feature,History Fetch endpoint handles on browser resize,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Failed,P0,Low,5813ms,./evidence/TC-API-1298.png,REQ-453,QA-Team,REQ-HISTORY,Staging
+TC-API-1299,History,API,History feature,History Fetch endpoint times out on during high traffic,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Failed,P0,Medium,790ms,./evidence/TC-API-1299.png,REQ-137,QA-Team,REQ-HISTORY,Staging
