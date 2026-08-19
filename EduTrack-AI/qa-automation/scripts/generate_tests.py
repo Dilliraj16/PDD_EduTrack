@@ -7,7 +7,7 @@ import re
 # Set random seed for reproducibility
 random.seed(42)
 
-BASE_DIR = r"c:\Users\DILLI RAJ\Desktop\PDD APP\APP\EduTrack-AI\qa-automation"
+BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 REPORTS_DIR = os.path.join(BASE_DIR, "reports")
 TESTS_DIR = os.path.join(BASE_DIR, "tests")
 
@@ -105,8 +105,10 @@ write_report("Security_Assessment_Report.csv", security_titles, "Security", ["P0
 
 # Validation Script
 with open(os.path.join(BASE_DIR, "verify_quality.py"), "w") as f:
-    f.write('''import csv, glob, collections, re
-files = glob.glob(r"c:\\Users\\DILLI RAJ\\Desktop\\PDD APP\\APP\\EduTrack-AI\\qa-automation\\reports\\*.csv")
+    f.write('''import csv, glob, collections, re, os
+base_dir = os.path.dirname(os.path.abspath(__file__))
+reports_dir = os.path.join(base_dir, "reports")
+files = glob.glob(os.path.join(reports_dir, "*.csv"))
 all_titles = []
 for file in files:
     with open(file, "r", encoding="utf-8") as f:
