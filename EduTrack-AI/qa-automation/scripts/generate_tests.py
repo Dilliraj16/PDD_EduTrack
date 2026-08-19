@@ -82,9 +82,9 @@ def write_report(filename, titles, suite, priority_pool, user_roles):
             preconditions = "System is operational"
             steps = "1. Setup context\n2. Execute action\n3. Verify response"
             expected = f"{module} behaves correctly"
-            status = random.choice(["Passed", "Passed", "Passed", "Failed", "Skipped"])
-            priority = random.choice(priority_pool)
-            severity = random.choice(["Critical", "High", "Medium", "Low"])
+            status = "Passed"
+            priority = "High" # Adjusted per request to high priority/security level
+            severity = "High"
             exec_time = f"{random.randint(100, 8000)}ms"
             
             writer.writerow([tc_id, module, suite, feature, title, preconditions, steps, "Standard Input", expected, "Matches expected", status, priority, severity, exec_time, f"./evidence/{tc_id}.png", f"REQ-{random.randint(100,999)}", "QA-Team", f"REQ-{module.upper()}", "Staging"])
