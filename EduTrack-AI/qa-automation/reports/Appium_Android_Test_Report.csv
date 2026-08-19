@@ -1,901 +1,901 @@
 Test Case ID,Module,Suite,Feature,Test Title,Preconditions,Steps,Input,Expected Result,Actual Result,Execution Status,Priority,Severity,Execution Time,Evidence,Traceability,Owner,Requirement ID,Environment
-TC-MOBILE-1000,History,Mobile,History feature,History updates with battery optimization on,System is operational,"1. Setup context
+TC-MOBILE-1000,Visit,Mobile,Visit feature,Visit Reminder syncs with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P2,Low,1516ms,./evidence/TC-MOBILE-1000.png,REQ-599,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1001,Notifications,Mobile,Notifications feature,Notifications syncs on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,7793ms,./evidence/TC-MOBILE-1000.png,REQ-467,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1001,Notifications,Mobile,Notifications feature,Notifications reports on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P1,Medium,406ms,./evidence/TC-MOBILE-1001.png,REQ-848,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1002,Permissions,Mobile,Permissions feature,Permissions renders with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,431ms,./evidence/TC-MOBILE-1001.png,REQ-324,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1002,Assessment,Mobile,Assessment feature,Assessment reports on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P2,Critical,6490ms,./evidence/TC-MOBILE-1002.png,REQ-157,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1003,Authentication,Mobile,Authentication feature,Authentication analyzes on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,6337ms,./evidence/TC-MOBILE-1002.png,REQ-599,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1003,History,Mobile,History feature,History reports on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,Low,3512ms,./evidence/TC-MOBILE-1003.png,REQ-988,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1004,Notifications,Mobile,Notifications feature,Notifications downloads with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,1998ms,./evidence/TC-MOBILE-1003.png,REQ-164,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1004,Dashboard,Mobile,Dashboard feature,Dashboard rejects during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,Critical,5292ms,./evidence/TC-MOBILE-1004.png,REQ-896,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1005,Notifications,Mobile,Notifications feature,Notifications downloads with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,2265ms,./evidence/TC-MOBILE-1004.png,REQ-478,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1005,Assessment,Mobile,Assessment feature,Assessment processes on tablet UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P1,Medium,4395ms,./evidence/TC-MOBILE-1005.png,REQ-142,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1006,Assessment,Mobile,Assessment feature,Assessment blocks when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,2017ms,./evidence/TC-MOBILE-1005.png,REQ-143,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1006,Dashboard,Mobile,Dashboard feature,Dashboard times out on on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Medium,4215ms,./evidence/TC-MOBILE-1006.png,REQ-814,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1007,Profile,Mobile,Profile feature,Profile blocks when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5577ms,./evidence/TC-MOBILE-1006.png,REQ-311,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1007,Dashboard,Mobile,Dashboard feature,Dashboard processes with bad network handshake,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,Critical,5618ms,./evidence/TC-MOBILE-1007.png,REQ-849,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1008,Camera,Mobile,Camera feature,Camera validates with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,4342ms,./evidence/TC-MOBILE-1007.png,REQ-910,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1008,Dashboard,Mobile,Dashboard feature,Dashboard syncs with bad network handshake,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Failed,P2,Critical,1919ms,./evidence/TC-MOBILE-1008.png,REQ-542,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1009,Authentication,Mobile,Authentication feature,Authentication rejects on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,3059ms,./evidence/TC-MOBILE-1008.png,REQ-497,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1009,Assessment,Mobile,Assessment feature,Assessment rejects when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,High,1182ms,./evidence/TC-MOBILE-1009.png,REQ-444,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1010,Camera,Mobile,Camera feature,Camera processes with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,3947ms,./evidence/TC-MOBILE-1009.png,REQ-565,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1010,Authentication,Mobile,Authentication feature,Authentication downloads on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P2,Critical,4590ms,./evidence/TC-MOBILE-1010.png,REQ-508,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1011,Education,Mobile,Education feature,Education blocks when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7321ms,./evidence/TC-MOBILE-1010.png,REQ-147,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1011,Permissions,Mobile,Permissions feature,Permissions renders with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Low,4210ms,./evidence/TC-MOBILE-1011.png,REQ-544,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1012,Tooth,Mobile,Tooth feature,Tooth Scan fetches with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,426ms,./evidence/TC-MOBILE-1011.png,REQ-764,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1012,Dashboard,Mobile,Dashboard feature,Dashboard authenticates on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P1,Low,4681ms,./evidence/TC-MOBILE-1012.png,REQ-302,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1013,Authentication,Mobile,Authentication feature,Authentication blocks when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,2754ms,./evidence/TC-MOBILE-1012.png,REQ-205,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1013,Visit,Mobile,Visit feature,Visit Reminder filters with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P2,High,4697ms,./evidence/TC-MOBILE-1013.png,REQ-730,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1014,Permissions,Mobile,Permissions feature,Permissions submits when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,5865ms,./evidence/TC-MOBILE-1013.png,REQ-633,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1014,Visit,Mobile,Visit feature,Visit Reminder renders with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P1,High,686ms,./evidence/TC-MOBILE-1014.png,REQ-372,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1015,Education,Mobile,Education feature,Education updates on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,5290ms,./evidence/TC-MOBILE-1014.png,REQ-949,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1015,Education,Mobile,Education feature,Education updates when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P2,Critical,1021ms,./evidence/TC-MOBILE-1015.png,REQ-787,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1016,Education,Mobile,Education feature,Education updates when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,2340ms,./evidence/TC-MOBILE-1015.png,REQ-954,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1016,Profile,Mobile,Profile feature,Profile submits when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P2,Medium,2953ms,./evidence/TC-MOBILE-1016.png,REQ-295,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1017,Profile,Mobile,Profile feature,Profile rejects with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6177ms,./evidence/TC-MOBILE-1016.png,REQ-369,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1017,Camera,Mobile,Camera feature,Camera rejects when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P2,Critical,6405ms,./evidence/TC-MOBILE-1017.png,REQ-412,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1018,Tooth,Mobile,Tooth feature,Tooth Scan validates on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,4840ms,./evidence/TC-MOBILE-1017.png,REQ-657,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1018,Tooth,Mobile,Tooth feature,Tooth Scan triggers on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,Low,5205ms,./evidence/TC-MOBILE-1018.png,REQ-249,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1019,Visit,Mobile,Visit feature,Visit Reminder updates during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,4770ms,./evidence/TC-MOBILE-1018.png,REQ-278,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1019,Tooth,Mobile,Tooth feature,Tooth Scan downloads with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P1,High,1735ms,./evidence/TC-MOBILE-1019.png,REQ-801,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1020,Education,Mobile,Education feature,Education filters when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,3185ms,./evidence/TC-MOBILE-1019.png,REQ-769,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1020,Camera,Mobile,Camera feature,Camera handles with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Critical,1020ms,./evidence/TC-MOBILE-1020.png,REQ-857,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1021,Education,Mobile,Education feature,Education downloads on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,3200ms,./evidence/TC-MOBILE-1020.png,REQ-474,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1021,Settings,Mobile,Settings feature,Settings reports on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,High,7216ms,./evidence/TC-MOBILE-1021.png,REQ-952,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1022,Offline,Mobile,Offline feature,Offline reports during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,4914ms,./evidence/TC-MOBILE-1021.png,REQ-769,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1022,Dashboard,Mobile,Dashboard feature,Dashboard filters when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P1,Medium,5783ms,./evidence/TC-MOBILE-1022.png,REQ-923,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1023,Education,Mobile,Education feature,Education syncs with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7458ms,./evidence/TC-MOBILE-1022.png,REQ-955,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1023,Dashboard,Mobile,Dashboard feature,Dashboard filters in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P2,Low,3959ms,./evidence/TC-MOBILE-1023.png,REQ-123,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1024,Notifications,Mobile,Notifications feature,Notifications triggers on Android 13,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,737ms,./evidence/TC-MOBILE-1023.png,REQ-629,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1024,Assessment,Mobile,Assessment feature,Assessment filters with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,High,1769ms,./evidence/TC-MOBILE-1024.png,REQ-659,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1025,Reminder,Mobile,Reminder feature,Reminder reports after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,2160ms,./evidence/TC-MOBILE-1024.png,REQ-485,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1025,Permissions,Mobile,Permissions feature,Permissions filters when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P2,Low,5203ms,./evidence/TC-MOBILE-1025.png,REQ-847,QA-Team,REQ-REMINDER,Staging
-TC-MOBILE-1026,History,Mobile,History feature,History times out on with airplane mode enabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,7532ms,./evidence/TC-MOBILE-1025.png,REQ-328,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1026,Profile,Mobile,Profile feature,Profile handles with bad network handshake,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P1,Low,4875ms,./evidence/TC-MOBILE-1026.png,REQ-779,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1027,Dashboard,Mobile,Dashboard feature,Dashboard filters in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,4330ms,./evidence/TC-MOBILE-1026.png,REQ-515,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1027,Notifications,Mobile,Notifications feature,Notifications authenticates on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P1,Medium,1495ms,./evidence/TC-MOBILE-1027.png,REQ-161,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1028,Tooth,Mobile,Tooth feature,Tooth Scan rejects when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2990ms,./evidence/TC-MOBILE-1027.png,REQ-936,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1028,Education,Mobile,Education feature,Education authenticates with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P1,Medium,534ms,./evidence/TC-MOBILE-1028.png,REQ-576,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1029,Permissions,Mobile,Permissions feature,Permissions filters when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,7208ms,./evidence/TC-MOBILE-1028.png,REQ-453,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1029,Permissions,Mobile,Permissions feature,Permissions loads on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,Low,5509ms,./evidence/TC-MOBILE-1029.png,REQ-377,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1030,Assessment,Mobile,Assessment feature,Assessment submits on tablet UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4088ms,./evidence/TC-MOBILE-1029.png,REQ-911,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1030,History,Mobile,History feature,History handles with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Critical,2496ms,./evidence/TC-MOBILE-1030.png,REQ-988,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1031,Settings,Mobile,Settings feature,Settings times out on on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,4049ms,./evidence/TC-MOBILE-1030.png,REQ-718,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1031,Assessment,Mobile,Assessment feature,Assessment times out on on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Failed,P1,Low,4265ms,./evidence/TC-MOBILE-1031.png,REQ-826,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1032,Offline,Mobile,Offline feature,Offline rejects when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,154ms,./evidence/TC-MOBILE-1031.png,REQ-613,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1032,Settings,Mobile,Settings feature,Settings authenticates on Android 13,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,Low,7200ms,./evidence/TC-MOBILE-1032.png,REQ-711,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1033,Camera,Mobile,Camera feature,Camera rejects on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,7325ms,./evidence/TC-MOBILE-1032.png,REQ-242,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1033,Permissions,Mobile,Permissions feature,Permissions handles on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P1,High,1729ms,./evidence/TC-MOBILE-1033.png,REQ-612,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1034,Notifications,Mobile,Notifications feature,Notifications reports on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3703ms,./evidence/TC-MOBILE-1033.png,REQ-269,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1034,History,Mobile,History feature,History updates with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P1,Critical,2126ms,./evidence/TC-MOBILE-1034.png,REQ-642,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1035,Profile,Mobile,Profile feature,Profile submits with bad network handshake,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,1984ms,./evidence/TC-MOBILE-1034.png,REQ-178,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1035,Reminder,Mobile,Reminder feature,Reminder fetches when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P2,Low,3322ms,./evidence/TC-MOBILE-1035.png,REQ-862,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1036,Permissions,Mobile,Permissions feature,Permissions analyzes on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,4315ms,./evidence/TC-MOBILE-1035.png,REQ-758,QA-Team,REQ-REMINDER,Staging
+TC-MOBILE-1036,Education,Mobile,Education feature,Education syncs with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,Medium,5705ms,./evidence/TC-MOBILE-1036.png,REQ-460,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1037,Education,Mobile,Education feature,Education loads on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,2400ms,./evidence/TC-MOBILE-1036.png,REQ-316,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1037,History,Mobile,History feature,History filters with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P2,High,4206ms,./evidence/TC-MOBILE-1037.png,REQ-382,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1038,Tooth,Mobile,Tooth feature,Tooth Scan fetches when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,1330ms,./evidence/TC-MOBILE-1037.png,REQ-291,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1038,Permissions,Mobile,Permissions feature,Permissions renders during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,Low,7394ms,./evidence/TC-MOBILE-1038.png,REQ-934,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1039,History,Mobile,History feature,History downloads with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,1389ms,./evidence/TC-MOBILE-1038.png,REQ-470,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1039,Authentication,Mobile,Authentication feature,Authentication rejects on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P2,High,1342ms,./evidence/TC-MOBILE-1039.png,REQ-449,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1040,Reminder,Mobile,Reminder feature,Reminder times out on on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,5031ms,./evidence/TC-MOBILE-1039.png,REQ-834,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1040,Assessment,Mobile,Assessment feature,Assessment analyzes with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P1,Critical,6079ms,./evidence/TC-MOBILE-1040.png,REQ-491,QA-Team,REQ-REMINDER,Staging
-TC-MOBILE-1041,Camera,Mobile,Camera feature,Camera analyzes with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,6792ms,./evidence/TC-MOBILE-1040.png,REQ-221,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1041,Authentication,Mobile,Authentication feature,Authentication syncs when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P1,Low,2069ms,./evidence/TC-MOBILE-1041.png,REQ-686,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1042,Visit,Mobile,Visit feature,Visit Reminder fetches during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,5515ms,./evidence/TC-MOBILE-1041.png,REQ-335,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1042,Dashboard,Mobile,Dashboard feature,Dashboard handles when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Medium,7552ms,./evidence/TC-MOBILE-1042.png,REQ-719,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1043,Camera,Mobile,Camera feature,Camera handles with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,3496ms,./evidence/TC-MOBILE-1042.png,REQ-930,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1043,Notifications,Mobile,Notifications feature,Notifications triggers on Android 13,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P2,High,1793ms,./evidence/TC-MOBILE-1043.png,REQ-768,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1044,Profile,Mobile,Profile feature,Profile reports with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2805ms,./evidence/TC-MOBILE-1043.png,REQ-837,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1044,Assessment,Mobile,Assessment feature,Assessment reports in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,High,2631ms,./evidence/TC-MOBILE-1044.png,REQ-805,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1045,History,Mobile,History feature,History analyzes on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,1028ms,./evidence/TC-MOBILE-1044.png,REQ-593,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1045,Assessment,Mobile,Assessment feature,Assessment triggers with bad network handshake,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P1,Low,7546ms,./evidence/TC-MOBILE-1045.png,REQ-888,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1046,Assessment,Mobile,Assessment feature,Assessment fetches when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5631ms,./evidence/TC-MOBILE-1045.png,REQ-590,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1046,Offline,Mobile,Offline feature,Offline handles with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Medium,655ms,./evidence/TC-MOBILE-1046.png,REQ-670,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1047,Offline,Mobile,Offline feature,Offline times out on when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,4024ms,./evidence/TC-MOBILE-1046.png,REQ-315,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1047,Camera,Mobile,Camera feature,Camera authenticates with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Skipped,P1,High,2701ms,./evidence/TC-MOBILE-1047.png,REQ-959,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1048,Assessment,Mobile,Assessment feature,Assessment fetches when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,4939ms,./evidence/TC-MOBILE-1047.png,REQ-265,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1048,Permissions,Mobile,Permissions feature,Permissions handles during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Medium,7310ms,./evidence/TC-MOBILE-1048.png,REQ-523,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1049,Settings,Mobile,Settings feature,Settings fetches with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5402ms,./evidence/TC-MOBILE-1048.png,REQ-953,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1049,Camera,Mobile,Camera feature,Camera triggers on Android 13,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Failed,P2,Low,6208ms,./evidence/TC-MOBILE-1049.png,REQ-941,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1050,Permissions,Mobile,Permissions feature,Permissions fetches after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,3466ms,./evidence/TC-MOBILE-1049.png,REQ-122,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1050,Assessment,Mobile,Assessment feature,Assessment handles with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,High,974ms,./evidence/TC-MOBILE-1050.png,REQ-234,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1051,Profile,Mobile,Profile feature,Profile processes with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,2096ms,./evidence/TC-MOBILE-1050.png,REQ-144,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1051,Settings,Mobile,Settings feature,Settings analyzes in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,Medium,5061ms,./evidence/TC-MOBILE-1051.png,REQ-680,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1052,Dashboard,Mobile,Dashboard feature,Dashboard syncs in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,1147ms,./evidence/TC-MOBILE-1051.png,REQ-687,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1052,Reminder,Mobile,Reminder feature,Reminder syncs with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P1,High,1991ms,./evidence/TC-MOBILE-1052.png,REQ-803,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1053,Authentication,Mobile,Authentication feature,Authentication triggers after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,4952ms,./evidence/TC-MOBILE-1052.png,REQ-264,QA-Team,REQ-REMINDER,Staging
+TC-MOBILE-1053,Permissions,Mobile,Permissions feature,Permissions submits during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,Critical,5737ms,./evidence/TC-MOBILE-1053.png,REQ-898,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1054,History,Mobile,History feature,History times out on on Android 13,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,1203ms,./evidence/TC-MOBILE-1053.png,REQ-744,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1054,Tooth,Mobile,Tooth feature,Tooth Scan triggers on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Failed,P1,Low,5932ms,./evidence/TC-MOBILE-1054.png,REQ-765,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1055,Visit,Mobile,Visit feature,Visit Reminder times out on on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,4299ms,./evidence/TC-MOBILE-1054.png,REQ-140,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1055,Authentication,Mobile,Authentication feature,Authentication processes on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Low,4125ms,./evidence/TC-MOBILE-1055.png,REQ-585,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1056,Permissions,Mobile,Permissions feature,Permissions syncs during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7397ms,./evidence/TC-MOBILE-1055.png,REQ-686,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1056,Assessment,Mobile,Assessment feature,Assessment reports on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,High,1953ms,./evidence/TC-MOBILE-1056.png,REQ-133,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1057,Permissions,Mobile,Permissions feature,Permissions renders during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,1303ms,./evidence/TC-MOBILE-1056.png,REQ-157,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1057,Dashboard,Mobile,Dashboard feature,Dashboard fetches when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P1,Medium,7884ms,./evidence/TC-MOBILE-1057.png,REQ-522,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1058,Camera,Mobile,Camera feature,Camera blocks with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,1462ms,./evidence/TC-MOBILE-1057.png,REQ-364,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1058,Tooth,Mobile,Tooth feature,Tooth Scan loads in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P1,High,641ms,./evidence/TC-MOBILE-1058.png,REQ-281,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1059,Camera,Mobile,Camera feature,Camera fetches with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,7656ms,./evidence/TC-MOBILE-1058.png,REQ-284,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1059,Education,Mobile,Education feature,Education updates on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Failed,P2,Medium,7200ms,./evidence/TC-MOBILE-1059.png,REQ-568,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1060,Notifications,Mobile,Notifications feature,Notifications validates with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,4332ms,./evidence/TC-MOBILE-1059.png,REQ-515,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1060,Visit,Mobile,Visit feature,Visit Reminder updates when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P2,Low,6458ms,./evidence/TC-MOBILE-1060.png,REQ-142,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1061,Education,Mobile,Education feature,Education rejects with airplane mode enabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,5009ms,./evidence/TC-MOBILE-1060.png,REQ-677,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1061,Profile,Mobile,Profile feature,Profile authenticates when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P2,Medium,3328ms,./evidence/TC-MOBILE-1061.png,REQ-726,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1062,Visit,Mobile,Visit feature,Visit Reminder reports on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,5323ms,./evidence/TC-MOBILE-1061.png,REQ-119,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1062,Authentication,Mobile,Authentication feature,Authentication submits when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P1,Critical,3799ms,./evidence/TC-MOBILE-1062.png,REQ-567,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1063,Education,Mobile,Education feature,Education updates in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7296ms,./evidence/TC-MOBILE-1062.png,REQ-836,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1063,Authentication,Mobile,Authentication feature,Authentication times out on with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Low,6122ms,./evidence/TC-MOBILE-1063.png,REQ-140,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1064,Tooth,Mobile,Tooth feature,Tooth Scan filters on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,6063ms,./evidence/TC-MOBILE-1063.png,REQ-777,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1064,Settings,Mobile,Settings feature,Settings rejects when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Skipped,P2,Critical,1655ms,./evidence/TC-MOBILE-1064.png,REQ-398,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1065,Authentication,Mobile,Authentication feature,Authentication syncs when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6828ms,./evidence/TC-MOBILE-1064.png,REQ-390,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1065,Education,Mobile,Education feature,Education blocks when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P2,Medium,6437ms,./evidence/TC-MOBILE-1065.png,REQ-947,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1066,Offline,Mobile,Offline feature,Offline authenticates when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,7859ms,./evidence/TC-MOBILE-1065.png,REQ-187,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1066,Profile,Mobile,Profile feature,Profile filters when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,High,3560ms,./evidence/TC-MOBILE-1066.png,REQ-401,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1067,Tooth,Mobile,Tooth feature,Tooth Scan handles on Android 13,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,1874ms,./evidence/TC-MOBILE-1066.png,REQ-559,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1067,Education,Mobile,Education feature,Education downloads with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Skipped,P1,High,3897ms,./evidence/TC-MOBILE-1067.png,REQ-949,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1068,Permissions,Mobile,Permissions feature,Permissions rejects when camera permission denied,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,5068ms,./evidence/TC-MOBILE-1067.png,REQ-582,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1068,Permissions,Mobile,Permissions feature,Permissions fetches when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P1,Critical,1572ms,./evidence/TC-MOBILE-1068.png,REQ-897,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1069,History,Mobile,History feature,History blocks during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,7204ms,./evidence/TC-MOBILE-1068.png,REQ-593,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1069,Profile,Mobile,Profile feature,Profile handles when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P1,Low,3487ms,./evidence/TC-MOBILE-1069.png,REQ-431,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1070,Visit,Mobile,Visit feature,Visit Reminder loads on tablet UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,1497ms,./evidence/TC-MOBILE-1069.png,REQ-324,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1070,History,Mobile,History feature,History processes on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P1,High,3816ms,./evidence/TC-MOBILE-1070.png,REQ-704,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1071,Authentication,Mobile,Authentication feature,Authentication submits when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,6902ms,./evidence/TC-MOBILE-1070.png,REQ-520,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1071,Permissions,Mobile,Permissions feature,Permissions blocks in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,Critical,2148ms,./evidence/TC-MOBILE-1071.png,REQ-431,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1072,Camera,Mobile,Camera feature,Camera downloads during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5022ms,./evidence/TC-MOBILE-1071.png,REQ-246,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1072,Notifications,Mobile,Notifications feature,Notifications submits with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P1,Critical,1035ms,./evidence/TC-MOBILE-1072.png,REQ-823,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1073,Dashboard,Mobile,Dashboard feature,Dashboard loads when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,6609ms,./evidence/TC-MOBILE-1072.png,REQ-696,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1073,Settings,Mobile,Settings feature,Settings loads on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P2,Critical,4391ms,./evidence/TC-MOBILE-1073.png,REQ-824,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1074,Notifications,Mobile,Notifications feature,Notifications fetches on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6821ms,./evidence/TC-MOBILE-1073.png,REQ-885,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1074,History,Mobile,History feature,History triggers when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P1,Low,4608ms,./evidence/TC-MOBILE-1074.png,REQ-489,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1075,Settings,Mobile,Settings feature,Settings rejects when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,1589ms,./evidence/TC-MOBILE-1074.png,REQ-738,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1075,History,Mobile,History feature,History downloads with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,Medium,4732ms,./evidence/TC-MOBILE-1075.png,REQ-992,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1076,Education,Mobile,Education feature,Education syncs on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,5503ms,./evidence/TC-MOBILE-1075.png,REQ-623,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1076,Visit,Mobile,Visit feature,Visit Reminder fetches during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,High,1565ms,./evidence/TC-MOBILE-1076.png,REQ-887,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1077,Assessment,Mobile,Assessment feature,Assessment handles with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2266ms,./evidence/TC-MOBILE-1076.png,REQ-271,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1077,Reminder,Mobile,Reminder feature,Reminder reports after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,Medium,2635ms,./evidence/TC-MOBILE-1077.png,REQ-847,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1078,Assessment,Mobile,Assessment feature,Assessment triggers with bad network handshake,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,6032ms,./evidence/TC-MOBILE-1077.png,REQ-802,QA-Team,REQ-REMINDER,Staging
+TC-MOBILE-1078,Authentication,Mobile,Authentication feature,Authentication loads when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P2,High,1063ms,./evidence/TC-MOBILE-1078.png,REQ-234,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1079,Camera,Mobile,Camera feature,Camera validates when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,2907ms,./evidence/TC-MOBILE-1078.png,REQ-564,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1079,Assessment,Mobile,Assessment feature,Assessment rejects in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P1,Medium,200ms,./evidence/TC-MOBILE-1079.png,REQ-569,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1080,Assessment,Mobile,Assessment feature,Assessment handles on tablet UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,4986ms,./evidence/TC-MOBILE-1079.png,REQ-704,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1080,Assessment,Mobile,Assessment feature,Assessment updates with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P2,Critical,5080ms,./evidence/TC-MOBILE-1080.png,REQ-605,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1081,Education,Mobile,Education feature,Education fetches when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,663ms,./evidence/TC-MOBILE-1080.png,REQ-335,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1081,Visit,Mobile,Visit feature,Visit Reminder times out on with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Low,3817ms,./evidence/TC-MOBILE-1081.png,REQ-519,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1082,Assessment,Mobile,Assessment feature,Assessment updates with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,3198ms,./evidence/TC-MOBILE-1081.png,REQ-494,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1082,Permissions,Mobile,Permissions feature,Permissions syncs when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P1,Critical,2104ms,./evidence/TC-MOBILE-1082.png,REQ-660,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1083,Reminder,Mobile,Reminder feature,Reminder fetches with bad network handshake,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,1183ms,./evidence/TC-MOBILE-1082.png,REQ-211,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1083,Permissions,Mobile,Permissions feature,Permissions syncs during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,Critical,1614ms,./evidence/TC-MOBILE-1083.png,REQ-251,QA-Team,REQ-REMINDER,Staging
-TC-MOBILE-1084,History,Mobile,History feature,History processes on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,235ms,./evidence/TC-MOBILE-1083.png,REQ-307,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1084,Reminder,Mobile,Reminder feature,Reminder updates when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P2,Critical,1290ms,./evidence/TC-MOBILE-1084.png,REQ-974,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1085,Assessment,Mobile,Assessment feature,Assessment submits after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,4382ms,./evidence/TC-MOBILE-1084.png,REQ-980,QA-Team,REQ-REMINDER,Staging
+TC-MOBILE-1085,Reminder,Mobile,Reminder feature,Reminder updates after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,Medium,7639ms,./evidence/TC-MOBILE-1085.png,REQ-189,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1086,Education,Mobile,Education feature,Education processes after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,7549ms,./evidence/TC-MOBILE-1085.png,REQ-616,QA-Team,REQ-REMINDER,Staging
+TC-MOBILE-1086,Education,Mobile,Education feature,Education syncs when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Low,1560ms,./evidence/TC-MOBILE-1086.png,REQ-265,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1087,Camera,Mobile,Camera feature,Camera authenticates with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,5706ms,./evidence/TC-MOBILE-1086.png,REQ-529,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1087,Offline,Mobile,Offline feature,Offline times out on when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P1,Low,6238ms,./evidence/TC-MOBILE-1087.png,REQ-692,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1088,Tooth,Mobile,Tooth feature,Tooth Scan validates with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,6870ms,./evidence/TC-MOBILE-1087.png,REQ-253,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1088,Profile,Mobile,Profile feature,Profile triggers with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P1,Critical,6395ms,./evidence/TC-MOBILE-1088.png,REQ-406,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1089,Authentication,Mobile,Authentication feature,Authentication updates when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,5060ms,./evidence/TC-MOBILE-1088.png,REQ-198,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1089,Settings,Mobile,Settings feature,Settings fetches with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,Low,6819ms,./evidence/TC-MOBILE-1089.png,REQ-169,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1090,Tooth,Mobile,Tooth feature,Tooth Scan updates on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,1553ms,./evidence/TC-MOBILE-1089.png,REQ-587,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1090,Assessment,Mobile,Assessment feature,Assessment fetches when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P1,Medium,3956ms,./evidence/TC-MOBILE-1090.png,REQ-237,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1091,Dashboard,Mobile,Dashboard feature,Dashboard fetches when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,7485ms,./evidence/TC-MOBILE-1090.png,REQ-729,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1091,Tooth,Mobile,Tooth feature,Tooth Scan fetches when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P2,Medium,4417ms,./evidence/TC-MOBILE-1091.png,REQ-523,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1092,Assessment,Mobile,Assessment feature,Assessment processes on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,5013ms,./evidence/TC-MOBILE-1091.png,REQ-139,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1092,Settings,Mobile,Settings feature,Settings analyzes with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P1,High,5113ms,./evidence/TC-MOBILE-1092.png,REQ-159,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1093,History,Mobile,History feature,History syncs after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,7290ms,./evidence/TC-MOBILE-1092.png,REQ-902,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1093,Permissions,Mobile,Permissions feature,Permissions authenticates when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P1,Low,6031ms,./evidence/TC-MOBILE-1093.png,REQ-805,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1094,Camera,Mobile,Camera feature,Camera processes on Android 13,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4453ms,./evidence/TC-MOBILE-1093.png,REQ-615,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1094,Visit,Mobile,Visit feature,Visit Reminder handles on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P2,Low,5087ms,./evidence/TC-MOBILE-1094.png,REQ-968,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1095,Tooth,Mobile,Tooth feature,Tooth Scan rejects with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,6263ms,./evidence/TC-MOBILE-1094.png,REQ-220,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1095,Assessment,Mobile,Assessment feature,Assessment fetches when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,Medium,7694ms,./evidence/TC-MOBILE-1095.png,REQ-232,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1096,History,Mobile,History feature,History authenticates with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,863ms,./evidence/TC-MOBILE-1095.png,REQ-593,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1096,Permissions,Mobile,Permissions feature,Permissions processes in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P2,Low,4134ms,./evidence/TC-MOBILE-1096.png,REQ-927,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1097,Offline,Mobile,Offline feature,Offline submits when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5501ms,./evidence/TC-MOBILE-1096.png,REQ-233,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1097,History,Mobile,History feature,History submits on tablet UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P1,Medium,1685ms,./evidence/TC-MOBILE-1097.png,REQ-101,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1098,Assessment,Mobile,Assessment feature,Assessment rejects in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,7489ms,./evidence/TC-MOBILE-1097.png,REQ-717,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1098,Profile,Mobile,Profile feature,Profile downloads when camera permission denied,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Low,5223ms,./evidence/TC-MOBILE-1098.png,REQ-915,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1099,Tooth,Mobile,Tooth feature,Tooth Scan fetches after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,4517ms,./evidence/TC-MOBILE-1098.png,REQ-947,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1099,Tooth,Mobile,Tooth feature,Tooth Scan handles after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P1,Low,3491ms,./evidence/TC-MOBILE-1099.png,REQ-146,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1100,Offline,Mobile,Offline feature,Offline analyzes when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,109ms,./evidence/TC-MOBILE-1099.png,REQ-893,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1100,Camera,Mobile,Camera feature,Camera syncs with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,High,192ms,./evidence/TC-MOBILE-1100.png,REQ-755,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1101,Notifications,Mobile,Notifications feature,Notifications reports on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,5658ms,./evidence/TC-MOBILE-1100.png,REQ-764,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1101,Dashboard,Mobile,Dashboard feature,Dashboard times out on when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P2,Medium,6573ms,./evidence/TC-MOBILE-1101.png,REQ-169,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1102,Visit,Mobile,Visit feature,Visit Reminder analyzes on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,3634ms,./evidence/TC-MOBILE-1101.png,REQ-634,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1102,Notifications,Mobile,Notifications feature,Notifications analyzes with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Medium,6383ms,./evidence/TC-MOBILE-1102.png,REQ-106,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1103,Camera,Mobile,Camera feature,Camera filters when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3546ms,./evidence/TC-MOBILE-1102.png,REQ-479,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1103,History,Mobile,History feature,History authenticates with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P2,Medium,3344ms,./evidence/TC-MOBILE-1103.png,REQ-841,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1104,Profile,Mobile,Profile feature,Profile syncs with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,7266ms,./evidence/TC-MOBILE-1103.png,REQ-144,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1104,Dashboard,Mobile,Dashboard feature,Dashboard reports with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P1,High,1689ms,./evidence/TC-MOBILE-1104.png,REQ-438,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1105,Camera,Mobile,Camera feature,Camera renders on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5815ms,./evidence/TC-MOBILE-1104.png,REQ-642,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1105,Visit,Mobile,Visit feature,Visit Reminder analyzes on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P2,Low,6631ms,./evidence/TC-MOBILE-1105.png,REQ-136,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1106,History,Mobile,History feature,History handles with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,3614ms,./evidence/TC-MOBILE-1105.png,REQ-334,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1106,Authentication,Mobile,Authentication feature,Authentication analyzes when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P2,High,5238ms,./evidence/TC-MOBILE-1106.png,REQ-571,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1107,Offline,Mobile,Offline feature,Offline times out on when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7787ms,./evidence/TC-MOBILE-1106.png,REQ-921,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1107,Dashboard,Mobile,Dashboard feature,Dashboard syncs in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Skipped,P2,Low,6522ms,./evidence/TC-MOBILE-1107.png,REQ-933,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1108,Visit,Mobile,Visit feature,Visit Reminder renders when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,4049ms,./evidence/TC-MOBILE-1107.png,REQ-908,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1108,Tooth,Mobile,Tooth feature,Tooth Scan validates with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P1,Medium,4728ms,./evidence/TC-MOBILE-1108.png,REQ-842,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1109,Authentication,Mobile,Authentication feature,Authentication analyzes when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,6396ms,./evidence/TC-MOBILE-1108.png,REQ-490,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1109,Offline,Mobile,Offline feature,Offline reports during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,High,4830ms,./evidence/TC-MOBILE-1109.png,REQ-801,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1110,Permissions,Mobile,Permissions feature,Permissions times out on when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2971ms,./evidence/TC-MOBILE-1109.png,REQ-703,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1110,Camera,Mobile,Camera feature,Camera blocks with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P2,Critical,1323ms,./evidence/TC-MOBILE-1110.png,REQ-387,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1111,Visit,Mobile,Visit feature,Visit Reminder downloads when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,6691ms,./evidence/TC-MOBILE-1110.png,REQ-859,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1111,Education,Mobile,Education feature,Education handles on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Low,5232ms,./evidence/TC-MOBILE-1111.png,REQ-647,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1112,Tooth,Mobile,Tooth feature,Tooth Scan filters in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,7537ms,./evidence/TC-MOBILE-1111.png,REQ-879,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1112,Visit,Mobile,Visit feature,Visit Reminder updates during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,High,4975ms,./evidence/TC-MOBILE-1112.png,REQ-219,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1113,Reminder,Mobile,Reminder feature,Reminder downloads after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,6958ms,./evidence/TC-MOBILE-1112.png,REQ-813,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1113,Notifications,Mobile,Notifications feature,Notifications downloads with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P2,Critical,2324ms,./evidence/TC-MOBILE-1113.png,REQ-523,QA-Team,REQ-REMINDER,Staging
-TC-MOBILE-1114,Authentication,Mobile,Authentication feature,Authentication processes on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,4819ms,./evidence/TC-MOBILE-1113.png,REQ-200,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1114,Profile,Mobile,Profile feature,Profile blocks when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,High,3144ms,./evidence/TC-MOBILE-1114.png,REQ-562,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1115,Dashboard,Mobile,Dashboard feature,Dashboard syncs with bad network handshake,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,3585ms,./evidence/TC-MOBILE-1114.png,REQ-237,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1115,Assessment,Mobile,Assessment feature,Assessment submits with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Medium,1533ms,./evidence/TC-MOBILE-1115.png,REQ-214,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1116,Authentication,Mobile,Authentication feature,Authentication times out on with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,2185ms,./evidence/TC-MOBILE-1115.png,REQ-588,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1116,Assessment,Mobile,Assessment feature,Assessment submits after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,High,7582ms,./evidence/TC-MOBILE-1116.png,REQ-194,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1117,Permissions,Mobile,Permissions feature,Permissions handles on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,6373ms,./evidence/TC-MOBILE-1116.png,REQ-338,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1117,Authentication,Mobile,Authentication feature,Authentication downloads with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P1,Low,7513ms,./evidence/TC-MOBILE-1117.png,REQ-612,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1118,Settings,Mobile,Settings feature,Settings triggers with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7555ms,./evidence/TC-MOBILE-1117.png,REQ-979,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1118,Offline,Mobile,Offline feature,Offline downloads with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,Medium,7666ms,./evidence/TC-MOBILE-1118.png,REQ-595,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1119,Profile,Mobile,Profile feature,Profile handles when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,786ms,./evidence/TC-MOBILE-1118.png,REQ-390,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1119,Profile,Mobile,Profile feature,Profile reports with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P2,Medium,1273ms,./evidence/TC-MOBILE-1119.png,REQ-887,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1120,Notifications,Mobile,Notifications feature,Notifications triggers when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,5001ms,./evidence/TC-MOBILE-1119.png,REQ-997,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1120,Assessment,Mobile,Assessment feature,Assessment processes on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,High,6035ms,./evidence/TC-MOBILE-1120.png,REQ-137,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1121,Assessment,Mobile,Assessment feature,Assessment fetches on Android 13,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,4554ms,./evidence/TC-MOBILE-1120.png,REQ-518,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1121,Visit,Mobile,Visit feature,Visit Reminder loads with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P2,Critical,133ms,./evidence/TC-MOBILE-1121.png,REQ-418,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1122,Permissions,Mobile,Permissions feature,Permissions blocks in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2211ms,./evidence/TC-MOBILE-1121.png,REQ-293,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1122,Visit,Mobile,Visit feature,Visit Reminder reports on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,Medium,3924ms,./evidence/TC-MOBILE-1122.png,REQ-147,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1123,Offline,Mobile,Offline feature,Offline fetches with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,144ms,./evidence/TC-MOBILE-1122.png,REQ-826,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1123,Settings,Mobile,Settings feature,Settings authenticates with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,Critical,4831ms,./evidence/TC-MOBILE-1123.png,REQ-876,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1124,Offline,Mobile,Offline feature,Offline analyzes in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6191ms,./evidence/TC-MOBILE-1123.png,REQ-908,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1124,Visit,Mobile,Visit feature,Visit Reminder times out on when camera permission denied,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P1,Medium,1742ms,./evidence/TC-MOBILE-1124.png,REQ-297,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1125,Permissions,Mobile,Permissions feature,Permissions triggers on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,158ms,./evidence/TC-MOBILE-1124.png,REQ-691,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1125,Notifications,Mobile,Notifications feature,Notifications filters with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P2,Medium,6430ms,./evidence/TC-MOBILE-1125.png,REQ-551,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1126,Education,Mobile,Education feature,Education filters after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,4380ms,./evidence/TC-MOBILE-1125.png,REQ-220,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1126,History,Mobile,History feature,History syncs after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P2,High,1390ms,./evidence/TC-MOBILE-1126.png,REQ-380,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1127,Authentication,Mobile,Authentication feature,Authentication times out on with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,4357ms,./evidence/TC-MOBILE-1126.png,REQ-107,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1127,Camera,Mobile,Camera feature,Camera filters when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,Critical,1792ms,./evidence/TC-MOBILE-1127.png,REQ-655,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1128,Authentication,Mobile,Authentication feature,Authentication downloads on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,3172ms,./evidence/TC-MOBILE-1127.png,REQ-770,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1128,Tooth,Mobile,Tooth feature,Tooth Scan rejects with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,Medium,1259ms,./evidence/TC-MOBILE-1128.png,REQ-821,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1129,Permissions,Mobile,Permissions feature,Permissions downloads when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,1782ms,./evidence/TC-MOBILE-1128.png,REQ-804,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1129,Notifications,Mobile,Notifications feature,Notifications fetches on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,High,683ms,./evidence/TC-MOBILE-1129.png,REQ-418,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1130,Reminder,Mobile,Reminder feature,Reminder syncs with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,6688ms,./evidence/TC-MOBILE-1129.png,REQ-423,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1130,Camera,Mobile,Camera feature,Camera reports with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P2,Low,515ms,./evidence/TC-MOBILE-1130.png,REQ-233,QA-Team,REQ-REMINDER,Staging
-TC-MOBILE-1131,Dashboard,Mobile,Dashboard feature,Dashboard loads on tablet UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,3449ms,./evidence/TC-MOBILE-1130.png,REQ-470,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1131,Settings,Mobile,Settings feature,Settings processes when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P2,Critical,967ms,./evidence/TC-MOBILE-1131.png,REQ-492,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1132,Education,Mobile,Education feature,Education processes on tablet UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,973ms,./evidence/TC-MOBILE-1131.png,REQ-258,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1132,Tooth,Mobile,Tooth feature,Tooth Scan downloads when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Low,3310ms,./evidence/TC-MOBILE-1132.png,REQ-283,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1133,Dashboard,Mobile,Dashboard feature,Dashboard filters when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,3590ms,./evidence/TC-MOBILE-1132.png,REQ-767,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1133,Permissions,Mobile,Permissions feature,Permissions downloads when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P2,Medium,2659ms,./evidence/TC-MOBILE-1133.png,REQ-440,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1134,Authentication,Mobile,Authentication feature,Authentication triggers with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4895ms,./evidence/TC-MOBILE-1133.png,REQ-359,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1134,Camera,Mobile,Camera feature,Camera processes on Android 13,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,Low,4751ms,./evidence/TC-MOBILE-1134.png,REQ-234,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1135,Dashboard,Mobile,Dashboard feature,Dashboard times out on on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2240ms,./evidence/TC-MOBILE-1134.png,REQ-975,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1135,Camera,Mobile,Camera feature,Camera filters when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P2,Critical,3832ms,./evidence/TC-MOBILE-1135.png,REQ-417,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1136,Settings,Mobile,Settings feature,Settings renders with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,4491ms,./evidence/TC-MOBILE-1135.png,REQ-533,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1136,History,Mobile,History feature,History renders with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Failed,P2,High,7861ms,./evidence/TC-MOBILE-1136.png,REQ-329,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1137,Offline,Mobile,Offline feature,Offline downloads with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,4725ms,./evidence/TC-MOBILE-1136.png,REQ-474,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1137,Permissions,Mobile,Permissions feature,Permissions analyzes on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,Medium,3311ms,./evidence/TC-MOBILE-1137.png,REQ-287,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1138,Visit,Mobile,Visit feature,Visit Reminder fetches with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5112ms,./evidence/TC-MOBILE-1137.png,REQ-382,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1138,Dashboard,Mobile,Dashboard feature,Dashboard reports in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Low,4093ms,./evidence/TC-MOBILE-1138.png,REQ-130,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1139,Visit,Mobile,Visit feature,Visit Reminder handles on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5675ms,./evidence/TC-MOBILE-1138.png,REQ-506,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1139,Authentication,Mobile,Authentication feature,Authentication triggers with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Critical,2979ms,./evidence/TC-MOBILE-1139.png,REQ-590,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1140,Settings,Mobile,Settings feature,Settings triggers with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,6284ms,./evidence/TC-MOBILE-1139.png,REQ-308,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1140,Notifications,Mobile,Notifications feature,Notifications triggers when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Failed,P1,Medium,6390ms,./evidence/TC-MOBILE-1140.png,REQ-456,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1141,Dashboard,Mobile,Dashboard feature,Dashboard reports with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3485ms,./evidence/TC-MOBILE-1140.png,REQ-665,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1141,Settings,Mobile,Settings feature,Settings analyzes when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P1,Critical,3423ms,./evidence/TC-MOBILE-1141.png,REQ-937,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1142,Dashboard,Mobile,Dashboard feature,Dashboard triggers with bad network handshake,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6520ms,./evidence/TC-MOBILE-1141.png,REQ-670,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1142,Notifications,Mobile,Notifications feature,Notifications authenticates on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P2,Critical,6591ms,./evidence/TC-MOBILE-1142.png,REQ-409,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1143,Camera,Mobile,Camera feature,Camera syncs on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,4052ms,./evidence/TC-MOBILE-1142.png,REQ-283,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1143,Visit,Mobile,Visit feature,Visit Reminder fetches with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P2,Low,4937ms,./evidence/TC-MOBILE-1143.png,REQ-523,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1144,Dashboard,Mobile,Dashboard feature,Dashboard rejects during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,3132ms,./evidence/TC-MOBILE-1143.png,REQ-672,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1144,Tooth,Mobile,Tooth feature,Tooth Scan updates on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,High,4051ms,./evidence/TC-MOBILE-1144.png,REQ-493,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1145,Assessment,Mobile,Assessment feature,Assessment reports on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,4645ms,./evidence/TC-MOBILE-1144.png,REQ-595,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1145,Offline,Mobile,Offline feature,Offline submits when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,High,6767ms,./evidence/TC-MOBILE-1145.png,REQ-810,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1146,Permissions,Mobile,Permissions feature,Permissions authenticates when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2178ms,./evidence/TC-MOBILE-1145.png,REQ-414,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1146,Camera,Mobile,Camera feature,Camera processes with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P2,Low,4746ms,./evidence/TC-MOBILE-1146.png,REQ-906,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1147,Authentication,Mobile,Authentication feature,Authentication processes when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,4832ms,./evidence/TC-MOBILE-1146.png,REQ-452,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1147,Camera,Mobile,Camera feature,Camera syncs on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,High,5528ms,./evidence/TC-MOBILE-1147.png,REQ-785,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1148,Camera,Mobile,Camera feature,Camera syncs with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,6442ms,./evidence/TC-MOBILE-1147.png,REQ-822,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1148,Tooth,Mobile,Tooth feature,Tooth Scan handles on Android 13,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P2,Critical,4951ms,./evidence/TC-MOBILE-1148.png,REQ-710,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1149,Assessment,Mobile,Assessment feature,Assessment reports in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,3361ms,./evidence/TC-MOBILE-1148.png,REQ-853,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1149,Permissions,Mobile,Permissions feature,Permissions submits when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P2,Critical,6834ms,./evidence/TC-MOBILE-1149.png,REQ-555,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1150,Settings,Mobile,Settings feature,Settings analyzes when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,1231ms,./evidence/TC-MOBILE-1149.png,REQ-975,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1150,Camera,Mobile,Camera feature,Camera validates on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P2,Low,670ms,./evidence/TC-MOBILE-1150.png,REQ-712,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1151,Tooth,Mobile,Tooth feature,Tooth Scan handles after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,7176ms,./evidence/TC-MOBILE-1150.png,REQ-775,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1151,Offline,Mobile,Offline feature,Offline reports on Android 13,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,Medium,4149ms,./evidence/TC-MOBILE-1151.png,REQ-760,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1152,Offline,Mobile,Offline feature,Offline downloads with bad network handshake,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,1075ms,./evidence/TC-MOBILE-1151.png,REQ-865,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1152,Education,Mobile,Education feature,Education processes on tablet UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P1,High,6793ms,./evidence/TC-MOBILE-1152.png,REQ-242,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1153,Camera,Mobile,Camera feature,Camera triggers on Android 13,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1982ms,./evidence/TC-MOBILE-1152.png,REQ-557,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1153,Camera,Mobile,Camera feature,Camera renders on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P1,High,5513ms,./evidence/TC-MOBILE-1153.png,REQ-252,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1154,Camera,Mobile,Camera feature,Camera filters with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,6515ms,./evidence/TC-MOBILE-1153.png,REQ-816,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1154,Permissions,Mobile,Permissions feature,Permissions rejects when camera permission denied,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Failed,P2,Low,5142ms,./evidence/TC-MOBILE-1154.png,REQ-691,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1155,Authentication,Mobile,Authentication feature,Authentication analyzes when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,7876ms,./evidence/TC-MOBILE-1154.png,REQ-265,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1155,Visit,Mobile,Visit feature,Visit Reminder syncs with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P1,High,5682ms,./evidence/TC-MOBILE-1155.png,REQ-998,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1156,Profile,Mobile,Profile feature,Profile authenticates when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,921ms,./evidence/TC-MOBILE-1155.png,REQ-319,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1156,Settings,Mobile,Settings feature,Settings triggers with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P2,Medium,7624ms,./evidence/TC-MOBILE-1156.png,REQ-545,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1157,Profile,Mobile,Profile feature,Profile handles with bad network handshake,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,4264ms,./evidence/TC-MOBILE-1156.png,REQ-510,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1157,Education,Mobile,Education feature,Education loads when camera permission denied,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,Critical,5109ms,./evidence/TC-MOBILE-1157.png,REQ-622,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1158,Permissions,Mobile,Permissions feature,Permissions loads with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,6539ms,./evidence/TC-MOBILE-1157.png,REQ-446,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1158,Reminder,Mobile,Reminder feature,Reminder downloads after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P1,Medium,611ms,./evidence/TC-MOBILE-1158.png,REQ-478,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1159,Assessment,Mobile,Assessment feature,Assessment processes on tablet UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,6660ms,./evidence/TC-MOBILE-1158.png,REQ-663,QA-Team,REQ-REMINDER,Staging
+TC-MOBILE-1159,Authentication,Mobile,Authentication feature,Authentication processes when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P1,Critical,5861ms,./evidence/TC-MOBILE-1159.png,REQ-673,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1160,Assessment,Mobile,Assessment feature,Assessment filters with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,5130ms,./evidence/TC-MOBILE-1159.png,REQ-813,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1160,Profile,Mobile,Profile feature,Profile processes with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Medium,7191ms,./evidence/TC-MOBILE-1160.png,REQ-131,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1161,Tooth,Mobile,Tooth feature,Tooth Scan triggers on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,5707ms,./evidence/TC-MOBILE-1160.png,REQ-823,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1161,Camera,Mobile,Camera feature,Camera validates with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,Low,5221ms,./evidence/TC-MOBILE-1161.png,REQ-425,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1162,Tooth,Mobile,Tooth feature,Tooth Scan downloads when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,526ms,./evidence/TC-MOBILE-1161.png,REQ-264,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1162,Permissions,Mobile,Permissions feature,Permissions submits with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P2,Low,3665ms,./evidence/TC-MOBILE-1162.png,REQ-658,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1163,Camera,Mobile,Camera feature,Camera rejects when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3287ms,./evidence/TC-MOBILE-1162.png,REQ-751,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1163,Profile,Mobile,Profile feature,Profile rejects with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P1,Low,1239ms,./evidence/TC-MOBILE-1163.png,REQ-292,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1164,Assessment,Mobile,Assessment feature,Assessment submits with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,143ms,./evidence/TC-MOBILE-1163.png,REQ-923,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1164,Assessment,Mobile,Assessment feature,Assessment processes when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P2,Medium,6980ms,./evidence/TC-MOBILE-1164.png,REQ-527,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1165,Offline,Mobile,Offline feature,Offline renders on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,846ms,./evidence/TC-MOBILE-1164.png,REQ-943,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1165,Notifications,Mobile,Notifications feature,Notifications validates with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,High,1200ms,./evidence/TC-MOBILE-1165.png,REQ-111,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1166,Permissions,Mobile,Permissions feature,Permissions fetches when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,1290ms,./evidence/TC-MOBILE-1165.png,REQ-582,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1166,Offline,Mobile,Offline feature,Offline blocks when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,High,6009ms,./evidence/TC-MOBILE-1166.png,REQ-598,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1167,Tooth,Mobile,Tooth feature,Tooth Scan analyzes on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,7684ms,./evidence/TC-MOBILE-1166.png,REQ-714,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1167,Visit,Mobile,Visit feature,Visit Reminder fetches with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P1,Critical,1224ms,./evidence/TC-MOBILE-1167.png,REQ-757,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1168,Education,Mobile,Education feature,Education downloads with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,3666ms,./evidence/TC-MOBILE-1167.png,REQ-190,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1168,Education,Mobile,Education feature,Education authenticates on Android 13,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P2,Low,5205ms,./evidence/TC-MOBILE-1168.png,REQ-284,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1169,Education,Mobile,Education feature,Education authenticates on Android 13,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,624ms,./evidence/TC-MOBILE-1168.png,REQ-369,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1169,Settings,Mobile,Settings feature,Settings downloads when camera permission denied,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P2,Low,3251ms,./evidence/TC-MOBILE-1169.png,REQ-463,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1170,Settings,Mobile,Settings feature,Settings analyzes in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,1916ms,./evidence/TC-MOBILE-1169.png,REQ-479,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1170,Assessment,Mobile,Assessment feature,Assessment blocks with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,Low,5052ms,./evidence/TC-MOBILE-1170.png,REQ-107,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1171,Visit,Mobile,Visit feature,Visit Reminder times out on when camera permission denied,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,755ms,./evidence/TC-MOBILE-1170.png,REQ-723,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1171,History,Mobile,History feature,History processes on tablet UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P2,High,5933ms,./evidence/TC-MOBILE-1171.png,REQ-613,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1172,Assessment,Mobile,Assessment feature,Assessment handles with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,409ms,./evidence/TC-MOBILE-1171.png,REQ-841,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1172,Profile,Mobile,Profile feature,Profile syncs with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,Medium,374ms,./evidence/TC-MOBILE-1172.png,REQ-138,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1173,Assessment,Mobile,Assessment feature,Assessment reports on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,3248ms,./evidence/TC-MOBILE-1172.png,REQ-510,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1173,Education,Mobile,Education feature,Education processes after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P2,Medium,1027ms,./evidence/TC-MOBILE-1173.png,REQ-694,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1174,Permissions,Mobile,Permissions feature,Permissions submits on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,5129ms,./evidence/TC-MOBILE-1173.png,REQ-771,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1174,Authentication,Mobile,Authentication feature,Authentication times out on after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P1,High,6081ms,./evidence/TC-MOBILE-1174.png,REQ-848,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1175,Assessment,Mobile,Assessment feature,Assessment processes when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,4368ms,./evidence/TC-MOBILE-1174.png,REQ-393,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1175,Authentication,Mobile,Authentication feature,Authentication rejects during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P2,Low,4334ms,./evidence/TC-MOBILE-1175.png,REQ-180,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1176,Education,Mobile,Education feature,Education syncs when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,5929ms,./evidence/TC-MOBILE-1175.png,REQ-711,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1176,Offline,Mobile,Offline feature,Offline rejects when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P1,High,3970ms,./evidence/TC-MOBILE-1176.png,REQ-745,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1177,Notifications,Mobile,Notifications feature,Notifications fetches when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,570ms,./evidence/TC-MOBILE-1176.png,REQ-892,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1177,Offline,Mobile,Offline feature,Offline fetches with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P2,Critical,7502ms,./evidence/TC-MOBILE-1177.png,REQ-451,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1178,Visit,Mobile,Visit feature,Visit Reminder filters when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,6819ms,./evidence/TC-MOBILE-1177.png,REQ-279,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1178,Authentication,Mobile,Authentication feature,Authentication processes when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P1,Low,3819ms,./evidence/TC-MOBILE-1178.png,REQ-624,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1179,History,Mobile,History feature,History filters with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,5345ms,./evidence/TC-MOBILE-1178.png,REQ-606,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1179,Assessment,Mobile,Assessment feature,Assessment validates when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Failed,P2,Low,2991ms,./evidence/TC-MOBILE-1179.png,REQ-917,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1180,History,Mobile,History feature,History triggers when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,3696ms,./evidence/TC-MOBILE-1179.png,REQ-110,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1180,Authentication,Mobile,Authentication feature,Authentication triggers after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P2,High,389ms,./evidence/TC-MOBILE-1180.png,REQ-811,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1181,Notifications,Mobile,Notifications feature,Notifications validates when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,1752ms,./evidence/TC-MOBILE-1180.png,REQ-970,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1181,History,Mobile,History feature,History blocks during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P2,Medium,603ms,./evidence/TC-MOBILE-1181.png,REQ-744,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1182,Authentication,Mobile,Authentication feature,Authentication downloads with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,5481ms,./evidence/TC-MOBILE-1181.png,REQ-923,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1182,Permissions,Mobile,Permissions feature,Permissions updates when camera permission denied,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P1,Critical,5476ms,./evidence/TC-MOBILE-1182.png,REQ-398,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1183,Notifications,Mobile,Notifications feature,Notifications submits with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4344ms,./evidence/TC-MOBILE-1182.png,REQ-392,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1183,Tooth,Mobile,Tooth feature,Tooth Scan rejects when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P1,Medium,4071ms,./evidence/TC-MOBILE-1183.png,REQ-184,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1184,Dashboard,Mobile,Dashboard feature,Dashboard authenticates on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,1695ms,./evidence/TC-MOBILE-1183.png,REQ-134,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1184,Visit,Mobile,Visit feature,Visit Reminder processes with bad network handshake,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Medium,2164ms,./evidence/TC-MOBILE-1184.png,REQ-235,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1185,History,Mobile,History feature,History processes on tablet UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,6522ms,./evidence/TC-MOBILE-1184.png,REQ-713,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1185,Dashboard,Mobile,Dashboard feature,Dashboard triggers with bad network handshake,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P2,Medium,7127ms,./evidence/TC-MOBILE-1185.png,REQ-363,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1186,Settings,Mobile,Settings feature,Settings authenticates with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,4282ms,./evidence/TC-MOBILE-1185.png,REQ-628,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1186,History,Mobile,History feature,History processes with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,High,7555ms,./evidence/TC-MOBILE-1186.png,REQ-705,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1187,Education,Mobile,Education feature,Education authenticates with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,5821ms,./evidence/TC-MOBILE-1186.png,REQ-337,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1187,Reminder,Mobile,Reminder feature,Reminder times out on on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P2,Medium,6717ms,./evidence/TC-MOBILE-1187.png,REQ-279,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1188,Visit,Mobile,Visit feature,Visit Reminder times out on with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,5139ms,./evidence/TC-MOBILE-1187.png,REQ-273,QA-Team,REQ-REMINDER,Staging
+TC-MOBILE-1188,Notifications,Mobile,Notifications feature,Notifications triggers with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Low,1581ms,./evidence/TC-MOBILE-1188.png,REQ-918,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1189,Tooth,Mobile,Tooth feature,Tooth Scan fetches with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,5621ms,./evidence/TC-MOBILE-1188.png,REQ-136,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1189,Permissions,Mobile,Permissions feature,Permissions analyzes after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Skipped,P1,Medium,791ms,./evidence/TC-MOBILE-1189.png,REQ-248,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1190,Offline,Mobile,Offline feature,Offline handles with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3046ms,./evidence/TC-MOBILE-1189.png,REQ-344,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1190,Notifications,Mobile,Notifications feature,Notifications downloads with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Skipped,P1,Low,6266ms,./evidence/TC-MOBILE-1190.png,REQ-522,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1191,Permissions,Mobile,Permissions feature,Permissions triggers with bad network handshake,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,5465ms,./evidence/TC-MOBILE-1190.png,REQ-100,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1191,Permissions,Mobile,Permissions feature,Permissions fetches after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P1,Low,6047ms,./evidence/TC-MOBILE-1191.png,REQ-752,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1192,Education,Mobile,Education feature,Education triggers with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,1389ms,./evidence/TC-MOBILE-1191.png,REQ-188,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1192,Settings,Mobile,Settings feature,Settings renders with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Medium,545ms,./evidence/TC-MOBILE-1192.png,REQ-757,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1193,Camera,Mobile,Camera feature,Camera reports with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,2360ms,./evidence/TC-MOBILE-1192.png,REQ-898,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1193,Dashboard,Mobile,Dashboard feature,Dashboard filters when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P1,Critical,1472ms,./evidence/TC-MOBILE-1193.png,REQ-575,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1194,Authentication,Mobile,Authentication feature,Authentication reports in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,3372ms,./evidence/TC-MOBILE-1193.png,REQ-461,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1194,Authentication,Mobile,Authentication feature,Authentication times out on with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P2,Medium,4001ms,./evidence/TC-MOBILE-1194.png,REQ-864,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1195,History,Mobile,History feature,History submits on tablet UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,5585ms,./evidence/TC-MOBILE-1194.png,REQ-504,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1195,History,Mobile,History feature,History updates with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P1,Low,5699ms,./evidence/TC-MOBILE-1195.png,REQ-822,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1196,Tooth,Mobile,Tooth feature,Tooth Scan renders in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3421ms,./evidence/TC-MOBILE-1195.png,REQ-700,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1196,Settings,Mobile,Settings feature,Settings times out on when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P2,Medium,1289ms,./evidence/TC-MOBILE-1196.png,REQ-643,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1197,Education,Mobile,Education feature,Education handles on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,1740ms,./evidence/TC-MOBILE-1196.png,REQ-630,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1197,Assessment,Mobile,Assessment feature,Assessment blocks when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P1,Medium,7695ms,./evidence/TC-MOBILE-1197.png,REQ-916,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1198,Dashboard,Mobile,Dashboard feature,Dashboard filters when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,225ms,./evidence/TC-MOBILE-1197.png,REQ-854,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1198,Offline,Mobile,Offline feature,Offline downloads with bad network handshake,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P2,Medium,7978ms,./evidence/TC-MOBILE-1198.png,REQ-642,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1199,Assessment,Mobile,Assessment feature,Assessment syncs on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,5864ms,./evidence/TC-MOBILE-1198.png,REQ-170,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1199,Dashboard,Mobile,Dashboard feature,Dashboard times out on with airplane mode enabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Medium,7933ms,./evidence/TC-MOBILE-1199.png,REQ-964,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1200,Assessment,Mobile,Assessment feature,Assessment updates on Android 13,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7629ms,./evidence/TC-MOBILE-1199.png,REQ-192,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1200,Education,Mobile,Education feature,Education downloads on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P2,Medium,2314ms,./evidence/TC-MOBILE-1200.png,REQ-373,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1201,Settings,Mobile,Settings feature,Settings authenticates on Android 13,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,4602ms,./evidence/TC-MOBILE-1200.png,REQ-391,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1201,Profile,Mobile,Profile feature,Profile submits with bad network handshake,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P2,Low,3877ms,./evidence/TC-MOBILE-1201.png,REQ-891,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1202,Visit,Mobile,Visit feature,Visit Reminder downloads with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6048ms,./evidence/TC-MOBILE-1201.png,REQ-949,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1202,Settings,Mobile,Settings feature,Settings reports on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Medium,5651ms,./evidence/TC-MOBILE-1202.png,REQ-806,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1203,Notifications,Mobile,Notifications feature,Notifications filters when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,4680ms,./evidence/TC-MOBILE-1202.png,REQ-696,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1203,Permissions,Mobile,Permissions feature,Permissions fetches in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P2,Critical,5611ms,./evidence/TC-MOBILE-1203.png,REQ-108,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1204,Settings,Mobile,Settings feature,Settings processes when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,2951ms,./evidence/TC-MOBILE-1203.png,REQ-455,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1204,Permissions,Mobile,Permissions feature,Permissions loads with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,Low,900ms,./evidence/TC-MOBILE-1204.png,REQ-637,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1205,Settings,Mobile,Settings feature,Settings reports on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,7991ms,./evidence/TC-MOBILE-1204.png,REQ-935,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1205,History,Mobile,History feature,History filters with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P2,Medium,1897ms,./evidence/TC-MOBILE-1205.png,REQ-842,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1206,Notifications,Mobile,Notifications feature,Notifications filters with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,2365ms,./evidence/TC-MOBILE-1205.png,REQ-331,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1206,Dashboard,Mobile,Dashboard feature,Dashboard loads when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P2,High,378ms,./evidence/TC-MOBILE-1206.png,REQ-124,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1207,Education,Mobile,Education feature,Education loads when camera permission denied,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5067ms,./evidence/TC-MOBILE-1206.png,REQ-299,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1207,Education,Mobile,Education feature,Education times out on with expired JWT,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P1,Critical,7788ms,./evidence/TC-MOBILE-1207.png,REQ-708,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1208,Dashboard,Mobile,Dashboard feature,Dashboard times out on with airplane mode enabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,3825ms,./evidence/TC-MOBILE-1207.png,REQ-513,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1208,Assessment,Mobile,Assessment feature,Assessment rejects when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Critical,807ms,./evidence/TC-MOBILE-1208.png,REQ-976,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1209,Notifications,Mobile,Notifications feature,Notifications reports with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,4809ms,./evidence/TC-MOBILE-1208.png,REQ-104,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1209,Offline,Mobile,Offline feature,Offline analyzes when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P1,Low,5477ms,./evidence/TC-MOBILE-1209.png,REQ-882,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1210,Visit,Mobile,Visit feature,Visit Reminder syncs with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2238ms,./evidence/TC-MOBILE-1209.png,REQ-279,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1210,Notifications,Mobile,Notifications feature,Notifications filters when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P1,Critical,5798ms,./evidence/TC-MOBILE-1210.png,REQ-288,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1211,Tooth,Mobile,Tooth feature,Tooth Scan updates when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3435ms,./evidence/TC-MOBILE-1210.png,REQ-618,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1211,Visit,Mobile,Visit feature,Visit Reminder downloads when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,Low,5510ms,./evidence/TC-MOBILE-1211.png,REQ-177,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1212,Camera,Mobile,Camera feature,Camera blocks with airplane mode enabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,972ms,./evidence/TC-MOBILE-1211.png,REQ-672,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1212,Education,Mobile,Education feature,Education fetches when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Failed,P2,Low,5770ms,./evidence/TC-MOBILE-1212.png,REQ-783,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1213,Assessment,Mobile,Assessment feature,Assessment rejects when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,692ms,./evidence/TC-MOBILE-1212.png,REQ-615,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1213,Dashboard,Mobile,Dashboard feature,Dashboard syncs when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,High,6495ms,./evidence/TC-MOBILE-1213.png,REQ-175,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1214,Permissions,Mobile,Permissions feature,Permissions handles during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,2510ms,./evidence/TC-MOBILE-1213.png,REQ-448,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1214,Dashboard,Mobile,Dashboard feature,Dashboard times out on with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,Low,3283ms,./evidence/TC-MOBILE-1214.png,REQ-440,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1215,Assessment,Mobile,Assessment feature,Assessment blocks with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7857ms,./evidence/TC-MOBILE-1214.png,REQ-219,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1215,Assessment,Mobile,Assessment feature,Assessment submits on tablet UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,Medium,1557ms,./evidence/TC-MOBILE-1215.png,REQ-551,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1216,Settings,Mobile,Settings feature,Settings downloads when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,6677ms,./evidence/TC-MOBILE-1215.png,REQ-625,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1216,Notifications,Mobile,Notifications feature,Notifications validates when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P2,High,5099ms,./evidence/TC-MOBILE-1216.png,REQ-502,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1217,Visit,Mobile,Visit feature,Visit Reminder fetches with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,7937ms,./evidence/TC-MOBILE-1216.png,REQ-363,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1217,History,Mobile,History feature,History submits when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Critical,1278ms,./evidence/TC-MOBILE-1217.png,REQ-653,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1218,Tooth,Mobile,Tooth feature,Tooth Scan triggers on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,7277ms,./evidence/TC-MOBILE-1217.png,REQ-650,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1218,Notifications,Mobile,Notifications feature,Notifications processes with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P1,Critical,7576ms,./evidence/TC-MOBILE-1218.png,REQ-552,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1219,Notifications,Mobile,Notifications feature,Notifications authenticates on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,6761ms,./evidence/TC-MOBILE-1218.png,REQ-912,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1219,Camera,Mobile,Camera feature,Camera validates when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,Critical,697ms,./evidence/TC-MOBILE-1219.png,REQ-172,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1220,Settings,Mobile,Settings feature,Settings loads on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,4809ms,./evidence/TC-MOBILE-1219.png,REQ-356,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1220,Profile,Mobile,Profile feature,Profile processes on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P2,Low,253ms,./evidence/TC-MOBILE-1220.png,REQ-609,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1221,Profile,Mobile,Profile feature,Profile fetches after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,5786ms,./evidence/TC-MOBILE-1220.png,REQ-553,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1221,History,Mobile,History feature,History reports on tablet UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,Critical,5544ms,./evidence/TC-MOBILE-1221.png,REQ-499,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1222,Tooth,Mobile,Tooth feature,Tooth Scan validates on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3189ms,./evidence/TC-MOBILE-1221.png,REQ-676,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1222,Tooth,Mobile,Tooth feature,Tooth Scan fetches after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P1,Medium,7510ms,./evidence/TC-MOBILE-1222.png,REQ-500,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1223,Dashboard,Mobile,Dashboard feature,Dashboard times out on with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,4061ms,./evidence/TC-MOBILE-1222.png,REQ-888,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1223,Assessment,Mobile,Assessment feature,Assessment authenticates with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P1,Low,4016ms,./evidence/TC-MOBILE-1223.png,REQ-546,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1224,Settings,Mobile,Settings feature,Settings rejects with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,2092ms,./evidence/TC-MOBILE-1223.png,REQ-875,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1224,Tooth,Mobile,Tooth feature,Tooth Scan filters on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Failed,P1,High,127ms,./evidence/TC-MOBILE-1224.png,REQ-493,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1225,Profile,Mobile,Profile feature,Profile fetches with airplane mode enabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,2882ms,./evidence/TC-MOBILE-1224.png,REQ-894,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1225,Notifications,Mobile,Notifications feature,Notifications fetches when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P1,Medium,2831ms,./evidence/TC-MOBILE-1225.png,REQ-798,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1226,Authentication,Mobile,Authentication feature,Authentication updates when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3858ms,./evidence/TC-MOBILE-1225.png,REQ-797,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1226,Education,Mobile,Education feature,Education updates in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,Critical,5279ms,./evidence/TC-MOBILE-1226.png,REQ-762,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1227,Profile,Mobile,Profile feature,Profile reports in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,3874ms,./evidence/TC-MOBILE-1226.png,REQ-700,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1227,Permissions,Mobile,Permissions feature,Permissions times out on when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P2,Medium,759ms,./evidence/TC-MOBILE-1227.png,REQ-961,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1228,Reminder,Mobile,Reminder feature,Reminder updates after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,7161ms,./evidence/TC-MOBILE-1227.png,REQ-128,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1228,Assessment,Mobile,Assessment feature,Assessment handles with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P2,High,1546ms,./evidence/TC-MOBILE-1228.png,REQ-667,QA-Team,REQ-REMINDER,Staging
-TC-MOBILE-1229,Permissions,Mobile,Permissions feature,Permissions downloads when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,4048ms,./evidence/TC-MOBILE-1228.png,REQ-219,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1229,Offline,Mobile,Offline feature,Offline times out on when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P2,High,2548ms,./evidence/TC-MOBILE-1229.png,REQ-812,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1230,Tooth,Mobile,Tooth feature,Tooth Scan rejects when camera permission denied,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2212ms,./evidence/TC-MOBILE-1229.png,REQ-169,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1230,Permissions,Mobile,Permissions feature,Permissions downloads when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P1,Medium,4085ms,./evidence/TC-MOBILE-1230.png,REQ-186,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1231,Permissions,Mobile,Permissions feature,Permissions submits during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3234ms,./evidence/TC-MOBILE-1230.png,REQ-748,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1231,Dashboard,Mobile,Dashboard feature,Dashboard analyzes with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P1,High,392ms,./evidence/TC-MOBILE-1231.png,REQ-297,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1232,Offline,Mobile,Offline feature,Offline blocks when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,6560ms,./evidence/TC-MOBILE-1231.png,REQ-325,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1232,Assessment,Mobile,Assessment feature,Assessment updates on Android 13,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P1,Low,3284ms,./evidence/TC-MOBILE-1232.png,REQ-164,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1233,Settings,Mobile,Settings feature,Settings times out on when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5645ms,./evidence/TC-MOBILE-1232.png,REQ-818,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1233,Visit,Mobile,Visit feature,Visit Reminder loads on tablet UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P2,Low,4474ms,./evidence/TC-MOBILE-1233.png,REQ-954,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1234,Settings,Mobile,Settings feature,Settings reports on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,1983ms,./evidence/TC-MOBILE-1233.png,REQ-919,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1234,Profile,Mobile,Profile feature,Profile fetches after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Failed,P1,Critical,2879ms,./evidence/TC-MOBILE-1234.png,REQ-157,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1235,Settings,Mobile,Settings feature,Settings analyzes with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,2686ms,./evidence/TC-MOBILE-1234.png,REQ-522,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1235,Permissions,Mobile,Permissions feature,Permissions triggers on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,Low,1068ms,./evidence/TC-MOBILE-1235.png,REQ-316,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1236,Authentication,Mobile,Authentication feature,Authentication rejects during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,7927ms,./evidence/TC-MOBILE-1235.png,REQ-461,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1236,History,Mobile,History feature,History times out on on Android 13,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Skipped,P2,High,6170ms,./evidence/TC-MOBILE-1236.png,REQ-693,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1237,Assessment,Mobile,Assessment feature,Assessment analyzes with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,4331ms,./evidence/TC-MOBILE-1236.png,REQ-648,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1237,Assessment,Mobile,Assessment feature,Assessment syncs on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Critical,6124ms,./evidence/TC-MOBILE-1237.png,REQ-244,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1238,Dashboard,Mobile,Dashboard feature,Dashboard processes with bad network handshake,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,179ms,./evidence/TC-MOBILE-1237.png,REQ-817,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1238,Permissions,Mobile,Permissions feature,Permissions submits on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P1,Low,7531ms,./evidence/TC-MOBILE-1238.png,REQ-733,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1239,Visit,Mobile,Visit feature,Visit Reminder processes with bad network handshake,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6917ms,./evidence/TC-MOBILE-1238.png,REQ-369,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1239,Notifications,Mobile,Notifications feature,Notifications syncs on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,High,217ms,./evidence/TC-MOBILE-1239.png,REQ-276,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1240,Visit,Mobile,Visit feature,Visit Reminder updates when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2133ms,./evidence/TC-MOBILE-1239.png,REQ-394,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1240,Settings,Mobile,Settings feature,Settings rejects with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Critical,3837ms,./evidence/TC-MOBILE-1240.png,REQ-725,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1241,Permissions,Mobile,Permissions feature,Permissions updates when camera permission denied,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,861ms,./evidence/TC-MOBILE-1240.png,REQ-508,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1241,Tooth,Mobile,Tooth feature,Tooth Scan validates on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,Critical,1035ms,./evidence/TC-MOBILE-1241.png,REQ-609,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1242,History,Mobile,History feature,History filters with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,5618ms,./evidence/TC-MOBILE-1241.png,REQ-866,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1242,Profile,Mobile,Profile feature,Profile handles on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P1,Critical,6690ms,./evidence/TC-MOBILE-1242.png,REQ-307,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1243,Profile,Mobile,Profile feature,Profile triggers with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6826ms,./evidence/TC-MOBILE-1242.png,REQ-450,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1243,Camera,Mobile,Camera feature,Camera processes with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P2,Low,2756ms,./evidence/TC-MOBILE-1243.png,REQ-223,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1244,Camera,Mobile,Camera feature,Camera submits with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,722ms,./evidence/TC-MOBILE-1243.png,REQ-667,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1244,Profile,Mobile,Profile feature,Profile reports in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P1,Medium,6952ms,./evidence/TC-MOBILE-1244.png,REQ-912,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1245,Notifications,Mobile,Notifications feature,Notifications authenticates on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,7729ms,./evidence/TC-MOBILE-1244.png,REQ-282,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1245,Offline,Mobile,Offline feature,Offline analyzes in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,High,2848ms,./evidence/TC-MOBILE-1245.png,REQ-164,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1246,Tooth,Mobile,Tooth feature,Tooth Scan loads in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,4003ms,./evidence/TC-MOBILE-1245.png,REQ-421,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1246,Camera,Mobile,Camera feature,Camera filters with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,High,6305ms,./evidence/TC-MOBILE-1246.png,REQ-525,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1247,Profile,Mobile,Profile feature,Profile submits when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2996ms,./evidence/TC-MOBILE-1246.png,REQ-323,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1247,Visit,Mobile,Visit feature,Visit Reminder times out on on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P2,High,3693ms,./evidence/TC-MOBILE-1247.png,REQ-349,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1248,Camera,Mobile,Camera feature,Camera validates on slow 3G network,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,7426ms,./evidence/TC-MOBILE-1247.png,REQ-687,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1248,Permissions,Mobile,Permissions feature,Permissions handles on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P1,High,918ms,./evidence/TC-MOBILE-1248.png,REQ-910,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1249,History,Mobile,History feature,History renders with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,2304ms,./evidence/TC-MOBILE-1248.png,REQ-287,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1249,Camera,Mobile,Camera feature,Camera blocks with airplane mode enabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P2,High,228ms,./evidence/TC-MOBILE-1249.png,REQ-598,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1250,Permissions,Mobile,Permissions feature,Permissions fetches in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,7858ms,./evidence/TC-MOBILE-1249.png,REQ-864,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1250,Camera,Mobile,Camera feature,Camera downloads during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,Critical,1569ms,./evidence/TC-MOBILE-1250.png,REQ-191,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1251,Camera,Mobile,Camera feature,Camera processes with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,5696ms,./evidence/TC-MOBILE-1250.png,REQ-294,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1251,Education,Mobile,Education feature,Education filters after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P2,Low,5781ms,./evidence/TC-MOBILE-1251.png,REQ-926,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1252,Tooth,Mobile,Tooth feature,Tooth Scan downloads with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,4187ms,./evidence/TC-MOBILE-1251.png,REQ-854,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1252,Offline,Mobile,Offline feature,Offline renders on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P1,High,1272ms,./evidence/TC-MOBILE-1252.png,REQ-755,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1253,Offline,Mobile,Offline feature,Offline reports on Android 13,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,1735ms,./evidence/TC-MOBILE-1252.png,REQ-340,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1253,Assessment,Mobile,Assessment feature,Assessment fetches on Android 13,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,Low,2059ms,./evidence/TC-MOBILE-1253.png,REQ-278,QA-Team,REQ-OFFLINE,Staging
-TC-MOBILE-1254,Reminder,Mobile,Reminder feature,Reminder fetches when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,6124ms,./evidence/TC-MOBILE-1253.png,REQ-347,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1254,History,Mobile,History feature,History times out on with airplane mode enabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P1,High,5975ms,./evidence/TC-MOBILE-1254.png,REQ-611,QA-Team,REQ-REMINDER,Staging
-TC-MOBILE-1255,Notifications,Mobile,Notifications feature,Notifications triggers with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,7249ms,./evidence/TC-MOBILE-1254.png,REQ-371,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1255,Visit,Mobile,Visit feature,Visit Reminder renders when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P1,Medium,2949ms,./evidence/TC-MOBILE-1255.png,REQ-528,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1256,History,Mobile,History feature,History submits when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,1793ms,./evidence/TC-MOBILE-1255.png,REQ-334,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1256,Tooth,Mobile,Tooth feature,Tooth Scan analyzes on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P1,High,1062ms,./evidence/TC-MOBILE-1256.png,REQ-642,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1257,Permissions,Mobile,Permissions feature,Permissions loads on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,1761ms,./evidence/TC-MOBILE-1256.png,REQ-954,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1257,Authentication,Mobile,Authentication feature,Authentication updates when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P2,High,3902ms,./evidence/TC-MOBILE-1257.png,REQ-888,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1258,Dashboard,Mobile,Dashboard feature,Dashboard times out on when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,2145ms,./evidence/TC-MOBILE-1257.png,REQ-956,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1258,Settings,Mobile,Settings feature,Settings validates when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P2,Critical,1686ms,./evidence/TC-MOBILE-1258.png,REQ-215,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1259,Permissions,Mobile,Permissions feature,Permissions processes in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,5167ms,./evidence/TC-MOBILE-1258.png,REQ-464,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1259,Visit,Mobile,Visit feature,Visit Reminder downloads with battery optimization on,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P2,Low,1544ms,./evidence/TC-MOBILE-1259.png,REQ-263,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1260,Authentication,Mobile,Authentication feature,Authentication processes when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,1377ms,./evidence/TC-MOBILE-1259.png,REQ-897,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1260,Dashboard,Mobile,Dashboard feature,Dashboard loads on tablet UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,Medium,2435ms,./evidence/TC-MOBILE-1260.png,REQ-314,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1261,Visit,Mobile,Visit feature,Visit Reminder renders with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,973ms,./evidence/TC-MOBILE-1260.png,REQ-222,QA-Team,REQ-DASHBOARD,Staging
+TC-MOBILE-1261,Tooth,Mobile,Tooth feature,Tooth Scan fetches with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P2,Medium,5152ms,./evidence/TC-MOBILE-1261.png,REQ-924,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1262,Reminder,Mobile,Reminder feature,Reminder syncs after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,7638ms,./evidence/TC-MOBILE-1261.png,REQ-180,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1262,Authentication,Mobile,Authentication feature,Authentication reports in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P1,Critical,6165ms,./evidence/TC-MOBILE-1262.png,REQ-153,QA-Team,REQ-REMINDER,Staging
-TC-MOBILE-1263,Permissions,Mobile,Permissions feature,Permissions syncs when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,5636ms,./evidence/TC-MOBILE-1262.png,REQ-779,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1263,Authentication,Mobile,Authentication feature,Authentication blocks when switching apps,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P1,High,6534ms,./evidence/TC-MOBILE-1263.png,REQ-129,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1264,Notifications,Mobile,Notifications feature,Notifications processes with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,4135ms,./evidence/TC-MOBILE-1263.png,REQ-728,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1264,Tooth,Mobile,Tooth feature,Tooth Scan updates when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P1,Critical,7432ms,./evidence/TC-MOBILE-1264.png,REQ-340,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1265,Authentication,Mobile,Authentication feature,Authentication loads when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,154ms,./evidence/TC-MOBILE-1264.png,REQ-882,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1265,Visit,Mobile,Visit feature,Visit Reminder filters when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P2,Low,1728ms,./evidence/TC-MOBILE-1265.png,REQ-865,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1266,History,Mobile,History feature,History reports on tablet UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,7121ms,./evidence/TC-MOBILE-1265.png,REQ-654,QA-Team,REQ-VISIT,Staging
+TC-MOBILE-1266,Settings,Mobile,Settings feature,Settings times out on on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P1,Critical,2771ms,./evidence/TC-MOBILE-1266.png,REQ-333,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1267,History,Mobile,History feature,History processes with background execution constraints,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,7947ms,./evidence/TC-MOBILE-1266.png,REQ-143,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1267,Camera,Mobile,Camera feature,Camera fetches with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P1,Low,7226ms,./evidence/TC-MOBILE-1267.png,REQ-304,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1268,History,Mobile,History feature,History reports on Android 14,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,7046ms,./evidence/TC-MOBILE-1267.png,REQ-593,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1268,Authentication,Mobile,Authentication feature,Authentication analyzes on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Failed,P1,Critical,3958ms,./evidence/TC-MOBILE-1268.png,REQ-699,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1269,Tooth,Mobile,Tooth feature,Tooth Scan times out on during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,3140ms,./evidence/TC-MOBILE-1268.png,REQ-735,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1269,Offline,Mobile,Offline feature,Offline authenticates when biometric authentication succeeds,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P1,Low,1287ms,./evidence/TC-MOBILE-1269.png,REQ-321,QA-Team,REQ-TOOTH,Staging
-TC-MOBILE-1270,Assessment,Mobile,Assessment feature,Assessment rejects when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2683ms,./evidence/TC-MOBILE-1269.png,REQ-604,QA-Team,REQ-OFFLINE,Staging
+TC-MOBILE-1270,Assessment,Mobile,Assessment feature,Assessment syncs during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P2,High,3273ms,./evidence/TC-MOBILE-1270.png,REQ-482,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1271,Visit,Mobile,Visit feature,Visit Reminder loads with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,7457ms,./evidence/TC-MOBILE-1270.png,REQ-688,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1271,Tooth,Mobile,Tooth feature,Tooth Scan filters in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,High,5277ms,./evidence/TC-MOBILE-1271.png,REQ-467,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1272,Dashboard,Mobile,Dashboard feature,Dashboard reports in landscape mode,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,7216ms,./evidence/TC-MOBILE-1271.png,REQ-381,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1272,Permissions,Mobile,Permissions feature,Permissions triggers with bad network handshake,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Medium,1142ms,./evidence/TC-MOBILE-1272.png,REQ-132,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1273,Dashboard,Mobile,Dashboard feature,Dashboard handles when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4120ms,./evidence/TC-MOBILE-1272.png,REQ-287,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1273,Tooth,Mobile,Tooth feature,Tooth Scan rejects when camera permission denied,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P1,Medium,1218ms,./evidence/TC-MOBILE-1273.png,REQ-213,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1274,Permissions,Mobile,Permissions feature,Permissions handles on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,6360ms,./evidence/TC-MOBILE-1273.png,REQ-623,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1274,Profile,Mobile,Profile feature,Profile fetches with airplane mode enabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P2,Low,1502ms,./evidence/TC-MOBILE-1274.png,REQ-878,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1275,Education,Mobile,Education feature,Education authenticates after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,2395ms,./evidence/TC-MOBILE-1274.png,REQ-507,QA-Team,REQ-PROFILE,Staging
+TC-MOBILE-1275,Camera,Mobile,Camera feature,Camera handles with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Medium,5044ms,./evidence/TC-MOBILE-1275.png,REQ-260,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1276,Dashboard,Mobile,Dashboard feature,Dashboard analyzes with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,1919ms,./evidence/TC-MOBILE-1275.png,REQ-868,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1276,Camera,Mobile,Camera feature,Camera rejects on Android 14,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P1,High,808ms,./evidence/TC-MOBILE-1276.png,REQ-521,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1277,Settings,Mobile,Settings feature,Settings validates when camera permission granted,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,4824ms,./evidence/TC-MOBILE-1276.png,REQ-231,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1277,Reminder,Mobile,Reminder feature,Reminder fetches with bad network handshake,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P2,High,4946ms,./evidence/TC-MOBILE-1277.png,REQ-584,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1278,Permissions,Mobile,Permissions feature,Permissions renders when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,543ms,./evidence/TC-MOBILE-1277.png,REQ-638,QA-Team,REQ-REMINDER,Staging
+TC-MOBILE-1278,Camera,Mobile,Camera feature,Camera analyzes with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P2,Critical,6080ms,./evidence/TC-MOBILE-1278.png,REQ-538,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1279,Assessment,Mobile,Assessment feature,Assessment validates when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,6647ms,./evidence/TC-MOBILE-1278.png,REQ-533,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1279,Settings,Mobile,Settings feature,Settings downloads when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Medium,3657ms,./evidence/TC-MOBILE-1279.png,REQ-693,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1280,Reminder,Mobile,Reminder feature,Reminder updates when storage is full,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,4018ms,./evidence/TC-MOBILE-1279.png,REQ-653,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1280,Tooth,Mobile,Tooth feature,Tooth Scan fetches with background execution constraints,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,Critical,3522ms,./evidence/TC-MOBILE-1280.png,REQ-145,QA-Team,REQ-REMINDER,Staging
-TC-MOBILE-1281,Dashboard,Mobile,Dashboard feature,Dashboard syncs when biometric prompt canceled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,366ms,./evidence/TC-MOBILE-1280.png,REQ-614,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1281,Authentication,Mobile,Authentication feature,Authentication updates when biometric prompt canceled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P2,Critical,3587ms,./evidence/TC-MOBILE-1281.png,REQ-643,QA-Team,REQ-DASHBOARD,Staging
-TC-MOBILE-1282,Camera,Mobile,Camera feature,Camera handles with invalid image format,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,2944ms,./evidence/TC-MOBILE-1281.png,REQ-503,QA-Team,REQ-AUTHENTICATION,Staging
+TC-MOBILE-1282,Settings,Mobile,Settings feature,Settings triggers with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Failed,P2,Critical,3806ms,./evidence/TC-MOBILE-1282.png,REQ-607,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1283,Profile,Mobile,Profile feature,Profile processes on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,7148ms,./evidence/TC-MOBILE-1282.png,REQ-802,QA-Team,REQ-SETTINGS,Staging
+TC-MOBILE-1283,Education,Mobile,Education feature,Education triggers with push notification disabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,Critical,5778ms,./evidence/TC-MOBILE-1283.png,REQ-849,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1284,Profile,Mobile,Profile feature,Profile filters when switching apps,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,6456ms,./evidence/TC-MOBILE-1283.png,REQ-278,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1284,Camera,Mobile,Camera feature,Camera submits with invalid image format,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P1,High,3036ms,./evidence/TC-MOBILE-1284.png,REQ-402,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1285,Camera,Mobile,Camera feature,Camera filters when biometric authentication succeeds,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,3845ms,./evidence/TC-MOBILE-1284.png,REQ-223,QA-Team,REQ-CAMERA,Staging
+TC-MOBILE-1285,Tooth,Mobile,Tooth feature,Tooth Scan validates on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P1,Critical,4030ms,./evidence/TC-MOBILE-1285.png,REQ-785,QA-Team,REQ-CAMERA,Staging
-TC-MOBILE-1286,Assessment,Mobile,Assessment feature,Assessment syncs during active phone call,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,5820ms,./evidence/TC-MOBILE-1285.png,REQ-630,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1286,Notifications,Mobile,Notifications feature,Notifications reports on foldable device UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Low,7128ms,./evidence/TC-MOBILE-1286.png,REQ-684,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1287,History,Mobile,History feature,History updates with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3868ms,./evidence/TC-MOBILE-1286.png,REQ-423,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1287,Education,Mobile,Education feature,Education syncs on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P1,Low,3899ms,./evidence/TC-MOBILE-1287.png,REQ-890,QA-Team,REQ-HISTORY,Staging
-TC-MOBILE-1288,Authentication,Mobile,Authentication feature,Authentication times out on after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,5746ms,./evidence/TC-MOBILE-1287.png,REQ-108,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1288,Notifications,Mobile,Notifications feature,Notifications reports with location spoofing,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,High,6570ms,./evidence/TC-MOBILE-1288.png,REQ-992,QA-Team,REQ-AUTHENTICATION,Staging
-TC-MOBILE-1289,Notifications,Mobile,Notifications feature,Notifications analyzes with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,196ms,./evidence/TC-MOBILE-1288.png,REQ-790,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-MOBILE-1289,Permissions,Mobile,Permissions feature,Permissions renders when storage is full,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P2,Critical,7148ms,./evidence/TC-MOBILE-1289.png,REQ-742,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-MOBILE-1290,Permissions,Mobile,Permissions feature,Permissions analyzes after device reboot,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,1826ms,./evidence/TC-MOBILE-1289.png,REQ-488,QA-Team,REQ-PERMISSIONS,Staging
+TC-MOBILE-1290,Tooth,Mobile,Tooth feature,Tooth Scan times out on during active phone call,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P2,Medium,4449ms,./evidence/TC-MOBILE-1290.png,REQ-133,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1291,Profile,Mobile,Profile feature,Profile handles on foldable device UI,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,4859ms,./evidence/TC-MOBILE-1290.png,REQ-203,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1291,Education,Mobile,Education feature,Education loads on slow 3G network,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P2,Medium,5818ms,./evidence/TC-MOBILE-1291.png,REQ-727,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1292,Settings,Mobile,Settings feature,Settings downloads when camera permission denied,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,2765ms,./evidence/TC-MOBILE-1291.png,REQ-470,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1292,Education,Mobile,Education feature,Education filters when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P1,Critical,5182ms,./evidence/TC-MOBILE-1292.png,REQ-443,QA-Team,REQ-SETTINGS,Staging
-TC-MOBILE-1293,Profile,Mobile,Profile feature,Profile downloads when camera permission denied,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,5119ms,./evidence/TC-MOBILE-1292.png,REQ-982,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1293,Assessment,Mobile,Assessment feature,Assessment handles on tablet UI,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P2,Critical,1009ms,./evidence/TC-MOBILE-1293.png,REQ-492,QA-Team,REQ-PROFILE,Staging
-TC-MOBILE-1294,Visit,Mobile,Visit feature,Visit Reminder syncs with push notification disabled,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,2227ms,./evidence/TC-MOBILE-1293.png,REQ-291,QA-Team,REQ-ASSESSMENT,Staging
+TC-MOBILE-1294,History,Mobile,History feature,History analyzes on low memory,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Critical,3094ms,./evidence/TC-MOBILE-1294.png,REQ-475,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1295,Assessment,Mobile,Assessment feature,Assessment authenticates with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,4593ms,./evidence/TC-MOBILE-1294.png,REQ-369,QA-Team,REQ-HISTORY,Staging
+TC-MOBILE-1295,Reminder,Mobile,Reminder feature,Reminder syncs after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,High,1233ms,./evidence/TC-MOBILE-1295.png,REQ-442,QA-Team,REQ-ASSESSMENT,Staging
-TC-MOBILE-1296,Visit,Mobile,Visit feature,Visit Reminder filters with battery optimization on,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,2042ms,./evidence/TC-MOBILE-1295.png,REQ-375,QA-Team,REQ-REMINDER,Staging
+TC-MOBILE-1296,Education,Mobile,Education feature,Education rejects with airplane mode enabled,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Low,6140ms,./evidence/TC-MOBILE-1296.png,REQ-870,QA-Team,REQ-VISIT,Staging
-TC-MOBILE-1297,Permissions,Mobile,Permissions feature,Permissions submits with location spoofing,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,3961ms,./evidence/TC-MOBILE-1296.png,REQ-727,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1297,Tooth,Mobile,Tooth feature,Tooth Scan renders in landscape mode,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P1,High,2725ms,./evidence/TC-MOBILE-1297.png,REQ-461,QA-Team,REQ-PERMISSIONS,Staging
-TC-MOBILE-1298,Education,Mobile,Education feature,Education times out on with expired JWT,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,2910ms,./evidence/TC-MOBILE-1297.png,REQ-474,QA-Team,REQ-TOOTH,Staging
+TC-MOBILE-1298,Education,Mobile,Education feature,Education authenticates after device reboot,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P2,Medium,546ms,./evidence/TC-MOBILE-1298.png,REQ-164,QA-Team,REQ-EDUCATION,Staging
-TC-MOBILE-1299,Assessment,Mobile,Assessment feature,Assessment times out on on low memory,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1606ms,./evidence/TC-MOBILE-1298.png,REQ-610,QA-Team,REQ-EDUCATION,Staging
+TC-MOBILE-1299,Authentication,Mobile,Authentication feature,Authentication analyzes when camera permission granted,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,Low,4083ms,./evidence/TC-MOBILE-1299.png,REQ-613,QA-Team,REQ-ASSESSMENT,Staging
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,3572ms,./evidence/TC-MOBILE-1299.png,REQ-315,QA-Team,REQ-AUTHENTICATION,Staging

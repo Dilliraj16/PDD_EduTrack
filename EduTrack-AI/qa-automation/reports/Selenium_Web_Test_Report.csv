@@ -1,901 +1,901 @@
 Test Case ID,Module,Suite,Feature,Test Title,Preconditions,Steps,Input,Expected Result,Actual Result,Execution Status,Priority,Severity,Execution Time,Evidence,Traceability,Owner,Requirement ID,Environment
-TC-WEB-1000,Reminder,Web,Reminder feature,Reminder submits after 5 minutes,System is operational,"1. Setup context
+TC-WEB-1000,Dashboard,Web,Dashboard feature,Dashboard submits with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P1,High,948ms,./evidence/TC-WEB-1000.png,REQ-496,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1001,Camera,Web,Camera feature,Camera fetches with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5767ms,./evidence/TC-WEB-1000.png,REQ-692,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1001,Offline,Web,Offline feature,Offline blocks on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P3,Medium,4229ms,./evidence/TC-WEB-1001.png,REQ-493,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1002,Assessment,Web,Assessment feature,Assessment analyzes with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,1522ms,./evidence/TC-WEB-1001.png,REQ-848,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1002,Settings,Web,Settings feature,Settings submits during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P3,High,2341ms,./evidence/TC-WEB-1002.png,REQ-507,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1003,Dashboard,Web,Dashboard feature,Dashboard rejects during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6778ms,./evidence/TC-WEB-1002.png,REQ-231,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1003,Dashboard,Web,Dashboard feature,Dashboard authenticates during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P2,Low,6692ms,./evidence/TC-WEB-1003.png,REQ-236,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1004,Notifications,Web,Notifications feature,Notifications downloads during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,948ms,./evidence/TC-WEB-1003.png,REQ-496,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1004,Assessment,Web,Assessment feature,Assessment submits on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P2,Medium,7006ms,./evidence/TC-WEB-1004.png,REQ-818,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1005,Education,Web,Education feature,Education times out on after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5486ms,./evidence/TC-WEB-1004.png,REQ-714,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1005,Visit,Web,Visit feature,Visit Reminder loads with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P2,High,1745ms,./evidence/TC-WEB-1005.png,REQ-314,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1006,Profile,Web,Profile feature,Profile times out on with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,5065ms,./evidence/TC-WEB-1005.png,REQ-429,QA-Team,REQ-VISIT,Staging
+TC-WEB-1006,Visit,Web,Visit feature,Visit Reminder downloads with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P3,Medium,5724ms,./evidence/TC-WEB-1006.png,REQ-453,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1007,Permissions,Web,Permissions feature,Permissions analyzes with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,4229ms,./evidence/TC-WEB-1006.png,REQ-493,QA-Team,REQ-VISIT,Staging
+TC-WEB-1007,Assessment,Web,Assessment feature,Assessment handles when API is down,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P3,High,4227ms,./evidence/TC-WEB-1007.png,REQ-655,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1008,Tooth,Web,Tooth feature,Tooth Scan triggers with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,3529ms,./evidence/TC-WEB-1007.png,REQ-723,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1008,History,Web,History feature,History syncs when API is down,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P3,Critical,6332ms,./evidence/TC-WEB-1008.png,REQ-460,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1009,History,Web,History feature,History downloads with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,7603ms,./evidence/TC-WEB-1008.png,REQ-809,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1009,Profile,Web,Profile feature,Profile handles with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P2,Low,5623ms,./evidence/TC-WEB-1009.png,REQ-865,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1010,Camera,Web,Camera feature,Camera submits on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6345ms,./evidence/TC-WEB-1009.png,REQ-354,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1010,Dashboard,Web,Dashboard feature,Dashboard submits when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P2,Low,6721ms,./evidence/TC-WEB-1010.png,REQ-113,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1011,Reminder,Web,Reminder feature,Reminder triggers with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,2341ms,./evidence/TC-WEB-1010.png,REQ-507,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1011,Profile,Web,Profile feature,Profile handles when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P1,Critical,3220ms,./evidence/TC-WEB-1011.png,REQ-248,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1012,Offline,Web,Offline feature,Offline handles when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,7993ms,./evidence/TC-WEB-1011.png,REQ-451,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1012,Tooth,Web,Tooth feature,Tooth Scan handles after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P3,Critical,1737ms,./evidence/TC-WEB-1012.png,REQ-373,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1013,Assessment,Web,Assessment feature,Assessment downloads on cache miss,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,2509ms,./evidence/TC-WEB-1012.png,REQ-563,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1013,Authentication,Web,Authentication feature,Authentication submits with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,Medium,1299ms,./evidence/TC-WEB-1013.png,REQ-959,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1014,Education,Web,Education feature,Education analyzes with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,6692ms,./evidence/TC-WEB-1013.png,REQ-236,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1014,Camera,Web,Camera feature,Camera filters with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P3,Medium,1771ms,./evidence/TC-WEB-1014.png,REQ-871,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1015,Profile,Web,Profile feature,Profile processes with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,1231ms,./evidence/TC-WEB-1014.png,REQ-522,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1015,Notifications,Web,Notifications feature,Notifications processes with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P1,Medium,6768ms,./evidence/TC-WEB-1015.png,REQ-563,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1016,Profile,Web,Profile feature,Profile syncs with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,5035ms,./evidence/TC-WEB-1015.png,REQ-816,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1016,Reminder,Web,Reminder feature,Reminder triggers with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P3,High,6181ms,./evidence/TC-WEB-1016.png,REQ-762,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1017,Assessment,Web,Assessment feature,Assessment renders with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,7361ms,./evidence/TC-WEB-1016.png,REQ-866,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1017,Visit,Web,Visit feature,Visit Reminder filters with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P2,High,4285ms,./evidence/TC-WEB-1017.png,REQ-903,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1018,Notifications,Web,Notifications feature,Notifications reports with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,4296ms,./evidence/TC-WEB-1017.png,REQ-406,QA-Team,REQ-VISIT,Staging
+TC-WEB-1018,Education,Web,Education feature,Education times out on after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P3,Critical,7689ms,./evidence/TC-WEB-1018.png,REQ-490,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1019,Assessment,Web,Assessment feature,Assessment handles when API is down,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,7006ms,./evidence/TC-WEB-1018.png,REQ-818,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1019,Permissions,Web,Permissions feature,Permissions authenticates when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P2,Medium,4623ms,./evidence/TC-WEB-1019.png,REQ-155,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1020,Tooth,Web,Tooth feature,Tooth Scan triggers with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4587ms,./evidence/TC-WEB-1019.png,REQ-981,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1020,Reminder,Web,Reminder feature,Reminder loads after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P3,Medium,1763ms,./evidence/TC-WEB-1020.png,REQ-735,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1021,Dashboard,Web,Dashboard feature,Dashboard downloads during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,2671ms,./evidence/TC-WEB-1020.png,REQ-828,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1021,Notifications,Web,Notifications feature,Notifications analyzes with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P1,Medium,6285ms,./evidence/TC-WEB-1021.png,REQ-702,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1022,Authentication,Web,Authentication feature,Authentication times out on with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,6136ms,./evidence/TC-WEB-1021.png,REQ-666,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1022,Assessment,Web,Assessment feature,Assessment blocks with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Skipped,P3,High,6458ms,./evidence/TC-WEB-1022.png,REQ-842,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1023,Profile,Web,Profile feature,Profile triggers with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5282ms,./evidence/TC-WEB-1022.png,REQ-322,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1023,Reminder,Web,Reminder feature,Reminder fetches with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P2,Low,1553ms,./evidence/TC-WEB-1023.png,REQ-799,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1024,Assessment,Web,Assessment feature,Assessment submits with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,1745ms,./evidence/TC-WEB-1023.png,REQ-314,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1024,Dashboard,Web,Dashboard feature,Dashboard rejects during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,High,6121ms,./evidence/TC-WEB-1024.png,REQ-626,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1025,Visit,Web,Visit feature,Visit Reminder fetches when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5213ms,./evidence/TC-WEB-1024.png,REQ-831,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1025,History,Web,History feature,History blocks with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Critical,3610ms,./evidence/TC-WEB-1025.png,REQ-385,QA-Team,REQ-VISIT,Staging
-TC-WEB-1026,Tooth,Web,Tooth feature,Tooth Scan renders on cache miss,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,2480ms,./evidence/TC-WEB-1025.png,REQ-803,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1026,Notifications,Web,Notifications feature,Notifications analyzes during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Skipped,P2,High,1418ms,./evidence/TC-WEB-1026.png,REQ-698,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1027,Authentication,Web,Authentication feature,Authentication filters with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2928ms,./evidence/TC-WEB-1026.png,REQ-788,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1027,Assessment,Web,Assessment feature,Assessment times out on with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,Medium,3920ms,./evidence/TC-WEB-1027.png,REQ-826,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1028,Assessment,Web,Assessment feature,Assessment renders during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,1186ms,./evidence/TC-WEB-1027.png,REQ-827,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1028,Permissions,Web,Permissions feature,Permissions updates with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,High,7707ms,./evidence/TC-WEB-1028.png,REQ-430,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1029,Profile,Web,Profile feature,Profile handles when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5425ms,./evidence/TC-WEB-1028.png,REQ-282,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1029,Authentication,Web,Authentication feature,Authentication loads with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P1,Medium,4118ms,./evidence/TC-WEB-1029.png,REQ-908,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1030,Settings,Web,Settings feature,Settings times out on with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,4227ms,./evidence/TC-WEB-1029.png,REQ-655,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1030,Dashboard,Web,Dashboard feature,Dashboard downloads with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P3,Medium,697ms,./evidence/TC-WEB-1030.png,REQ-902,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1031,Offline,Web,Offline feature,Offline blocks on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5787ms,./evidence/TC-WEB-1030.png,REQ-752,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1031,Camera,Web,Camera feature,Camera processes with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P3,High,7939ms,./evidence/TC-WEB-1031.png,REQ-288,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1032,Camera,Web,Camera feature,Camera syncs with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2740ms,./evidence/TC-WEB-1031.png,REQ-827,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1032,Reminder,Web,Reminder feature,Reminder filters with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P1,High,3507ms,./evidence/TC-WEB-1032.png,REQ-656,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1033,Settings,Web,Settings feature,Settings triggers with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,1045ms,./evidence/TC-WEB-1032.png,REQ-879,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1033,Camera,Web,Camera feature,Camera submits on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P2,Critical,2962ms,./evidence/TC-WEB-1033.png,REQ-326,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1034,Permissions,Web,Permissions feature,Permissions times out on after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2985ms,./evidence/TC-WEB-1033.png,REQ-675,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1034,Tooth,Web,Tooth feature,Tooth Scan updates when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P3,Medium,2812ms,./evidence/TC-WEB-1034.png,REQ-469,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1035,Camera,Web,Camera feature,Camera blocks with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,4035ms,./evidence/TC-WEB-1034.png,REQ-696,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1035,Reminder,Web,Reminder feature,Reminder renders during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P1,Low,4698ms,./evidence/TC-WEB-1035.png,REQ-943,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1036,Notifications,Web,Notifications feature,Notifications filters with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,4774ms,./evidence/TC-WEB-1035.png,REQ-783,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1036,Permissions,Web,Permissions feature,Permissions fetches when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,Medium,3750ms,./evidence/TC-WEB-1036.png,REQ-346,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1037,Permissions,Web,Permissions feature,Permissions filters with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5917ms,./evidence/TC-WEB-1036.png,REQ-527,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1037,Dashboard,Web,Dashboard feature,Dashboard downloads with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P3,High,7955ms,./evidence/TC-WEB-1037.png,REQ-140,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1038,Settings,Web,Settings feature,Settings reports when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5623ms,./evidence/TC-WEB-1037.png,REQ-865,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1038,Profile,Web,Profile feature,Profile updates with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P2,Critical,3261ms,./evidence/TC-WEB-1038.png,REQ-362,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1039,Visit,Web,Visit feature,Visit Reminder triggers with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,7422ms,./evidence/TC-WEB-1038.png,REQ-961,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1039,Authentication,Web,Authentication feature,Authentication rejects during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P3,Medium,302ms,./evidence/TC-WEB-1039.png,REQ-629,QA-Team,REQ-VISIT,Staging
-TC-WEB-1040,Tooth,Web,Tooth feature,Tooth Scan filters during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,4473ms,./evidence/TC-WEB-1039.png,REQ-392,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1040,Settings,Web,Settings feature,Settings processes with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P3,Low,4087ms,./evidence/TC-WEB-1040.png,REQ-144,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1041,Permissions,Web,Permissions feature,Permissions times out on after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,7288ms,./evidence/TC-WEB-1040.png,REQ-967,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1041,Notifications,Web,Notifications feature,Notifications filters with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P3,High,2724ms,./evidence/TC-WEB-1041.png,REQ-626,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1042,Reminder,Web,Reminder feature,Reminder authenticates on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3560ms,./evidence/TC-WEB-1041.png,REQ-927,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1042,Dashboard,Web,Dashboard feature,Dashboard authenticates after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,High,7933ms,./evidence/TC-WEB-1042.png,REQ-891,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1043,Notifications,Web,Notifications feature,Notifications processes on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,204ms,./evidence/TC-WEB-1042.png,REQ-635,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1043,Profile,Web,Profile feature,Profile times out on when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P3,Critical,5235ms,./evidence/TC-WEB-1043.png,REQ-167,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1044,Profile,Web,Profile feature,Profile times out on with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,972ms,./evidence/TC-WEB-1043.png,REQ-125,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1044,Visit,Web,Visit feature,Visit Reminder authenticates with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P3,High,7185ms,./evidence/TC-WEB-1044.png,REQ-801,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1045,Offline,Web,Offline feature,Offline loads after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,3220ms,./evidence/TC-WEB-1044.png,REQ-248,QA-Team,REQ-VISIT,Staging
+TC-WEB-1045,Reminder,Web,Reminder feature,Reminder reports with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Failed,P1,High,4505ms,./evidence/TC-WEB-1045.png,REQ-948,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1046,Notifications,Web,Notifications feature,Notifications triggers during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,534ms,./evidence/TC-WEB-1045.png,REQ-786,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1046,Education,Web,Education feature,Education authenticates after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P3,Critical,6218ms,./evidence/TC-WEB-1046.png,REQ-802,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1047,Dashboard,Web,Dashboard feature,Dashboard submits with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,563ms,./evidence/TC-WEB-1046.png,REQ-304,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1047,Notifications,Web,Notifications feature,Notifications times out on with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Low,5972ms,./evidence/TC-WEB-1047.png,REQ-439,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1048,Authentication,Web,Authentication feature,Authentication times out on with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2287ms,./evidence/TC-WEB-1047.png,REQ-868,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1048,Visit,Web,Visit feature,Visit Reminder submits when API is down,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,Critical,544ms,./evidence/TC-WEB-1048.png,REQ-282,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1049,Visit,Web,Visit feature,Visit Reminder submits when API is down,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,6535ms,./evidence/TC-WEB-1048.png,REQ-264,QA-Team,REQ-VISIT,Staging
+TC-WEB-1049,Education,Web,Education feature,Education submits when API is down,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P3,Critical,4810ms,./evidence/TC-WEB-1049.png,REQ-941,QA-Team,REQ-VISIT,Staging
-TC-WEB-1050,Notifications,Web,Notifications feature,Notifications times out on with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,2447ms,./evidence/TC-WEB-1049.png,REQ-799,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1050,Profile,Web,Profile feature,Profile filters during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P2,Low,3278ms,./evidence/TC-WEB-1050.png,REQ-561,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1051,Notifications,Web,Notifications feature,Notifications updates during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,2152ms,./evidence/TC-WEB-1050.png,REQ-249,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1051,Notifications,Web,Notifications feature,Notifications renders with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P2,Medium,238ms,./evidence/TC-WEB-1051.png,REQ-498,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1052,Education,Web,Education feature,Education rejects with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,6976ms,./evidence/TC-WEB-1051.png,REQ-163,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1052,History,Web,History feature,History processes during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P3,Critical,5354ms,./evidence/TC-WEB-1052.png,REQ-837,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1053,Reminder,Web,Reminder feature,Reminder renders with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,5757ms,./evidence/TC-WEB-1052.png,REQ-903,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1053,Dashboard,Web,Dashboard feature,Dashboard downloads during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P1,Critical,5841ms,./evidence/TC-WEB-1053.png,REQ-968,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1054,Notifications,Web,Notifications feature,Notifications processes with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,2517ms,./evidence/TC-WEB-1053.png,REQ-308,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1054,Profile,Web,Profile feature,Profile processes with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P2,Critical,2474ms,./evidence/TC-WEB-1054.png,REQ-905,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1055,Profile,Web,Profile feature,Profile submits after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6273ms,./evidence/TC-WEB-1054.png,REQ-654,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1055,Assessment,Web,Assessment feature,Assessment submits on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P3,Critical,2406ms,./evidence/TC-WEB-1055.png,REQ-883,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1056,Dashboard,Web,Dashboard feature,Dashboard handles with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,364ms,./evidence/TC-WEB-1055.png,REQ-467,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1056,Reminder,Web,Reminder feature,Reminder filters with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P2,Low,6834ms,./evidence/TC-WEB-1056.png,REQ-776,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1057,Visit,Web,Visit feature,Visit Reminder renders on cache miss,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,6768ms,./evidence/TC-WEB-1056.png,REQ-563,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1057,Notifications,Web,Notifications feature,Notifications loads after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,High,4470ms,./evidence/TC-WEB-1057.png,REQ-325,QA-Team,REQ-VISIT,Staging
-TC-WEB-1058,Settings,Web,Settings feature,Settings fetches with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,939ms,./evidence/TC-WEB-1057.png,REQ-730,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1058,Dashboard,Web,Dashboard feature,Dashboard times out on after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P3,Low,6627ms,./evidence/TC-WEB-1058.png,REQ-916,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1059,Assessment,Web,Assessment feature,Assessment submits with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7210ms,./evidence/TC-WEB-1058.png,REQ-791,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1059,Visit,Web,Visit feature,Visit Reminder downloads with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P2,High,2541ms,./evidence/TC-WEB-1059.png,REQ-793,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1060,Reminder,Web,Reminder feature,Reminder filters with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,6157ms,./evidence/TC-WEB-1059.png,REQ-675,QA-Team,REQ-VISIT,Staging
+TC-WEB-1060,Reminder,Web,Reminder feature,Reminder renders with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,High,1109ms,./evidence/TC-WEB-1060.png,REQ-142,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1061,Reminder,Web,Reminder feature,Reminder blocks with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,7184ms,./evidence/TC-WEB-1060.png,REQ-329,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1061,Visit,Web,Visit feature,Visit Reminder downloads with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P3,Low,4500ms,./evidence/TC-WEB-1061.png,REQ-660,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1062,Visit,Web,Visit feature,Visit Reminder downloads with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,6181ms,./evidence/TC-WEB-1061.png,REQ-762,QA-Team,REQ-VISIT,Staging
+TC-WEB-1062,Visit,Web,Visit feature,Visit Reminder times out on with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,High,6230ms,./evidence/TC-WEB-1062.png,REQ-859,QA-Team,REQ-VISIT,Staging
-TC-WEB-1063,Education,Web,Education feature,Education processes with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,4697ms,./evidence/TC-WEB-1062.png,REQ-498,QA-Team,REQ-VISIT,Staging
+TC-WEB-1063,Tooth,Web,Tooth feature,Tooth Scan filters during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Low,7518ms,./evidence/TC-WEB-1063.png,REQ-761,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1064,Settings,Web,Settings feature,Settings fetches with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,2046ms,./evidence/TC-WEB-1063.png,REQ-623,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1064,Offline,Web,Offline feature,Offline submits with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P1,High,1607ms,./evidence/TC-WEB-1064.png,REQ-326,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1065,Tooth,Web,Tooth feature,Tooth Scan blocks during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,6525ms,./evidence/TC-WEB-1064.png,REQ-915,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1065,Assessment,Web,Assessment feature,Assessment fetches on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Skipped,P2,High,1038ms,./evidence/TC-WEB-1065.png,REQ-285,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1066,Visit,Web,Visit feature,Visit Reminder loads with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,6643ms,./evidence/TC-WEB-1065.png,REQ-812,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1066,Visit,Web,Visit feature,Visit Reminder syncs with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P1,Low,5381ms,./evidence/TC-WEB-1066.png,REQ-662,QA-Team,REQ-VISIT,Staging
-TC-WEB-1067,Dashboard,Web,Dashboard feature,Dashboard submits when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2456ms,./evidence/TC-WEB-1066.png,REQ-809,QA-Team,REQ-VISIT,Staging
+TC-WEB-1067,Permissions,Web,Permissions feature,Permissions processes after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P2,Critical,2153ms,./evidence/TC-WEB-1067.png,REQ-200,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1068,Visit,Web,Visit feature,Visit Reminder blocks with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5543ms,./evidence/TC-WEB-1067.png,REQ-148,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1068,Settings,Web,Settings feature,Settings downloads with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P3,Low,7895ms,./evidence/TC-WEB-1068.png,REQ-438,QA-Team,REQ-VISIT,Staging
-TC-WEB-1069,Permissions,Web,Permissions feature,Permissions updates with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,7689ms,./evidence/TC-WEB-1068.png,REQ-490,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1069,Permissions,Web,Permissions feature,Permissions authenticates when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,High,919ms,./evidence/TC-WEB-1069.png,REQ-391,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1070,Education,Web,Education feature,Education processes when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3274ms,./evidence/TC-WEB-1069.png,REQ-526,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1070,Offline,Web,Offline feature,Offline handles when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P1,High,2703ms,./evidence/TC-WEB-1070.png,REQ-597,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1071,Assessment,Web,Assessment feature,Assessment validates with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,7937ms,./evidence/TC-WEB-1070.png,REQ-907,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1071,Assessment,Web,Assessment feature,Assessment downloads on cache miss,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P2,Medium,5780ms,./evidence/TC-WEB-1071.png,REQ-698,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1072,Tooth,Web,Tooth feature,Tooth Scan filters during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5712ms,./evidence/TC-WEB-1071.png,REQ-420,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1072,Profile,Web,Profile feature,Profile triggers on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P3,Medium,6716ms,./evidence/TC-WEB-1072.png,REQ-423,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1073,Tooth,Web,Tooth feature,Tooth Scan syncs with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,4623ms,./evidence/TC-WEB-1072.png,REQ-155,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1073,Camera,Web,Camera feature,Camera submits with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P1,Critical,2665ms,./evidence/TC-WEB-1073.png,REQ-352,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1074,Settings,Web,Settings feature,Settings processes with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,206ms,./evidence/TC-WEB-1073.png,REQ-861,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1074,Profile,Web,Profile feature,Profile times out on with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P3,Low,2366ms,./evidence/TC-WEB-1074.png,REQ-960,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1075,Education,Web,Education feature,Education triggers with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,2158ms,./evidence/TC-WEB-1074.png,REQ-307,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1075,History,Web,History feature,History processes on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Medium,7291ms,./evidence/TC-WEB-1075.png,REQ-591,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1076,Tooth,Web,Tooth feature,Tooth Scan authenticates with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,5183ms,./evidence/TC-WEB-1075.png,REQ-989,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1076,Dashboard,Web,Dashboard feature,Dashboard updates with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P2,Medium,6446ms,./evidence/TC-WEB-1076.png,REQ-412,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1077,Permissions,Web,Permissions feature,Permissions analyzes with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,6497ms,./evidence/TC-WEB-1076.png,REQ-981,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1077,Reminder,Web,Reminder feature,Reminder renders during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P3,Critical,1539ms,./evidence/TC-WEB-1077.png,REQ-761,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1078,Permissions,Web,Permissions feature,Permissions authenticates when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,7228ms,./evidence/TC-WEB-1077.png,REQ-553,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1078,History,Web,History feature,History loads after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P1,Medium,7134ms,./evidence/TC-WEB-1078.png,REQ-946,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1079,Profile,Web,Profile feature,Profile submits with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,6899ms,./evidence/TC-WEB-1078.png,REQ-330,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1079,Authentication,Web,Authentication feature,Authentication authenticates with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P3,High,2256ms,./evidence/TC-WEB-1079.png,REQ-851,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1080,Reminder,Web,Reminder feature,Reminder fetches with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7566ms,./evidence/TC-WEB-1079.png,REQ-748,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1080,Assessment,Web,Assessment feature,Assessment downloads on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P3,Critical,7408ms,./evidence/TC-WEB-1080.png,REQ-119,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1081,Permissions,Web,Permissions feature,Permissions filters when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5872ms,./evidence/TC-WEB-1080.png,REQ-826,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1081,Dashboard,Web,Dashboard feature,Dashboard downloads with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P3,Critical,6757ms,./evidence/TC-WEB-1081.png,REQ-695,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1082,Permissions,Web,Permissions feature,Permissions downloads on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5405ms,./evidence/TC-WEB-1081.png,REQ-476,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1082,Assessment,Web,Assessment feature,Assessment rejects with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P2,High,7524ms,./evidence/TC-WEB-1082.png,REQ-137,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1083,Permissions,Web,Permissions feature,Permissions reports when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,6285ms,./evidence/TC-WEB-1082.png,REQ-702,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1083,Permissions,Web,Permissions feature,Permissions filters with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P2,Low,5456ms,./evidence/TC-WEB-1083.png,REQ-893,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1084,Visit,Web,Visit feature,Visit Reminder downloads with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4577ms,./evidence/TC-WEB-1083.png,REQ-856,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1084,Dashboard,Web,Dashboard feature,Dashboard rejects with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Low,1929ms,./evidence/TC-WEB-1084.png,REQ-890,QA-Team,REQ-VISIT,Staging
-TC-WEB-1085,Assessment,Web,Assessment feature,Assessment validates on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5042ms,./evidence/TC-WEB-1084.png,REQ-301,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1085,Tooth,Web,Tooth feature,Tooth Scan authenticates with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P3,Medium,1196ms,./evidence/TC-WEB-1085.png,REQ-575,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1086,Offline,Web,Offline feature,Offline renders with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,6458ms,./evidence/TC-WEB-1085.png,REQ-842,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1086,Notifications,Web,Notifications feature,Notifications filters with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Skipped,P3,Critical,3350ms,./evidence/TC-WEB-1086.png,REQ-472,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1087,Profile,Web,Profile feature,Profile renders on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,7999ms,./evidence/TC-WEB-1086.png,REQ-298,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1087,Visit,Web,Visit feature,Visit Reminder authenticates during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P1,High,7046ms,./evidence/TC-WEB-1087.png,REQ-925,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1088,Education,Web,Education feature,Education rejects with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2509ms,./evidence/TC-WEB-1087.png,REQ-559,QA-Team,REQ-VISIT,Staging
+TC-WEB-1088,Camera,Web,Camera feature,Camera handles with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P3,High,6303ms,./evidence/TC-WEB-1088.png,REQ-626,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1089,Profile,Web,Profile feature,Profile filters during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,1553ms,./evidence/TC-WEB-1088.png,REQ-799,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1089,Assessment,Web,Assessment feature,Assessment renders with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P2,High,1567ms,./evidence/TC-WEB-1089.png,REQ-679,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1090,Notifications,Web,Notifications feature,Notifications syncs during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,710ms,./evidence/TC-WEB-1089.png,REQ-291,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1090,Offline,Web,Offline feature,Offline syncs with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P3,High,6128ms,./evidence/TC-WEB-1090.png,REQ-849,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1091,Offline,Web,Offline feature,Offline submits with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,7984ms,./evidence/TC-WEB-1090.png,REQ-277,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1091,Assessment,Web,Assessment feature,Assessment submits on cache miss,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Failed,P2,Critical,1892ms,./evidence/TC-WEB-1091.png,REQ-879,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1092,Assessment,Web,Assessment feature,Assessment submits on cache miss,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,6121ms,./evidence/TC-WEB-1091.png,REQ-626,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1092,Offline,Web,Offline feature,Offline times out on with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P1,Critical,2265ms,./evidence/TC-WEB-1092.png,REQ-478,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1093,Dashboard,Web,Dashboard feature,Dashboard downloads with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,1077ms,./evidence/TC-WEB-1092.png,REQ-486,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1093,Permissions,Web,Permissions feature,Permissions reports when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,High,4342ms,./evidence/TC-WEB-1093.png,REQ-910,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1094,Offline,Web,Offline feature,Offline renders after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,432ms,./evidence/TC-WEB-1093.png,REQ-538,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1094,Dashboard,Web,Dashboard feature,Dashboard analyzes with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,Low,7619ms,./evidence/TC-WEB-1094.png,REQ-565,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1095,Notifications,Web,Notifications feature,Notifications rejects when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,2386ms,./evidence/TC-WEB-1094.png,REQ-669,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1095,Profile,Web,Profile feature,Profile submits after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,Medium,945ms,./evidence/TC-WEB-1095.png,REQ-820,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1096,Authentication,Web,Authentication feature,Authentication submits with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,2264ms,./evidence/TC-WEB-1095.png,REQ-233,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1096,Visit,Web,Visit feature,Visit Reminder blocks with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Skipped,P3,Medium,6939ms,./evidence/TC-WEB-1096.png,REQ-859,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1097,Authentication,Web,Authentication feature,Authentication authenticates on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,1418ms,./evidence/TC-WEB-1096.png,REQ-698,QA-Team,REQ-VISIT,Staging
+TC-WEB-1097,Reminder,Web,Reminder feature,Reminder loads when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P3,High,3185ms,./evidence/TC-WEB-1097.png,REQ-769,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1098,Education,Web,Education feature,Education loads with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,7030ms,./evidence/TC-WEB-1097.png,REQ-361,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1098,Visit,Web,Visit feature,Visit Reminder renders when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P2,Critical,4332ms,./evidence/TC-WEB-1098.png,REQ-357,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1099,Authentication,Web,Authentication feature,Authentication blocks after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,146ms,./evidence/TC-WEB-1098.png,REQ-438,QA-Team,REQ-VISIT,Staging
+TC-WEB-1099,Visit,Web,Visit feature,Visit Reminder triggers with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P1,Low,2990ms,./evidence/TC-WEB-1099.png,REQ-936,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1100,Reminder,Web,Reminder feature,Reminder validates with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,3920ms,./evidence/TC-WEB-1099.png,REQ-826,QA-Team,REQ-VISIT,Staging
+TC-WEB-1100,Notifications,Web,Notifications feature,Notifications triggers after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P2,Low,7367ms,./evidence/TC-WEB-1100.png,REQ-718,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1101,Dashboard,Web,Dashboard feature,Dashboard rejects with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,7779ms,./evidence/TC-WEB-1100.png,REQ-258,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1101,Education,Web,Education feature,Education triggers with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P3,High,3703ms,./evidence/TC-WEB-1101.png,REQ-269,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1102,Reminder,Web,Reminder feature,Reminder renders with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,427ms,./evidence/TC-WEB-1101.png,REQ-257,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1102,Assessment,Web,Assessment feature,Assessment submits with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,Medium,1832ms,./evidence/TC-WEB-1102.png,REQ-253,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1103,Visit,Web,Visit feature,Visit Reminder triggers with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,7707ms,./evidence/TC-WEB-1102.png,REQ-430,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1103,Profile,Web,Profile feature,Profile processes on cache miss,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Medium,5031ms,./evidence/TC-WEB-1103.png,REQ-834,QA-Team,REQ-VISIT,Staging
-TC-WEB-1104,Reminder,Web,Reminder feature,Reminder reports with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,4989ms,./evidence/TC-WEB-1103.png,REQ-152,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1104,Settings,Web,Settings feature,Settings fetches with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P3,High,3496ms,./evidence/TC-WEB-1104.png,REQ-930,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1105,Profile,Web,Profile feature,Profile triggers on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6437ms,./evidence/TC-WEB-1104.png,REQ-740,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1105,Authentication,Web,Authentication feature,Authentication triggers with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P3,Critical,4044ms,./evidence/TC-WEB-1105.png,REQ-791,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1106,Authentication,Web,Authentication feature,Authentication fetches with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,5143ms,./evidence/TC-WEB-1105.png,REQ-963,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1106,Camera,Web,Camera feature,Camera rejects when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P2,High,4939ms,./evidence/TC-WEB-1106.png,REQ-265,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1107,Visit,Web,Visit feature,Visit Reminder blocks with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,5522ms,./evidence/TC-WEB-1106.png,REQ-408,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1107,Offline,Web,Offline feature,Offline triggers when API is down,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P1,High,453ms,./evidence/TC-WEB-1107.png,REQ-230,QA-Team,REQ-VISIT,Staging
-TC-WEB-1108,Offline,Web,Offline feature,Offline downloads when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,4118ms,./evidence/TC-WEB-1107.png,REQ-908,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1108,Permissions,Web,Permissions feature,Permissions triggers with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Skipped,P3,High,1203ms,./evidence/TC-WEB-1108.png,REQ-744,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1109,Education,Web,Education feature,Education handles with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4791ms,./evidence/TC-WEB-1108.png,REQ-663,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1109,Permissions,Web,Permissions feature,Permissions processes with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P1,High,558ms,./evidence/TC-WEB-1109.png,REQ-270,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1110,Profile,Web,Profile feature,Profile times out on on cache miss,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3033ms,./evidence/TC-WEB-1109.png,REQ-174,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1110,Visit,Web,Visit feature,Visit Reminder authenticates on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P1,Low,5009ms,./evidence/TC-WEB-1110.png,REQ-677,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1111,Tooth,Web,Tooth feature,Tooth Scan handles after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,6522ms,./evidence/TC-WEB-1110.png,REQ-824,QA-Team,REQ-VISIT,Staging
+TC-WEB-1111,Camera,Web,Camera feature,Camera blocks on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P3,Medium,7859ms,./evidence/TC-WEB-1111.png,REQ-187,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1112,Reminder,Web,Reminder feature,Reminder syncs on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2703ms,./evidence/TC-WEB-1111.png,REQ-638,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1112,Education,Web,Education feature,Education updates with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P2,Low,7204ms,./evidence/TC-WEB-1112.png,REQ-593,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1113,Authentication,Web,Authentication feature,Authentication downloads with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1901ms,./evidence/TC-WEB-1112.png,REQ-288,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1113,Education,Web,Education feature,Education times out on during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,Low,5022ms,./evidence/TC-WEB-1113.png,REQ-246,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1114,Dashboard,Web,Dashboard feature,Dashboard rejects with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,4364ms,./evidence/TC-WEB-1113.png,REQ-169,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1114,Reminder,Web,Reminder feature,Reminder validates with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P1,Medium,1473ms,./evidence/TC-WEB-1114.png,REQ-841,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1115,Offline,Web,Offline feature,Offline authenticates with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,6541ms,./evidence/TC-WEB-1114.png,REQ-617,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1115,Offline,Web,Offline feature,Offline reports on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,Critical,1982ms,./evidence/TC-WEB-1115.png,REQ-487,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1116,Notifications,Web,Notifications feature,Notifications renders with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,1405ms,./evidence/TC-WEB-1115.png,REQ-525,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1116,Authentication,Web,Authentication feature,Authentication fetches with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P1,Critical,235ms,./evidence/TC-WEB-1116.png,REQ-307,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1117,History,Web,History feature,History submits with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,4548ms,./evidence/TC-WEB-1116.png,REQ-649,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1117,Settings,Web,Settings feature,Settings times out on on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P3,Low,6870ms,./evidence/TC-WEB-1117.png,REQ-253,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1118,History,Web,History feature,History syncs when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,3404ms,./evidence/TC-WEB-1117.png,REQ-194,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1118,Camera,Web,Camera feature,Camera validates with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P1,High,3998ms,./evidence/TC-WEB-1118.png,REQ-729,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1119,Permissions,Web,Permissions feature,Permissions fetches with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2962ms,./evidence/TC-WEB-1118.png,REQ-326,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1119,Authentication,Web,Authentication feature,Authentication triggers with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P1,Critical,863ms,./evidence/TC-WEB-1119.png,REQ-593,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1120,Camera,Web,Camera feature,Camera handles with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7336ms,./evidence/TC-WEB-1119.png,REQ-318,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1120,Visit,Web,Visit feature,Visit Reminder handles with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P3,Critical,7447ms,./evidence/TC-WEB-1120.png,REQ-893,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1121,Visit,Web,Visit feature,Visit Reminder validates with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,5534ms,./evidence/TC-WEB-1120.png,REQ-439,QA-Team,REQ-VISIT,Staging
+TC-WEB-1121,Authentication,Web,Authentication feature,Authentication blocks after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P3,Low,3134ms,./evidence/TC-WEB-1121.png,REQ-995,QA-Team,REQ-VISIT,Staging
-TC-WEB-1122,History,Web,History feature,History processes during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,2812ms,./evidence/TC-WEB-1121.png,REQ-469,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1122,Permissions,Web,Permissions feature,Permissions fetches with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P3,Low,1979ms,./evidence/TC-WEB-1122.png,REQ-921,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1123,Dashboard,Web,Dashboard feature,Dashboard downloads with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,2504ms,./evidence/TC-WEB-1122.png,REQ-323,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1123,Visit,Web,Visit feature,Visit Reminder syncs on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P2,Medium,4925ms,./evidence/TC-WEB-1123.png,REQ-923,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1124,Dashboard,Web,Dashboard feature,Dashboard validates when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,7884ms,./evidence/TC-WEB-1123.png,REQ-870,QA-Team,REQ-VISIT,Staging
+TC-WEB-1124,Assessment,Web,Assessment feature,Assessment downloads with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P1,Low,1196ms,./evidence/TC-WEB-1124.png,REQ-360,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1125,Dashboard,Web,Dashboard feature,Dashboard downloads with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5164ms,./evidence/TC-WEB-1124.png,REQ-643,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1125,Profile,Web,Profile feature,Profile submits with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P1,Critical,2420ms,./evidence/TC-WEB-1125.png,REQ-712,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1126,Education,Web,Education feature,Education analyzes during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,3990ms,./evidence/TC-WEB-1125.png,REQ-674,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1126,Authentication,Web,Authentication feature,Authentication authenticates after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P2,Medium,1648ms,./evidence/TC-WEB-1126.png,REQ-105,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1127,Permissions,Web,Permissions feature,Permissions processes with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,6847ms,./evidence/TC-WEB-1126.png,REQ-870,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1127,Camera,Web,Camera feature,Camera syncs with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P3,Critical,4357ms,./evidence/TC-WEB-1127.png,REQ-107,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1128,Reminder,Web,Reminder feature,Reminder processes during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,5419ms,./evidence/TC-WEB-1127.png,REQ-109,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1128,Education,Web,Education feature,Education analyzes during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P3,High,5734ms,./evidence/TC-WEB-1128.png,REQ-923,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1129,Assessment,Web,Assessment feature,Assessment validates with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1039ms,./evidence/TC-WEB-1128.png,REQ-784,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1129,Visit,Web,Visit feature,Visit Reminder filters during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,Medium,973ms,./evidence/TC-WEB-1129.png,REQ-258,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1130,Profile,Web,Profile feature,Profile renders after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2934ms,./evidence/TC-WEB-1129.png,REQ-556,QA-Team,REQ-VISIT,Staging
+TC-WEB-1130,Permissions,Web,Permissions feature,Permissions authenticates with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P3,Medium,2240ms,./evidence/TC-WEB-1130.png,REQ-975,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1131,Profile,Web,Profile feature,Profile times out on when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,2068ms,./evidence/TC-WEB-1130.png,REQ-757,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1131,Education,Web,Education feature,Education handles with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P2,Medium,5112ms,./evidence/TC-WEB-1131.png,REQ-382,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1132,Dashboard,Web,Dashboard feature,Dashboard times out on during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,5127ms,./evidence/TC-WEB-1131.png,REQ-736,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1132,History,Web,History feature,History validates on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P1,Low,4622ms,./evidence/TC-WEB-1132.png,REQ-902,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1133,Visit,Web,Visit feature,Visit Reminder processes with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,2097ms,./evidence/TC-WEB-1132.png,REQ-140,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1133,Reminder,Web,Reminder feature,Reminder syncs on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P2,High,3132ms,./evidence/TC-WEB-1133.png,REQ-672,QA-Team,REQ-VISIT,Staging
-TC-WEB-1134,Assessment,Web,Assessment feature,Assessment times out on with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,5691ms,./evidence/TC-WEB-1133.png,REQ-428,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1134,Assessment,Web,Assessment feature,Assessment validates on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P2,Medium,2612ms,./evidence/TC-WEB-1134.png,REQ-691,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1135,Tooth,Web,Tooth feature,Tooth Scan loads with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,3224ms,./evidence/TC-WEB-1134.png,REQ-915,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1135,Dashboard,Web,Dashboard feature,Dashboard validates with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P3,Low,6127ms,./evidence/TC-WEB-1135.png,REQ-241,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1136,Reminder,Web,Reminder feature,Reminder authenticates with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7841ms,./evidence/TC-WEB-1135.png,REQ-216,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1136,Notifications,Web,Notifications feature,Notifications syncs during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P3,High,3758ms,./evidence/TC-WEB-1136.png,REQ-901,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1137,Permissions,Web,Permissions feature,Permissions processes with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3261ms,./evidence/TC-WEB-1136.png,REQ-362,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1137,History,Web,History feature,History updates when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,High,4264ms,./evidence/TC-WEB-1137.png,REQ-510,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1138,Dashboard,Web,Dashboard feature,Dashboard analyzes with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,4525ms,./evidence/TC-WEB-1137.png,REQ-841,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1138,History,Web,History feature,History updates with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P3,Critical,1416ms,./evidence/TC-WEB-1138.png,REQ-498,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1139,Reminder,Web,Reminder feature,Reminder handles during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,2416ms,./evidence/TC-WEB-1138.png,REQ-125,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1139,History,Web,History feature,History times out on with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,High,3963ms,./evidence/TC-WEB-1139.png,REQ-714,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1140,Dashboard,Web,Dashboard feature,Dashboard reports with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,7565ms,./evidence/TC-WEB-1139.png,REQ-629,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1140,Settings,Web,Settings feature,Settings submits after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P1,Critical,2255ms,./evidence/TC-WEB-1140.png,REQ-327,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1141,History,Web,History feature,History processes on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6834ms,./evidence/TC-WEB-1140.png,REQ-888,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1141,Permissions,Web,Permissions feature,Permissions downloads on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P1,Critical,6035ms,./evidence/TC-WEB-1141.png,REQ-493,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1142,Camera,Web,Camera feature,Camera rejects when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3171ms,./evidence/TC-WEB-1141.png,REQ-626,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1142,Offline,Web,Offline feature,Offline downloads with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Failed,P3,Medium,5929ms,./evidence/TC-WEB-1142.png,REQ-711,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1143,Authentication,Web,Authentication feature,Authentication handles with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,6676ms,./evidence/TC-WEB-1142.png,REQ-620,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1143,Reminder,Web,Reminder feature,Reminder processes during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,Low,3696ms,./evidence/TC-WEB-1143.png,REQ-110,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1144,Visit,Web,Visit feature,Visit Reminder filters with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,3750ms,./evidence/TC-WEB-1143.png,REQ-598,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1144,Dashboard,Web,Dashboard feature,Dashboard reports with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P3,Medium,1695ms,./evidence/TC-WEB-1144.png,REQ-134,QA-Team,REQ-VISIT,Staging
-TC-WEB-1145,Assessment,Web,Assessment feature,Assessment downloads when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,459ms,./evidence/TC-WEB-1144.png,REQ-403,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1145,Education,Web,Education feature,Education reports with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P3,High,5139ms,./evidence/TC-WEB-1145.png,REQ-273,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1146,Authentication,Web,Authentication feature,Authentication loads with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,7458ms,./evidence/TC-WEB-1145.png,REQ-767,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1146,Camera,Web,Camera feature,Camera blocks with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,High,5465ms,./evidence/TC-WEB-1146.png,REQ-100,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1147,Dashboard,Web,Dashboard feature,Dashboard validates with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,1677ms,./evidence/TC-WEB-1146.png,REQ-428,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1147,Profile,Web,Profile feature,Profile syncs with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Medium,6487ms,./evidence/TC-WEB-1147.png,REQ-509,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1148,Profile,Web,Profile feature,Profile validates with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,4309ms,./evidence/TC-WEB-1147.png,REQ-184,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1148,Assessment,Web,Assessment feature,Assessment validates with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,P3,Low,3421ms,./evidence/TC-WEB-1148.png,REQ-700,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1149,Permissions,Web,Permissions feature,Permissions triggers with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,7867ms,./evidence/TC-WEB-1148.png,REQ-198,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1149,Settings,Web,Settings feature,Settings reports when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P3,Critical,6136ms,./evidence/TC-WEB-1149.png,REQ-820,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1150,Authentication,Web,Authentication feature,Authentication times out on during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,1471ms,./evidence/TC-WEB-1149.png,REQ-891,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1150,Profile,Web,Profile feature,Profile processes with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,Medium,6048ms,./evidence/TC-WEB-1150.png,REQ-949,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1151,Education,Web,Education feature,Education authenticates after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,4507ms,./evidence/TC-WEB-1150.png,REQ-646,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1151,Visit,Web,Visit feature,Visit Reminder downloads with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P3,Medium,2946ms,./evidence/TC-WEB-1151.png,REQ-935,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1152,Permissions,Web,Permissions feature,Permissions triggers when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,160ms,./evidence/TC-WEB-1151.png,REQ-741,QA-Team,REQ-VISIT,Staging
+TC-WEB-1152,Assessment,Web,Assessment feature,Assessment submits with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,High,3825ms,./evidence/TC-WEB-1152.png,REQ-513,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1153,Offline,Web,Offline feature,Offline syncs on cache miss,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,636ms,./evidence/TC-WEB-1152.png,REQ-315,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1153,Visit,Web,Visit feature,Visit Reminder submits with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Skipped,P1,Medium,1533ms,./evidence/TC-WEB-1153.png,REQ-516,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1154,Assessment,Web,Assessment feature,Assessment downloads on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,5591ms,./evidence/TC-WEB-1153.png,REQ-744,QA-Team,REQ-VISIT,Staging
+TC-WEB-1154,Permissions,Web,Permissions feature,Permissions filters with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P1,Critical,4221ms,./evidence/TC-WEB-1154.png,REQ-401,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1155,Permissions,Web,Permissions feature,Permissions authenticates with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6437ms,./evidence/TC-WEB-1154.png,REQ-318,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1155,Notifications,Web,Notifications feature,Notifications triggers during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,Medium,7277ms,./evidence/TC-WEB-1155.png,REQ-650,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1156,Authentication,Web,Authentication feature,Authentication blocks during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,7185ms,./evidence/TC-WEB-1155.png,REQ-801,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1156,Dashboard,Web,Dashboard feature,Dashboard downloads with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Skipped,P2,Low,3189ms,./evidence/TC-WEB-1156.png,REQ-676,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1157,Authentication,Web,Authentication feature,Authentication authenticates with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,3575ms,./evidence/TC-WEB-1156.png,REQ-955,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1157,Profile,Web,Profile feature,Profile filters when API is down,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P1,Medium,7974ms,./evidence/TC-WEB-1157.png,REQ-894,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1158,Permissions,Web,Permissions feature,Permissions triggers with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,951ms,./evidence/TC-WEB-1157.png,REQ-310,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1158,Visit,Web,Visit feature,Visit Reminder syncs during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P3,Low,7444ms,./evidence/TC-WEB-1158.png,REQ-700,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1159,Camera,Web,Camera feature,Camera validates with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,4505ms,./evidence/TC-WEB-1158.png,REQ-948,QA-Team,REQ-VISIT,Staging
+TC-WEB-1159,Permissions,Web,Permissions feature,Permissions triggers with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P2,Critical,2212ms,./evidence/TC-WEB-1159.png,REQ-169,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1160,Dashboard,Web,Dashboard feature,Dashboard updates with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5856ms,./evidence/TC-WEB-1159.png,REQ-999,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1160,Permissions,Web,Permissions feature,Permissions times out on with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P3,High,5645ms,./evidence/TC-WEB-1160.png,REQ-818,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1161,Camera,Web,Camera feature,Camera blocks with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6173ms,./evidence/TC-WEB-1160.png,REQ-893,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1161,Reminder,Web,Reminder feature,Reminder rejects with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P2,Low,7927ms,./evidence/TC-WEB-1161.png,REQ-461,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1162,Assessment,Web,Assessment feature,Assessment handles with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,3665ms,./evidence/TC-WEB-1161.png,REQ-762,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1162,Offline,Web,Offline feature,Offline times out on when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P3,Critical,5841ms,./evidence/TC-WEB-1162.png,REQ-952,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1163,Authentication,Web,Authentication feature,Authentication authenticates after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,6790ms,./evidence/TC-WEB-1162.png,REQ-173,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1163,Authentication,Web,Authentication feature,Authentication triggers with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,Medium,861ms,./evidence/TC-WEB-1163.png,REQ-508,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1164,Permissions,Web,Permissions feature,Permissions filters with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,6218ms,./evidence/TC-WEB-1163.png,REQ-802,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1164,Visit,Web,Visit feature,Visit Reminder rejects with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,High,4003ms,./evidence/TC-WEB-1164.png,REQ-421,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1165,Authentication,Web,Authentication feature,Authentication rejects during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,1359ms,./evidence/TC-WEB-1164.png,REQ-124,QA-Team,REQ-VISIT,Staging
+TC-WEB-1165,Permissions,Web,Permissions feature,Permissions fetches with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P1,Medium,1597ms,./evidence/TC-WEB-1165.png,REQ-864,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1166,Visit,Web,Visit feature,Visit Reminder submits during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3861ms,./evidence/TC-WEB-1165.png,REQ-834,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1166,Visit,Web,Visit feature,Visit Reminder validates with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,High,2023ms,./evidence/TC-WEB-1166.png,REQ-853,QA-Team,REQ-VISIT,Staging
-TC-WEB-1167,Permissions,Web,Permissions feature,Permissions submits after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2817ms,./evidence/TC-WEB-1166.png,REQ-138,QA-Team,REQ-VISIT,Staging
+TC-WEB-1167,Visit,Web,Visit feature,Visit Reminder updates during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P2,High,1977ms,./evidence/TC-WEB-1167.png,REQ-307,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1168,Visit,Web,Visit feature,Visit Reminder handles with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,816ms,./evidence/TC-WEB-1167.png,REQ-175,QA-Team,REQ-VISIT,Staging
+TC-WEB-1168,Offline,Web,Offline feature,Offline syncs on cache miss,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P3,Medium,1377ms,./evidence/TC-WEB-1168.png,REQ-897,QA-Team,REQ-VISIT,Staging
-TC-WEB-1169,Offline,Web,Offline feature,Offline times out on when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,544ms,./evidence/TC-WEB-1168.png,REQ-282,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1169,Education,Web,Education feature,Education rejects with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P1,Critical,5636ms,./evidence/TC-WEB-1169.png,REQ-779,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1170,Camera,Web,Camera feature,Camera authenticates with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,6606ms,./evidence/TC-WEB-1169.png,REQ-357,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1170,Permissions,Web,Permissions feature,Permissions authenticates with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Failed,P3,Critical,6360ms,./evidence/TC-WEB-1170.png,REQ-977,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1171,Profile,Web,Profile feature,Profile downloads with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4671ms,./evidence/TC-WEB-1170.png,REQ-172,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1171,Offline,Web,Offline feature,Offline authenticates with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P1,Low,3140ms,./evidence/TC-WEB-1171.png,REQ-735,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1172,Notifications,Web,Notifications feature,Notifications analyzes with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,4810ms,./evidence/TC-WEB-1171.png,REQ-941,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1172,Education,Web,Education feature,Education reports with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P2,Medium,4120ms,./evidence/TC-WEB-1172.png,REQ-287,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1173,Visit,Web,Visit feature,Visit Reminder filters during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1964ms,./evidence/TC-WEB-1172.png,REQ-364,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1173,Tooth,Web,Tooth feature,Tooth Scan triggers with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Skipped,P2,Low,1919ms,./evidence/TC-WEB-1173.png,REQ-868,QA-Team,REQ-VISIT,Staging
-TC-WEB-1174,Camera,Web,Camera feature,Camera submits with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,3439ms,./evidence/TC-WEB-1173.png,REQ-497,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1174,Reminder,Web,Reminder feature,Reminder authenticates with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P1,Critical,4406ms,./evidence/TC-WEB-1174.png,REQ-918,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1175,Reminder,Web,Reminder feature,Reminder renders during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,3795ms,./evidence/TC-WEB-1174.png,REQ-745,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1175,Education,Web,Education feature,Education renders during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P2,Critical,4216ms,./evidence/TC-WEB-1175.png,REQ-455,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1176,Notifications,Web,Notifications feature,Notifications rejects with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,3413ms,./evidence/TC-WEB-1175.png,REQ-543,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1176,Tooth,Web,Tooth feature,Tooth Scan validates after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P3,High,3845ms,./evidence/TC-WEB-1176.png,REQ-223,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1177,Permissions,Web,Permissions feature,Permissions authenticates with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,2691ms,./evidence/TC-WEB-1176.png,REQ-117,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1177,History,Web,History feature,History syncs when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P2,Medium,5746ms,./evidence/TC-WEB-1177.png,REQ-108,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1178,Settings,Web,Settings feature,Settings times out on on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3290ms,./evidence/TC-WEB-1177.png,REQ-789,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1178,Dashboard,Web,Dashboard feature,Dashboard handles with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P3,High,3208ms,./evidence/TC-WEB-1178.png,REQ-694,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1179,Dashboard,Web,Dashboard feature,Dashboard loads with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,1069ms,./evidence/TC-WEB-1178.png,REQ-647,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1179,Visit,Web,Visit feature,Visit Reminder validates during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P2,Medium,5119ms,./evidence/TC-WEB-1179.png,REQ-982,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1180,Visit,Web,Visit feature,Visit Reminder times out on with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,148ms,./evidence/TC-WEB-1179.png,REQ-756,QA-Team,REQ-VISIT,Staging
+TC-WEB-1180,Notifications,Web,Notifications feature,Notifications updates during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Medium,2042ms,./evidence/TC-WEB-1180.png,REQ-375,QA-Team,REQ-VISIT,Staging
-TC-WEB-1181,Authentication,Web,Authentication feature,Authentication triggers with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,6000ms,./evidence/TC-WEB-1180.png,REQ-733,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1181,Offline,Web,Offline feature,Offline renders after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P3,Medium,3097ms,./evidence/TC-WEB-1181.png,REQ-288,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1182,Settings,Web,Settings feature,Settings authenticates after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,618ms,./evidence/TC-WEB-1181.png,REQ-874,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1182,Reminder,Web,Reminder feature,Reminder authenticates on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Failed,P2,High,3533ms,./evidence/TC-WEB-1182.png,REQ-817,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1183,Tooth,Web,Tooth feature,Tooth Scan reports when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,6210ms,./evidence/TC-WEB-1182.png,REQ-699,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1183,Authentication,Web,Authentication feature,Authentication times out on with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,Low,2390ms,./evidence/TC-WEB-1183.png,REQ-561,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1184,Education,Web,Education feature,Education submits when API is down,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,472ms,./evidence/TC-WEB-1183.png,REQ-817,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1184,Dashboard,Web,Dashboard feature,Dashboard updates after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P3,High,4817ms,./evidence/TC-WEB-1184.png,REQ-802,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1185,Settings,Web,Settings feature,Settings downloads with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7048ms,./evidence/TC-WEB-1184.png,REQ-174,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1185,Settings,Web,Settings feature,Settings authenticates after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,Medium,6687ms,./evidence/TC-WEB-1185.png,REQ-341,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1186,Settings,Web,Settings feature,Settings submits during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,3030ms,./evidence/TC-WEB-1185.png,REQ-614,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1186,Tooth,Web,Tooth feature,Tooth Scan blocks during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Skipped,P2,Low,1706ms,./evidence/TC-WEB-1186.png,REQ-249,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1187,History,Web,History feature,History downloads with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,969ms,./evidence/TC-WEB-1186.png,REQ-396,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1187,Permissions,Web,Permissions feature,Permissions downloads when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P2,Critical,1546ms,./evidence/TC-WEB-1187.png,REQ-531,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1188,Tooth,Web,Tooth feature,Tooth Scan updates when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6546ms,./evidence/TC-WEB-1187.png,REQ-802,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1188,Profile,Web,Profile feature,Profile renders after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P1,Medium,6533ms,./evidence/TC-WEB-1188.png,REQ-598,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1189,Visit,Web,Visit feature,Visit Reminder validates during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,2568ms,./evidence/TC-WEB-1188.png,REQ-721,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1189,Camera,Web,Camera feature,Camera fetches with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Critical,3363ms,./evidence/TC-WEB-1189.png,REQ-201,QA-Team,REQ-VISIT,Staging
-TC-WEB-1190,Permissions,Web,Permissions feature,Permissions processes after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,808ms,./evidence/TC-WEB-1189.png,REQ-388,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1190,Tooth,Web,Tooth feature,Tooth Scan filters during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,High,6766ms,./evidence/TC-WEB-1190.png,REQ-360,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1191,Visit,Web,Visit feature,Visit Reminder downloads with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,6369ms,./evidence/TC-WEB-1190.png,REQ-548,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1191,Education,Web,Education feature,Education handles with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P3,Critical,3785ms,./evidence/TC-WEB-1191.png,REQ-862,QA-Team,REQ-VISIT,Staging
-TC-WEB-1192,Visit,Web,Visit feature,Visit Reminder authenticates on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,3224ms,./evidence/TC-WEB-1191.png,REQ-504,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1192,Profile,Web,Profile feature,Profile syncs with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Medium,3051ms,./evidence/TC-WEB-1192.png,REQ-673,QA-Team,REQ-VISIT,Staging
-TC-WEB-1193,Camera,Web,Camera feature,Camera downloads with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6834ms,./evidence/TC-WEB-1192.png,REQ-776,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1193,Visit,Web,Visit feature,Visit Reminder fetches when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P2,Medium,262ms,./evidence/TC-WEB-1193.png,REQ-521,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1194,Tooth,Web,Tooth feature,Tooth Scan filters when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,352ms,./evidence/TC-WEB-1193.png,REQ-585,QA-Team,REQ-VISIT,Staging
+TC-WEB-1194,Tooth,Web,Tooth feature,Tooth Scan loads on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,High,4825ms,./evidence/TC-WEB-1194.png,REQ-689,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1195,History,Web,History feature,History times out on with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,1380ms,./evidence/TC-WEB-1194.png,REQ-646,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1195,Dashboard,Web,Dashboard feature,Dashboard validates when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P1,Medium,3009ms,./evidence/TC-WEB-1195.png,REQ-432,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1196,Offline,Web,Offline feature,Offline syncs with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,1901ms,./evidence/TC-WEB-1195.png,REQ-239,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1196,Notifications,Web,Notifications feature,Notifications processes on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Skipped,P2,Low,7387ms,./evidence/TC-WEB-1196.png,REQ-180,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1197,Offline,Web,Offline feature,Offline handles when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,6217ms,./evidence/TC-WEB-1196.png,REQ-500,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1197,History,Web,History feature,History submits with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Failed,P3,Medium,3899ms,./evidence/TC-WEB-1197.png,REQ-746,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1198,Settings,Web,Settings feature,Settings rejects with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,6627ms,./evidence/TC-WEB-1197.png,REQ-916,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1198,Tooth,Web,Tooth feature,Tooth Scan authenticates with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,Medium,3555ms,./evidence/TC-WEB-1198.png,REQ-746,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1199,Permissions,Web,Permissions feature,Permissions fetches with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,7058ms,./evidence/TC-WEB-1198.png,REQ-658,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1199,Profile,Web,Profile feature,Profile times out on with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P3,Low,7054ms,./evidence/TC-WEB-1199.png,REQ-173,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1200,Visit,Web,Visit feature,Visit Reminder downloads with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,2516ms,./evidence/TC-WEB-1199.png,REQ-749,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1200,Authentication,Web,Authentication feature,Authentication filters with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Medium,1969ms,./evidence/TC-WEB-1200.png,REQ-421,QA-Team,REQ-VISIT,Staging
-TC-WEB-1201,History,Web,History feature,History updates with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,1280ms,./evidence/TC-WEB-1200.png,REQ-405,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1201,Education,Web,Education feature,Education processes when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P3,Medium,5919ms,./evidence/TC-WEB-1201.png,REQ-373,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1202,Education,Web,Education feature,Education times out on during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,5648ms,./evidence/TC-WEB-1201.png,REQ-914,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1202,Settings,Web,Settings feature,Settings fetches with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P3,Low,2322ms,./evidence/TC-WEB-1202.png,REQ-555,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1203,Tooth,Web,Tooth feature,Tooth Scan fetches with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,7203ms,./evidence/TC-WEB-1202.png,REQ-846,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1203,Tooth,Web,Tooth feature,Tooth Scan handles with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P3,Low,3491ms,./evidence/TC-WEB-1203.png,REQ-271,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1204,Assessment,Web,Assessment feature,Assessment times out on after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,5407ms,./evidence/TC-WEB-1203.png,REQ-482,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1204,Authentication,Web,Authentication feature,Authentication analyzes with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,High,6061ms,./evidence/TC-WEB-1204.png,REQ-340,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1205,Authentication,Web,Authentication feature,Authentication times out on with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7942ms,./evidence/TC-WEB-1204.png,REQ-111,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1205,Dashboard,Web,Dashboard feature,Dashboard blocks on cache miss,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P3,Critical,1825ms,./evidence/TC-WEB-1205.png,REQ-270,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1206,Visit,Web,Visit feature,Visit Reminder rejects with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,4634ms,./evidence/TC-WEB-1205.png,REQ-995,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1206,Permissions,Web,Permissions feature,Permissions analyzes with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P1,Critical,622ms,./evidence/TC-WEB-1206.png,REQ-999,QA-Team,REQ-VISIT,Staging
-TC-WEB-1207,Education,Web,Education feature,Education reports with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4647ms,./evidence/TC-WEB-1206.png,REQ-244,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1207,Assessment,Web,Assessment feature,Assessment rejects with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P3,Critical,315ms,./evidence/TC-WEB-1207.png,REQ-889,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1208,Reminder,Web,Reminder feature,Reminder submits when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,1109ms,./evidence/TC-WEB-1207.png,REQ-142,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1208,Dashboard,Web,Dashboard feature,Dashboard loads with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P3,Critical,951ms,./evidence/TC-WEB-1208.png,REQ-368,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1209,Authentication,Web,Authentication feature,Authentication analyzes with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,141ms,./evidence/TC-WEB-1208.png,REQ-686,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1209,Permissions,Web,Permissions feature,Permissions submits after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Skipped,P1,Critical,5464ms,./evidence/TC-WEB-1209.png,REQ-499,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1210,Offline,Web,Offline feature,Offline reports on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4987ms,./evidence/TC-WEB-1209.png,REQ-503,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1210,Offline,Web,Offline feature,Offline renders when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P1,High,6142ms,./evidence/TC-WEB-1210.png,REQ-390,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1211,Dashboard,Web,Dashboard feature,Dashboard downloads with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,4500ms,./evidence/TC-WEB-1210.png,REQ-660,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1211,Notifications,Web,Notifications feature,Notifications rejects with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P3,High,1175ms,./evidence/TC-WEB-1211.png,REQ-639,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1212,Assessment,Web,Assessment feature,Assessment rejects with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,7857ms,./evidence/TC-WEB-1211.png,REQ-187,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1212,Notifications,Web,Notifications feature,Notifications loads with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Critical,5535ms,./evidence/TC-WEB-1212.png,REQ-465,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1213,Authentication,Web,Authentication feature,Authentication filters with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2596ms,./evidence/TC-WEB-1212.png,REQ-315,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1213,Permissions,Web,Permissions feature,Permissions analyzes with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,Low,7234ms,./evidence/TC-WEB-1213.png,REQ-653,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1214,Visit,Web,Visit feature,Visit Reminder syncs during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6230ms,./evidence/TC-WEB-1213.png,REQ-859,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1214,Authentication,Web,Authentication feature,Authentication times out on with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P3,Low,1206ms,./evidence/TC-WEB-1214.png,REQ-814,QA-Team,REQ-VISIT,Staging
-TC-WEB-1215,Tooth,Web,Tooth feature,Tooth Scan authenticates with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7501ms,./evidence/TC-WEB-1214.png,REQ-843,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1215,Notifications,Web,Notifications feature,Notifications updates with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Skipped,P1,Low,5269ms,./evidence/TC-WEB-1215.png,REQ-866,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1216,History,Web,History feature,History validates on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2916ms,./evidence/TC-WEB-1215.png,REQ-316,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1216,Camera,Web,Camera feature,Camera authenticates with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P2,Medium,7545ms,./evidence/TC-WEB-1216.png,REQ-455,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1217,Notifications,Web,Notifications feature,Notifications analyzes during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,3480ms,./evidence/TC-WEB-1216.png,REQ-761,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1217,Dashboard,Web,Dashboard feature,Dashboard rejects with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P3,High,6692ms,./evidence/TC-WEB-1217.png,REQ-191,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1218,Visit,Web,Visit feature,Visit Reminder updates during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7075ms,./evidence/TC-WEB-1217.png,REQ-624,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1218,Reminder,Web,Reminder feature,Reminder handles during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P2,Medium,3476ms,./evidence/TC-WEB-1218.png,REQ-366,QA-Team,REQ-VISIT,Staging
-TC-WEB-1219,Dashboard,Web,Dashboard feature,Dashboard rejects with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,1266ms,./evidence/TC-WEB-1218.png,REQ-264,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1219,Notifications,Web,Notifications feature,Notifications reports with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P2,Critical,100ms,./evidence/TC-WEB-1219.png,REQ-635,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1220,Offline,Web,Offline feature,Offline triggers when API is down,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,1607ms,./evidence/TC-WEB-1219.png,REQ-326,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1220,Notifications,Web,Notifications feature,Notifications rejects when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,Medium,3943ms,./evidence/TC-WEB-1220.png,REQ-647,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1221,Permissions,Web,Permissions feature,Permissions handles during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,5153ms,./evidence/TC-WEB-1220.png,REQ-954,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1221,Authentication,Web,Authentication feature,Authentication handles with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P3,Low,7857ms,./evidence/TC-WEB-1221.png,REQ-873,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1222,Profile,Web,Profile feature,Profile handles with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,2170ms,./evidence/TC-WEB-1221.png,REQ-298,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1222,Visit,Web,Visit feature,Visit Reminder submits on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P2,Critical,6374ms,./evidence/TC-WEB-1222.png,REQ-540,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1223,History,Web,History feature,History filters on cache miss,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,1038ms,./evidence/TC-WEB-1222.png,REQ-285,QA-Team,REQ-VISIT,Staging
+TC-WEB-1223,Tooth,Web,Tooth feature,Tooth Scan fetches with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P3,High,6627ms,./evidence/TC-WEB-1223.png,REQ-107,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1224,History,Web,History feature,History blocks with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,5596ms,./evidence/TC-WEB-1223.png,REQ-918,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1224,Settings,Web,Settings feature,Settings rejects after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P2,High,3472ms,./evidence/TC-WEB-1224.png,REQ-674,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1225,Visit,Web,Visit feature,Visit Reminder renders when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,4747ms,./evidence/TC-WEB-1224.png,REQ-972,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1225,Authentication,Web,Authentication feature,Authentication authenticates on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P2,High,1437ms,./evidence/TC-WEB-1225.png,REQ-832,QA-Team,REQ-VISIT,Staging
-TC-WEB-1226,Permissions,Web,Permissions feature,Permissions times out on with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,545ms,./evidence/TC-WEB-1225.png,REQ-971,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1226,Notifications,Web,Notifications feature,Notifications downloads during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Failed,P2,High,2254ms,./evidence/TC-WEB-1226.png,REQ-181,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1227,Notifications,Web,Notifications feature,Notifications updates with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,6252ms,./evidence/TC-WEB-1226.png,REQ-662,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1227,Offline,Web,Offline feature,Offline loads after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Failed,P3,High,4332ms,./evidence/TC-WEB-1227.png,REQ-882,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1228,Permissions,Web,Permissions feature,Permissions fetches when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,3878ms,./evidence/TC-WEB-1227.png,REQ-760,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1228,Education,Web,Education feature,Education validates on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P3,Medium,2432ms,./evidence/TC-WEB-1228.png,REQ-764,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1229,Tooth,Web,Tooth feature,Tooth Scan loads on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,4602ms,./evidence/TC-WEB-1228.png,REQ-174,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1229,Visit,Web,Visit feature,Visit Reminder submits during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Skipped,P2,Low,1640ms,./evidence/TC-WEB-1229.png,REQ-973,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1230,Settings,Web,Settings feature,Settings rejects after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2481ms,./evidence/TC-WEB-1229.png,REQ-787,QA-Team,REQ-VISIT,Staging
+TC-WEB-1230,Assessment,Web,Assessment feature,Assessment validates with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P1,High,2472ms,./evidence/TC-WEB-1230.png,REQ-213,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1231,Dashboard,Web,Dashboard feature,Dashboard blocks on cache miss,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,651ms,./evidence/TC-WEB-1230.png,REQ-356,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1231,Permissions,Web,Permissions feature,Permissions handles during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P3,Low,2329ms,./evidence/TC-WEB-1231.png,REQ-817,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1232,History,Web,History feature,History updates when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,904ms,./evidence/TC-WEB-1231.png,REQ-302,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1232,Permissions,Web,Permissions feature,Permissions filters when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Skipped,P2,High,2726ms,./evidence/TC-WEB-1232.png,REQ-119,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1233,History,Web,History feature,History loads with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6044ms,./evidence/TC-WEB-1232.png,REQ-694,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1233,Tooth,Web,Tooth feature,Tooth Scan reports when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P1,Critical,1623ms,./evidence/TC-WEB-1233.png,REQ-204,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1234,Education,Web,Education feature,Education blocks with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,4091ms,./evidence/TC-WEB-1233.png,REQ-438,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1234,Permissions,Web,Permissions feature,Permissions submits with expired token,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P2,High,5958ms,./evidence/TC-WEB-1234.png,REQ-548,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1235,Dashboard,Web,Dashboard feature,Dashboard updates after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3025ms,./evidence/TC-WEB-1234.png,REQ-231,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1235,Tooth,Web,Tooth feature,Tooth Scan syncs with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Critical,1334ms,./evidence/TC-WEB-1235.png,REQ-115,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1236,Reminder,Web,Reminder feature,Reminder filters with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,5599ms,./evidence/TC-WEB-1235.png,REQ-771,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1236,Notifications,Web,Notifications feature,Notifications renders with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P1,Medium,3542ms,./evidence/TC-WEB-1236.png,REQ-419,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1237,Assessment,Web,Assessment feature,Assessment blocks with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2021ms,./evidence/TC-WEB-1236.png,REQ-202,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1237,Camera,Web,Camera feature,Camera times out on with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Failed,P2,Low,5809ms,./evidence/TC-WEB-1237.png,REQ-910,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1238,Permissions,Web,Permissions feature,Permissions authenticates when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2435ms,./evidence/TC-WEB-1237.png,REQ-734,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1238,Reminder,Web,Reminder feature,Reminder blocks with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P2,Critical,7010ms,./evidence/TC-WEB-1238.png,REQ-868,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1239,Camera,Web,Camera feature,Camera times out on with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,671ms,./evidence/TC-WEB-1238.png,REQ-298,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1239,Offline,Web,Offline feature,Offline downloads when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P1,Medium,6454ms,./evidence/TC-WEB-1239.png,REQ-501,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1240,Notifications,Web,Notifications feature,Notifications renders with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2703ms,./evidence/TC-WEB-1239.png,REQ-597,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1240,Education,Web,Education feature,Education processes with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P3,Low,1587ms,./evidence/TC-WEB-1240.png,REQ-296,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1241,Assessment,Web,Assessment feature,Assessment submits on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,3791ms,./evidence/TC-WEB-1240.png,REQ-436,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1241,Notifications,Web,Notifications feature,Notifications validates during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,Critical,1099ms,./evidence/TC-WEB-1241.png,REQ-886,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1242,Tooth,Web,Tooth feature,Tooth Scan validates after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,5149ms,./evidence/TC-WEB-1241.png,REQ-775,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1242,Offline,Web,Offline feature,Offline handles when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,P2,Low,2124ms,./evidence/TC-WEB-1242.png,REQ-855,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1243,Dashboard,Web,Dashboard feature,Dashboard reports when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2604ms,./evidence/TC-WEB-1242.png,REQ-810,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1243,History,Web,History feature,History filters on cache miss,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P1,Low,6123ms,./evidence/TC-WEB-1243.png,REQ-889,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1244,Visit,Web,Visit feature,Visit Reminder submits with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,4885ms,./evidence/TC-WEB-1243.png,REQ-256,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1244,Permissions,Web,Permissions feature,Permissions filters on slow connection,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P3,High,3973ms,./evidence/TC-WEB-1244.png,REQ-498,QA-Team,REQ-VISIT,Staging
-TC-WEB-1245,Authentication,Web,Authentication feature,Authentication triggers with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4733ms,./evidence/TC-WEB-1244.png,REQ-680,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1245,Tooth,Web,Tooth feature,Tooth Scan loads with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,P2,High,5254ms,./evidence/TC-WEB-1245.png,REQ-845,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1246,Dashboard,Web,Dashboard feature,Dashboard times out on after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,3085ms,./evidence/TC-WEB-1245.png,REQ-927,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1246,Camera,Web,Camera feature,Camera downloads with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,P3,Critical,2175ms,./evidence/TC-WEB-1246.png,REQ-592,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1247,Permissions,Web,Permissions feature,Permissions filters on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2691ms,./evidence/TC-WEB-1246.png,REQ-538,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1247,Education,Web,Education feature,Education blocks with cross-origin request,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,Medium,7370ms,./evidence/TC-WEB-1247.png,REQ-153,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1248,Reminder,Web,Reminder feature,Reminder blocks with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1481ms,./evidence/TC-WEB-1247.png,REQ-104,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1248,Visit,Web,Visit feature,Visit Reminder triggers with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,High,5284ms,./evidence/TC-WEB-1248.png,REQ-544,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1249,Education,Web,Education feature,Education renders during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2665ms,./evidence/TC-WEB-1248.png,REQ-352,QA-Team,REQ-VISIT,Staging
+TC-WEB-1249,Profile,Web,Profile feature,Profile downloads with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,High,6607ms,./evidence/TC-WEB-1249.png,REQ-382,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1250,Camera,Web,Camera feature,Camera blocks on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6536ms,./evidence/TC-WEB-1249.png,REQ-326,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1250,Reminder,Web,Reminder feature,Reminder submits after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Skipped,P1,Low,6564ms,./evidence/TC-WEB-1250.png,REQ-348,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1251,Assessment,Web,Assessment feature,Assessment rejects with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,5934ms,./evidence/TC-WEB-1250.png,REQ-857,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1251,Assessment,Web,Assessment feature,Assessment analyzes with special characters,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P1,Low,5739ms,./evidence/TC-WEB-1251.png,REQ-710,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1252,Permissions,Web,Permissions feature,Permissions times out on with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5349ms,./evidence/TC-WEB-1251.png,REQ-546,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1252,Reminder,Web,Reminder feature,Reminder fetches with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P2,Critical,2137ms,./evidence/TC-WEB-1252.png,REQ-261,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1253,Visit,Web,Visit feature,Visit Reminder syncs with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,2366ms,./evidence/TC-WEB-1252.png,REQ-960,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1253,Authentication,Web,Authentication feature,Authentication filters with malicious payload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Failed,P1,Medium,7725ms,./evidence/TC-WEB-1253.png,REQ-877,QA-Team,REQ-VISIT,Staging
-TC-WEB-1254,Visit,Web,Visit feature,Visit Reminder authenticates with valid PNG upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,3044ms,./evidence/TC-WEB-1253.png,REQ-237,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1254,Offline,Web,Offline feature,Offline reports when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Medium,5380ms,./evidence/TC-WEB-1254.png,REQ-257,QA-Team,REQ-VISIT,Staging
-TC-WEB-1255,Permissions,Web,Permissions feature,Permissions rejects with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,5667ms,./evidence/TC-WEB-1254.png,REQ-850,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1255,Dashboard,Web,Dashboard feature,Dashboard times out on during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Skipped,P1,High,4096ms,./evidence/TC-WEB-1255.png,REQ-338,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1256,History,Web,History feature,History syncs when API is down,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,2816ms,./evidence/TC-WEB-1255.png,REQ-998,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1256,Permissions,Web,Permissions feature,Permissions times out on after 5 minutes,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P3,Medium,6698ms,./evidence/TC-WEB-1256.png,REQ-549,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1257,Education,Web,Education feature,Education validates on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4031ms,./evidence/TC-WEB-1256.png,REQ-573,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1257,Tooth,Web,Tooth feature,Tooth Scan blocks with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,P1,Low,3034ms,./evidence/TC-WEB-1257.png,REQ-841,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1258,Assessment,Web,Assessment feature,Assessment fetches on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,3748ms,./evidence/TC-WEB-1257.png,REQ-467,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1258,Permissions,Web,Permissions feature,Permissions validates when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P2,Critical,4075ms,./evidence/TC-WEB-1258.png,REQ-823,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1259,Reminder,Web,Reminder feature,Reminder fetches with malicious payload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6446ms,./evidence/TC-WEB-1258.png,REQ-412,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1259,Permissions,Web,Permissions feature,Permissions times out on after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P3,Medium,4546ms,./evidence/TC-WEB-1259.png,REQ-813,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1260,Dashboard,Web,Dashboard feature,Dashboard blocks with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4089ms,./evidence/TC-WEB-1259.png,REQ-664,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1260,Visit,Web,Visit feature,Visit Reminder renders on cache miss,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Failed,P1,High,4553ms,./evidence/TC-WEB-1260.png,REQ-456,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1261,Offline,Web,Offline feature,Offline times out on with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,991ms,./evidence/TC-WEB-1260.png,REQ-279,QA-Team,REQ-VISIT,Staging
+TC-WEB-1261,Dashboard,Web,Dashboard feature,Dashboard blocks with bad input,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P3,Low,2355ms,./evidence/TC-WEB-1261.png,REQ-988,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1262,Notifications,Web,Notifications feature,Notifications triggers after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5388ms,./evidence/TC-WEB-1261.png,REQ-721,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1262,Authentication,Web,Authentication feature,Authentication downloads with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P3,High,664ms,./evidence/TC-WEB-1262.png,REQ-643,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1263,Camera,Web,Camera feature,Camera processes with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,771ms,./evidence/TC-WEB-1262.png,REQ-961,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1263,Visit,Web,Visit feature,Visit Reminder processes with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,P2,Medium,6812ms,./evidence/TC-WEB-1263.png,REQ-369,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1264,Offline,Web,Offline feature,Offline reports when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2398ms,./evidence/TC-WEB-1263.png,REQ-979,QA-Team,REQ-VISIT,Staging
+TC-WEB-1264,Reminder,Web,Reminder feature,Reminder renders with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Skipped,P2,Low,105ms,./evidence/TC-WEB-1264.png,REQ-894,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1265,Reminder,Web,Reminder feature,Reminder renders during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,6870ms,./evidence/TC-WEB-1264.png,REQ-243,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1265,Permissions,Web,Permissions feature,Permissions rejects with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Skipped,P2,High,7332ms,./evidence/TC-WEB-1265.png,REQ-119,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1266,Notifications,Web,Notifications feature,Notifications updates with exceedingly long string,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,7401ms,./evidence/TC-WEB-1265.png,REQ-651,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1266,Settings,Web,Settings feature,Settings rejects with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P2,High,2727ms,./evidence/TC-WEB-1266.png,REQ-838,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1267,Permissions,Web,Permissions feature,Permissions downloads when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,1709ms,./evidence/TC-WEB-1266.png,REQ-369,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1267,Reminder,Web,Reminder feature,Reminder submits when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P3,Low,1655ms,./evidence/TC-WEB-1267.png,REQ-636,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1268,Camera,Web,Camera feature,Camera filters with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,6109ms,./evidence/TC-WEB-1267.png,REQ-741,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1268,Tooth,Web,Tooth feature,Tooth Scan renders on cache miss,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Failed,P3,High,5122ms,./evidence/TC-WEB-1268.png,REQ-389,QA-Team,REQ-CAMERA,Staging
-TC-WEB-1269,Reminder,Web,Reminder feature,Reminder rejects with invalid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,726ms,./evidence/TC-WEB-1268.png,REQ-844,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1269,Assessment,Web,Assessment feature,Assessment handles with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P2,Medium,1004ms,./evidence/TC-WEB-1269.png,REQ-198,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1270,Notifications,Web,Notifications feature,Notifications loads with bad input,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,717ms,./evidence/TC-WEB-1269.png,REQ-119,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1270,Tooth,Web,Tooth feature,Tooth Scan triggers with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P3,Critical,458ms,./evidence/TC-WEB-1270.png,REQ-955,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1271,Reminder,Web,Reminder feature,Reminder loads after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,7059ms,./evidence/TC-WEB-1270.png,REQ-619,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1271,Dashboard,Web,Dashboard feature,Dashboard reports when unauthorized,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,P1,Critical,1755ms,./evidence/TC-WEB-1271.png,REQ-209,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1272,Education,Web,Education feature,Education handles with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5274ms,./evidence/TC-WEB-1271.png,REQ-131,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1272,History,Web,History feature,History loads with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P1,Critical,360ms,./evidence/TC-WEB-1272.png,REQ-684,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1273,Profile,Web,Profile feature,Profile syncs with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,6757ms,./evidence/TC-WEB-1272.png,REQ-695,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1273,Profile,Web,Profile feature,Profile times out on on cache miss,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P3,Low,4407ms,./evidence/TC-WEB-1273.png,REQ-738,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1274,Profile,Web,Profile feature,Profile filters when API is down,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,4842ms,./evidence/TC-WEB-1273.png,REQ-514,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1274,Permissions,Web,Permissions feature,Permissions times out on with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P2,Critical,3101ms,./evidence/TC-WEB-1274.png,REQ-326,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1275,Education,Web,Education feature,Education updates with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6401ms,./evidence/TC-WEB-1274.png,REQ-704,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1275,Visit,Web,Visit feature,Visit Reminder blocks with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Skipped,P3,Critical,207ms,./evidence/TC-WEB-1275.png,REQ-313,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1276,Reminder,Web,Reminder feature,Reminder loads when database is locked,System is operational,"1. Setup context
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,1842ms,./evidence/TC-WEB-1275.png,REQ-137,QA-Team,REQ-VISIT,Staging
+TC-WEB-1276,Tooth,Web,Tooth feature,Tooth Scan filters when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Failed,P1,Low,6661ms,./evidence/TC-WEB-1276.png,REQ-754,QA-Team,REQ-REMINDER,Staging
-TC-WEB-1277,Visit,Web,Visit feature,Visit Reminder authenticates during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,4618ms,./evidence/TC-WEB-1276.png,REQ-366,QA-Team,REQ-TOOTH,Staging
+TC-WEB-1277,Dashboard,Web,Dashboard feature,Dashboard rejects with empty array response,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P2,Low,6834ms,./evidence/TC-WEB-1277.png,REQ-477,QA-Team,REQ-VISIT,Staging
-TC-WEB-1278,Settings,Web,Settings feature,Settings submits after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,4552ms,./evidence/TC-WEB-1277.png,REQ-652,QA-Team,REQ-DASHBOARD,Staging
+TC-WEB-1278,Authentication,Web,Authentication feature,Authentication blocks during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,P3,Medium,4433ms,./evidence/TC-WEB-1278.png,REQ-141,QA-Team,REQ-SETTINGS,Staging
-TC-WEB-1279,Permissions,Web,Permissions feature,Permissions validates when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,3967ms,./evidence/TC-WEB-1278.png,REQ-769,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1279,Offline,Web,Offline feature,Offline renders with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P2,Critical,7838ms,./evidence/TC-WEB-1279.png,REQ-321,QA-Team,REQ-PERMISSIONS,Staging
-TC-WEB-1280,Assessment,Web,Assessment feature,Assessment downloads with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,6450ms,./evidence/TC-WEB-1279.png,REQ-252,QA-Team,REQ-OFFLINE,Staging
+TC-WEB-1280,Assessment,Web,Assessment feature,Assessment times out on after session timeout,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Skipped,P1,Critical,6040ms,./evidence/TC-WEB-1280.png,REQ-336,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1281,Tooth,Web,Tooth feature,Tooth Scan handles with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,3096ms,./evidence/TC-WEB-1280.png,REQ-501,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1281,Education,Web,Education feature,Education rejects with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Skipped,P2,High,1682ms,./evidence/TC-WEB-1281.png,REQ-638,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1282,Offline,Web,Offline feature,Offline downloads with special characters,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1929ms,./evidence/TC-WEB-1281.png,REQ-890,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1282,Assessment,Web,Assessment feature,Assessment renders during maintenance,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P3,High,4674ms,./evidence/TC-WEB-1282.png,REQ-867,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1283,Notifications,Web,Notifications feature,Notifications validates during high traffic,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,4930ms,./evidence/TC-WEB-1282.png,REQ-850,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1283,History,Web,History feature,History downloads with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Skipped,P2,Critical,6377ms,./evidence/TC-WEB-1283.png,REQ-753,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1284,Profile,Web,Profile feature,Profile updates with invalid PDF upload,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,7121ms,./evidence/TC-WEB-1283.png,REQ-397,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1284,Profile,Web,Profile feature,Profile renders on browser resize,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P2,Low,5855ms,./evidence/TC-WEB-1284.png,REQ-781,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1285,Tooth,Web,Tooth feature,Tooth Scan blocks with empty array response,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,1196ms,./evidence/TC-WEB-1284.png,REQ-575,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1285,Education,Web,Education feature,Education analyzes with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Failed,P1,High,6591ms,./evidence/TC-WEB-1285.png,REQ-284,QA-Team,REQ-TOOTH,Staging
-TC-WEB-1286,Profile,Web,Profile feature,Profile processes on cache miss,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,4205ms,./evidence/TC-WEB-1285.png,REQ-622,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1286,Profile,Web,Profile feature,Profile triggers with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Skipped,P2,Medium,5486ms,./evidence/TC-WEB-1286.png,REQ-261,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1287,Dashboard,Web,Dashboard feature,Dashboard authenticates during maintenance,System is operational,"1. Setup context
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,841ms,./evidence/TC-WEB-1286.png,REQ-506,QA-Team,REQ-PROFILE,Staging
+TC-WEB-1287,Camera,Web,Camera feature,Camera blocks with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P3,Low,7747ms,./evidence/TC-WEB-1287.png,REQ-460,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1288,Notifications,Web,Notifications feature,Notifications filters with valid credentials,System is operational,"1. Setup context
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,3080ms,./evidence/TC-WEB-1287.png,REQ-614,QA-Team,REQ-CAMERA,Staging
+TC-WEB-1288,Permissions,Web,Permissions feature,Permissions processes with valid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P3,Medium,7021ms,./evidence/TC-WEB-1288.png,REQ-480,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1289,Authentication,Web,Authentication feature,Authentication triggers with cross-origin request,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,186ms,./evidence/TC-WEB-1288.png,REQ-778,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1289,Settings,Web,Settings feature,Settings times out on with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Failed,P3,Low,6867ms,./evidence/TC-WEB-1289.png,REQ-843,QA-Team,REQ-AUTHENTICATION,Staging
-TC-WEB-1290,History,Web,History feature,History loads after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,2056ms,./evidence/TC-WEB-1289.png,REQ-968,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1290,Settings,Web,Settings feature,Settings triggers with invalid credentials,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,P3,High,4713ms,./evidence/TC-WEB-1290.png,REQ-658,QA-Team,REQ-HISTORY,Staging
-TC-WEB-1291,Offline,Web,Offline feature,Offline renders when unauthorized,System is operational,"1. Setup context
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,7997ms,./evidence/TC-WEB-1290.png,REQ-925,QA-Team,REQ-SETTINGS,Staging
+TC-WEB-1291,Assessment,Web,Assessment feature,Assessment downloads when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,P2,Medium,3049ms,./evidence/TC-WEB-1291.png,REQ-563,QA-Team,REQ-OFFLINE,Staging
-TC-WEB-1292,Education,Web,Education feature,Education reports with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5130ms,./evidence/TC-WEB-1291.png,REQ-800,QA-Team,REQ-ASSESSMENT,Staging
+TC-WEB-1292,Notifications,Web,Notifications feature,Notifications updates with exceedingly long string,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Education behaves correctly,Matches expected,Failed,P2,Critical,6049ms,./evidence/TC-WEB-1292.png,REQ-135,QA-Team,REQ-EDUCATION,Staging
-TC-WEB-1293,Assessment,Web,Assessment feature,Assessment submits on slow connection,System is operational,"1. Setup context
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,1458ms,./evidence/TC-WEB-1292.png,REQ-875,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-WEB-1293,Authentication,Web,Authentication feature,Authentication times out on during high traffic,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,P3,Critical,4340ms,./evidence/TC-WEB-1293.png,REQ-238,QA-Team,REQ-ASSESSMENT,Staging
-TC-WEB-1294,Notifications,Web,Notifications feature,Notifications loads after 5 minutes,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,4311ms,./evidence/TC-WEB-1293.png,REQ-243,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1294,Authentication,Web,Authentication feature,Authentication times out on with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,P1,Medium,1917ms,./evidence/TC-WEB-1294.png,REQ-319,QA-Team,REQ-NOTIFICATIONS,Staging
-TC-WEB-1295,Visit,Web,Visit feature,Visit Reminder submits on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,3755ms,./evidence/TC-WEB-1294.png,REQ-263,QA-Team,REQ-AUTHENTICATION,Staging
+TC-WEB-1295,Reminder,Web,Reminder feature,Reminder blocks with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P1,Medium,7629ms,./evidence/TC-WEB-1295.png,REQ-666,QA-Team,REQ-VISIT,Staging
-TC-WEB-1296,Dashboard,Web,Dashboard feature,Dashboard authenticates after session timeout,System is operational,"1. Setup context
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,1567ms,./evidence/TC-WEB-1295.png,REQ-679,QA-Team,REQ-REMINDER,Staging
+TC-WEB-1296,Permissions,Web,Permissions feature,Permissions triggers when database is locked,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Skipped,P3,High,872ms,./evidence/TC-WEB-1296.png,REQ-138,QA-Team,REQ-DASHBOARD,Staging
-TC-WEB-1297,Profile,Web,Profile feature,Profile processes with missing fields,System is operational,"1. Setup context
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,7871ms,./evidence/TC-WEB-1296.png,REQ-679,QA-Team,REQ-PERMISSIONS,Staging
+TC-WEB-1297,Education,Web,Education feature,Education loads with valid PNG upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Failed,P2,High,1233ms,./evidence/TC-WEB-1297.png,REQ-371,QA-Team,REQ-PROFILE,Staging
-TC-WEB-1298,Visit,Web,Visit feature,Visit Reminder syncs on browser resize,System is operational,"1. Setup context
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,5501ms,./evidence/TC-WEB-1297.png,REQ-993,QA-Team,REQ-EDUCATION,Staging
+TC-WEB-1298,History,Web,History feature,History downloads with invalid PDF upload,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,P3,High,2008ms,./evidence/TC-WEB-1298.png,REQ-362,QA-Team,REQ-VISIT,Staging
-TC-WEB-1299,Permissions,Web,Permissions feature,Permissions submits with expired token,System is operational,"1. Setup context
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,1297ms,./evidence/TC-WEB-1298.png,REQ-853,QA-Team,REQ-HISTORY,Staging
+TC-WEB-1299,Profile,Web,Profile feature,Profile validates with missing fields,System is operational,"1. Setup context
 2. Execute action
-3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,P1,Low,4761ms,./evidence/TC-WEB-1299.png,REQ-322,QA-Team,REQ-PERMISSIONS,Staging
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6096ms,./evidence/TC-WEB-1299.png,REQ-595,QA-Team,REQ-PROFILE,Staging

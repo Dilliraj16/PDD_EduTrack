@@ -97,11 +97,11 @@ assert len(set(load_titles)) == 300
 assert len(set(security_titles)) == 300
 
 # Generate standard priority distributions
-write_report("Selenium_Web_Test_Report_v2.csv", selenium_titles, "Web", ["P1", "P2", "P3"], ["Student", "Faculty"])
-write_report("Appium_Android_Test_Report_v2.csv", appium_titles, "Mobile", ["P1", "P2"], ["Student", "Parent"])
-write_report("API_Integration_Test_Report_v2.csv", api_titles, "API", ["P0", "P1"], ["Admin"])
-write_report("Performance_Load_Test_Report_v2.csv", load_titles, "Load", ["P0", "P1"], ["System"])
-write_report("Security_Assessment_Report_v2.csv", security_titles, "Security", ["P0"], ["Auditor"])
+write_report("Selenium_Web_Test_Report.csv", selenium_titles, "Web", ["P1", "P2", "P3"], ["Student", "Faculty"])
+write_report("Appium_Android_Test_Report.csv", appium_titles, "Mobile", ["P1", "P2"], ["Student", "Parent"])
+write_report("API_Integration_Test_Report.csv", api_titles, "API", ["P0", "P1"], ["Admin"])
+write_report("Performance_Load_Test_Report.csv", load_titles, "Load", ["P0", "P1"], ["System"])
+write_report("Security_Assessment_Report.csv", security_titles, "Security", ["P0"], ["Auditor"])
 
 # Validation Script
 with open(os.path.join(BASE_DIR, "verify_quality.py"), "w") as f:
