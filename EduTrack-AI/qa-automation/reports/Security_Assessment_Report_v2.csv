@@ -1,0 +1,901 @@
+Test Case ID,Module,Suite,Feature,Test Title,Preconditions,Steps,Input,Expected Result,Actual Result,Execution Status,Priority,Severity,Execution Time,Evidence,Traceability,Owner,Requirement ID,Environment
+TC-SECURITY-1000,Permissions,Security,Permissions feature,Permissions audit covering NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4349ms,./evidence/TC-SECURITY-1000.png,REQ-650,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1001,Reminder,Security,Reminder feature,Reminder resilience against business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,3340ms,./evidence/TC-SECURITY-1001.png,REQ-852,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1002,Permissions,Security,Permissions feature,Permissions resilience against unvalidated redirect,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,421ms,./evidence/TC-SECURITY-1002.png,REQ-671,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1003,Education,Security,Education feature,Education audit covering XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,3273ms,./evidence/TC-SECURITY-1003.png,REQ-628,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1004,Education,Security,Education feature,Education audit covering XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,6368ms,./evidence/TC-SECURITY-1004.png,REQ-745,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1005,Education,Security,Education feature,Education resilience against JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,7985ms,./evidence/TC-SECURITY-1005.png,REQ-150,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1006,Education,Security,Education feature,Education audit covering rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1655ms,./evidence/TC-SECURITY-1006.png,REQ-398,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1007,History,Security,History feature,History vulnerability check for graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3700ms,./evidence/TC-SECURITY-1007.png,REQ-507,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1008,History,Security,History feature,History vulnerability check for secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,7344ms,./evidence/TC-SECURITY-1008.png,REQ-411,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1009,Visit,Security,Visit feature,Visit Reminder vulnerability check for XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,6437ms,./evidence/TC-SECURITY-1009.png,REQ-947,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1010,Permissions,Security,Permissions feature,Permissions vulnerability check for HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,2442ms,./evidence/TC-SECURITY-1010.png,REQ-572,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1011,Profile,Security,Profile feature,Profile vulnerability check for JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,1463ms,./evidence/TC-SECURITY-1011.png,REQ-532,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1012,Offline,Security,Offline feature,Offline audit covering stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2511ms,./evidence/TC-SECURITY-1012.png,REQ-727,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1013,Assessment,Security,Assessment feature,Assessment resilience against IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,7628ms,./evidence/TC-SECURITY-1013.png,REQ-155,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1014,Permissions,Security,Permissions feature,Permissions resilience against NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5752ms,./evidence/TC-SECURITY-1014.png,REQ-629,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1015,Settings,Security,Settings feature,Settings vulnerability check for privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,7502ms,./evidence/TC-SECURITY-1015.png,REQ-245,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1016,Dashboard,Security,Dashboard feature,Dashboard resilience against CORS misconfiguration,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,3897ms,./evidence/TC-SECURITY-1016.png,REQ-949,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1017,Permissions,Security,Permissions feature,Permissions vulnerability check for missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5392ms,./evidence/TC-SECURITY-1017.png,REQ-562,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1018,Camera,Security,Camera feature,Camera audit covering NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,840ms,./evidence/TC-SECURITY-1018.png,REQ-839,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1019,Offline,Security,Offline feature,Offline vulnerability check for rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,4201ms,./evidence/TC-SECURITY-1019.png,REQ-215,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1020,Notifications,Security,Notifications feature,Notifications audit covering XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,1572ms,./evidence/TC-SECURITY-1020.png,REQ-897,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1021,Reminder,Security,Reminder feature,Reminder resilience against secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,4895ms,./evidence/TC-SECURITY-1021.png,REQ-812,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1022,Permissions,Security,Permissions feature,Permissions audit covering brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4576ms,./evidence/TC-SECURITY-1022.png,REQ-238,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1023,Authentication,Security,Authentication feature,Authentication audit covering SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,3320ms,./evidence/TC-SECURITY-1023.png,REQ-523,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1024,Profile,Security,Profile feature,Profile resilience against XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,2749ms,./evidence/TC-SECURITY-1024.png,REQ-561,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1025,Settings,Security,Settings feature,Settings vulnerability check for HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,304ms,./evidence/TC-SECURITY-1025.png,REQ-283,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1026,Permissions,Security,Permissions feature,Permissions vulnerability check for graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3816ms,./evidence/TC-SECURITY-1026.png,REQ-704,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1027,Reminder,Security,Reminder feature,Reminder resilience against XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,7445ms,./evidence/TC-SECURITY-1027.png,REQ-829,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1028,Tooth,Security,Tooth feature,Tooth Scan audit covering missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,7438ms,./evidence/TC-SECURITY-1028.png,REQ-306,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1029,Dashboard,Security,Dashboard feature,Dashboard resilience against rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7329ms,./evidence/TC-SECURITY-1029.png,REQ-565,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1030,Reminder,Security,Reminder feature,Reminder vulnerability check for brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,838ms,./evidence/TC-SECURITY-1030.png,REQ-356,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1031,Tooth,Security,Tooth feature,Tooth Scan vulnerability check for brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,2754ms,./evidence/TC-SECURITY-1031.png,REQ-808,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1032,Permissions,Security,Permissions feature,Permissions resilience against path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5413ms,./evidence/TC-SECURITY-1032.png,REQ-828,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1033,Profile,Security,Profile feature,Profile resilience against unvalidated redirect,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6624ms,./evidence/TC-SECURITY-1033.png,REQ-267,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1034,Profile,Security,Profile feature,Profile resilience against HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,5984ms,./evidence/TC-SECURITY-1034.png,REQ-850,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1035,Profile,Security,Profile feature,Profile vulnerability check for missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,1112ms,./evidence/TC-SECURITY-1035.png,REQ-193,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1036,Dashboard,Security,Dashboard feature,Dashboard audit covering SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,1035ms,./evidence/TC-SECURITY-1036.png,REQ-823,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1037,History,Security,History feature,History resilience against stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3781ms,./evidence/TC-SECURITY-1037.png,REQ-749,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1038,Dashboard,Security,Dashboard feature,Dashboard vulnerability check for graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,3073ms,./evidence/TC-SECURITY-1038.png,REQ-187,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1039,Camera,Security,Camera feature,Camera vulnerability check for timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,4391ms,./evidence/TC-SECURITY-1039.png,REQ-824,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1040,Camera,Security,Camera feature,Camera audit covering CSRF token bypass,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,3246ms,./evidence/TC-SECURITY-1040.png,REQ-844,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1041,Settings,Security,Settings feature,Settings vulnerability check for timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6580ms,./evidence/TC-SECURITY-1041.png,REQ-623,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1042,Reminder,Security,Reminder feature,Reminder vulnerability check for JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,5114ms,./evidence/TC-SECURITY-1042.png,REQ-263,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1043,Assessment,Security,Assessment feature,Assessment resilience against timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,3202ms,./evidence/TC-SECURITY-1043.png,REQ-663,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1044,Notifications,Security,Notifications feature,Notifications audit covering path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3217ms,./evidence/TC-SECURITY-1044.png,REQ-144,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1045,Tooth,Security,Tooth feature,Tooth Scan audit covering SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,6393ms,./evidence/TC-SECURITY-1045.png,REQ-274,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1046,Profile,Security,Profile feature,Profile vulnerability check for unvalidated redirect,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,7573ms,./evidence/TC-SECURITY-1046.png,REQ-443,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1047,Notifications,Security,Notifications feature,Notifications vulnerability check for insecure direct object reference,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,4732ms,./evidence/TC-SECURITY-1047.png,REQ-992,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1048,Offline,Security,Offline feature,Offline vulnerability check for XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,5502ms,./evidence/TC-SECURITY-1048.png,REQ-983,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1049,Settings,Security,Settings feature,Settings audit covering missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,1329ms,./evidence/TC-SECURITY-1049.png,REQ-266,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1050,Camera,Security,Camera feature,Camera vulnerability check for JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,7217ms,./evidence/TC-SECURITY-1050.png,REQ-248,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1051,Notifications,Security,Notifications feature,Notifications vulnerability check for missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,1565ms,./evidence/TC-SECURITY-1051.png,REQ-887,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1052,Camera,Security,Camera feature,Camera resilience against XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,5933ms,./evidence/TC-SECURITY-1052.png,REQ-152,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1053,Notifications,Security,Notifications feature,Notifications vulnerability check for XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3537ms,./evidence/TC-SECURITY-1053.png,REQ-415,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1054,Notifications,Security,Notifications feature,Notifications vulnerability check for rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2635ms,./evidence/TC-SECURITY-1054.png,REQ-847,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1055,Dashboard,Security,Dashboard feature,Dashboard audit covering business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,6396ms,./evidence/TC-SECURITY-1055.png,REQ-556,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1056,Tooth,Security,Tooth feature,Tooth Scan resilience against privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,2465ms,./evidence/TC-SECURITY-1056.png,REQ-741,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1057,History,Security,History feature,History audit covering timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,1580ms,./evidence/TC-SECURITY-1057.png,REQ-220,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1058,Dashboard,Security,Dashboard feature,Dashboard resilience against stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7460ms,./evidence/TC-SECURITY-1058.png,REQ-234,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1059,Offline,Security,Offline feature,Offline audit covering timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,7967ms,./evidence/TC-SECURITY-1059.png,REQ-307,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1060,Reminder,Security,Reminder feature,Reminder resilience against stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,128ms,./evidence/TC-SECURITY-1060.png,REQ-737,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1061,History,Security,History feature,History audit covering CSRF token bypass,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,6370ms,./evidence/TC-SECURITY-1061.png,REQ-359,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1062,Permissions,Security,Permissions feature,Permissions resilience against graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,200ms,./evidence/TC-SECURITY-1062.png,REQ-569,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1063,Dashboard,Security,Dashboard feature,Dashboard vulnerability check for rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,4176ms,./evidence/TC-SECURITY-1063.png,REQ-975,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1064,Settings,Security,Settings feature,Settings resilience against privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,4184ms,./evidence/TC-SECURITY-1064.png,REQ-656,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1065,History,Security,History feature,History resilience against insecure direct object reference,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,6714ms,./evidence/TC-SECURITY-1065.png,REQ-105,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1066,Camera,Security,Camera feature,Camera resilience against path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,5080ms,./evidence/TC-SECURITY-1066.png,REQ-605,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1067,Settings,Security,Settings feature,Settings vulnerability check for stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,2048ms,./evidence/TC-SECURITY-1067.png,REQ-322,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1068,Permissions,Security,Permissions feature,Permissions audit covering business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4923ms,./evidence/TC-SECURITY-1068.png,REQ-775,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1069,History,Security,History feature,History audit covering brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3997ms,./evidence/TC-SECURITY-1069.png,REQ-564,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1070,Tooth,Security,Tooth feature,Tooth Scan vulnerability check for SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,3459ms,./evidence/TC-SECURITY-1070.png,REQ-552,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1071,History,Security,History feature,History resilience against HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,750ms,./evidence/TC-SECURITY-1071.png,REQ-715,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1072,Visit,Security,Visit feature,Visit Reminder audit covering stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,5016ms,./evidence/TC-SECURITY-1072.png,REQ-106,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1073,Permissions,Security,Permissions feature,Permissions resilience against HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,2104ms,./evidence/TC-SECURITY-1073.png,REQ-660,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1074,Education,Security,Education feature,Education audit covering path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,2378ms,./evidence/TC-SECURITY-1074.png,REQ-734,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1075,Dashboard,Security,Dashboard feature,Dashboard vulnerability check for path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5249ms,./evidence/TC-SECURITY-1075.png,REQ-670,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1076,Settings,Security,Settings feature,Settings vulnerability check for CSRF token bypass,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6818ms,./evidence/TC-SECURITY-1076.png,REQ-945,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1077,Education,Security,Education feature,Education resilience against path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1800ms,./evidence/TC-SECURITY-1077.png,REQ-150,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1078,Visit,Security,Visit feature,Visit Reminder resilience against missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,1614ms,./evidence/TC-SECURITY-1078.png,REQ-251,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1079,Camera,Security,Camera feature,Camera audit covering XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,551ms,./evidence/TC-SECURITY-1079.png,REQ-768,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1080,Education,Security,Education feature,Education resilience against HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,2959ms,./evidence/TC-SECURITY-1080.png,REQ-137,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1081,Visit,Security,Visit feature,Visit Reminder vulnerability check for CORS misconfiguration,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,1290ms,./evidence/TC-SECURITY-1081.png,REQ-974,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1082,Notifications,Security,Notifications feature,Notifications audit covering NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,365ms,./evidence/TC-SECURITY-1082.png,REQ-783,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1083,Assessment,Security,Assessment feature,Assessment audit covering privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,4835ms,./evidence/TC-SECURITY-1083.png,REQ-958,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1084,Offline,Security,Offline feature,Offline resilience against timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,5042ms,./evidence/TC-SECURITY-1084.png,REQ-405,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1085,Profile,Security,Profile feature,Profile resilience against stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,2812ms,./evidence/TC-SECURITY-1085.png,REQ-189,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1086,Assessment,Security,Assessment feature,Assessment resilience against graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,501ms,./evidence/TC-SECURITY-1086.png,REQ-211,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1087,Offline,Security,Offline feature,Offline resilience against insecure direct object reference,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,3515ms,./evidence/TC-SECURITY-1087.png,REQ-282,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1088,Authentication,Security,Authentication feature,Authentication resilience against SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,1421ms,./evidence/TC-SECURITY-1088.png,REQ-788,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1089,Visit,Security,Visit feature,Visit Reminder audit covering CSRF token bypass,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2429ms,./evidence/TC-SECURITY-1089.png,REQ-725,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1090,Assessment,Security,Assessment feature,Assessment audit covering SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5514ms,./evidence/TC-SECURITY-1090.png,REQ-808,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1091,Notifications,Security,Notifications feature,Notifications audit covering IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,5833ms,./evidence/TC-SECURITY-1091.png,REQ-709,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1092,Reminder,Security,Reminder feature,Reminder vulnerability check for NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,4788ms,./evidence/TC-SECURITY-1092.png,REQ-906,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1093,Authentication,Security,Authentication feature,Authentication vulnerability check for privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,4705ms,./evidence/TC-SECURITY-1093.png,REQ-281,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1094,History,Security,History feature,History vulnerability check for rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3830ms,./evidence/TC-SECURITY-1094.png,REQ-867,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1095,Permissions,Security,Permissions feature,Permissions vulnerability check for XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,4842ms,./evidence/TC-SECURITY-1095.png,REQ-468,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1096,Notifications,Security,Notifications feature,Notifications vulnerability check for unvalidated redirect,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,7730ms,./evidence/TC-SECURITY-1096.png,REQ-136,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1097,Settings,Security,Settings feature,Settings vulnerability check for business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,862ms,./evidence/TC-SECURITY-1097.png,REQ-886,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1098,Permissions,Security,Permissions feature,Permissions vulnerability check for brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,2551ms,./evidence/TC-SECURITY-1098.png,REQ-430,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1099,Offline,Security,Offline feature,Offline vulnerability check for business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,3119ms,./evidence/TC-SECURITY-1099.png,REQ-488,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1100,Education,Security,Education feature,Education audit covering stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,6819ms,./evidence/TC-SECURITY-1100.png,REQ-169,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1101,Profile,Security,Profile feature,Profile resilience against SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6313ms,./evidence/TC-SECURITY-1101.png,REQ-537,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1102,Authentication,Security,Authentication feature,Authentication vulnerability check for HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7008ms,./evidence/TC-SECURITY-1102.png,REQ-663,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1103,Authentication,Security,Authentication feature,Authentication vulnerability check for graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,631ms,./evidence/TC-SECURITY-1103.png,REQ-399,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1104,Camera,Security,Camera feature,Camera audit covering path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,3956ms,./evidence/TC-SECURITY-1104.png,REQ-237,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1105,Profile,Security,Profile feature,Profile resilience against timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,1099ms,./evidence/TC-SECURITY-1105.png,REQ-811,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1106,Dashboard,Security,Dashboard feature,Dashboard resilience against XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7140ms,./evidence/TC-SECURITY-1106.png,REQ-381,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1107,Education,Security,Education feature,Education vulnerability check for graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,2796ms,./evidence/TC-SECURITY-1107.png,REQ-639,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1108,Permissions,Security,Permissions feature,Permissions audit covering JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3489ms,./evidence/TC-SECURITY-1108.png,REQ-637,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1109,Profile,Security,Profile feature,Profile vulnerability check for XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,1819ms,./evidence/TC-SECURITY-1109.png,REQ-812,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1110,Education,Security,Education feature,Education audit covering SSRF on webhook URL,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1812ms,./evidence/TC-SECURITY-1110.png,REQ-726,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1111,Tooth,Security,Tooth feature,Tooth Scan resilience against IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,576ms,./evidence/TC-SECURITY-1111.png,REQ-211,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1112,Authentication,Security,Authentication feature,Authentication audit covering IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,4780ms,./evidence/TC-SECURITY-1112.png,REQ-847,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1113,Assessment,Security,Assessment feature,Assessment resilience against JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5252ms,./evidence/TC-SECURITY-1113.png,REQ-641,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1114,Tooth,Security,Tooth feature,Tooth Scan vulnerability check for timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,818ms,./evidence/TC-SECURITY-1114.png,REQ-595,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1115,Camera,Security,Camera feature,Camera resilience against IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,6031ms,./evidence/TC-SECURITY-1115.png,REQ-805,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1116,Settings,Security,Settings feature,Settings resilience against NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,5054ms,./evidence/TC-SECURITY-1116.png,REQ-907,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1117,Assessment,Security,Assessment feature,Assessment resilience against HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5890ms,./evidence/TC-SECURITY-1117.png,REQ-394,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1118,History,Security,History feature,History resilience against XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3598ms,./evidence/TC-SECURITY-1118.png,REQ-723,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1119,Camera,Security,Camera feature,Camera audit covering IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,7045ms,./evidence/TC-SECURITY-1119.png,REQ-424,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1120,Profile,Security,Profile feature,Profile audit covering JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,2227ms,./evidence/TC-SECURITY-1120.png,REQ-638,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1121,Visit,Security,Visit feature,Visit Reminder audit covering secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,4811ms,./evidence/TC-SECURITY-1121.png,REQ-738,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1122,Notifications,Security,Notifications feature,Notifications audit covering JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2998ms,./evidence/TC-SECURITY-1122.png,REQ-232,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1123,Settings,Security,Settings feature,Settings vulnerability check for brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,5132ms,./evidence/TC-SECURITY-1123.png,REQ-676,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1124,Reminder,Security,Reminder feature,Reminder vulnerability check for stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,4166ms,./evidence/TC-SECURITY-1124.png,REQ-632,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1125,Offline,Security,Offline feature,Offline resilience against missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,6073ms,./evidence/TC-SECURITY-1125.png,REQ-747,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1126,Assessment,Security,Assessment feature,Assessment resilience against brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,4177ms,./evidence/TC-SECURITY-1126.png,REQ-604,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1127,Assessment,Security,Assessment feature,Assessment vulnerability check for graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,6718ms,./evidence/TC-SECURITY-1127.png,REQ-284,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1128,Notifications,Security,Notifications feature,Notifications audit covering SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,7338ms,./evidence/TC-SECURITY-1128.png,REQ-724,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1129,Camera,Security,Camera feature,Camera vulnerability check for rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2006ms,./evidence/TC-SECURITY-1129.png,REQ-825,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1130,Visit,Security,Visit feature,Visit Reminder vulnerability check for JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2479ms,./evidence/TC-SECURITY-1130.png,REQ-298,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1131,Assessment,Security,Assessment feature,Assessment audit covering XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,112ms,./evidence/TC-SECURITY-1131.png,REQ-221,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1132,Education,Security,Education feature,Education resilience against brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,296ms,./evidence/TC-SECURITY-1132.png,REQ-576,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1133,Tooth,Security,Tooth feature,Tooth Scan resilience against path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,5223ms,./evidence/TC-SECURITY-1133.png,REQ-915,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1134,Education,Security,Education feature,Education audit covering CSRF token bypass,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,1066ms,./evidence/TC-SECURITY-1134.png,REQ-855,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1135,Reminder,Security,Reminder feature,Reminder resilience against HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,7047ms,./evidence/TC-SECURITY-1135.png,REQ-312,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1136,Reminder,Security,Reminder feature,Reminder audit covering unvalidated redirect,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,6650ms,./evidence/TC-SECURITY-1136.png,REQ-730,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1137,Dashboard,Security,Dashboard feature,Dashboard audit covering XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,3496ms,./evidence/TC-SECURITY-1137.png,REQ-523,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1138,Authentication,Security,Authentication feature,Authentication resilience against XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,472ms,./evidence/TC-SECURITY-1138.png,REQ-441,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1139,Offline,Security,Offline feature,Offline audit covering NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2964ms,./evidence/TC-SECURITY-1139.png,REQ-673,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1140,Assessment,Security,Assessment feature,Assessment resilience against business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,6703ms,./evidence/TC-SECURITY-1140.png,REQ-752,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1141,Dashboard,Security,Dashboard feature,Dashboard vulnerability check for JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,1839ms,./evidence/TC-SECURITY-1141.png,REQ-111,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1142,Permissions,Security,Permissions feature,Permissions resilience against rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,5347ms,./evidence/TC-SECURITY-1142.png,REQ-306,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1143,History,Security,History feature,History resilience against business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,5752ms,./evidence/TC-SECURITY-1143.png,REQ-388,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1144,Dashboard,Security,Dashboard feature,Dashboard resilience against brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,2184ms,./evidence/TC-SECURITY-1144.png,REQ-909,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1145,Offline,Security,Offline feature,Offline audit covering XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,655ms,./evidence/TC-SECURITY-1145.png,REQ-415,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1146,Settings,Security,Settings feature,Settings resilience against HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,2559ms,./evidence/TC-SECURITY-1146.png,REQ-618,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1147,Settings,Security,Settings feature,Settings resilience against SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,4605ms,./evidence/TC-SECURITY-1147.png,REQ-431,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1148,Authentication,Security,Authentication feature,Authentication audit covering secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,6383ms,./evidence/TC-SECURITY-1148.png,REQ-106,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1149,Notifications,Security,Notifications feature,Notifications resilience against timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,1032ms,./evidence/TC-SECURITY-1149.png,REQ-802,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1150,Reminder,Security,Reminder feature,Reminder vulnerability check for IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,2830ms,./evidence/TC-SECURITY-1150.png,REQ-449,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1151,Authentication,Security,Authentication feature,Authentication vulnerability check for brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,3344ms,./evidence/TC-SECURITY-1151.png,REQ-841,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1152,Reminder,Security,Reminder feature,Reminder vulnerability check for XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,4760ms,./evidence/TC-SECURITY-1152.png,REQ-730,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1153,Reminder,Security,Reminder feature,Reminder audit covering insecure direct object reference,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,7965ms,./evidence/TC-SECURITY-1153.png,REQ-129,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1154,Dashboard,Security,Dashboard feature,Dashboard resilience against SSRF on webhook URL,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,6916ms,./evidence/TC-SECURITY-1154.png,REQ-279,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1155,History,Security,History feature,History audit covering privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,1689ms,./evidence/TC-SECURITY-1155.png,REQ-438,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1156,History,Security,History feature,History vulnerability check for missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,6930ms,./evidence/TC-SECURITY-1156.png,REQ-446,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1157,Authentication,Security,Authentication feature,Authentication audit covering SSRF on webhook URL,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7655ms,./evidence/TC-SECURITY-1157.png,REQ-788,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1158,Notifications,Security,Notifications feature,Notifications audit covering brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,4024ms,./evidence/TC-SECURITY-1158.png,REQ-585,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1159,Settings,Security,Settings feature,Settings audit covering path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6631ms,./evidence/TC-SECURITY-1159.png,REQ-136,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1160,Camera,Security,Camera feature,Camera audit covering secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,5389ms,./evidence/TC-SECURITY-1160.png,REQ-239,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1161,Dashboard,Security,Dashboard feature,Dashboard resilience against path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,4044ms,./evidence/TC-SECURITY-1161.png,REQ-259,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1162,Settings,Security,Settings feature,Settings audit covering business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,5238ms,./evidence/TC-SECURITY-1162.png,REQ-571,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1163,Tooth,Security,Tooth feature,Tooth Scan audit covering NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,7407ms,./evidence/TC-SECURITY-1163.png,REQ-985,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1164,Reminder,Security,Reminder feature,Reminder audit covering stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,4498ms,./evidence/TC-SECURITY-1164.png,REQ-443,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1165,Visit,Security,Visit feature,Visit Reminder vulnerability check for IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,3888ms,./evidence/TC-SECURITY-1165.png,REQ-902,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1166,Permissions,Security,Permissions feature,Permissions audit covering secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6769ms,./evidence/TC-SECURITY-1166.png,REQ-523,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1167,Camera,Security,Camera feature,Camera vulnerability check for insecure direct object reference,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,7700ms,./evidence/TC-SECURITY-1167.png,REQ-860,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1168,Education,Security,Education feature,Education vulnerability check for brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,558ms,./evidence/TC-SECURITY-1168.png,REQ-955,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1169,Dashboard,Security,Dashboard feature,Dashboard vulnerability check for XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,4368ms,./evidence/TC-SECURITY-1169.png,REQ-406,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1170,Assessment,Security,Assessment feature,Assessment resilience against XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,4728ms,./evidence/TC-SECURITY-1170.png,REQ-842,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1171,Assessment,Security,Assessment feature,Assessment audit covering unvalidated redirect,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,5655ms,./evidence/TC-SECURITY-1171.png,REQ-423,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1172,Dashboard,Security,Dashboard feature,Dashboard audit covering privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,4648ms,./evidence/TC-SECURITY-1172.png,REQ-648,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1173,Camera,Security,Camera feature,Camera resilience against rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,253ms,./evidence/TC-SECURITY-1173.png,REQ-313,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1174,Settings,Security,Settings feature,Settings vulnerability check for missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,4830ms,./evidence/TC-SECURITY-1174.png,REQ-801,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1175,Settings,Security,Settings feature,Settings resilience against JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,2817ms,./evidence/TC-SECURITY-1175.png,REQ-918,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1176,Dashboard,Security,Dashboard feature,Dashboard resilience against NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,7605ms,./evidence/TC-SECURITY-1176.png,REQ-914,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1177,Notifications,Security,Notifications feature,Notifications vulnerability check for CSRF token bypass,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,2996ms,./evidence/TC-SECURITY-1177.png,REQ-167,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1178,Permissions,Security,Permissions feature,Permissions vulnerability check for JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,1323ms,./evidence/TC-SECURITY-1178.png,REQ-387,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1179,Camera,Security,Camera feature,Camera resilience against business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,6987ms,./evidence/TC-SECURITY-1179.png,REQ-131,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1180,History,Security,History feature,History resilience against graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,2878ms,./evidence/TC-SECURITY-1180.png,REQ-484,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1181,History,Security,History feature,History vulnerability check for privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,5232ms,./evidence/TC-SECURITY-1181.png,REQ-647,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1182,Permissions,Security,Permissions feature,Permissions audit covering privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,7000ms,./evidence/TC-SECURITY-1182.png,REQ-269,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1183,Authentication,Security,Authentication feature,Authentication vulnerability check for timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,4777ms,./evidence/TC-SECURITY-1183.png,REQ-720,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1184,History,Security,History feature,History vulnerability check for NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3291ms,./evidence/TC-SECURITY-1184.png,REQ-291,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1185,Dashboard,Security,Dashboard feature,Dashboard audit covering HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,4975ms,./evidence/TC-SECURITY-1185.png,REQ-219,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1186,Authentication,Security,Authentication feature,Authentication audit covering JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7182ms,./evidence/TC-SECURITY-1186.png,REQ-901,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1187,Tooth,Security,Tooth feature,Tooth Scan audit covering XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,6256ms,./evidence/TC-SECURITY-1187.png,REQ-415,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1188,Dashboard,Security,Dashboard feature,Dashboard audit covering timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5877ms,./evidence/TC-SECURITY-1188.png,REQ-978,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1189,Tooth,Security,Tooth feature,Tooth Scan resilience against SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,2676ms,./evidence/TC-SECURITY-1189.png,REQ-826,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1190,Reminder,Security,Reminder feature,Reminder audit covering brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,359ms,./evidence/TC-SECURITY-1190.png,REQ-378,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1191,Education,Security,Education feature,Education audit covering secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,3490ms,./evidence/TC-SECURITY-1191.png,REQ-188,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1192,History,Security,History feature,History resilience against path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,4171ms,./evidence/TC-SECURITY-1192.png,REQ-998,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1193,History,Security,History feature,History resilience against secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,2046ms,./evidence/TC-SECURITY-1193.png,REQ-480,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1194,Authentication,Security,Authentication feature,Authentication resilience against SSRF on webhook URL,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,3802ms,./evidence/TC-SECURITY-1194.png,REQ-949,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1195,Reminder,Security,Reminder feature,Reminder resilience against missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,7888ms,./evidence/TC-SECURITY-1195.png,REQ-409,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1196,Camera,Security,Camera feature,Camera vulnerability check for SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,1870ms,./evidence/TC-SECURITY-1196.png,REQ-637,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1197,Assessment,Security,Assessment feature,Assessment vulnerability check for brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,2576ms,./evidence/TC-SECURITY-1197.png,REQ-279,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1198,Camera,Security,Camera feature,Camera audit covering brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,1019ms,./evidence/TC-SECURITY-1198.png,REQ-483,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1199,Visit,Security,Visit feature,Visit Reminder resilience against privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,6530ms,./evidence/TC-SECURITY-1199.png,REQ-138,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1200,Reminder,Security,Reminder feature,Reminder vulnerability check for SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,6471ms,./evidence/TC-SECURITY-1200.png,REQ-306,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1201,Assessment,Security,Assessment feature,Assessment vulnerability check for SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,7582ms,./evidence/TC-SECURITY-1201.png,REQ-194,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1202,Notifications,Security,Notifications feature,Notifications resilience against XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3735ms,./evidence/TC-SECURITY-1202.png,REQ-618,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1203,Permissions,Security,Permissions feature,Permissions resilience against stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,304ms,./evidence/TC-SECURITY-1203.png,REQ-918,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1204,Settings,Security,Settings feature,Settings audit covering graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,4053ms,./evidence/TC-SECURITY-1204.png,REQ-612,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1205,History,Security,History feature,History vulnerability check for path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,1362ms,./evidence/TC-SECURITY-1205.png,REQ-294,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1206,Dashboard,Security,Dashboard feature,Dashboard resilience against insecure direct object reference,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,2886ms,./evidence/TC-SECURITY-1206.png,REQ-595,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1207,Permissions,Security,Permissions feature,Permissions resilience against missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6100ms,./evidence/TC-SECURITY-1207.png,REQ-994,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1208,Authentication,Security,Authentication feature,Authentication resilience against brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,4389ms,./evidence/TC-SECURITY-1208.png,REQ-417,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1209,Tooth,Security,Tooth feature,Tooth Scan vulnerability check for secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,6453ms,./evidence/TC-SECURITY-1209.png,REQ-435,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1210,Assessment,Security,Assessment feature,Assessment vulnerability check for SSRF on webhook URL,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,1273ms,./evidence/TC-SECURITY-1210.png,REQ-887,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1211,Offline,Security,Offline feature,Offline resilience against path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,7241ms,./evidence/TC-SECURITY-1211.png,REQ-200,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1212,Dashboard,Security,Dashboard feature,Dashboard audit covering XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,6834ms,./evidence/TC-SECURITY-1212.png,REQ-628,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1213,Offline,Security,Offline feature,Offline vulnerability check for CSRF token bypass,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,5643ms,./evidence/TC-SECURITY-1213.png,REQ-235,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1214,Reminder,Security,Reminder feature,Reminder vulnerability check for XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,1780ms,./evidence/TC-SECURITY-1214.png,REQ-841,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1215,Tooth,Security,Tooth feature,Tooth Scan audit covering rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,399ms,./evidence/TC-SECURITY-1215.png,REQ-570,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1216,History,Security,History feature,History audit covering insecure direct object reference,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3275ms,./evidence/TC-SECURITY-1216.png,REQ-830,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1217,Profile,Security,Profile feature,Profile vulnerability check for SSRF on webhook URL,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,7184ms,./evidence/TC-SECURITY-1217.png,REQ-634,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1218,Profile,Security,Profile feature,Profile vulnerability check for secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,1048ms,./evidence/TC-SECURITY-1218.png,REQ-104,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1219,Permissions,Security,Permissions feature,Permissions resilience against IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,2647ms,./evidence/TC-SECURITY-1219.png,REQ-145,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1220,Dashboard,Security,Dashboard feature,Dashboard audit covering insecure direct object reference,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,5728ms,./evidence/TC-SECURITY-1220.png,REQ-968,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1221,Visit,Security,Visit feature,Visit Reminder resilience against CORS misconfiguration,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,4968ms,./evidence/TC-SECURITY-1221.png,REQ-992,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1222,Permissions,Security,Permissions feature,Permissions vulnerability check for SSRF on webhook URL,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,813ms,./evidence/TC-SECURITY-1222.png,REQ-441,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1223,Education,Security,Education feature,Education audit covering graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,3924ms,./evidence/TC-SECURITY-1223.png,REQ-147,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1224,Education,Security,Education feature,Education vulnerability check for path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,944ms,./evidence/TC-SECURITY-1224.png,REQ-633,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1225,Education,Security,Education feature,Education audit covering CORS misconfiguration,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,6376ms,./evidence/TC-SECURITY-1225.png,REQ-774,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1226,Authentication,Security,Authentication feature,Authentication resilience against HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,6207ms,./evidence/TC-SECURITY-1226.png,REQ-419,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1227,Profile,Security,Profile feature,Profile audit covering unvalidated redirect,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,284ms,./evidence/TC-SECURITY-1227.png,REQ-691,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1228,Offline,Security,Offline feature,Offline audit covering missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,6313ms,./evidence/TC-SECURITY-1228.png,REQ-419,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1229,Reminder,Security,Reminder feature,Reminder audit covering IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,5333ms,./evidence/TC-SECURITY-1229.png,REQ-314,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1230,Offline,Security,Offline feature,Offline vulnerability check for privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2728ms,./evidence/TC-SECURITY-1230.png,REQ-305,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1231,Offline,Security,Offline feature,Offline resilience against business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,1677ms,./evidence/TC-SECURITY-1231.png,REQ-393,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1232,History,Security,History feature,History audit covering business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,2366ms,./evidence/TC-SECURITY-1232.png,REQ-645,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1233,Visit,Security,Visit feature,Visit Reminder vulnerability check for privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2714ms,./evidence/TC-SECURITY-1233.png,REQ-891,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1234,Visit,Security,Visit feature,Visit Reminder audit covering rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,3713ms,./evidence/TC-SECURITY-1234.png,REQ-787,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1235,Dashboard,Security,Dashboard feature,Dashboard audit covering graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,1063ms,./evidence/TC-SECURITY-1235.png,REQ-379,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1236,Offline,Security,Offline feature,Offline audit covering privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,1323ms,./evidence/TC-SECURITY-1236.png,REQ-261,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1237,Assessment,Security,Assessment feature,Assessment resilience against unvalidated redirect,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,2341ms,./evidence/TC-SECURITY-1237.png,REQ-217,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1238,Offline,Security,Offline feature,Offline resilience against IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,224ms,./evidence/TC-SECURITY-1238.png,REQ-737,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1239,Settings,Security,Settings feature,Settings vulnerability check for JWT signature manipulation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,4684ms,./evidence/TC-SECURITY-1239.png,REQ-626,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1240,Reminder,Security,Reminder feature,Reminder vulnerability check for CORS misconfiguration,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,938ms,./evidence/TC-SECURITY-1240.png,REQ-311,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1241,History,Security,History feature,History vulnerability check for IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,4544ms,./evidence/TC-SECURITY-1241.png,REQ-458,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1242,Camera,Security,Camera feature,Camera resilience against SSRF on webhook URL,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,4600ms,./evidence/TC-SECURITY-1242.png,REQ-426,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1243,Camera,Security,Camera feature,Camera vulnerability check for missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2320ms,./evidence/TC-SECURITY-1243.png,REQ-244,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1244,Notifications,Security,Notifications feature,Notifications resilience against rate limit evasion,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,7827ms,./evidence/TC-SECURITY-1244.png,REQ-821,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1245,Settings,Security,Settings feature,Settings audit covering HTTP parameter pollution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6686ms,./evidence/TC-SECURITY-1245.png,REQ-390,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1246,Tooth,Security,Tooth feature,Tooth Scan vulnerability check for SSRF on webhook URL,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,4802ms,./evidence/TC-SECURITY-1246.png,REQ-350,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1247,Profile,Security,Profile feature,Profile resilience against brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,1503ms,./evidence/TC-SECURITY-1247.png,REQ-172,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1248,Assessment,Security,Assessment feature,Assessment resilience against privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,2650ms,./evidence/TC-SECURITY-1248.png,REQ-727,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1249,Authentication,Security,Authentication feature,Authentication resilience against NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,7409ms,./evidence/TC-SECURITY-1249.png,REQ-446,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1250,Tooth,Security,Tooth feature,Tooth Scan audit covering timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,4528ms,./evidence/TC-SECURITY-1250.png,REQ-554,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1251,Offline,Security,Offline feature,Offline audit covering insecure direct object reference,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,515ms,./evidence/TC-SECURITY-1251.png,REQ-233,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1252,Reminder,Security,Reminder feature,Reminder audit covering SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,337ms,./evidence/TC-SECURITY-1252.png,REQ-582,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1253,Notifications,Security,Notifications feature,Notifications resilience against path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,7499ms,./evidence/TC-SECURITY-1253.png,REQ-791,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1254,Authentication,Security,Authentication feature,Authentication vulnerability check for IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,513ms,./evidence/TC-SECURITY-1254.png,REQ-208,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1255,Profile,Security,Profile feature,Profile audit covering business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,3242ms,./evidence/TC-SECURITY-1255.png,REQ-155,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1256,Education,Security,Education feature,Education resilience against timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,805ms,./evidence/TC-SECURITY-1256.png,REQ-536,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1257,Camera,Security,Camera feature,Camera vulnerability check for path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,3310ms,./evidence/TC-SECURITY-1257.png,REQ-283,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1258,Visit,Security,Visit feature,Visit Reminder vulnerability check for CSRF token bypass,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,5872ms,./evidence/TC-SECURITY-1258.png,REQ-710,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1259,Reminder,Security,Reminder feature,Reminder vulnerability check for CSRF token bypass,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,7401ms,./evidence/TC-SECURITY-1259.png,REQ-706,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1260,Visit,Security,Visit feature,Visit Reminder audit covering CORS misconfiguration,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,5256ms,./evidence/TC-SECURITY-1260.png,REQ-956,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1261,Offline,Security,Offline feature,Offline resilience against XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,5753ms,./evidence/TC-SECURITY-1261.png,REQ-816,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1262,Assessment,Security,Assessment feature,Assessment vulnerability check for IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,3752ms,./evidence/TC-SECURITY-1262.png,REQ-731,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1263,Visit,Security,Visit feature,Visit Reminder resilience against stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,3013ms,./evidence/TC-SECURITY-1263.png,REQ-419,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1264,Authentication,Security,Authentication feature,Authentication vulnerability check for NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,2822ms,./evidence/TC-SECURITY-1264.png,REQ-937,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1265,Tooth,Security,Tooth feature,Tooth Scan audit covering brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,1723ms,./evidence/TC-SECURITY-1265.png,REQ-830,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1266,Profile,Security,Profile feature,Profile audit covering privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,6312ms,./evidence/TC-SECURITY-1266.png,REQ-786,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1267,Settings,Security,Settings feature,Settings vulnerability check for XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Settings behaves correctly,Matches expected,Passed,High,High,6729ms,./evidence/TC-SECURITY-1267.png,REQ-646,QA-Team,REQ-SETTINGS,Staging
+TC-SECURITY-1268,Dashboard,Security,Dashboard feature,Dashboard vulnerability check for brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Dashboard behaves correctly,Matches expected,Passed,High,High,743ms,./evidence/TC-SECURITY-1268.png,REQ-873,QA-Team,REQ-DASHBOARD,Staging
+TC-SECURITY-1269,Permissions,Security,Permissions feature,Permissions resilience against brute force login,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,6362ms,./evidence/TC-SECURITY-1269.png,REQ-576,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1270,Reminder,Security,Reminder feature,Reminder resilience against timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,4751ms,./evidence/TC-SECURITY-1270.png,REQ-234,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1271,Notifications,Security,Notifications feature,Notifications resilience against privilege escalation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,861ms,./evidence/TC-SECURITY-1271.png,REQ-932,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1272,History,Security,History feature,History resilience against SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,6672ms,./evidence/TC-SECURITY-1272.png,REQ-815,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1273,Permissions,Security,Permissions feature,Permissions audit covering stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,3936ms,./evidence/TC-SECURITY-1273.png,REQ-199,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1274,Profile,Security,Profile feature,Profile audit covering secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,3832ms,./evidence/TC-SECURITY-1274.png,REQ-417,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1275,Profile,Security,Profile feature,Profile audit covering timing attack on password validation,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,5707ms,./evidence/TC-SECURITY-1275.png,REQ-759,QA-Team,REQ-PROFILE,Staging
+TC-SECURITY-1276,Tooth,Security,Tooth feature,Tooth Scan resilience against CSRF token bypass,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,5918ms,./evidence/TC-SECURITY-1276.png,REQ-884,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1277,History,Security,History feature,History audit covering graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,3912ms,./evidence/TC-SECURITY-1277.png,REQ-581,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1278,Notifications,Security,Notifications feature,Notifications audit covering missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,1998ms,./evidence/TC-SECURITY-1278.png,REQ-329,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1279,Permissions,Security,Permissions feature,Permissions audit covering path traversal via filename,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Permissions behaves correctly,Matches expected,Passed,High,High,1277ms,./evidence/TC-SECURITY-1279.png,REQ-981,QA-Team,REQ-PERMISSIONS,Staging
+TC-SECURITY-1280,Tooth,Security,Tooth feature,Tooth Scan resilience against missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,7437ms,./evidence/TC-SECURITY-1280.png,REQ-731,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1281,Camera,Security,Camera feature,Camera vulnerability check for IDOR on user object,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,2213ms,./evidence/TC-SECURITY-1281.png,REQ-472,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1282,Reminder,Security,Reminder feature,Reminder resilience against NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Reminder behaves correctly,Matches expected,Passed,High,High,3311ms,./evidence/TC-SECURITY-1282.png,REQ-287,QA-Team,REQ-REMINDER,Staging
+TC-SECURITY-1283,Authentication,Security,Authentication feature,Authentication audit covering NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,5831ms,./evidence/TC-SECURITY-1283.png,REQ-781,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1284,Offline,Security,Offline feature,Offline resilience against SSRF on webhook URL,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,2806ms,./evidence/TC-SECURITY-1284.png,REQ-907,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1285,History,Security,History feature,History audit covering missing secure flag on cookie,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,7151ms,./evidence/TC-SECURITY-1285.png,REQ-432,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1286,Notifications,Security,Notifications feature,Notifications vulnerability check for stale session persistence,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,3813ms,./evidence/TC-SECURITY-1286.png,REQ-599,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1287,Notifications,Security,Notifications feature,Notifications resilience against unvalidated redirect,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,347ms,./evidence/TC-SECURITY-1287.png,REQ-166,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1288,Offline,Security,Offline feature,Offline resilience against NoSQL injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Offline behaves correctly,Matches expected,Passed,High,High,3993ms,./evidence/TC-SECURITY-1288.png,REQ-215,QA-Team,REQ-OFFLINE,Staging
+TC-SECURITY-1289,Visit,Security,Visit feature,Visit Reminder resilience against graphQL introspection leak,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,2979ms,./evidence/TC-SECURITY-1289.png,REQ-590,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1290,Authentication,Security,Authentication feature,Authentication vulnerability check for business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Authentication behaves correctly,Matches expected,Passed,High,High,3878ms,./evidence/TC-SECURITY-1290.png,REQ-966,QA-Team,REQ-AUTHENTICATION,Staging
+TC-SECURITY-1291,Visit,Security,Visit feature,Visit Reminder audit covering business logic flaw,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Visit behaves correctly,Matches expected,Passed,High,High,1499ms,./evidence/TC-SECURITY-1291.png,REQ-389,QA-Team,REQ-VISIT,Staging
+TC-SECURITY-1292,Camera,Security,Camera feature,Camera resilience against SQL injection attempt,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Camera behaves correctly,Matches expected,Passed,High,High,6390ms,./evidence/TC-SECURITY-1292.png,REQ-456,QA-Team,REQ-CAMERA,Staging
+TC-SECURITY-1293,Tooth,Security,Tooth feature,Tooth Scan vulnerability check for XML external entity injection,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Tooth behaves correctly,Matches expected,Passed,High,High,5051ms,./evidence/TC-SECURITY-1293.png,REQ-688,QA-Team,REQ-TOOTH,Staging
+TC-SECURITY-1294,Assessment,Security,Assessment feature,Assessment resilience against CORS misconfiguration,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Assessment behaves correctly,Matches expected,Passed,High,High,1143ms,./evidence/TC-SECURITY-1294.png,REQ-620,QA-Team,REQ-ASSESSMENT,Staging
+TC-SECURITY-1295,Notifications,Security,Notifications feature,Notifications resilience against XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Notifications behaves correctly,Matches expected,Passed,High,High,943ms,./evidence/TC-SECURITY-1295.png,REQ-515,QA-Team,REQ-NOTIFICATIONS,Staging
+TC-SECURITY-1296,Education,Security,Education feature,Education vulnerability check for secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,6797ms,./evidence/TC-SECURITY-1296.png,REQ-831,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1297,History,Security,History feature,History audit covering secret exposure in headers,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,History behaves correctly,Matches expected,Passed,High,High,6627ms,./evidence/TC-SECURITY-1297.png,REQ-209,QA-Team,REQ-HISTORY,Staging
+TC-SECURITY-1298,Education,Security,Education feature,Education resilience against insecure direct object reference,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Education behaves correctly,Matches expected,Passed,High,High,2769ms,./evidence/TC-SECURITY-1298.png,REQ-669,QA-Team,REQ-EDUCATION,Staging
+TC-SECURITY-1299,Profile,Security,Profile feature,Profile vulnerability check for XSS payload execution,System is operational,"1. Setup context
+2. Execute action
+3. Verify response",Standard Input,Profile behaves correctly,Matches expected,Passed,High,High,5420ms,./evidence/TC-SECURITY-1299.png,REQ-172,QA-Team,REQ-PROFILE,Staging

@@ -47,28 +47,28 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Web Selenium Test Report
-          path: qa-automation/reports/Selenium_Web_Test_Report.csv
+          path: qa-automation/reports/Selenium_Web_Test_Report_v2.csv
 
       - name: Upload Android Appium Test Report
         uses: actions/upload-artifact@v4
         with:
           name: Android Appium Test Report
-          path: qa-automation/reports/Appium_Android_Test_Report.csv
+          path: qa-automation/reports/Appium_Android_Test_Report_v2.csv
 
       - name: Upload API Test Report
         uses: actions/upload-artifact@v4
         with:
           name: API Test Report
-          path: qa-automation/reports/API_Integration_Test_Report.csv
+          path: qa-automation/reports/API_Integration_Test_Report_v2.csv
 
       - name: Upload Performance & Load Test Report
         uses: actions/upload-artifact@v4
         with:
           name: Performance & Load Test Report
-          path: qa-automation/reports/Performance_Load_Test_Report.csv
+          path: qa-automation/reports/Performance_Load_Test_Report_v2.csv
 
       - name: Upload Security Assessment Report
         uses: actions/upload-artifact@v4
         with:
           name: Security Assessment Report
-          path: qa-automation/reports/Security_Assessment_Report.csv
+          path: qa-automation/reports/Security_Assessment_Report_v2.csv
