@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: ../../
+      dockerfile: deployment/docker/Dockerfile
+    ports:
+      - "80:80"
+    restart: always
+
+# Note: Supabase and Postgres are typically hosted via Supabase Cloud for this app.
+# If self-hosting Supabase, include their standard docker-compose services here.

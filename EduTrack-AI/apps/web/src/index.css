@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-cyber-blue: #00d2ff;
+  --color-faculty-purple: #a200ff;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    /* LIGHT MODE — vibrant & premium */
+    --page-bg: #f4f6fb;
+    --sidebar-bg: #16213e;
+    /* always-dark deep navy sidebar */
+    --card-bg: #ffffff;
+    --card-border: #e8edf5;
+    --card-shadow: 0 1px 4px rgba(0, 0, 0, .06), 0 6px 24px rgba(0, 0, 0, .07);
+    --text-h: #111827;
+    --text-sub: #374151;
+    --text-muted: #6b7280;
+    --accent: #4f46e5;
+    /* indigo-600 */
+    --accent-glow: rgba(79, 70, 229, .2);
+  }
+
+  .dark {
+    color-scheme: dark;
+    --page-bg: #0f172a;
+    --sidebar-bg: #0a1020;
+    --card-bg: rgba(30, 41, 59, 0.65);
+    --card-border: rgba(255, 255, 255, 0.07);
+    --card-shadow: 0 4px 24px rgba(0, 0, 0, .3);
+    --text-h: #f1f5f9;
+    --text-sub: #cbd5e1;
+    --text-muted: #64748b;
+    --accent: #818cf8;
+    --accent-glow: rgba(129, 140, 248, .2);
+  }
+
+  * {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    background-color: var(--page-bg);
+    color: var(--text-sub);
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
+
+@layer utilities {
+
+  /* ─── Premium card ─── */
+  .glass-panel {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--card-shadow);
+    backdrop-filter: blur(12px);
+  }
+
+  /* ─── Nav items ─── */
+  .nav-pill-active {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, .45);
+  }
+
+  /* ─── Text tokens ─── */
+  .t-h {
+    color: var(--text-h);
+  }
+
+  .t-sub {
+    color: var(--text-sub);
+  }
+
+  .t-muted {
+    color: var(--text-muted);
+  }
+
+  /* ─── Glow accent ─── */
+  .neon-glow {
+    box-shadow: 0 0 18px var(--accent-glow), 0 2px 8px var(--accent-glow);
+  }
+
+  /* ─── Scrollbar ─── */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

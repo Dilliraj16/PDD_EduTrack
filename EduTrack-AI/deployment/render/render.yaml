@@ -1,0 +1,14 @@
+services:
+  # Render deployment configuration for Backend / Admin / Web (Optional if web is on Vercel)
+  # Assuming Supabase self-hosting or Edge Functions deployment via CLI
+  # Let's add a generic Node worker for any background processing built on EduTrack
+  - type: worker
+    name: edutrack-background-worker
+    env: node
+    buildCommand: npm install
+    startCommand: node apps/admin-dashboard/start.js
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false

@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.sql": "pgsql",
+        "**/*.sql": "pgsql"
+    },
+    "mssql.syntaxValidation": false,
+    "[sql]": {
+        "editor.defaultFormatter": null,
+        "editor.suggest.snippetsPreventQuickSuggestions": false
+    }
+}
