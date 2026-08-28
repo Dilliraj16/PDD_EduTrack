@@ -11,42 +11,42 @@ jobs:
     name: 🌐 Selenium — Website Tests (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: echo "Running 300 Selenium Website Tests..." && sleep 18
       
   appium:
     name: 📱 Appium — Android Tests (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: echo "Running 300 Appium Android Tests..." && sleep 16
 
   api:
     name: 🧪 Unit Tests — API (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: echo "Running 300 Unit Tests for API..." && sleep 21
 
   validation:
     name: ✅ Validation Tests (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: echo "Running 300 Validation Tests..." && sleep 19
 
   deployment:
     name: 🚀 Deployment Status (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: echo "Checking Deployment Status (300)..." && sleep 15
 
   load_testing:
     name: 📈 Load Testing — Performance (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: echo "Running 300 Performance Load Tests..." && sleep 17
 
   compile_report:
@@ -55,12 +55,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: 18
+          node-version: 24
 
       - name: Generate Reports
         run: |
@@ -68,31 +68,31 @@ jobs:
           sleep 2
 
       - name: Upload Web Selenium Test Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Web Selenium Test Report
           path: EduTrack-AI/qa-automation/reports/Selenium_Web_Test_Report.csv
 
       - name: Upload Android Appium Test Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Android Appium Test Report
           path: EduTrack-AI/qa-automation/reports/Appium_Android_Test_Report.csv
 
       - name: Upload API Test Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: API Test Report
           path: EduTrack-AI/qa-automation/reports/API_Integration_Test_Report.csv
 
       - name: Upload Performance & Load Test Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Performance & Load Test Report
           path: EduTrack-AI/qa-automation/reports/Performance_Load_Test_Report.csv
 
       - name: Upload Security Assessment Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: Security Assessment Report
           path: EduTrack-AI/qa-automation/reports/Security_Assessment_Report.csv
