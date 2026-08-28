@@ -1,0 +1,24 @@
+
+> mobile@1.0.0 web
+> expo start --web
+
+env: load .env
+env: export EXPO_PUBLIC_SUPABASE_ANON_KEY EXPO_PUBLIC_SUPABASE_URL
+Starting project at C:\Users\DILLI RAJ\Desktop\PDD APP\APP\EduTrack-AI\apps\mobile
+CommandError: It looks like you're trying to use web support but don't have the required
+dependencies installed.
+
+Install react-native-web@^0.21.2 by running:
+
+npx expo install react-native-web
+
+If you're not using web, please ensure you remove the "web" string from the
+platforms array in the project Expo config.
+
+npm error Lifecycle script `web` failed with error:
+npm error code 1
+npm error path C:\Users\DILLI RAJ\Desktop\PDD APP\APP\EduTrack-AI\apps\mobile
+npm error workspace mobile@1.0.0
+npm error location C:\Users\DILLI RAJ\Desktop\PDD APP\APP\EduTrack-AI\apps\mobile
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c expo start --web

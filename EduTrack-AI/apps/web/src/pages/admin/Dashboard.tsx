@@ -1,22 +1,29 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Monitor, AlertTriangle, ShieldCheck, Database, Plus } from 'lucide-react';
 import { useCourseStore } from '@/store/courseStore';
 
 export default function AdminDashboard() {
-    const { addCourse } = useCourseStore();
+    const { addCourse, fetchCourses } = useCourseStore();
     const [newCourseName, setNewCourseName] = useState('');
     const [newCourseCode, setNewCourseCode] = useState('');
 
-    const handleCreateCourse = (e: React.FormEvent) => {
+    const [isCreating, setIsCreating] = useState(false);
+
+    useEffect(() => {
+        fetchCourses();
+    }, [fetchCourses]);
+
+    const handleCreateCourse = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!newCourseName.trim() || !newCourseCode.trim()) return;
 
-        addCourse({
-            id: Date.now().toString(),
+        setIsCreating(true);
+        await addCourse({
+            id: Date.now().toString(), // local fallback
             name: newCourseName,
-            code: newCourseCode.toUpperCase(),
-            activeUsers: 0
+            code: newCourseCode.toUpperCase()
         });
+        setIsCreating(false);
 
         // Reset form
         setNewCourseName('');
@@ -88,10 +95,10 @@ export default function AdminDashboard() {
                     </div>
                     <button
                         type="submit"
-                        disabled={!newCourseName.trim() || !newCourseCode.trim()}
+                        disabled={!newCourseName.trim() || !newCourseCode.trim() || isCreating}
                         className="bg-blue-600 hover:bg-blue-500 disabled:bg-slate-300 dark:disabled:bg-slate-700 text-white font-bold py-3 px-6 rounded-xl transition-colors shadow-lg"
                     >
-                        Create & Connect Setup
+                        {isCreating ? 'Creating...' : 'Create & Connect Setup'}
                     </button>
                 </form>
             </div>

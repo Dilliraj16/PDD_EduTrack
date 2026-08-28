@@ -57,7 +57,7 @@ export const useThemeStore = create<ThemeState>((set, get) => ({
                     }
                 }
             )
-            .subscribe((status, err) => {
+            .subscribe((_status, err) => {
                 if (err) console.warn('Supabase Realtime offline: Database container dormant.');
             });
     }

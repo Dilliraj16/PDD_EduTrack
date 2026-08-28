@@ -224,7 +224,7 @@ export default function Settings() {
                         <div className="space-y-6 animate-in fade-in zoom-in-95 duration-300">
                             <div className="glass-panel p-8 rounded-3xl border border-white/10">
                                 <h2 className="text-xl font-bold mb-6 flex items-center"><HardDrive className="mr-3 w-5 h-5 text-purple-400" /> Data Portability</h2>
-                                <p className="text-sm text-gray-400 mb-6">EduTrack AI respects your complete ownership over your generated academic and personal payloads.</p>
+                                <p className="text-sm text-gray-400 mb-6">EduTrack respects your complete ownership over your generated academic and personal payloads.</p>
 
                                 <button className="px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/10 rounded-xl font-medium transition-colors w-full sm:w-auto text-sm">
                                     Export My History (JSON)

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Login from '@/pages/authentication/Login';
 import DashboardLayout from '@/layouts/DashboardLayout';
@@ -18,9 +19,46 @@ import Notifications from '@/pages/shared/Notifications';
 import Settings from '@/pages/shared/Settings';
 import AIDashboard from '@/pages/ai/AIDashboard';
 import { useAuthStore } from '@/store/authStore';
+import { supabase } from '@/lib/supabase';
 
 export default function App() {
-  const { user, role } = useAuthStore();
+  const { user, role, login, logout } = useAuthStore();
+  const [isInitializing, setIsInitializing] = useState(true);
+
+  useEffect(() => {
+    // Check active session immediately on boot
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user) {
+        const meta = session.user.user_metadata;
+        login(
+          { id: session.user.id, email: session.user.email!, name: meta?.first_name || session.user.email!.split('@')[0] },
+          meta?.role || 'student'
+        );
+      }
+      setIsInitializing(false);
+    });
+
+    // Listen for auth changes (logouts across tabs, token refeshes)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (session?.user) {
+        const meta = session.user.user_metadata;
+        login(
+          { id: session.user.id, email: session.user.email!, name: meta?.first_name || session.user.email!.split('@')[0] },
+          meta?.role || 'student'
+        );
+      } else {
+        logout();
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, [login, logout]);
+
+  if (isInitializing) {
+    return <div className="min-h-screen bg-[#030712] flex items-center justify-center">
+      <div className="w-8 h-8 rounded-full border-t-2 border-indigo-500 animate-spin" />
+    </div>;
+  }
 
   return (
     <Routes>

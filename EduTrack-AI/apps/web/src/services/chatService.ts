@@ -44,7 +44,7 @@ export const ChatService = {
                 { event: 'INSERT', schema: 'public', table: 'messages', filter: `room_id=eq.${roomId}` },
                 callback
             )
-            .subscribe((status, err) => {
+            .subscribe((_status, err) => {
                 if (err) console.warn('Supabase Chat Sync offline: Using mock architecture instead.');
             });
     },

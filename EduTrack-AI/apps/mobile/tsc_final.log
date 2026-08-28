@@ -1,0 +1,4 @@
+src/components/Sidebar.tsx(109,22): error TS2304: Cannot find name 'activeMenu'.
+src/components/Sidebar.tsx(109,38): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/screens/ChatScreen.tsx(25,41): error TS2339: Property 'user_metadata' does not exist on type '{ id: string; email: string; name?: string | undefined; }'.
+src/screens/ChatScreen.tsx(58,46): error TS18047: 'user' is possibly 'null'.

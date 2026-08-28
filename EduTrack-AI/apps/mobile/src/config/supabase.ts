@@ -1,12 +1,31 @@
-import 'react-native-url-polyfill/auto';
 import * as SecureStore from 'expo-secure-store';
 import { createClient } from '@supabase/supabase-js';
+import { Platform } from 'react-native';
 
-// Custom adapter to tightly bind Supabase Auth to iOS Keychain / Android Keystore
+if (Platform.OS !== 'web') {
+    require('react-native-url-polyfill/auto');
+}
+
+// Custom adapter to bind Supabase Auth to iOS Keychain / Android Keystore, falling back to localStorage on web
 const ExpoSecureStoreAdapter = {
-    getItem: (key: string) => SecureStore.getItemAsync(key),
-    setItem: (key: string, value: string) => SecureStore.setItemAsync(key, value),
-    removeItem: (key: string) => SecureStore.deleteItemAsync(key),
+    getItem: (key: string) => {
+        if (Platform.OS === 'web') return Promise.resolve(localStorage.getItem(key));
+        return SecureStore.getItemAsync(key);
+    },
+    setItem: (key: string, value: string) => {
+        if (Platform.OS === 'web') {
+            localStorage.setItem(key, value);
+            return Promise.resolve();
+        }
+        return SecureStore.setItemAsync(key, value);
+    },
+    removeItem: (key: string) => {
+        if (Platform.OS === 'web') {
+            localStorage.removeItem(key);
+            return Promise.resolve();
+        }
+        return SecureStore.deleteItemAsync(key);
+    },
 };
 
 const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL || '';

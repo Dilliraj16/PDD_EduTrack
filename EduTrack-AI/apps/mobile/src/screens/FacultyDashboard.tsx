@@ -1,145 +1,235 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView, Dimensions, TouchableOpacity, Modal } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, BackHandler, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { LineChart } from 'react-native-chart-kit';
+import Sidebar from '../components/Sidebar';
+import ProfileScreen from './ProfileScreen';
+import { useCourseStore } from '../store/courseStore';
+import { supabase } from '../config/supabase';
 
-const { width } = Dimensions.get('window');
-
-const courses = [
-    { id: 1, name: 'Data Structures & Algorithms', code: 'CS301' },
-    { id: 2, name: 'Database Management', code: 'CS302' },
-    { id: 3, name: 'Software Engineering', code: 'CS303' },
-];
+// Faculty specific screens
+import CreateCourseScreen from './CreateCourseScreen';
+import AttendanceScreen from './AttendanceScreen';
+import FacultyAssignmentsScreen from './FacultyAssignmentsScreen';
+import FacultyResultsScreen from './FacultyResultsScreen';
+// Reused screens
+import ChatScreen from './ChatScreen';
+import TimetableScreen from './TimetableScreen';
+import AssignmentScreen from './AssignmentScreen';
+import NotificationsScreen from './NotificationsScreen';
 
 export default function FacultyDashboard() {
-    const [odStatuses, setOdStatuses] = useState<Record<number, 'approved' | 'rejected'>>({});
-    const [selectedProof, setSelectedProof] = useState<string | null>(null);
+    const [isSidebarOpen, setSidebarOpen] = useState(false);
+    const [activeTab, setActiveTab] = useState('dashboard');
+    const [tabHistory, setTabHistory] = useState<string[]>(['dashboard']);
+    const fetchCourses = useCourseStore(state => state.fetchCourses);
 
-    const handleOD = (id: number, status: 'approved' | 'rejected') => {
-        setOdStatuses(prev => ({ ...prev, [id]: status }));
+    const [odRequests, setOdRequests] = useState<any[]>([]);
+
+    const fetchOdRequests = async () => {
+        const { data } = await supabase
+            .from('od_requests')
+            .select('*, profiles:student_id(full_name)')
+            .eq('status', 'pending');
+
+        if (data) setOdRequests(data);
     };
 
-    return (
-        <ScrollView className="flex-1 bg-[#0f172a]" contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
-            {/* Header Profile */}
-            <View className="mb-6 bg-white/5 p-5 rounded-3xl border border-white/10 relative overflow-hidden">
-                <Text className="text-3xl font-extrabold text-white mb-2">Faculty Command Center</Text>
-                <Text className="text-slate-400 mt-1 mb-4">Manage your classes, assignments, and monitor student progress easily.</Text>
+    // Centralized Navigation Handler
+    const navigateTo = (tab: string) => {
+        if (tab !== activeTab) {
+            setTabHistory(prev => [...prev, tab]);
+            setActiveTab(tab);
+        }
+    };
 
-                <View className="flex-row items-center bg-indigo-500/20 px-4 py-2 rounded-xl flex-row items-center border border-indigo-500/30 self-start">
-                    <Ionicons name="shield-checkmark" size={16} color="#a855f7" />
-                    <Text className="text-indigo-300 font-bold text-xs ml-2 uppercase">Faculty Authorized</Text>
+    const handleBack = () => {
+        if (tabHistory.length > 1) {
+            const newHistory = [...tabHistory];
+            newHistory.pop();
+            const previousTab = newHistory[newHistory.length - 1];
+            setTabHistory(newHistory);
+            setActiveTab(previousTab);
+            return true;
+        }
+        return false;
+    };
+
+    React.useEffect(() => {
+        fetchCourses();
+        fetchOdRequests();
+    }, []);
+
+    React.useEffect(() => {
+        const subscription = BackHandler.addEventListener('hardwareBackPress', handleBack);
+        return () => subscription.remove();
+    }, [tabHistory]);
+
+
+    // Rendering Faculty Command Center
+    const renderDashboardOverview = () => (
+        <ScrollView className="flex-1 bg-[#101827]" contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
+            <View className="flex-row justify-between items-center mb-6 pt-4">
+                <TouchableOpacity className="p-2" onPress={() => setSidebarOpen(true)}>
+                    <Ionicons name="menu" size={28} color="#64748b" />
+                </TouchableOpacity>
+                <View className="flex-row gap-4">
+                    <TouchableOpacity
+                        onPress={() => navigateTo('notifications')}
+                        className="w-10 h-10 rounded-full bg-[#1e293b] border border-white/5 items-center justify-center">
+                        <Ionicons name="notifications-outline" size={20} color="#94a3b8" />
+                    </TouchableOpacity>
                 </View>
             </View>
 
-            {/* Stats Grid */}
-            <View className="flex-row flex-wrap justify-between mb-6">
-                {[
-                    { title: 'Total Students', value: '450', icon: 'people', c: '#a855f7', bg: 'bg-purple-500/10' },
-                    { title: 'Pending Evals', value: '34', icon: 'clipboard', c: '#fb7185', bg: 'bg-rose-500/10' },
-                    { title: 'Subjects', value: '4', icon: 'book', c: '#60a5fa', bg: 'bg-blue-500/10' },
-                    { title: 'Attendance', value: '88%', icon: 'trending-up', c: '#34d399', bg: 'bg-emerald-500/10' }
-                ].map((s, i) => (
-                    <View key={i} className={`w-[48%] mb-4 p-4 rounded-2xl ${s.bg} border border-white/5 flex-col justify-between`}>
-                        <View className="flex-row justify-between items-center mb-2">
-                            <Text className="text-gray-400 text-[10px] font-bold uppercase">{s.title}</Text>
-                            <Ionicons name={s.icon as any} size={18} color={s.c} />
-                        </View>
-                        <Text className="text-3xl font-extrabold text-white mt-1 leading-tight">{s.value}</Text>
-                    </View>
-                ))}
+            {/* Welcome Banner Card */}
+            <View className="bg-[#1a233a] p-6 rounded-[28px] mb-6 shadow-2xl relative overflow-hidden">
+                <Text className="text-3xl font-extrabold text-white mb-2 tracking-tight">Faculty Command Center</Text>
+                <Text className="text-gray-400 font-semibold text-sm mb-4">Manage your classes, assignments, and monitor student progress easily.</Text>
+                <View className="bg-indigo-900/40 border border-indigo-500/30 px-3 py-1.5 rounded-lg flex-row items-center self-start">
+                    <Ionicons name="grid" size={14} color="#a5b4fc" />
+                    <Text className="text-indigo-300 font-bold text-xs tracking-wider ml-2">Desktop widgets are fully reorderable</Text>
+                </View>
             </View>
 
-            {/* Courses Matrix */}
-            <View className="bg-white/5 rounded-3xl p-5 border border-white/10 mb-6">
-                <View className="flex-row items-center mb-4">
-                    <Ionicons name="book-outline" size={24} color="#6366f1" />
-                    <Text className="text-xl font-bold text-white ml-2">My Scheduled Classes</Text>
-                </View>
-                {courses.map(course => (
-                    <View key={course.id} className="p-4 rounded-2xl border border-white/5 flex-row items-center mb-3 bg-black/20">
-                        <View className="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center border border-indigo-500/30">
-                            <Text className="text-indigo-400 font-bold text-lg">{course.code.substring(0, 2)}</Text>
-                        </View>
-                        <View className="ml-4 flex-1">
-                            <Text className="font-bold text-white text-base">{course.name}</Text>
-                            <Text className="text-xs text-gray-400 font-mono mt-1">{course.code}</Text>
-                        </View>
+            {/* Stacked KPI Cards */}
+            <View className="flex-col gap-4 mb-6">
+                <View className="bg-[#1a233a] p-5 rounded-[24px] flex-row justify-between items-center border border-white/10 shadow-lg relative overflow-hidden">
+                    <View className="absolute right-[-20] top-[-20] opacity-5">
+                        <Ionicons name="people" size={100} color="#fff" />
                     </View>
-                ))}
+                    <View>
+                        <Text className="text-gray-400 font-bold text-xs mb-2 tracking-widest">Total Students</Text>
+                        <Text className="text-white font-extrabold text-3xl">450</Text>
+                    </View>
+                    <View className="w-12 h-12 rounded-2xl bg-indigo-900/40 items-center justify-center border border-indigo-500/20">
+                        <Ionicons name="people-outline" size={24} color="#a5b4fc" />
+                    </View>
+                </View>
+
+                <View className="bg-[#1a233a] p-5 rounded-[24px] flex-row justify-between items-center border border-white/10 shadow-lg relative overflow-hidden">
+                    <View className="absolute right-[-20] top-[-20] opacity-5">
+                        <Ionicons name="document-text" size={100} color="#fff" />
+                    </View>
+                    <View>
+                        <Text className="text-gray-400 font-bold text-xs mb-2 tracking-widest">Pending Evaluations</Text>
+                        <Text className="text-white font-extrabold text-3xl">34</Text>
+                    </View>
+                    <View className="w-12 h-12 rounded-2xl bg-rose-900/40 items-center justify-center border border-rose-500/20">
+                        <Ionicons name="clipboard-outline" size={24} color="#fda4af" />
+                    </View>
+                </View>
+
+                <View className="bg-[#1a233a] p-5 rounded-[24px] flex-row justify-between items-center border border-white/10 shadow-lg relative overflow-hidden">
+                    <View className="absolute right-[-20] top-[-20] opacity-5">
+                        <Ionicons name="book" size={100} color="#fff" />
+                    </View>
+                    <View>
+                        <Text className="text-gray-400 font-bold text-xs mb-2 tracking-widest">Subjects Taught</Text>
+                        <Text className="text-white font-extrabold text-3xl">4</Text>
+                    </View>
+                    <View className="w-12 h-12 rounded-2xl bg-blue-900/40 items-center justify-center border border-blue-500/20">
+                        <Ionicons name="book-outline" size={24} color="#93c5fd" />
+                    </View>
+                </View>
+
+                <View className="bg-[#1a233a] p-5 rounded-[24px] flex-row justify-between items-center border border-white/10 shadow-lg relative overflow-hidden">
+                    <View className="absolute right-[-20] top-[-20] opacity-5">
+                        <Ionicons name="stats-chart" size={100} color="#fff" />
+                    </View>
+                    <View>
+                        <Text className="text-gray-400 font-bold text-xs mb-2 tracking-widest">Avg Class Attendance</Text>
+                        <Text className="text-white font-extrabold text-3xl">88%</Text>
+                    </View>
+                    <View className="w-12 h-12 rounded-2xl bg-emerald-900/40 items-center justify-center border border-emerald-500/20">
+                        <Ionicons name="trending-up" size={24} color="#34d399" />
+                    </View>
+                </View>
             </View>
 
             {/* Quick Actions */}
-            <View className="bg-white/5 rounded-3xl p-5 border border-white/10 mb-6">
-                <View className="flex-row items-center mb-4">
-                    <Ionicons name="flash-outline" size={24} color="#06b6d4" />
-                    <Text className="text-xl font-bold text-white ml-2">Quick Actions</Text>
-                </View>
-                <View className="flex-row justify-between">
-                    <TouchableOpacity className="flex-1 mr-2 flex-col items-center justify-center py-6 px-4 rounded-2xl bg-white/5 border border-white/5">
-                        <Ionicons name="checkmark-done" size={28} color="#06b6d4" className="mb-2" />
-                        <Text className="text-xs font-bold text-white mt-3 text-center">Mark Attendance</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity className="flex-1 ml-2 flex-col items-center justify-center py-6 px-4 rounded-2xl bg-white/5 border border-white/5">
-                        <Ionicons name="document-text" size={28} color="#a855f7" className="mb-2" />
-                        <Text className="text-xs font-bold text-white mt-3 text-center">Add Assignment</Text>
-                    </TouchableOpacity>
-                </View>
+            <Text className="text-xl font-extrabold text-white mb-4 tracking-tight px-2 flex-row"><Ionicons name="flash-outline" size={20} color="#38bdf8" /> Quick Actions</Text>
+            <View className="flex-col gap-4 mb-8">
+                <TouchableOpacity onPress={() => navigateTo('attendance')} className="bg-[#1e293b] py-5 px-6 rounded-[20px] flex-row items-center justify-between border border-white/5 shadow-lg active:scale-95 transition-transform">
+                    <View className="flex-row items-center">
+                        <Ionicons name="clipboard-outline" size={24} color="#94a3b8" />
+                        <Text className="text-white font-bold text-base ml-4">Mark Attendance</Text>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigateTo('assignments')} className="bg-[#1e293b] py-5 px-6 rounded-[20px] flex-row items-center justify-between border border-white/5 shadow-lg active:scale-95 transition-transform">
+                    <View className="flex-row items-center">
+                        <Ionicons name="book-outline" size={24} color="#94a3b8" />
+                        <Text className="text-white font-bold text-base ml-4">Add Assignment</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
 
-            {/* OD Requests */}
-            <View className="bg-white/5 rounded-3xl p-5 border border-white/10 mb-6">
-                <View className="flex-row items-center mb-4">
-                    <Ionicons name="document-outline" size={24} color="#3b82f6" />
-                    <Text className="text-xl font-bold text-white ml-2">Pending OD Requests</Text>
-                </View>
+            {/* Pending OD Requests - Condensed List */}
+            <Text className="text-xl font-extrabold text-white mb-4 tracking-tight px-2 flex-row"><Ionicons name="document-text-outline" size={20} color="#38bdf8" /> Pending OD Requests</Text>
 
-                {[
-                    { id: 1, name: 'Dilli Raj', reason: 'Hackathon Participation', date: 'Oct 24, 2026', proof: 'hackathon_pass.pdf' },
-                    { id: 2, name: 'John Doe', reason: 'Medical Leave', date: 'Oct 25, 2026', proof: 'doctor_note.png' }
-                ].map((od) => (
-                    <View key={od.id} className={`p-5 rounded-2xl border mb-3 flex-col ${odStatuses[od.id] ? 'bg-black/10 border-white/5 opacity-50' : 'bg-white/5 border-white/10'}`}>
-                        <View className="flex-row justify-between items-start mb-3">
-                            <View>
-                                <Text className="font-bold text-white text-lg">{od.name}</Text>
-                                <Text className="text-xs text-gray-400 font-medium mt-1">{od.date}</Text>
-                            </View>
-                            {odStatuses[od.id] === 'approved' ? (
-                                <View className="px-3 py-1 bg-emerald-500/10 rounded-md">
-                                    <Text className="text-emerald-400 text-[10px] font-bold uppercase">Approved</Text>
-                                </View>
-                            ) : odStatuses[od.id] === 'rejected' ? (
-                                <View className="px-3 py-1 bg-rose-500/10 rounded-md">
-                                    <Text className="text-rose-400 text-[10px] font-bold uppercase">Rejected</Text>
-                                </View>
-                            ) : (
-                                <View className="px-3 py-1 bg-amber-500/10 rounded-md">
-                                    <Text className="text-amber-400 text-[10px] font-bold uppercase">Pending</Text>
-                                </View>
-                            )}
-                        </View>
-                        <Text className="text-sm text-gray-300 mb-4">{od.reason}</Text>
-
-                        <View className="flex-row items-center justify-between">
-                            <TouchableOpacity onPress={() => setSelectedProof(od.proof)} className="flex-row items-center">
-                                <Ionicons name="document-attach" size={16} color="#3b82f6" />
-                                <Text className="text-xs font-bold text-blue-400 ml-1">View {od.proof}</Text>
-                            </TouchableOpacity>
-
-                            {!odStatuses[od.id] && (
-                                <View className="flex-row space-x-2">
-                                    <TouchableOpacity onPress={() => handleOD(od.id, 'approved')} className="p-2 rounded-xl bg-emerald-500/10 mr-2 border border-emerald-500/20">
-                                        <Ionicons name="checkmark" size={20} color="#34d399" />
-                                    </TouchableOpacity>
-                                    <TouchableOpacity onPress={() => handleOD(od.id, 'rejected')} className="p-2 rounded-xl bg-rose-500/10 border border-rose-500/20">
-                                        <Ionicons name="close" size={20} color="#fb7185" />
-                                    </TouchableOpacity>
-                                </View>
-                            )}
-                        </View>
+            <View className="bg-[#1e293b] rounded-[24px] overflow-hidden mb-6 border border-white/10">
+                {odRequests.length === 0 ? (
+                    <View className="p-8 items-center justify-center">
+                        <Ionicons name="checkmark-circle-outline" size={48} color="#34d399" />
+                        <Text className="text-gray-400 mt-4 font-bold">All requests cleared!</Text>
                     </View>
-                ))}
+                ) : (
+                    odRequests.map((req, idx) => (
+                        <View key={req.id} className={`p-4 ${idx !== odRequests.length - 1 ? 'border-b border-white/5' : ''}`}>
+                            <View className="flex-row justify-between items-start mb-2">
+                                <View>
+                                    <Text className="text-white font-bold text-base">{req.profiles?.full_name || 'Student'}</Text>
+                                    <Text className="text-gray-500 text-xs mt-1">{new Date(req.created_at).toLocaleDateString()}</Text>
+                                </View>
+                                <View className="bg-amber-500/10 px-2 py-1 rounded">
+                                    <Text className="text-amber-500 text-[10px] font-bold">PENDING</Text>
+                                </View>
+                            </View>
+                            <Text className="text-gray-300 text-sm mb-3" numberOfLines={2}>{req.reason}</Text>
+                            <View className="flex-row justify-between items-center">
+                                <TouchableOpacity onPress={() => Alert.alert("Document Viewer", `Opening ${req.file_url}...`)} className="flex-row items-center">
+                                    <Ionicons name="document-attach-outline" size={14} color="#60a5fa" />
+                                    <Text className="text-blue-400 text-xs font-bold ml-1">View {req.file_url || 'Proof'}</Text>
+                                </TouchableOpacity>
+                                <View className="flex-row gap-2">
+                                    <TouchableOpacity onPress={async () => {
+                                        await supabase.from('od_requests').update({ status: 'approved' }).eq('id', req.id);
+                                        fetchOdRequests();
+                                    }} className="w-8 h-8 rounded-lg bg-emerald-500/10 items-center justify-center border border-emerald-500/20">
+                                        <Ionicons name="checkmark" size={16} color="#34d399" />
+                                    </TouchableOpacity>
+                                    <TouchableOpacity onPress={async () => {
+                                        await supabase.from('od_requests').update({ status: 'rejected' }).eq('id', req.id);
+                                        fetchOdRequests();
+                                    }} className="w-8 h-8 rounded-lg bg-rose-500/10 items-center justify-center border border-rose-500/20">
+                                        <Ionicons name="close" size={16} color="#fda4af" />
+                                    </TouchableOpacity>
+                                </View>
+                            </View>
+                        </View>
+                    ))
+                )}
             </View>
         </ScrollView>
+    );
+
+    return (
+        <View className="flex-1 bg-[#101827]">
+            {activeTab === 'dashboard' && renderDashboardOverview()}
+            {activeTab === 'create-course' && <CreateCourseScreen onBack={handleBack} />}
+            {activeTab === 'attendance' && <AttendanceScreen onBack={handleBack} />}
+            {activeTab === 'assignments' && <FacultyAssignmentsScreen onBack={handleBack} />}
+            {activeTab === 'timetable' && <TimetableScreen onBack={handleBack} />}
+            {activeTab === 'chat' && <ChatScreen onBack={handleBack} />}
+            {activeTab === 'profile' && <ProfileScreen onBack={handleBack} />}
+            {activeTab === 'results' && <FacultyResultsScreen onBack={handleBack} />}
+            {activeTab === 'notifications' && <NotificationsScreen onBack={handleBack} />}
+
+            <Sidebar
+                isOpen={isSidebarOpen}
+                onClose={() => setSidebarOpen(false)}
+                activeTab={activeTab}
+                setActiveTab={navigateTo}
+            />
+        </View>
     );
 }

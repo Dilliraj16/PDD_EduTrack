@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { UploadCloud, FileText, CheckCircle, Clock, X, FileCheck, Check, Search, Download } from 'lucide-react';
+import { UploadCloud, FileText, CheckCircle, Clock, X, FileCheck, Check, Search } from 'lucide-react';
 
 const MOCK_ASSIGNMENTS = [
     { id: '1', course: 'Computer Networks', title: 'TCP/IP Flow Control Analysis', due: 'Tomorrow, 11:59 PM', status: 'pending', description: 'Analyze the congestion control algorithms implemented in modern TCP stacks. Provide PCAP file traces if possible.' },
@@ -94,8 +94,8 @@ export default function AssignmentSubmission() {
                                 key={assignment.id}
                                 onClick={() => { setSelectedAssignment(assignment); setSubmitted(false); setUploadedFile(null); }}
                                 className={`p-4 rounded-2xl cursor-pointer transition-all ${selectedAssignment.id === assignment.id
-                                        ? 'bg-gradient-to-br from-purple-600/20 to-pink-600/20 border border-purple-500/30'
-                                        : 'bg-white/5 border border-white/5 hover:bg-white/10'
+                                    ? 'bg-gradient-to-br from-purple-600/20 to-pink-600/20 border border-purple-500/30'
+                                    : 'bg-white/5 border border-white/5 hover:bg-white/10'
                                     }`}
                             >
                                 <div className="flex items-center justify-between mb-2">
@@ -177,10 +177,10 @@ export default function AssignmentSubmission() {
                                             onDrop={handleDrop}
                                             onClick={() => !uploadedFile && fileInputRef.current?.click()}
                                             className={`flex-1 flex flex-col items-center justify-center border-2 border-dashed rounded-3xl p-8 transition-all duration-300 ${dragActive
-                                                    ? 'border-purple-500 bg-purple-500/10 shadow-[0_0_30px_rgba(168,85,247,0.2)]'
-                                                    : uploadedFile
-                                                        ? 'border-white/20 bg-white/5'
-                                                        : 'border-white/10 bg-black/20 hover:bg-white/5 hover:border-white/30 cursor-pointer'
+                                                ? 'border-purple-500 bg-purple-500/10 shadow-[0_0_30px_rgba(168,85,247,0.2)]'
+                                                : uploadedFile
+                                                    ? 'border-white/20 bg-white/5'
+                                                    : 'border-white/10 bg-black/20 hover:bg-white/5 hover:border-white/30 cursor-pointer'
                                                 }`}
                                         >
                                             <input type="file" className="hidden" ref={fileInputRef} onChange={handleFileSelect} />
@@ -197,7 +197,11 @@ export default function AssignmentSubmission() {
                                                         </div>
                                                     </div>
                                                     <button
-                                                        onClick={(e) => { e.stopPropagation(); setUploadedFile(null); }}
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            setUploadedFile(null);
+                                                            if (fileInputRef.current) fileInputRef.current.value = '';
+                                                        }}
                                                         className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
                                                     >
                                                         <X className="w-4 h-4 text-white" />
@@ -225,8 +229,8 @@ export default function AssignmentSubmission() {
                                                 onClick={handleSimulatedUpload}
                                                 disabled={uploading}
                                                 className={`px-8 py-3 rounded-xl font-bold transition-all shadow-lg flex items-center gap-2 ${uploading
-                                                        ? 'bg-purple-600/50 text-white/50 cursor-not-allowed'
-                                                        : 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:shadow-purple-500/25 cursor-pointer'
+                                                    ? 'bg-purple-600/50 text-white/50 cursor-not-allowed'
+                                                    : 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:shadow-purple-500/25 cursor-pointer'
                                                     }`}
                                             >
                                                 {uploading ? (

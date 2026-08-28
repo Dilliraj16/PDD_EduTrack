@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageSquare, Send, Paperclip, Search, Users, MoreVertical, Hash, Image as ImageIcon, FileText, Smile, Download, Loader2 } from 'lucide-react';
+import { MessageSquare, Send, Paperclip, Search, Hash, Image as ImageIcon, FileText, Smile, Download, Loader2 } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { useCourseStore } from '@/store/courseStore';
 

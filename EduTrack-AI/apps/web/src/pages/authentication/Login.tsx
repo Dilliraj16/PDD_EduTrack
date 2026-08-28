@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Lock, User, UserPlus, ArrowRight, ShieldCheck, Sparkles, Key, BookOpen } from 'lucide-react';
+import { User, UserPlus, ArrowRight, ShieldCheck, Sparkles, Key, BookOpen } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import { generateRegistrationNumber } from '@/lib/idGenerator';
 import { supabase } from '@/lib/supabase';
@@ -124,7 +124,7 @@ export default function Login() {
                             <Sparkles className="w-8 h-8 text-white relative z-10 drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
                         </div>
                         <h1 className="text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 drop-shadow-sm">
-                            EduTrack AI
+                            EduTrack
                         </h1>
                         <p className="text-gray-400 mt-2 text-sm font-medium tracking-wide">Enterprise Smart Campus</p>
                     </div>

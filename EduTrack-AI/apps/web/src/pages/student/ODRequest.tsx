@@ -1,4 +1,4 @@
-import { FilePlus, Send, FileText, UploadCloud, CheckCircle2, User } from 'lucide-react';
+import { Send, FileText, UploadCloud, CheckCircle2 } from 'lucide-react';
 import { useState, useRef } from 'react';
 
 export default function ODRequest() {
@@ -93,8 +93,8 @@ export default function ODRequest() {
                         <div
                             onClick={() => fileInputRef.current?.click()}
                             className={`w-full border-2 border-dashed rounded-xl p-8 flex flex-col items-center justify-center transition-all cursor-pointer group ${file
-                                    ? 'border-emerald-400 bg-emerald-50 dark:bg-emerald-500/5'
-                                    : 'border-slate-300 dark:border-white/20 bg-slate-50 dark:bg-white/5 hover:border-blue-500/50'
+                                ? 'border-emerald-400 bg-emerald-50 dark:bg-emerald-500/5'
+                                : 'border-slate-300 dark:border-white/20 bg-slate-50 dark:bg-white/5 hover:border-blue-500/50'
                                 }`}
                         >
                             {file ? (

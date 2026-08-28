@@ -21,20 +21,44 @@ interface CourseState {
     activeStudents: StudentGrade[];
     isLoading: boolean;
 
+    fetchCourses: () => Promise<void>;
     fetchCoursesForFaculty: () => Promise<void>;
     fetchStudentsForCourse: (courseCode: string) => Promise<void>;
-    addCourse: (course: Course) => void;
+    addCourse: (course: Course) => Promise<void>;
     updateGrade: (courseCode: string, studentId: string, grade: string) => Promise<void>;
 }
 
-export const useCourseStore = create<CourseState>((set, get) => ({
+export const useCourseStore = create<CourseState>((set) => ({
     courses: [],
     activeStudents: [],
     isLoading: false,
 
-    addCourse: (course) => set((state) => ({
-        courses: [...state.courses, course]
-    })),
+    fetchCourses: async () => {
+        const { data, error } = await supabase.from('courses').select('code, name, faculty_id');
+        if (!error && data) {
+            const mapped = data.map((c: any) => ({
+                id: c.code,
+                name: c.name,
+                code: c.code,
+                faculty_id: c.faculty_id
+            }));
+            set({ courses: mapped });
+        }
+    },
+
+    addCourse: async (course) => {
+        const { error } = await supabase.from('courses').insert({
+            code: course.code,
+            name: course.name,
+            faculty_id: course.faculty_id
+        });
+
+        if (!error) {
+            set((state) => ({
+                courses: [...state.courses, course]
+            }));
+        }
+    },
 
     fetchCoursesForFaculty: async () => {
         const { data: { user } } = await supabase.auth.getUser();
