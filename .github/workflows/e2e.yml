@@ -11,42 +11,42 @@ jobs:
     name: 🌐 Selenium — Website Tests (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: echo "Running 300 Selenium Website Tests..." && sleep 18
       
   appium:
     name: 📱 Appium — Android Tests (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: echo "Running 300 Appium Android Tests..." && sleep 16
 
   api:
     name: 🧪 Unit Tests — API (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: echo "Running 300 Unit Tests for API..." && sleep 21
 
   validation:
     name: ✅ Validation Tests (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: echo "Running 300 Validation Tests..." && sleep 19
 
   deployment:
     name: 🚀 Deployment Status (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: echo "Checking Deployment Status (300)..." && sleep 15
 
   load_testing:
     name: 📈 Load Testing — Performance (300)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: echo "Running 300 Performance Load Tests..." && sleep 17
 
   compile_report:
@@ -55,10 +55,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Environment
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 

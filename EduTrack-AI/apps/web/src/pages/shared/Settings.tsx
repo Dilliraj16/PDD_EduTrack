@@ -1,12 +1,81 @@
-import { useState } from 'react';
-import { Camera, Shield, Moon, Sun, Monitor, HardDrive, Edit3, Lock, Trash2, Smartphone } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Camera, Shield, Moon, Sun, Monitor, HardDrive, Edit3, Lock, Trash2, Smartphone, Loader2 } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import { useThemeStore } from '@/store/themeStore';
+import { supabase } from '@/lib/supabase';
 
 export default function Settings() {
     const { user, role } = useAuthStore();
     const { theme, setTheme } = useThemeStore();
     const [activeTab, setActiveTab] = useState<'profile' | 'security' | 'appearance' | 'privacy'>('profile');
+
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [biography, setBiography] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
+    const [isSaving, setIsSaving] = useState(false);
+    const [saveMessage, setSaveMessage] = useState('');
+
+    useEffect(() => {
+        const fetchProfile = async () => {
+            if (!user?.id || !role) return;
+
+            try {
+                const table = role === 'student' ? 'students' : role === 'faculty' ? 'faculty' : 'admins';
+                const { data, error } = await supabase
+                    .from(table)
+                    .select('first_name, last_name')
+                    .eq('id', user.id)
+                    .single();
+
+                if (data && !error) {
+                    setFirstName(data.first_name || '');
+                    setLastName(data.last_name || '');
+                }
+
+                const { data: authData } = await supabase.auth.getUser();
+                if (authData?.user?.user_metadata?.biography) {
+                    setBiography(authData.user.user_metadata.biography);
+                }
+            } catch (error) {
+                console.error("Error fetching profile", error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+        fetchProfile();
+    }, [user, role]);
+
+    const handleSaveProfile = async () => {
+        if (!user?.id || !role) return;
+        setIsSaving(true);
+        setSaveMessage('');
+
+        try {
+            const table = role === 'student' ? 'students' : role === 'faculty' ? 'faculty' : 'admins';
+
+            const { error: dbError } = await supabase
+                .from(table)
+                .update({ first_name: firstName, last_name: lastName })
+                .eq('id', user.id);
+
+            if (dbError) throw dbError;
+
+            const { error: authError } = await supabase.auth.updateUser({
+                data: { biography: biography }
+            });
+
+            if (authError) throw authError;
+
+            setSaveMessage('Profile saved successfully!');
+            setTimeout(() => setSaveMessage(''), 3000);
+        } catch (error) {
+            console.error("Error saving profile", error);
+            setSaveMessage('Failed to save profile.');
+        } finally {
+            setIsSaving(false);
+        }
+    };
 
     return (
         <div className="max-w-6xl mx-auto space-y-6">
@@ -58,19 +127,30 @@ export default function Settings() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="space-y-2">
                                         <label className="text-xs text-gray-400 uppercase tracking-wide">First Name</label>
-                                        <input type="text" className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:ring-2 focus:ring-blue-500/50 outline-none" defaultValue="EduTrack" />
+                                        <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} disabled={isLoading} className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:ring-2 focus:ring-blue-500/50 outline-none disabled:opacity-50" placeholder="First Name" />
                                     </div>
                                     <div className="space-y-2">
                                         <label className="text-xs text-gray-400 uppercase tracking-wide">Last Name</label>
-                                        <input type="text" className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:ring-2 focus:ring-blue-500/50 outline-none" defaultValue="User" />
+                                        <input type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} disabled={isLoading} className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-2.5 text-white focus:ring-2 focus:ring-blue-500/50 outline-none disabled:opacity-50" placeholder="Last Name" />
                                     </div>
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-xs text-gray-400 uppercase tracking-wide">Biography</label>
-                                    <textarea className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:ring-2 focus:ring-blue-500/50 outline-none min-h-[100px]" defaultValue="EduTrack User Profile." />
+                                    <textarea value={biography} onChange={(e) => setBiography(e.target.value)} disabled={isLoading} className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:ring-2 focus:ring-blue-500/50 outline-none min-h-[100px] disabled:opacity-50" placeholder="Tell us about yourself..." />
                                 </div>
-                                <div className="pt-4 flex justify-end">
-                                    <button className="px-6 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-medium transition-colors shadow-lg shadow-blue-500/20">Save Changes</button>
+                                <div className="pt-4 flex justify-end items-center space-x-4">
+                                    {saveMessage && (
+                                        <span className={`text-sm font-medium ${saveMessage.includes('Failed') ? 'text-red-400' : 'text-emerald-400'}`}>
+                                            {saveMessage}
+                                        </span>
+                                    )}
+                                    <button onClick={handleSaveProfile} disabled={isSaving || isLoading} className="flex flex-row items-center justify-center px-6 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-medium transition-colors shadow-lg shadow-blue-500/20 disabled:opacity-50 disabled:cursor-not-allowed min-w-[140px]">
+                                        {isSaving ? (
+                                            <><Loader2 className="w-4 h-4 mr-2 animate-spin" /> Saving...</>
+                                        ) : (
+                                            'Save Changes'
+                                        )}
+                                    </button>
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, ScrollView, Dimensions, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView, Dimensions, TouchableOpacity, Modal, TextInput, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LineChart } from 'react-native-chart-kit';
+import { supabase } from '../config/supabase';
 
 const { width } = Dimensions.get('window');
 
@@ -20,6 +21,89 @@ const attendanceData = [
 export default function StudentDashboard() {
     const [currentTime, setCurrentTime] = useState(new Date());
 
+    // Profile Settings State
+    const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [biography, setBiography] = useState('');
+    const [isLoadingProfile, setIsLoadingProfile] = useState(false);
+    const [isSaving, setIsSaving] = useState(false);
+    const [saveMessage, setSaveMessage] = useState('');
+    const [userId, setUserId] = useState<string | null>(null);
+    const [userRole, setUserRole] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (!isSettingsOpen) return;
+
+        const fetchProfile = async () => {
+            setIsLoadingProfile(true);
+            try {
+                const { data: authData } = await supabase.auth.getUser();
+                const sessionUser = authData?.user;
+                if (!sessionUser) return;
+
+                setUserId(sessionUser.id);
+
+                const meta = sessionUser.user_metadata || {};
+                const role = meta.role || 'students';
+                setUserRole(role);
+                setBiography(meta.biography || '');
+
+                const table = role === 'faculty' ? 'faculty' : role === 'admin' ? 'admins' : 'students';
+
+                const { data, error } = await supabase
+                    .from(table)
+                    .select('first_name, last_name')
+                    .eq('id', sessionUser.id)
+                    .single();
+
+                if (data && !error) {
+                    setFirstName(data.first_name || '');
+                    setLastName(data.last_name || '');
+                }
+            } catch (error) {
+                console.error("Error fetching profile", error);
+            } finally {
+                setIsLoadingProfile(false);
+            }
+        };
+        fetchProfile();
+    }, [isSettingsOpen]);
+
+    const handleSaveProfile = async () => {
+        if (!userId || !userRole) return;
+        setIsSaving(true);
+        setSaveMessage('');
+
+        try {
+            const table = userRole === 'faculty' ? 'faculty' : userRole === 'admin' ? 'admins' : 'students';
+
+            const { error: dbError } = await supabase
+                .from(table)
+                .update({ first_name: firstName, last_name: lastName })
+                .eq('id', userId);
+
+            if (dbError) throw dbError;
+
+            const { error: authError } = await supabase.auth.updateUser({
+                data: { biography: biography }
+            });
+
+            if (authError) throw authError;
+
+            setSaveMessage('Profile saved successfully!');
+            setTimeout(() => {
+                setSaveMessage('');
+                setIsSettingsOpen(false);
+            }, 2000);
+        } catch (error) {
+            console.error("Error saving profile", error);
+            setSaveMessage('Failed to save profile.');
+        } finally {
+            setIsSaving(false);
+        }
+    };
+
     useEffect(() => {
         const timer = setInterval(() => setCurrentTime(new Date()), 1000);
         return () => clearInterval(timer);
@@ -31,7 +115,12 @@ export default function StudentDashboard() {
         <ScrollView className="flex-1 bg-[#0f172a]" contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
             {/* Header Profile */}
             <View className="mb-6 mt-12 bg-white/5 p-5 rounded-3xl border border-white/10 relative overflow-hidden">
-                <Text className="text-3xl font-extrabold text-white mb-2">Welcome, Student!</Text>
+                <View className="flex-row justify-between items-start mb-2">
+                    <Text className="text-3xl font-extrabold text-white">Welcome, Student!</Text>
+                    <TouchableOpacity onPress={() => setIsSettingsOpen(true)} className="p-2 bg-blue-500/10 rounded-full border border-blue-500/20">
+                        <Ionicons name="settings-outline" size={22} color="#3b82f6" />
+                    </TouchableOpacity>
+                </View>
                 <View className="flex-row flex-wrap gap-2 mb-4">
                     <View className="bg-blue-500/20 border border-blue-500/30 px-3 py-1 rounded-lg">
                         <Text className="text-blue-300 font-bold text-xs">STD-2026-CS-0154</Text>
@@ -122,6 +211,82 @@ export default function StudentDashboard() {
                     <Text className="text-gray-400 font-bold">01:00 PM</Text>
                 </View>
             </View>
+
+            {/* Settings Modal */}
+            <Modal visible={isSettingsOpen} animationType="slide" transparent={true}>
+                <View className="flex-1 justify-end bg-black/60">
+                    <View className="bg-[#0f172a] p-6 rounded-t-3xl border-t border-white/10 min-h-[500px]">
+                        <View className="flex-row justify-between items-center mb-6">
+                            <Text className="text-2xl font-extrabold text-white">Edit Profile</Text>
+                            <TouchableOpacity onPress={() => setIsSettingsOpen(false)} className="p-2 bg-white/5 rounded-full border border-white/10">
+                                <Ionicons name="close" size={20} color="#94a3b8" />
+                            </TouchableOpacity>
+                        </View>
+
+                        {isLoadingProfile ? (
+                            <View className="flex-1 justify-center items-center">
+                                <ActivityIndicator size="large" color="#3b82f6" />
+                            </View>
+                        ) : (
+                            <View className="w-full h-full flex flex-col justify-start">
+                                <View className="flex-row items-center w-full mb-4">
+                                    <View className="flex-1 pr-2">
+                                        <Text className="text-xs text-gray-400 font-bold mb-1 ml-1 uppercase">First Name</Text>
+                                        <TextInput
+                                            className="bg-black/20 text-white p-4 rounded-xl border border-white/10 font-bold"
+                                            value={firstName}
+                                            onChangeText={setFirstName}
+                                            placeholder="First Name"
+                                            placeholderTextColor="#94a3b8"
+                                        />
+                                    </View>
+                                    <View className="flex-1 pl-2">
+                                        <Text className="text-xs text-gray-400 font-bold mb-1 ml-1 uppercase">Last Name</Text>
+                                        <TextInput
+                                            className="bg-black/20 text-white p-4 rounded-xl border border-white/10 font-bold"
+                                            value={lastName}
+                                            onChangeText={setLastName}
+                                            placeholder="Last Name"
+                                            placeholderTextColor="#94a3b8"
+                                        />
+                                    </View>
+                                </View>
+
+                                <View className="mb-6 w-full">
+                                    <Text className="text-xs text-gray-400 font-bold mb-1 ml-1 uppercase">Biography</Text>
+                                    <TextInput
+                                        className="bg-black/20 text-white p-4 rounded-xl border border-white/10 min-h-[100px] font-bold"
+                                        value={biography}
+                                        onChangeText={setBiography}
+                                        placeholder="Add a short bio..."
+                                        placeholderTextColor="#94a3b8"
+                                        multiline
+                                        textAlignVertical="top"
+                                    />
+                                </View>
+
+                                {saveMessage ? (
+                                    <Text className={`text-center mb-4 font-bold ${saveMessage.includes('Failed') ? 'text-rose-400' : 'text-emerald-400'}`}>
+                                        {saveMessage}
+                                    </Text>
+                                ) : null}
+
+                                <TouchableOpacity
+                                    onPress={handleSaveProfile}
+                                    disabled={isSaving}
+                                    className={`p-4 rounded-2xl items-center shadow-lg w-full ${isSaving ? 'bg-blue-500/50' : 'bg-blue-600 shadow-blue-500/20'}`}
+                                >
+                                    {isSaving ? (
+                                        <ActivityIndicator color="#ffffff" />
+                                    ) : (
+                                        <Text className="text-white font-bold text-lg">Save Changes</Text>
+                                    )}
+                                </TouchableOpacity>
+                            </View>
+                        )}
+                    </View>
+                </View>
+            </Modal>
 
         </ScrollView>
     );
