@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView, ScrollView, Alert, TextInput } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { supabase } from '../config/supabase';
+import { supabase } from '../../config/supabase';
 
 export default function FacultyAssignmentsScreen({ onBack }: { onBack: () => void }) {
     const [viewMode, setViewMode] = useState<'list' | 'create'>('create');

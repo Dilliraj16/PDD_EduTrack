@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, ScrollView, TextInput, TouchableOpacity, ActivityIndicator, KeyboardAvoidingView, Platform, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { supabase } from '../config/supabase';
-import { useAuthStore } from '../store/authStore';
-import { useCourseStore } from '../store/courseStore';
+import { supabase } from '../../config/supabase';
+import { useAuthStore } from '../../store/authStore';
+import { useCourseStore } from '../../store/courseStore';
 
 interface Message {
     id: string;

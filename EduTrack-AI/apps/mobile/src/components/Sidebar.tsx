@@ -22,16 +22,21 @@ const STUDENT_MENU = [
     { id: 'assignments', label: 'Assignments', icon: 'document-text-outline' },
     { id: 'od-request', label: 'OD Request', icon: 'checkbox-outline' },
     { id: 'chat', label: 'Subject Chat', icon: 'chatbubbles-outline' },
+    { id: 'sep1', separator: true },
+    { id: 'ai-insights', label: '🤖 AI Mode', icon: 'hardware-chip-outline' },
 ];
 
 const FACULTY_MENU = [
     { id: 'dashboard', label: 'Dashboard', icon: 'grid-outline' },
+    { id: 'student-reg', label: 'Student Reg', icon: 'person-add-outline' },
     { id: 'create-course', label: 'Create Course', icon: 'add-circle-outline' },
     { id: 'timetable', label: 'Timetable', icon: 'calendar-outline' },
     { id: 'attendance', label: 'Attendance', icon: 'checkbox-outline' },
     { id: 'assignments', label: 'Assignments', icon: 'document-text-outline' },
     { id: 'results', label: 'Course Results', icon: 'ribbon-outline' },
     { id: 'chat', label: 'Subject Chat', icon: 'chatbubbles-outline' },
+    { id: 'sep2', separator: true },
+    { id: 'ai-insights', label: '🤖 AI Mode', icon: 'hardware-chip-outline' },
 ];
 
 export default function Sidebar({ isOpen, onClose, activeTab, setActiveTab }: SidebarProps) {
@@ -107,6 +112,9 @@ export default function Sidebar({ isOpen, onClose, activeTab, setActiveTab }: Si
                     <Text className="text-slate-500 text-xs font-bold uppercase tracking-wider mb-4 px-2">Menu</Text>
 
                     {activeMenu.map((item) => {
+                        if (item.separator) {
+                            return <View key={item.id} className="w-full h-px bg-white/10 my-2" />;
+                        }
                         const isActive = activeTab === item.id;
                         return (
                             <TouchableOpacity

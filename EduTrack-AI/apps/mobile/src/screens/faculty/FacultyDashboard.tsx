@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, BackHandler, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import Sidebar from '../components/Sidebar';
-import ProfileScreen from './ProfileScreen';
-import { useCourseStore } from '../store/courseStore';
-import { supabase } from '../config/supabase';
+import Sidebar from '../../components/Sidebar';
+import ProfileScreen from '../common/ProfileScreen';
+import { useCourseStore } from '../../store/courseStore';
+import { supabase } from '../../config/supabase';
 
 // Faculty specific screens
 import CreateCourseScreen from './CreateCourseScreen';
 import AttendanceScreen from './AttendanceScreen';
-import FacultyAssignmentsScreen from './FacultyAssignmentsScreen';
-import FacultyResultsScreen from './FacultyResultsScreen';
+import FacultyResultsScreen from './ResultsScreen';
+import StudentRegistrationScreen from './StudentRegistrationScreen';
+import FacultyAIInsightsScreen from './FacultyAIInsightsScreen';
 // Reused screens
-import ChatScreen from './ChatScreen';
-import TimetableScreen from './TimetableScreen';
-import AssignmentScreen from './AssignmentScreen';
-import NotificationsScreen from './NotificationsScreen';
+import ChatScreen from '../common/ChatScreen';
+import TimetableScreen from '../common/TimetableScreen';
+import FacultyAssignmentsScreen from './AssignmentScreen';
+import NotificationsScreen from '../common/NotificationsScreen';
 
 export default function FacultyDashboard() {
     const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -24,6 +25,7 @@ export default function FacultyDashboard() {
     const fetchCourses = useCourseStore(state => state.fetchCourses);
 
     const [odRequests, setOdRequests] = useState<any[]>([]);
+    const [totalStudents, setTotalStudents] = useState<number>(0);
 
     const fetchOdRequests = async () => {
         const { data } = await supabase
@@ -32,6 +34,16 @@ export default function FacultyDashboard() {
             .eq('status', 'pending');
 
         if (data) setOdRequests(data);
+    };
+
+    const fetchStudentsCount = async () => {
+        const { count, error } = await supabase
+            .from('profiles')
+            .select('*', { count: 'exact', head: true })
+            .eq('role', 'student');
+        if (!error && count !== null) {
+            setTotalStudents(count);
+        }
     };
 
     // Centralized Navigation Handler
@@ -57,6 +69,7 @@ export default function FacultyDashboard() {
     React.useEffect(() => {
         fetchCourses();
         fetchOdRequests();
+        fetchStudentsCount();
     }, []);
 
     React.useEffect(() => {
@@ -99,7 +112,7 @@ export default function FacultyDashboard() {
                     </View>
                     <View>
                         <Text className="text-gray-400 font-bold text-xs mb-2 tracking-widest">Total Students</Text>
-                        <Text className="text-white font-extrabold text-3xl">450</Text>
+                        <Text className="text-white font-extrabold text-3xl">{totalStudents}</Text>
                     </View>
                     <View className="w-12 h-12 rounded-2xl bg-indigo-900/40 items-center justify-center border border-indigo-500/20">
                         <Ionicons name="people-outline" size={24} color="#a5b4fc" />
@@ -222,6 +235,8 @@ export default function FacultyDashboard() {
             {activeTab === 'chat' && <ChatScreen onBack={handleBack} />}
             {activeTab === 'profile' && <ProfileScreen onBack={handleBack} />}
             {activeTab === 'results' && <FacultyResultsScreen onBack={handleBack} />}
+            {activeTab === 'student-reg' && <StudentRegistrationScreen onBack={handleBack} />}
+            {activeTab === 'ai-insights' && <FacultyAIInsightsScreen />}
             {activeTab === 'notifications' && <NotificationsScreen onBack={handleBack} />}
 
             <Sidebar

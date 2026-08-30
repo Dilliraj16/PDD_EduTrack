@@ -1,8 +1,9 @@
 import { Users, FileStack, ClipboardCheck, TrendingUp, BookOpen, Check, FileText, X, GripHorizontal } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Reorder } from 'framer-motion';
 import { useCourseStore } from '@/store/courseStore';
+import { supabase } from '@/lib/supabase';
 
 export default function FacultyDashboard() {
     const navigate = useNavigate();
@@ -14,6 +15,21 @@ export default function FacultyDashboard() {
     // Draggable layout state
     const [layout, setLayout] = useState(['stats', 'courses', 'actions_and_od']);
 
+    const [totalStudents, setTotalStudents] = useState<number>(0);
+
+    useEffect(() => {
+        const fetchStudentsCount = async () => {
+            const { count, error } = await supabase
+                .from('profiles')
+                .select('*', { count: 'exact', head: true })
+                .eq('role', 'student');
+            if (!error && count !== null) {
+                setTotalStudents(count);
+            }
+        };
+        fetchStudentsCount();
+    }, []);
+
     const handleOD = (id: number, status: 'approved' | 'rejected') => {
         if (!odStatuses[id]) {
             setOdStatuses(prev => ({ ...prev, [id]: status }));
@@ -23,7 +39,7 @@ export default function FacultyDashboard() {
     const renderStats = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-                { title: 'Total Students', value: '450', icon: Users, color: 'text-purple-400', glow: 'bg-purple-500/20' },
+                { title: 'Total Students', value: totalStudents.toString(), icon: Users, color: 'text-purple-400', glow: 'bg-purple-500/20' },
                 { title: 'Pending Evaluations', value: '34', icon: ClipboardCheck, color: 'text-rose-400', glow: 'bg-rose-500/20', link: '/dashboard/assignments' },
                 { title: 'Subjects Taught', value: '4', icon: BookOpen, color: 'text-blue-400', glow: 'bg-blue-500/20' },
                 { title: 'Avg Class Attendance', value: '88%', icon: TrendingUp, color: 'text-emerald-400', glow: 'bg-emerald-500/20' },

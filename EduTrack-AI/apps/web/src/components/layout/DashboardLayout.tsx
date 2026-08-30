@@ -2,7 +2,7 @@ import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import {
     LogOut, LayoutDashboard, Calendar, FileText, Bell,
     MessageSquare, Settings as SettingsIcon, BookOpen, FileCheck,
-    ClipboardList, BrainCircuit, Sun, Moon, Menu, X, Zap, Award, PlusCircle
+    ClipboardList, Sun, Moon, Menu, X, Zap, Award, PlusCircle, UserPlus, Bot
 } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import { useThemeStore } from '@/store/themeStore';
@@ -25,22 +25,25 @@ export default function DashboardLayout() {
     const getNavItems = () => {
         if (role === 'student') return [
             { icon: LayoutDashboard, label: 'Dashboard', path: '/dashboard' },
-            { icon: BrainCircuit, label: 'Goals & Progress', path: '/dashboard/ai-insights' },
-            { icon: Calendar, label: 'Timetable', path: '/dashboard/timetable' },
             { icon: BookOpen, label: 'Enrollment', path: '/dashboard/enrollment' },
             { icon: Award, label: 'Completed Courses', path: '/dashboard/completed-courses' },
             { icon: FileText, label: 'Assignments', path: '/dashboard/assignments' },
             { icon: FileCheck, label: 'OD Request', path: '/dashboard/od-request' },
-            { icon: MessageSquare, label: 'Subject Chat', path: '/dashboard/chat' }
+            { icon: MessageSquare, label: 'Subject Chat', path: '/dashboard/chat' },
+            { separator: true },
+            { icon: Bot, label: '🤖 AI Mode', path: '/dashboard/student/ai', isAiModule: true },
         ];
         if (role === 'faculty') return [
             { icon: LayoutDashboard, label: 'Dashboard', path: '/dashboard' },
+            { icon: UserPlus, label: 'Student Reg', path: '/dashboard/student-reg' },
             { icon: PlusCircle, label: 'Create Course', path: '/dashboard/create-course' },
             { icon: Calendar, label: 'Timetable', path: '/dashboard/timetable' },
             { icon: ClipboardList, label: 'Attendance', path: '/dashboard/attendance' },
             { icon: FileText, label: 'Assignments', path: '/dashboard/assignments' },
             { icon: Award, label: 'Course Results', path: '/dashboard/course-results' },
-            { icon: MessageSquare, label: 'Subject Chat', path: '/dashboard/chat' }
+            { icon: MessageSquare, label: 'Subject Chat', path: '/dashboard/chat' },
+            { separator: true },
+            { icon: Bot, label: '🤖 AI Mode', path: '/dashboard/faculty/ai', isAiModule: true },
         ];
 
         return [{ icon: LayoutDashboard, label: 'Dashboard', path: '/dashboard' }];
@@ -97,17 +100,24 @@ export default function DashboardLayout() {
                 {/* Nav */}
                 <nav className="flex-1 px-3 space-y-0.5 overflow-y-auto scrollbar-hide">
                     {navItems.map((item, i) => {
+                        if (item.separator) {
+                            return <hr key={i} className="my-4 border-white/10" />;
+                        }
                         const active = location.pathname === item.path;
                         return (
                             <button
                                 key={i}
-                                onClick={() => { navigate(item.path); setIsMobileMenuOpen(false); }}
+                                onClick={() => { if (item.path) navigate(item.path); setIsMobileMenuOpen(false); }}
                                 className={`w-full flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${active
-                                    ? 'nav-pill-active'
-                                    : 'text-white/55 hover:text-white hover:bg-white/8'
+                                    ? item.isAiModule
+                                        ? 'bg-gradient-to-r from-indigo-500/20 to-purple-500/20 text-indigo-300 border border-indigo-500/30 font-bold'
+                                        : 'nav-pill-active'
+                                    : item.isAiModule
+                                        ? 'text-indigo-400 hover:bg-white/5 hover:text-indigo-300'
+                                        : 'text-white/55 hover:text-white hover:bg-white/8'
                                     }`}
                             >
-                                <item.icon className={`w-4 h-4 shrink-0 ${active ? 'text-white' : 'text-white/40'}`} />
+                                {item.icon && <item.icon className={`w-4 h-4 shrink-0 ${active ? (item.isAiModule ? 'text-indigo-400' : 'text-white') : (item.isAiModule ? 'text-indigo-500' : 'text-white/40')}`} />}
                                 {item.label}
                             </button>
                         );

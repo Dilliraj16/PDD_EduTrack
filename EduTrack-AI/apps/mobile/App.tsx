@@ -2,9 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { StyleSheet, KeyboardAvoidingView, Platform, View, TouchableOpacity, Text } from 'react-native';
 import { useAuthStore } from './src/store/authStore';
-import StudentDashboard from './src/screens/StudentDashboard';
-import FacultyDashboard from './src/screens/FacultyDashboard';
-import LoginScreen from './src/screens/LoginScreen';
+import StudentDashboard from './src/screens/student/StudentDashboard';
+import FacultyDashboard from './src/screens/faculty/FacultyDashboard';
+import LoginScreen from './src/screens/auth/LoginScreen';
 import { configureReanimatedLogger, ReanimatedLogLevel } from 'react-native-reanimated';
 
 // Disable strict mode for Reanimated 4.5.x to prevent NativeWind from flooding the console and freezing the UI

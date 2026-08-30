@@ -1,23 +1,25 @@
 import { useEffect, useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Login from '@/pages/authentication/Login';
-import DashboardLayout from '@/layouts/DashboardLayout';
-import StudentDashboard from '@/pages/student/Dashboard';
+import Login from '@/pages/auth/Login';
+import DashboardLayout from '@/components/layout/DashboardLayout';
+import StudentDashboard from '@/pages/student/StudentDashboard';
 import CourseEnrollment from '@/pages/student/CourseEnrollment';
 import CompletedCourses from '@/pages/student/CompletedCourses';
 import ODRequest from '@/pages/student/ODRequest';
 import AssignmentSubmission from '@/pages/student/AssignmentSubmission';
 import FacultyAssignments from '@/pages/faculty/Assignments';
-import FacultyDashboard from '@/pages/faculty/Dashboard';
+import FacultyDashboard from '@/pages/faculty/FacultyDashboard';
 import MarkAttendance from '@/pages/faculty/MarkAttendance';
 import CourseResults from '@/pages/faculty/CourseResults';
 import CreateCourse from '@/pages/faculty/CreateCourse';
+import StudentRegistration from '@/pages/faculty/StudentRegistrationPage';
 
 import SubjectChat from '@/pages/chat/SubjectChat';
 import Timetable from '@/pages/shared/Timetable';
 import Notifications from '@/pages/shared/Notifications';
 import Settings from '@/pages/shared/Settings';
-import AIDashboard from '@/pages/ai/AIDashboard';
+import StudentAIDashboard from '@/features/ai/StudentAIDashboard';
+import FacultyAIDashboard from '@/features/ai/FacultyAIDashboard';
 import { useAuthStore } from '@/store/authStore';
 import { supabase } from '@/lib/supabase';
 
@@ -79,11 +81,13 @@ export default function App() {
         <Route path="attendance" element={role === 'faculty' ? <MarkAttendance /> : <Navigate to="/dashboard" />} />
         <Route path="course-results" element={role === 'faculty' ? <CourseResults /> : <Navigate to="/dashboard" />} />
         <Route path="create-course" element={role === 'faculty' ? <CreateCourse /> : <Navigate to="/dashboard" />} />
+        <Route path="student-reg" element={role === 'faculty' ? <StudentRegistration /> : <Navigate to="/dashboard" />} />
         <Route path="chat" element={<SubjectChat />} />
         <Route path="timetable" element={<Timetable />} />
         <Route path="notifications" element={<Notifications />} />
         <Route path="settings" element={<Settings />} />
-        <Route path="ai-insights" element={<AIDashboard />} />
+        <Route path="student/ai" element={role === 'student' ? <StudentAIDashboard /> : <Navigate to="/dashboard" />} />
+        <Route path="faculty/ai" element={role === 'faculty' ? <FacultyAIDashboard /> : <Navigate to="/dashboard" />} />
       </Route>
 
       {/* Fallback route */}

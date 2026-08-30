@@ -93,7 +93,7 @@ export default function AIDashboard() {
         const text = newTaskText[timeframe];
         if (!text.trim() || !currentUser) return;
 
-        const { data, error } = await supabase.from('todos').insert({
+        const { data } = await supabase.from('todos').insert({
             student_id: currentUser.id,
             task: text.trim(),
             time_frame: timeframe,

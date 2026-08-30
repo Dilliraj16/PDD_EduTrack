@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, Dimensions, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { supabase } from '../config/supabase';
-import { useAuthStore } from '../store/authStore';
-import { useCourseStore } from '../store/courseStore';
+import { supabase } from '../../config/supabase';
+import { useAuthStore } from '../../store/authStore';
+import { useCourseStore } from '../../store/courseStore';
 import ODRequestScreen from './ODRequestScreen';
 import AssignmentScreen from './AssignmentScreen';
-import ProfileScreen from './ProfileScreen';
+import ProfileScreen from '../common/ProfileScreen';
 import GoalsScreen from './GoalsScreen';
-import TimetableScreen from './TimetableScreen';
+import TimetableScreen from '../common/TimetableScreen';
 import EnrollmentScreen from './EnrollmentScreen';
 import CoursesScreen from './CoursesScreen';
-import ChatScreen from './ChatScreen';
-import NotificationsScreen from './NotificationsScreen';
-import Sidebar from '../components/Sidebar';
+import ChatScreen from '../common/ChatScreen';
+import NotificationsScreen from '../common/NotificationsScreen';
+import Sidebar from '../../components/Sidebar';
+import StudentAIInsightsScreen from './StudentAIInsightsScreen';
 
 export default function StudentDashboard() {
     const { user } = useAuthStore();
@@ -219,6 +220,12 @@ export default function StudentDashboard() {
             {currentTab === 'notifications' && (
                 <View className="flex-1 pb-[80px]">
                     <NotificationsScreen onBack={() => setCurrentTab('dashboard')} />
+                </View>
+            )}
+
+            {currentTab === 'ai-insights' && (
+                <View className="flex-1 pb-[80px]">
+                    <StudentAIInsightsScreen />
                 </View>
             )}
 

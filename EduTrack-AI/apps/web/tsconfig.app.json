@@ -12,7 +12,7 @@
         "./src/*"
       ],
       "@shared/*": [
-        "../../packages/shared/*"
+        "../../packages/shared/src/*"
       ],
       "@utils/*": [
         "../../packages/utils/*"

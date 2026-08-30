@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { User, UserPlus, ArrowRight, ShieldCheck, Sparkles, Key, BookOpen } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
-import { generateRegistrationNumber } from '@/lib/idGenerator';
+import { generateRegistrationNumber } from '@shared/utils/idGenerator';
 import { supabase } from '@/lib/supabase';
 
 const STATIC_PASSWORD = 'EduTrack@SimpleLog1n!';
@@ -142,7 +142,7 @@ export default function Login() {
                                     <button onClick={() => { setIsLogin(true); setErrorMsg(""); }} className={`flex-1 py-2.5 text-sm font-semibold rounded-xl transition-all duration-300 z-10 ${isLogin ? 'text-white' : 'text-gray-500 hover:text-gray-300'}`}>
                                         Log in
                                     </button>
-                                    <button onClick={() => { setIsLogin(false); setErrorMsg(""); }} className={`flex-1 py-2.5 text-sm font-semibold rounded-xl transition-all duration-300 z-10 ${!isLogin ? 'text-white' : 'text-gray-500 hover:text-gray-300'}`}>
+                                    <button onClick={() => { setIsLogin(false); setErrorMsg(""); setRole('faculty'); }} className={`flex-1 py-2.5 text-sm font-semibold rounded-xl transition-all duration-300 z-10 ${!isLogin ? 'text-white' : 'text-gray-500 hover:text-gray-300'}`}>
                                         Create Account
                                     </button>
                                     {/* Animated Pill Background */}
@@ -159,7 +159,10 @@ export default function Login() {
                                     {['student', 'faculty'].map((r) => (
                                         <button
                                             key={r}
-                                            onClick={() => setRole(r as any)}
+                                            onClick={() => {
+                                                setRole(r as any);
+                                                if (r === 'student') setIsLogin(true); // Students cannot create accounts
+                                            }}
                                             className={`flex-1 py-3 px-4 rounded-2xl border transition-all duration-300 flex items-center justify-center gap-2 font-medium capitalize text-sm
                                                 ${role === r ? roleStyles[r as keyof typeof roleStyles].active : 'border-white/5 bg-white/[0.02] text-gray-400 hover:bg-white/[0.05] hover:border-white/10 hover:text-gray-200'}
                                             `}

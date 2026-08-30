@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView, ScrollView, TextInput, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useCourseStore } from '../store/courseStore';
+import { useCourseStore } from '../../store/courseStore';
 
 export default function CreateCourseScreen({ onBack }: { onBack: () => void }) {
     const [name, setName] = useState('');

@@ -1,4 +1,4 @@
-import { supabase } from '../config/supabase';
+import { supabase } from '../../../config/supabase';
 
 export const authService = {
     // Mobile implementations matching the Web flow logic

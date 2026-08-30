@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ActivityIndicator, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { supabase } from '../config/supabase';
-import { useAuthStore } from '../store/authStore';
-import { generateRegistrationNumber } from '../utils/idGenerator';
+import { supabase } from '../../config/supabase';
+import { useAuthStore } from '../../store/authStore';
+import { generateRegistrationNumber } from '../../../../../packages/shared/src/utils/idGenerator';
 
 const STATIC_PASSWORD = 'EduTrack@SimpleLog1n!';
 
@@ -88,7 +88,7 @@ export default function LoginScreen() {
                                 <Text className={`font-bold ${action === 'login' ? 'text-white' : 'text-gray-500'}`}>Log in</Text>
                             </TouchableOpacity>
                             <TouchableOpacity
-                                onPress={() => setAction('create')}
+                                onPress={() => { setAction('create'); setRole('faculty'); }}
                                 className={`flex-1 py-3 items-center justify-center rounded-xl ${action === 'create' ? 'bg-[#1b253b] shadow-lg' : 'bg-transparent'}`}
                             >
                                 <Text className={`font-bold ${action === 'create' ? 'text-white' : 'text-gray-500'}`}>Create Account</Text>
@@ -98,7 +98,7 @@ export default function LoginScreen() {
                         {/* Role Tabs */}
                         <View className="flex-row gap-4 mb-6">
                             <TouchableOpacity
-                                onPress={() => setRole('student')}
+                                onPress={() => { setRole('student'); setAction('login'); }}
                                 className={`flex-1 py-3 rounded-2xl flex-row items-center justify-center ${role === 'student' ? 'bg-[#0f2942] border border-[#1d4ed8]' : 'bg-white/5 border border-white/5'}`}
                             >
                                 <Ionicons name="person-outline" size={16} color={role === 'student' ? '#60a5fa' : '#94a3b8'} />

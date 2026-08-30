@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import * as DocumentPicker from 'expo-document-picker';
 import { View, Text, ScrollView, TextInput, TouchableOpacity, ActivityIndicator, Platform, UIManager, LayoutAnimation } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { supabase } from '../config/supabase';
-import { useAuthStore } from '../store/authStore';
+import { supabase } from '../../config/supabase';
+import { useAuthStore } from '../../store/authStore';
 
 if (Platform.OS === 'android') {
     if (UIManager.setLayoutAnimationEnabledExperimental) {

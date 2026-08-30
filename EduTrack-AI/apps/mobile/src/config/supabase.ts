@@ -39,3 +39,12 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
         detectSessionInUrl: false,
     },
 });
+
+export const supabaseAdmin = createClient(supabaseUrl, supabaseAnonKey, {
+    auth: {
+        storage: ExpoSecureStoreAdapter,
+        persistSession: false, // Will not save tokens, preventing auto-login override
+        autoRefreshToken: false,
+        detectSessionInUrl: false,
+    },
+});
