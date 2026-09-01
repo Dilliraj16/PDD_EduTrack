@@ -11,10 +11,7 @@ interface Assignment {
     totalStudents: number;
 }
 
-const MOCK_ASSIGNMENTS: Assignment[] = [
-    { id: '1', title: 'Socket Programming Client/Server', course: 'Computer Networks', dueDate: '2026-08-15', dueTime: '23:59', submittedCount: 45, totalStudents: 60 },
-    { id: '2', title: 'TCP Congestion Control Analysis', course: 'Computer Networks', dueDate: '2026-08-20', dueTime: '17:00', submittedCount: 12, totalStudents: 60 }
-];
+const MOCK_ASSIGNMENTS: Assignment[] = [];
 
 export default function FacultyAssignments() {
     const [assignments, setAssignments] = useState<Assignment[]>(MOCK_ASSIGNMENTS);
@@ -139,42 +136,50 @@ export default function FacultyAssignments() {
                 </div>
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {assignments.map(assignment => (
-                        <div key={assignment.id} className="glass-panel p-6 rounded-3xl hover:shadow-lg transition-all group relative overflow-hidden hover:border-purple-500/30">
-                            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                                <FileText className="w-24 h-24 text-purple-400" />
-                            </div>
-                            <div className="relative z-10 space-y-4">
-                                <div className="space-y-1">
-                                    <span className="text-xs font-semibold text-purple-300 bg-purple-500/20 px-2.5 py-1 rounded-lg border border-purple-500/30">{assignment.course}</span>
-                                    <h3 className="text-xl font-bold t-h leading-tight mt-3">{assignment.title}</h3>
-                                </div>
-
-                                <div className="flex flex-col gap-3 pt-3 border-t border-white/10">
-                                    <div className="flex items-center text-sm text-gray-300 gap-2 font-medium">
-                                        <div className="p-1.5 rounded-md bg-emerald-500/20 border border-emerald-500/30">
-                                            <Calendar className="w-3.5 h-3.5 text-emerald-400" />
-                                        </div>
-                                        <span>{assignment.dueDate} at {assignment.dueTime}</span>
-                                    </div>
-                                    <div className="flex items-center text-sm text-gray-300 gap-2 font-medium">
-                                        <div className="p-1.5 rounded-md bg-blue-500/20 border border-blue-500/30">
-                                            <Users className="w-3.5 h-3.5 text-blue-400" />
-                                        </div>
-                                        <span>{assignment.submittedCount} / {assignment.totalStudents} Submitted</span>
-                                    </div>
-                                </div>
-
-                                {/* Progress Bar */}
-                                <div className="w-full bg-gray-800 rounded-full h-2 mt-4 overflow-hidden border border-white/5">
-                                    <div
-                                        className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full transition-all duration-1000"
-                                        style={{ width: `${(assignment.submittedCount / assignment.totalStudents) * 100}%` }}
-                                    />
-                                </div>
-                            </div>
+                    {assignments.length === 0 ? (
+                        <div className="md:col-span-2 lg:col-span-3 border border-dashed border-white/10 rounded-3xl p-12 flex flex-col items-center justify-center text-slate-500 bg-white/5">
+                            <FileText className="w-16 h-16 mb-4 opacity-30" />
+                            <p className="font-bold text-lg text-white">No Assignments Created</p>
+                            <p className="text-sm mt-1">Click 'Create Assignment' to get started.</p>
                         </div>
-                    ))}
+                    ) : (
+                        assignments.map(assignment => (
+                            <div key={assignment.id} className="glass-panel p-6 rounded-3xl hover:shadow-lg transition-all group relative overflow-hidden hover:border-purple-500/30">
+                                <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                                    <FileText className="w-24 h-24 text-purple-400" />
+                                </div>
+                                <div className="relative z-10 space-y-4">
+                                    <div className="space-y-1">
+                                        <span className="text-xs font-semibold text-purple-300 bg-purple-500/20 px-2.5 py-1 rounded-lg border border-purple-500/30">{assignment.course}</span>
+                                        <h3 className="text-xl font-bold t-h leading-tight mt-3">{assignment.title}</h3>
+                                    </div>
+
+                                    <div className="flex flex-col gap-3 pt-3 border-t border-white/10">
+                                        <div className="flex items-center text-sm text-gray-300 gap-2 font-medium">
+                                            <div className="p-1.5 rounded-md bg-emerald-500/20 border border-emerald-500/30">
+                                                <Calendar className="w-3.5 h-3.5 text-emerald-400" />
+                                            </div>
+                                            <span>{assignment.dueDate} at {assignment.dueTime}</span>
+                                        </div>
+                                        <div className="flex items-center text-sm text-gray-300 gap-2 font-medium">
+                                            <div className="p-1.5 rounded-md bg-blue-500/20 border border-blue-500/30">
+                                                <Users className="w-3.5 h-3.5 text-blue-400" />
+                                            </div>
+                                            <span>{assignment.submittedCount} / {assignment.totalStudents} Submitted</span>
+                                        </div>
+                                    </div>
+
+                                    {/* Progress Bar */}
+                                    <div className="w-full bg-gray-800 rounded-full h-2 mt-4 overflow-hidden border border-white/5">
+                                        <div
+                                            className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full transition-all duration-1000"
+                                            style={{ width: `${(assignment.submittedCount / assignment.totalStudents) * 100}%` }}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    )}
                 </div>
             )}
         </div>

@@ -40,9 +40,9 @@ export default function FacultyDashboard() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
                 { title: 'Total Students', value: totalStudents.toString(), icon: Users, color: 'text-purple-400', glow: 'bg-purple-500/20' },
-                { title: 'Pending Evaluations', value: '34', icon: ClipboardCheck, color: 'text-rose-400', glow: 'bg-rose-500/20', link: '/dashboard/assignments' },
-                { title: 'Subjects Taught', value: '4', icon: BookOpen, color: 'text-blue-400', glow: 'bg-blue-500/20' },
-                { title: 'Avg Class Attendance', value: '88%', icon: TrendingUp, color: 'text-emerald-400', glow: 'bg-emerald-500/20' },
+                { title: 'Pending Evaluations', value: '0', icon: ClipboardCheck, color: 'text-rose-400', glow: 'bg-rose-500/20', link: '/dashboard/assignments' },
+                { title: 'Subjects Taught', value: '0', icon: BookOpen, color: 'text-blue-400', glow: 'bg-blue-500/20' },
+                { title: 'Avg Class Attendance', value: 'N/A', icon: TrendingUp, color: 'text-emerald-400', glow: 'bg-emerald-500/20' },
             ].map((stat, i) => (
                 <div
                     key={i}
@@ -120,53 +120,17 @@ export default function FacultyDashboard() {
                     Pending OD Requests
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-4">
-                    {[
-                        { id: 1, name: 'Dilli Raj', reason: 'Hackathon Participation', date: 'Oct 24, 2026', proof: 'hackathon_pass.pdf' },
-                        { id: 2, name: 'John Doe', reason: 'Medical Leave', date: 'Oct 25, 2026', proof: 'doctor_note.png' }
-                    ].map((od) => (
-                        <div key={od.id} className={`p-5 rounded-xl border transition-all ${odStatuses[od.id] ? 'bg-slate-50 dark:bg-black/10 border-slate-200 dark:border-white/5 opacity-50' : 'bg-slate-50 dark:bg-white/5 border-slate-200 dark:border-white/10 hover:border-blue-500/30'}`}>
-                            <div className="flex justify-between items-start mb-3">
-                                <div>
-                                    <p className="font-bold text-slate-800 dark:text-white">{od.name}</p>
-                                    <p className="text-xs text-slate-500 font-medium">{od.date}</p>
-                                </div>
-                                {odStatuses[od.id] === 'approved' ? (
-                                    <span className="px-2 py-1 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold rounded-md uppercase tracking-wider">
-                                        Approved
-                                    </span>
-                                ) : odStatuses[od.id] === 'rejected' ? (
-                                    <span className="px-2 py-1 bg-rose-500/10 text-rose-600 dark:text-rose-400 text-[10px] font-bold rounded-md uppercase tracking-wider">
-                                        Rejected
-                                    </span>
-                                ) : (
-                                    <span className="px-2 py-1 bg-amber-500/10 text-amber-600 dark:text-amber-400 text-[10px] font-bold rounded-md uppercase tracking-wider">
-                                        Pending
-                                    </span>
-                                )}
-                            </div>
-                            <p className="text-sm text-slate-600 dark:text-gray-300 mb-4">{od.reason}</p>
-
-                            <div className="flex items-center justify-between mt-auto">
-                                <button
-                                    onClick={(e) => { e.preventDefault(); setSelectedProof(od.proof); }}
-                                    className="flex items-center text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer bg-transparent border-none p-0"
-                                >
-                                    <FileText className="w-3 h-3 mr-1" /> View {od.proof}
-                                </button>
-
-                                {!odStatuses[od.id] && (
-                                    <div className="flex space-x-2">
-                                        <button onClick={() => handleOD(od.id, 'approved')} className="p-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-500/10 hover:bg-emerald-100 dark:hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 transition-colors">
-                                            <Check className="w-4 h-4" />
-                                        </button>
-                                        <button onClick={() => handleOD(od.id, 'rejected')} className="p-1.5 rounded-lg bg-rose-50 dark:bg-rose-500/10 hover:bg-rose-100 dark:hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 transition-colors">
-                                            <X className="w-4 h-4" />
-                                        </button>
-                                    </div>
-                                )}
-                            </div>
+                    {[] /* Connect to real OD Request Data */.length === 0 ? (
+                        <div className="sm:col-span-2 col-span-1 border border-dashed border-slate-200 dark:border-white/10 rounded-2xl p-8 flex flex-col items-center justify-center text-slate-500 mt-2 bg-slate-50 dark:bg-white/5">
+                            <FileText className="w-10 h-10 mb-2 opacity-50" />
+                            <p className="font-bold text-sm">No Pending Required Duties</p>
+                            <p className="text-xs mt-1">Students can request On-Duty leaves from their dashboard.</p>
                         </div>
-                    ))}
+                    ) : (
+                        [].map((od: any) => (
+                            <div key={od.id}></div>
+                        ))
+                    )}
                 </div>
             </div>
         </div>

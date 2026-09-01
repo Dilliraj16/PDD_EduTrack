@@ -32,11 +32,11 @@ const PERFORMANCE_TAB = () => {
             <View className="flex-row space-x-4">
                 <View className="flex-1 p-4 rounded-2xl bg-white/5 border border-white/10 items-center">
                     <Text className="text-xs text-slate-400">Average</Text>
-                    <Text className="text-3xl font-bold text-emerald-400 mt-2">74%</Text>
+                    <Text className="text-3xl font-bold text-emerald-400/50 mt-2">N/A</Text>
                 </View>
                 <View className="flex-1 p-4 rounded-2xl bg-white/5 border border-white/10 items-center">
                     <Text className="text-xs text-slate-400">Attendance</Text>
-                    <Text className="text-3xl font-bold text-blue-400 mt-2">82%</Text>
+                    <Text className="text-3xl font-bold text-blue-400/50 mt-2">N/A</Text>
                 </View>
             </View>
 
@@ -48,7 +48,7 @@ const PERFORMANCE_TAB = () => {
                     </View>
                 </View>
                 <Text className="text-slate-300 text-sm leading-6 mb-4">
-                    {insight || "Your DBMS performance is strong (85%). However, your Network Security score has dropped from 78% to 64%. Recent results indicate TLS and X.509 are topics that need additional practice."}
+                    {insight || "No previous performance data available. Click Generate to let AI analyze your blank state, or complete a course assignment to start tracking."}
                 </Text>
                 <TouchableOpacity onPress={handleInsight} disabled={isLoading} className={`py-3 rounded-xl items-center flex-row justify-center space-x-2 ${isLoading ? 'bg-indigo-500/50' : 'bg-indigo-500'}`}>
                     {isLoading ? <ActivityIndicator color="#fff" /> : <Text className="text-white font-semibold flex items-center"><Sparkles size={16} color="#fff" /> Generate Custom Insight</Text>}
@@ -100,7 +100,13 @@ const PLAN_TAB = () => {
                 </TouchableOpacity>
             </View>
 
-            {planData && (
+            {(!planData || planData.length === 0) ? (
+                <View className="mt-4 p-8 items-center bg-white/5 rounded-2xl border border-white/10 border-dashed">
+                    <ListChecks className="text-slate-500 mb-3" size={32} />
+                    <Text className="text-lg font-bold text-white mb-1">No Active Plan</Text>
+                    <Text className="text-slate-400 text-xs text-center px-4 leading-5">Type your priority above to generate a dynamic 7-day schedule.</Text>
+                </View>
+            ) : (
                 <View className="mt-4 space-y-4">
                     {planData.map((d: any, i: number) => (
                         <View key={i} className="mb-2">
@@ -181,21 +187,28 @@ const QUIZ_TAB = () => {
     );
 };
 
-export default function StudentAIInsightsScreen() {
+export default function StudentAIInsightsScreen({ onBack }: { onBack?: () => void }) {
     const [activeTab, setActiveTab] = useState<'performance' | 'plan' | 'quiz'>('performance');
 
     return (
         <View className="flex-1 bg-slate-900">
             {/* Header Area */}
             <View className="px-6 pt-12 pb-6 bg-slate-900 border-b border-white/5">
-                <View className="flex-row items-center space-x-3">
-                    <View className="w-12 h-12 bg-indigo-500/20 rounded-xl items-center justify-center border border-indigo-500/30">
-                        <Bot className="text-indigo-400" size={24} />
+                <View className="flex-row items-center justify-between">
+                    <View className="flex-row items-center space-x-3">
+                        <View className="w-12 h-12 bg-indigo-500/20 rounded-xl items-center justify-center border border-indigo-500/30">
+                            <Bot className="text-indigo-400" size={24} />
+                        </View>
+                        <View>
+                            <Text className="text-2xl font-black text-white">EduTrack AI</Text>
+                            <Text className="text-indigo-300 text-xs">Student Workspace Mode</Text>
+                        </View>
                     </View>
-                    <View>
-                        <Text className="text-2xl font-black text-white">EduTrack AI</Text>
-                        <Text className="text-indigo-300 text-xs">Student Workspace Mode</Text>
-                    </View>
+                    {onBack && (
+                        <TouchableOpacity onPress={onBack} className="w-10 h-10 bg-white/5 rounded-xl border border-white/10 items-center justify-center">
+                            <Text className="text-white text-xl">{'<'}</Text>
+                        </TouchableOpacity>
+                    )}
                 </View>
 
                 {/* Tab Navigation Segmented Control */}

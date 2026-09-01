@@ -37,9 +37,9 @@ export default function App() {
   return (
     <SafeAreaProvider style={{ flex: 1 }}>
       <SafeAreaView style={styles.container}>
-        <View className="absolute top-12 right-4 z-50">
-          <TouchableOpacity onPress={logout} className="p-2 rounded-full bg-red-500/20 border border-red-500/30">
-            <Text className="text-red-400 text-xs font-bold uppercase">Exit</Text>
+        <View className="w-full flex-row justify-end items-center px-4 pt-2 pb-1 z-50 bg-[#0f172a]">
+          <TouchableOpacity onPress={logout} className="px-3 py-1.5 rounded-full bg-red-500/20 border border-red-500/30">
+            <Text className="text-red-400 text-xs font-bold uppercase tracking-wider">Exit</Text>
           </TouchableOpacity>
         </View>
 

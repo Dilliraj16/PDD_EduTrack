@@ -1,24 +1,50 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, SafeAreaView, ScrollView, Alert } from 'react-native';
+import { View, Text, TouchableOpacity, SafeAreaView, ScrollView, Alert, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+
+import { useAuthStore } from '../../store/authStore';
+import { supabase } from '../../config/supabase';
 
 interface Student {
     id: string;
-    name: string;
-    reg_no: string;
+    first_name: string;
+    last_name: string;
+    enrollment_number: string;
     present: boolean;
 }
 
-const mockRoster: Student[] = [
-    { id: '1', name: 'John Doe', reg_no: 'CS1023', present: true },
-    { id: '2', name: 'Jane Smith', reg_no: 'CS1024', present: true },
-    { id: '3', name: 'Alice Walker', reg_no: 'CS1025', present: false },
-    { id: '4', name: 'Bob Richards', reg_no: 'CS1026', present: false },
-];
-
 export default function AttendanceScreen({ onBack }: { onBack: () => void }) {
-    const [roster, setRoster] = useState<Student[]>(mockRoster);
+    const { user } = useAuthStore();
+    const [roster, setRoster] = useState<Student[]>([]);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [loading, setLoading] = useState(true);
+
+    React.useEffect(() => {
+        if (!user?.id) return;
+
+        const fetchStudents = async () => {
+            try {
+                const { data, error } = await supabase
+                    .from('students')
+                    .select('*')
+                    .eq('created_by', user.id);
+
+                if (error) throw error;
+                if (data) {
+                    setRoster(data.map((s: any) => ({
+                        ...s,
+                        present: true // Default all to present
+                    })));
+                }
+            } catch (err: any) {
+                Alert.alert("Error fetching students", err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchStudents();
+    }, [user?.id]);
 
     const toggleAttendance = (id: string, present: boolean) => {
         setRoster(prev => prev.map(s => s.id === id ? { ...s, present } : s));
@@ -54,15 +80,27 @@ export default function AttendanceScreen({ onBack }: { onBack: () => void }) {
                         </View>
                     </View>
 
-                    {roster.map((student, idx) => (
+                    {loading && (
+                        <ActivityIndicator className="my-8" color="#60a5fa" />
+                    )}
+
+                    {!loading && roster.length === 0 && (
+                        <View className="items-center justify-center p-8 border-t border-white/5">
+                            <Ionicons name="people-circle-outline" size={48} color="#475569" className="mb-2" />
+                            <Text className="text-gray-400 text-center font-bold">No students found.</Text>
+                            <Text className="text-gray-500 text-xs text-center mt-1">Register students using the Student Registration tool to see them here.</Text>
+                        </View>
+                    )}
+
+                    {!loading && roster.map((student, idx) => (
                         <View key={student.id} className={`flex-row items-center justify-between p-4 border-b border-white/5 relative ${idx === 0 ? 'border-t border-white/5' : ''}`}>
                             <View className="flex-row items-center">
                                 <View className="w-10 h-10 rounded-full bg-indigo-900/40 border border-indigo-500/20 items-center justify-center mr-4">
-                                    <Text className="text-indigo-300 font-bold uppercase">{student.name.charAt(0)}</Text>
+                                    <Text className="text-indigo-300 font-bold uppercase">{student.first_name?.charAt(0)}</Text>
                                 </View>
                                 <View>
-                                    <Text className="text-white font-bold text-base">{student.name}</Text>
-                                    <Text className="text-gray-500 text-xs font-mono">{student.reg_no}</Text>
+                                    <Text className="text-white font-bold text-base">{student.first_name} {student.last_name}</Text>
+                                    <Text className="text-gray-500 text-xs font-mono">{student.enrollment_number}</Text>
                                 </View>
                             </View>
                             <View className="flex-row items-center gap-2">

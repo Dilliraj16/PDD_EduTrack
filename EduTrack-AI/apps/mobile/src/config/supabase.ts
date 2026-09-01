@@ -42,6 +42,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
 
 export const supabaseAdmin = createClient(supabaseUrl, supabaseAnonKey, {
     auth: {
+        storageKey: 'supabase-admin-auth-token',
         storage: ExpoSecureStoreAdapter,
         persistSession: false, // Will not save tokens, preventing auto-login override
         autoRefreshToken: false,

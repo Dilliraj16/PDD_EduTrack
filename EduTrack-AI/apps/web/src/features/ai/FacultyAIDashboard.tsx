@@ -28,33 +28,27 @@ const ClassPerformanceTab = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="glass-panel p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
                     <p className="text-xs text-slate-400">Class Avg</p>
-                    <p className="text-3xl font-bold text-white mt-1">68%</p>
-                    <span className="text-[10px] text-rose-400 flex items-center justify-center mt-1"><TrendingDown className="w-3 h-3 mr-1" /> -8%</span>
+                    <p className="text-3xl font-bold text-white mt-1">N/A</p>
+                    <span className="text-[10px] text-slate-500 flex items-center justify-center mt-1">No classes assigned</span>
                 </div>
                 <div className="glass-panel p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
                     <p className="text-xs text-slate-400">Attendance</p>
-                    <p className="text-3xl font-bold text-emerald-400 mt-1">84%</p>
+                    <p className="text-3xl font-bold text-emerald-400/50 mt-1">N/A</p>
                 </div>
                 <div className="glass-panel p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
                     <p className="text-xs text-slate-400">Assignments</p>
-                    <p className="text-3xl font-bold text-blue-400 mt-1">88%</p>
+                    <p className="text-3xl font-bold text-blue-400/50 mt-1">0</p>
                 </div>
             </div>
 
             <div className="flex gap-4">
-                <div className="flex-1 p-6 rounded-2xl bg-white/5 border border-emerald-500/20">
-                    <h3 className="font-semibold text-emerald-400 flex items-center gap-2"><Sparkles className="inline mr-2 w-5 h-5" /> Strong Topics</h3>
-                    <ul className="text-slate-300 mt-2 text-sm space-y-1 list-disc list-inside">
-                        <li>Cryptography Basics</li>
-                        <li>Symmetric Keys</li>
-                    </ul>
+                <div className="flex-1 p-6 rounded-2xl bg-white/5 border border-emerald-500/10">
+                    <h3 className="font-semibold text-emerald-400/50 flex items-center gap-2"><Sparkles className="inline mr-2 w-5 h-5" /> Strong Topics</h3>
+                    <p className="text-slate-500 text-sm mt-2">Waiting for student submissions...</p>
                 </div>
-                <div className="flex-1 p-6 rounded-2xl bg-white/5 border border-rose-500/20">
-                    <h3 className="font-semibold text-rose-400 flex items-center gap-2"><AlertTriangle className="inline mr-2 w-5 h-5" /> Weak Topics</h3>
-                    <ul className="text-slate-300 mt-2 text-sm space-y-1 list-disc list-inside">
-                        <li>TLS Handshake</li>
-                        <li>Certificate Validation</li>
-                    </ul>
+                <div className="flex-1 p-6 rounded-2xl bg-white/5 border border-rose-500/10">
+                    <h3 className="font-semibold text-rose-400/50 flex items-center gap-2"><AlertTriangle className="inline mr-2 w-5 h-5" /> Weak Topics</h3>
+                    <p className="text-slate-500 text-sm mt-2">Waiting for student submissions...</p>
                 </div>
             </div>
 
@@ -99,36 +93,17 @@ const AtRiskTab = () => {
             <h2 className="text-2xl font-bold flex items-center gap-2"><AlertTriangle className="text-rose-500" /> Academic Support Needed</h2>
 
             <div className="space-y-4">
-                {[
-                    { id: 'ST1021', name: 'Student A', att: '68%', avg: '51%' },
-                    { id: 'ST1022', name: 'Student B', att: '73%', avg: '59%' }
-                ].map((s) => (
-                    <div key={s.id} className="p-5 rounded-2xl bg-white/5 border border-white/10 flex flex-col justify-between">
-                        <div>
-                            <div className="flex items-center justify-between">
-                                <div className="flex items-center gap-3">
-                                    <h3 className="text-lg font-bold text-white">{s.name} ({s.id})</h3>
-                                    <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-rose-500/20 text-rose-400 uppercase tracking-wider">High Risk</span>
-                                </div>
-                                <button onClick={() => handleInsight(s.id, s.att, s.avg)} disabled={loadingIds[s.id]} className="px-3 py-1 bg-indigo-500 disabled:opacity-50 hover:bg-indigo-600 rounded-lg text-xs text-white">
-                                    {loadingIds[s.id] ? "Analyzing..." : "Ask AI"}
-                                </button>
-                            </div>
-                            <div className="flex gap-4 mt-2 text-sm text-slate-400">
-                                <span>Attendance: <strong className="text-white">{s.att}</strong></span>
-                                <span>Average: <strong className="text-white">{s.avg}</strong></span>
-                                <span>Trend: <strong className="text-rose-400">Declining</strong></span>
-                            </div>
-                        </div>
-                        {insights[s.id] && (
-                            <div className="mt-4 p-3 bg-indigo-500/10 border border-indigo-500/20 rounded-xl">
-                                <p className="text-xs text-indigo-300 flex items-center gap-2">
-                                    <Bot className="w-4 h-4 shrink-0" /> {insights[s.id]}
-                                </p>
-                            </div>
-                        )}
+                {[] /* Fetch real array here eventually */.length === 0 ? (
+                    <div className="p-8 text-center bg-white/5 rounded-2xl border border-white/10 border-dashed">
+                        <AlertTriangle className="w-12 h-12 text-slate-500 mx-auto mb-3" />
+                        <h3 className="text-lg font-bold text-white">No Tracking Data Available</h3>
+                        <p className="text-slate-400 text-sm mt-1 max-w-sm mx-auto">Create a class and assign students to automatically track risk factors.</p>
                     </div>
-                ))}
+                ) : (
+                    [].map((s: any) => (
+                        <div key={s.id}></div>
+                    ))
+                )}
             </div>
         </motion.div>
     );

@@ -6,6 +6,7 @@ export interface Course {
     name: string;
     code: string;
     faculty_id?: string;
+    faculty_name?: string;
 }
 
 export interface StudentGrade {
@@ -36,11 +37,24 @@ export const useCourseStore = create<CourseState>((set) => ({
     fetchCourses: async () => {
         const { data, error } = await supabase.from('courses').select('code, name, faculty_id');
         if (!error && data) {
+            const facultyIds = [...new Set(data.map((c: any) => c.faculty_id).filter(Boolean))];
+            const profilesDict: Record<string, string> = {};
+
+            if (facultyIds.length > 0) {
+                const { data: profs } = await supabase.from('profiles').select('id, full_name').in('id', facultyIds);
+                if (profs) {
+                    profs.forEach((p: any) => {
+                        profilesDict[p.id] = p.full_name;
+                    });
+                }
+            }
+
             const mapped = data.map((c: any) => ({
                 id: c.code,
                 name: c.name,
                 code: c.code,
-                faculty_id: c.faculty_id
+                faculty_id: c.faculty_id,
+                faculty_name: c.faculty_id && profilesDict[c.faculty_id] ? profilesDict[c.faculty_id] : 'Unknown Faculty'
             }));
             set({ courses: mapped });
         }

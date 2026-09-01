@@ -3,6 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, ScrollView, ActivityIndicator,
 import { Ionicons } from '@expo/vector-icons';
 import { supabaseAdmin } from '../../config/supabase';
 import { generateRegistrationNumber } from '../../../../../packages/shared/src/utils/idGenerator';
+import { useAuthStore } from '../../store/authStore';
 
 interface StudentRegistrationScreenProps {
     onBack: () => void;
@@ -33,7 +34,8 @@ export default function StudentRegistrationScreen({ onBack }: StudentRegistratio
                     data: {
                         first_name: firstName,
                         role: 'student',
-                        registration_number: assignedId
+                        registration_number: assignedId,
+                        created_by: useAuthStore.getState().user?.id
                     }
                 }
             });
@@ -72,21 +74,22 @@ export default function StudentRegistrationScreen({ onBack }: StudentRegistratio
 
                 <View className="mb-4 text-left w-full relative z-10">
                     <Text className="text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 ml-1">Student Full Name</Text>
-                    <View className="bg-[#121827] border border-white/10 flex-row items-center px-4 py-3 rounded-2xl h-14">
+                    <View className="bg-[#121827] border border-white/10 flex-row items-center px-4 rounded-2xl h-14">
                         <Ionicons name="person" size={20} color="#60a5fa" />
                         <TextInput
                             value={firstName}
                             onChangeText={setFirstName}
                             placeholder="Student's Legal Name"
                             placeholderTextColor="#475569"
-                            className="flex-1 text-white ml-3 font-semibold h-full"
+                            className="flex-1 text-white ml-3 font-semibold py-0"
+                            style={{ paddingVertical: 0 }}
                         />
                     </View>
                 </View>
 
                 <View className="mb-4 text-left w-full relative z-10">
                     <Text className="text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 ml-1">Email Address</Text>
-                    <View className="bg-[#121827] border border-white/10 flex-row items-center px-4 py-3 rounded-2xl h-14">
+                    <View className="bg-[#121827] border border-white/10 flex-row items-center px-4 rounded-2xl h-14">
                         <Ionicons name="mail" size={20} color="#60a5fa" />
                         <TextInput
                             value={email}
@@ -95,21 +98,24 @@ export default function StudentRegistrationScreen({ onBack }: StudentRegistratio
                             placeholderTextColor="#475569"
                             keyboardType="email-address"
                             autoCapitalize="none"
-                            className="flex-1 text-white ml-3 font-semibold h-full"
+                            className="flex-1 text-white ml-3 font-semibold py-0"
+                            style={{ paddingVertical: 0 }}
                         />
                     </View>
                 </View>
 
                 <View className="mb-6 text-left w-full relative z-10">
                     <Text className="text-gray-400 text-xs font-bold uppercase tracking-wider mb-2 ml-1">Temporary Password</Text>
-                    <View className="bg-[#121827] border border-white/10 flex-row items-center px-4 py-3 rounded-2xl h-14">
+                    <View className="bg-[#121827] border border-white/10 flex-row items-center px-4 rounded-2xl h-14">
                         <Ionicons name="key" size={20} color="#60a5fa" />
                         <TextInput
                             value={password}
                             onChangeText={setPassword}
                             placeholder="Minimum 6 characters"
                             placeholderTextColor="#475569"
-                            className="flex-1 text-white ml-3 font-semibold h-full"
+                            secureTextEntry={true}
+                            className="flex-1 text-white ml-3 font-semibold py-0"
+                            style={{ paddingVertical: 0 }}
                         />
                     </View>
                 </View>

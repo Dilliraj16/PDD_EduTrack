@@ -125,7 +125,7 @@ export default function FacultyDashboard() {
                     </View>
                     <View>
                         <Text className="text-gray-400 font-bold text-xs mb-2 tracking-widest">Pending Evaluations</Text>
-                        <Text className="text-white font-extrabold text-3xl">34</Text>
+                        <Text className="text-white font-extrabold text-3xl">0</Text>
                     </View>
                     <View className="w-12 h-12 rounded-2xl bg-rose-900/40 items-center justify-center border border-rose-500/20">
                         <Ionicons name="clipboard-outline" size={24} color="#fda4af" />
@@ -138,7 +138,7 @@ export default function FacultyDashboard() {
                     </View>
                     <View>
                         <Text className="text-gray-400 font-bold text-xs mb-2 tracking-widest">Subjects Taught</Text>
-                        <Text className="text-white font-extrabold text-3xl">4</Text>
+                        <Text className="text-white font-extrabold text-3xl">0</Text>
                     </View>
                     <View className="w-12 h-12 rounded-2xl bg-blue-900/40 items-center justify-center border border-blue-500/20">
                         <Ionicons name="book-outline" size={24} color="#93c5fd" />
@@ -151,7 +151,7 @@ export default function FacultyDashboard() {
                     </View>
                     <View>
                         <Text className="text-gray-400 font-bold text-xs mb-2 tracking-widest">Avg Class Attendance</Text>
-                        <Text className="text-white font-extrabold text-3xl">88%</Text>
+                        <Text className="text-white font-extrabold text-3xl opacity-50">N/A</Text>
                     </View>
                     <View className="w-12 h-12 rounded-2xl bg-emerald-900/40 items-center justify-center border border-emerald-500/20">
                         <Ionicons name="trending-up" size={24} color="#34d399" />
@@ -236,7 +236,7 @@ export default function FacultyDashboard() {
             {activeTab === 'profile' && <ProfileScreen onBack={handleBack} />}
             {activeTab === 'results' && <FacultyResultsScreen onBack={handleBack} />}
             {activeTab === 'student-reg' && <StudentRegistrationScreen onBack={handleBack} />}
-            {activeTab === 'ai-insights' && <FacultyAIInsightsScreen />}
+            {activeTab === 'ai-insights' && <FacultyAIInsightsScreen onBack={handleBack} />}
             {activeTab === 'notifications' && <NotificationsScreen onBack={handleBack} />}
 
             <Sidebar

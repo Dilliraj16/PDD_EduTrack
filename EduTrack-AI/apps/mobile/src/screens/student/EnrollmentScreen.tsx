@@ -1,17 +1,32 @@
-import React, { useState } from 'react';
-import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useCourseStore } from '../../store/courseStore';
 
-const availableCourses = [
-    { id: 1, code: 'CS101', name: 'Intro to Computer Science', credits: 4, faculty: 'Dr. Alan Turing' },
-    { id: 2, code: 'MATH201', name: 'Advanced Calculus', credits: 3, faculty: 'Dr. Euler' },
-    { id: 3, code: 'PHY105', name: 'Quantum Physics', credits: 4, faculty: 'Dr. Feynman' },
-    { id: 4, code: 'ENG102', name: 'Technical Writing', credits: 2, faculty: 'Prof. Strunk' },
-    { id: 5, code: 'ECO101', name: 'Microeconomics', credits: 3, faculty: 'Dr. Smith' },
-];
+
 
 export default function EnrollmentScreen({ onBack }: { onBack?: () => void }) {
     const [enrolled, setEnrolled] = useState<(number | string)[]>([]);
+    const [searchQuery, setSearchQuery] = useState('');
+    const { courses, fetchCourses } = useCourseStore();
+
+    useEffect(() => {
+        fetchCourses();
+    }, [fetchCourses]);
+
+    // Map the fetched courses formatting identically to availableCourses
+    const storeCourses = courses.map(c => ({
+        id: c.code,
+        code: c.code,
+        name: c.name,
+        credits: 3,
+        faculty: c.faculty_name || 'Faculty Member'
+    }));
+
+    const filteredCourses = storeCourses.filter(c =>
+        c.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        c.code.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
     const handleEnroll = (id: number | string) => {
         if (!enrolled.includes(id)) {
@@ -45,8 +60,19 @@ export default function EnrollmentScreen({ onBack }: { onBack?: () => void }) {
 
             <Text className="text-slate-400 font-bold text-sm uppercase tracking-widest mb-4 ml-1">Available Electives</Text>
 
+            <View className="mb-6 flex-row items-center bg-[#1e293b] border border-white/10 rounded-xl px-4 h-12">
+                <Ionicons name="search" size={20} color="#94a3b8" />
+                <TextInput
+                    placeholder="Search courses by name or code..."
+                    placeholderTextColor="#94a3b8"
+                    value={searchQuery}
+                    onChangeText={setSearchQuery}
+                    className="flex-1 ml-3 text-white h-full"
+                />
+            </View>
+
             <View className="space-y-4">
-                {availableCourses.map((course) => {
+                {filteredCourses.map((course) => {
                     const isEnrolled = enrolled.includes(course.id);
                     return (
                         <View key={course.id} className="bg-[#1e293b] p-5 rounded-3xl mb-4 border border-white/5 relative overflow-hidden">
@@ -73,8 +99,8 @@ export default function EnrollmentScreen({ onBack }: { onBack?: () => void }) {
                                     onPress={() => handleEnroll(course.id)}
                                     disabled={isEnrolled}
                                     className={`w-full py-3.5 rounded-xl font-medium flex-row items-center justify-center transition-all ${isEnrolled
-                                            ? 'bg-emerald-500/20 border border-emerald-500/30'
-                                            : 'bg-white/10 border border-white/5'
+                                        ? 'bg-emerald-500/20 border border-emerald-500/30'
+                                        : 'bg-white/10 border border-white/5'
                                         }`}
                                 >
                                     {isEnrolled ? (

@@ -98,34 +98,42 @@ export default function FacultyAssignmentsScreen({ onBack }: { onBack: () => voi
 
                 {viewMode === 'list' && (
                     <View className="flex-col gap-4 mt-4">
-                        {assignments.map((item) => (
-                            <View key={item.id} className="bg-[#1a233a] p-5 rounded-[24px] border border-white/5 shadow-2xl relative overflow-hidden">
-                                <Ionicons name="document-text" size={100} color="rgba(255,255,255,0.02)" style={{ position: 'absolute', right: -20, top: -20 }} />
-                                <View className="bg-purple-900/30 border border-purple-500/30 px-3 py-1 rounded-full self-start mb-3">
-                                    <Text className="text-purple-300 text-[10px] font-bold tracking-widest uppercase">{item.course}</Text>
-                                </View>
-                                <Text className="text-xl font-bold text-white mb-6 w-3/4 leading-6">{item.title}</Text>
-
-                                <View className="flex-col gap-3">
-                                    <View className="flex-row items-center">
-                                        <View className="w-8 h-8 rounded-lg bg-emerald-500/10 items-center justify-center mr-3">
-                                            <Ionicons name="calendar-outline" size={16} color="#34d399" />
-                                        </View>
-                                        <Text className="text-emerald-400 font-bold text-xs">{item.due_date} at {item.due_time}</Text>
-                                    </View>
-                                    <View className="flex-row items-center">
-                                        <View className="w-8 h-8 rounded-lg bg-blue-500/10 items-center justify-center mr-3">
-                                            <Ionicons name="people-outline" size={16} color="#60a5fa" />
-                                        </View>
-                                        <Text className="text-blue-300 font-bold text-xs">{item.submitted || '0 / 60'} Submitted</Text>
-                                    </View>
-                                </View>
-
-                                <View className="w-full bg-white/5 h-1.5 rounded-full mt-5 overflow-hidden">
-                                    <View className={`bg-gradient-to-r from-fuchsia-500 to-blue-500 h-full w-[0%]`} />
-                                </View>
+                        {assignments.length === 0 ? (
+                            <View className="p-12 items-center justify-center border border-dashed border-white/10 rounded-[24px] bg-white/5">
+                                <Ionicons name="document-text-outline" size={48} color="rgba(255,255,255,0.2)" />
+                                <Text className="text-white font-bold text-lg mt-4">No Assignments</Text>
+                                <Text className="text-gray-500 text-sm mt-2 text-center">Tap 'New Assignment' to create your first class assignment.</Text>
                             </View>
-                        ))}
+                        ) : (
+                            assignments.map((item) => (
+                                <View key={item.id} className="bg-[#1a233a] p-5 rounded-[24px] border border-white/5 shadow-2xl relative overflow-hidden">
+                                    <Ionicons name="document-text" size={100} color="rgba(255,255,255,0.02)" style={{ position: 'absolute', right: -20, top: -20 }} />
+                                    <View className="bg-purple-900/30 border border-purple-500/30 px-3 py-1 rounded-full self-start mb-3">
+                                        <Text className="text-purple-300 text-[10px] font-bold tracking-widest uppercase">{item.course}</Text>
+                                    </View>
+                                    <Text className="text-xl font-bold text-white mb-6 w-3/4 leading-6">{item.title}</Text>
+
+                                    <View className="flex-col gap-3">
+                                        <View className="flex-row items-center">
+                                            <View className="w-8 h-8 rounded-lg bg-emerald-500/10 items-center justify-center mr-3">
+                                                <Ionicons name="calendar-outline" size={16} color="#34d399" />
+                                            </View>
+                                            <Text className="text-emerald-400 font-bold text-xs">{item.due_date} at {item.due_time}</Text>
+                                        </View>
+                                        <View className="flex-row items-center">
+                                            <View className="w-8 h-8 rounded-lg bg-blue-500/10 items-center justify-center mr-3">
+                                                <Ionicons name="people-outline" size={16} color="#60a5fa" />
+                                            </View>
+                                            <Text className="text-blue-300 font-bold text-xs">{item.submitted || '0 / 60'} Submitted</Text>
+                                        </View>
+                                    </View>
+
+                                    <View className="w-full bg-white/5 h-1.5 rounded-full mt-5 overflow-hidden">
+                                        <View className={`bg-gradient-to-r from-fuchsia-500 to-blue-500 h-full w-[0%]`} />
+                                    </View>
+                                </View>
+                            ))
+                        )}
                     </View>
                 )}
 

@@ -31,11 +31,11 @@ const PerformanceTab = () => {
             <div className="grid grid-cols-2 gap-4">
                 <div className="glass-panel p-6 rounded-2xl bg-white/5 border border-white/10 text-center">
                     <p className="text-sm text-slate-400">Overall Average</p>
-                    <p className="text-4xl font-bold text-emerald-400 mt-2">74%</p>
+                    <p className="text-4xl font-bold text-emerald-400/50 mt-2">N/A</p>
                 </div>
                 <div className="glass-panel p-6 rounded-2xl bg-white/5 border border-white/10 text-center">
                     <p className="text-sm text-slate-400">Attendance</p>
-                    <p className="text-4xl font-bold text-blue-400 mt-2">82%</p>
+                    <p className="text-4xl font-bold text-blue-400/50 mt-2">N/A</p>
                 </div>
             </div>
 
@@ -48,7 +48,7 @@ const PerformanceTab = () => {
                 </div>
                 <div className="bg-slate-900/50 p-4 rounded-xl border border-indigo-500/10">
                     <p className="text-slate-300 text-sm leading-relaxed">
-                        {insight || "Your DBMS performance is strong (85%). However, your Network Security score has dropped from 78% to 64%. Recent results indicate TLS and X.509 are topics that need additional practice."}
+                        {insight || "No previous performance data available. Click Generate to let AI analyze your blank state, or complete a course assignment to start tracking."}
                     </p>
                 </div>
             </div>
@@ -99,23 +99,28 @@ const StudyPlanTab = () => {
 
             <div className="space-y-3 mt-4 max-h-[400px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-white/10">
                 <h3 className="font-semibold text-slate-300 mb-2">🎯 YOUR AI STUDY PLAN</h3>
-                {(planData || [
-                    { title: 'Day 1', tasks: ['30 min - TLS', '30 min X.509'] },
-                    { title: 'Day 2', tasks: ['40 min - Cryptography', '20 min RSA Practice'] }
-                ]).map((d: any, i: number) => (
-                    <div key={i} className="mb-4">
-                        <span className="font-bold text-indigo-400 text-sm uppercase tracking-wide block mb-2">{d.title || d.day || `Day ${i + 1}`}</span>
-                        {(d.tasks || (d.task ? [d.task] : [])).map((tString: string, tIdx: number) => (
-                            <div key={tIdx} className="flex justify-between items-center p-4 bg-white/5 rounded-xl border border-white/10 mb-2">
-                                <div>
-                                    <span className="font-bold text-indigo-400/50 mr-3 text-xs w-12 inline-block">TASK {tIdx + 1}</span>
-                                    <span className="text-sm text-slate-200">{tString}</span>
-                                </div>
-                                <button className="text-xs px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full hover:bg-emerald-500/40">Start</button>
-                            </div>
-                        ))}
+                {(!planData || planData.length === 0) ? (
+                    <div className="p-8 text-center bg-white/5 rounded-2xl border border-white/10 border-dashed mt-4">
+                        <ListChecks className="w-12 h-12 text-slate-500 mx-auto mb-3" />
+                        <h3 className="text-lg font-bold text-white">No Active Study Plan</h3>
+                        <p className="text-slate-400 text-sm mt-1 max-w-sm mx-auto">Input your priority above and click Generate to build a dynamic schedule.</p>
                     </div>
-                ))}
+                ) : (
+                    planData.map((d: any, i: number) => (
+                        <div key={i} className="mb-4 mt-4">
+                            <span className="font-bold text-indigo-400 text-sm uppercase tracking-wide block mb-2">{d.title || d.day || `Day ${i + 1}`}</span>
+                            {(d.tasks || (d.task ? [d.task] : [])).map((tString: string, tIdx: number) => (
+                                <div key={tIdx} className="flex justify-between items-center p-4 bg-white/5 rounded-xl border border-white/10 mb-2">
+                                    <div>
+                                        <span className="font-bold text-indigo-400/50 mr-3 text-xs w-12 inline-block">TASK {tIdx + 1}</span>
+                                        <span className="text-sm text-slate-200">{tString}</span>
+                                    </div>
+                                    <button className="text-xs px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full hover:bg-emerald-500/40">Start</button>
+                                </div>
+                            ))}
+                        </div>
+                    ))
+                )}
             </div>
         </motion.div>
     );
@@ -207,7 +212,7 @@ const ExamPrepTab = () => (
 const ChatTab = () => {
     const [message, setMessage] = useState('');
     const [history, setHistory] = useState([
-        { role: 'ai', text: 'Hi! I see your Network Security mid-term is coming up. Would you like me to generate questions from Module 3?' }
+        { role: 'ai', text: 'Hello! Ask me any academic questions related to your current courses.' }
     ]);
     const [isLoading, setIsLoading] = useState(false);
 
